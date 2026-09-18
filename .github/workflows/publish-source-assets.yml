@@ -1,0 +1,62 @@
+name: Publish StoryBoard.SourceAssets
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out selected commit
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.x
+
+      - name: Restore project
+        run: dotnet restore StoryBoard.SourceAssets.csproj
+
+      - name: Validate version bump
+        shell: bash
+        run: |
+          current_version=$(sed -n 's:.*<Version>\([^<]*\)</Version>.*:\1:p' StoryBoard.SourceAssets.csproj)
+          previous_version=$(git show HEAD^:StoryBoard.SourceAssets.csproj | sed -n 's:.*<Version>\([^<]*\)</Version>.*:\1:p')
+
+          if [ -z "$current_version" ] || [ -z "$previous_version" ]; then
+            echo "Could not read current and previous package versions."
+            exit 1
+          fi
+
+          if [ "$current_version" = "$previous_version" ] || [ "$(printf '%s\n' "$previous_version" "$current_version" | sort -V | tail -n 1)" != "$current_version" ]; then
+            echo "Version must be bumped above $previous_version; found $current_version."
+            exit 1
+          fi
+
+          echo "PACKAGE_VERSION=$current_version" >> "$GITHUB_ENV"
+          echo "Publishing StoryBoard.SourceAssets $current_version (previous: $previous_version)."
+
+      - name: Pack package
+        run: >-
+          dotnet pack StoryBoard.SourceAssets.csproj
+          --configuration Release
+          --no-restore
+          --output artifacts
+          -p:PackageVersion=$PACKAGE_VERSION
+
+      - name: Publish package to GitHub Packages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: >-
+          dotnet nuget push "artifacts/StoryBoard.SourceAssets.$PACKAGE_VERSION.nupkg"
+          --source "https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json"
+          --api-key "$GITHUB_TOKEN"
+          --skip-duplicate
