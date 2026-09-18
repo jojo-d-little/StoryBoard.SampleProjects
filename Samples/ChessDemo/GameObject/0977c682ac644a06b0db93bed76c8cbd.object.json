@@ -1,0 +1,39 @@
+{
+  "objectType": "BlueTile",
+  "positionX": 512,
+  "positionY": 64,
+  "includeInPreview": true,
+  "linkedBaseObjectId": "6dcea7c9-cc8b-44b5-9cda-3552ff31394c",
+  "linkActionsToBaseObject": true,
+  "productionName": "",
+  "imageRotationDegrees": 0,
+  "renderZOrder": 1062,
+  "authoredRenderOrder": 1062,
+  "quantity": 1,
+  "quantifiablePlacementDistributionMode": "IndividualInstances",
+  "containedObjects": [],
+  "id": "0977c682-ac64-4a06-b0db-93bed76c8cbd",
+  "name": "BlueTile",
+  "nameInGame": "BlueTile",
+  "hideEmptyConfiguration": false,
+  "scopeKind": "GameObject",
+  "gameProperties": [
+    {
+      "id": "6346d32e-6712-4dc0-91ca-6cf81937ec93",
+      "name": "isQuantifiable",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "cba2b0f2-659b-4918-b593-76c5341e3940",
+      "name": "quantity",
+      "defaultValue": "1",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    }
+  ],
+  "eventSubscriptions": [],
+  "timerDefinitions": [],
+  "soundEffectLibraryEntries": []
+}

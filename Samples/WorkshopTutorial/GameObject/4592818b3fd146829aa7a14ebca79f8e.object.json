@@ -1,0 +1,241 @@
+{
+  "objectType": "BrassKey",
+  "positionX": 600,
+  "positionY": 240,
+  "includeInPreview": true,
+  "linkActionsToBaseObject": false,
+  "productionName": "inventoriableTemplate",
+  "nameSynonyms": [
+    "key"
+  ],
+  "imageVariants": [
+    {
+      "variantName": "bent",
+      "fullImagePath": "ASSETROOT:/PlaceHolderImages/BentBrassKey.png",
+      "imageLocalAlignmentRotationDegrees": 0,
+      "imageLocalAlignmentOffsetX": 3,
+      "imageLocalAlignmentOffsetY": -4,
+      "imageScale": 0.1,
+      "isDefault": true
+    },
+    {
+      "variantName": "fixed",
+      "fullImagePath": "ASSETROOT:/PlaceHolderImages/BrassKey.png",
+      "imageLocalAlignmentRotationDegrees": 0,
+      "imageLocalAlignmentOffsetX": -2,
+      "imageLocalAlignmentOffsetY": 1,
+      "imageScale": 0.1,
+      "isDefault": false
+    }
+  ],
+  "imageRotationDegrees": 0,
+  "renderZOrder": 1001,
+  "authoredRenderOrder": 1001,
+  "imageVariantChooserScript": "IF {owner.isBent}\r\nbent\r\nELSE\r\nfixed\r\nENDIF",
+  "appearance": {
+    "spatialType": "SolidObject",
+    "isMovable": true,
+    "isMovableDefaultValue": true,
+    "stackGroup": 1,
+    "footprintWidthCells": 2,
+    "footprintHeightCells": 2,
+    "footprintOrientation": "N",
+    "headingDirection": "N",
+    "objectHeightUnits": 1,
+    "isHeightPinned": false,
+    "stackScaleStepOverride": 0.1,
+    "minStackScaleOverride": 0.5
+  },
+  "isInventoriable": true,
+  "inventoryPointsDefaultValue": 1,
+  "isContainer": false,
+  "containerPointsDefaultValue": 1,
+  "isOpenable": false,
+  "isOpenDefaultValue": false,
+  "isLockable": false,
+  "isLockedDefaultValue": false,
+  "isActivatable": true,
+  "isActiveDefaultValue": true,
+  "isHidable": true,
+  "isHiddenDefaultValue": false,
+  "description": "Template with pickup/drop baseline actions.",
+  "isQuantifiable": false,
+  "quantity": 1,
+  "quantifiablePlacementDistributionMode": "GroupedStack",
+  "containedObjects": [],
+  "id": "4592818b-3fd1-4682-9aa7-a14ebca79f8e",
+  "name": "BrassKey",
+  "nameInGame": "Brass Key",
+  "hideEmptyConfiguration": false,
+  "validationErrors": [],
+  "ignoredValidationRuleIds": [],
+  "scopeKind": "GameObject",
+  "procedureIds": [
+    "80423a4c-1027-4247-9f32-7762dcee7ad2"
+  ],
+  "gameProperties": [
+    {
+      "id": "15e858f2-d725-4779-abde-a8eb0c7cbdeb",
+      "name": "inventoryPoints",
+      "defaultValue": "1",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "245b59aa-eb0e-4090-ab0b-2eea2758c5a4",
+      "name": "isActive",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "41e8254f-8493-467d-84a0-f2b90e6f2e3f",
+      "name": "isHidden",
+      "defaultValue": "false",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "6da4658b-4d2d-4ff1-9267-c07e0e39b760",
+      "name": "isBent",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "33d7e023-18c8-46ce-ba3a-1e38fe9080c5",
+      "name": "isMovable",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    }
+  ],
+  "additionalVerbs": [
+    "fix"
+  ],
+  "additionalDirectionals": [],
+  "additionalDirectionalTraversalMappings": [],
+  "availableGameActions": [
+    {
+      "id": "91d4de68-9ad4-4143-acec-fb3a91b0446e",
+      "name": "look_ball",
+      "payload": {
+        "$payloadType": "echoMessage"
+      },
+      "actionType": "EchoMessage",
+      "noVerbLinkage": false,
+      "verbListText": "look, inspect",
+      "verbs": [
+        "look",
+        "inspect"
+      ],
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "",
+        "Success": "There is a {self.name}, it looks to be about {self.inventoryPoints} heavy"
+      },
+      "childCommandForwardingMode": "None",
+      "similarChildDispatchMode": "SingleMatchingChild"
+    },
+    {
+      "id": "51b248df-4ca7-48aa-a83d-5bec573227ed",
+      "name": "fix_brasskey",
+      "payload": {
+        "$payloadType": "invokeProcedure",
+        "procedureId": "80423a4c-1027-4247-9f32-7762dcee7ad2"
+      },
+      "actionType": "InvokeProcedure",
+      "noVerbLinkage": true,
+      "verbListText": "",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "f",
+        "MutationFailed": "mf",
+        "ParticipantRequirementsNotMet": "Do you have everything you need?",
+        "ParticipantVariableRequirementsNotMet": "Did you already do that?",
+        "PreconditionsFailed": "pf",
+        "ProcedureNotFound": "pnf",
+        "Success": "{currentAction.procedureDescription}"
+      },
+      "childCommandForwardingMode": "None",
+      "similarChildDispatchMode": "SingleMatchingChild"
+    },
+    {
+      "id": "6b3a25e4-e0d7-497b-888e-7c32b81eb8cf",
+      "name": "fix_and_turn",
+      "payload": {
+        "$payloadType": "linkedFlow",
+        "linkedActions": [
+          {
+            "nodeId": 1,
+            "actionId": "51b248df-4ca7-48aa-a83d-5bec573227ed",
+            "onAlwaysNodeIds": [],
+            "onSuccessNodeIds": [
+              2
+            ],
+            "onFailureNodeIds": []
+          },
+          {
+            "nodeId": 2,
+            "actionId": "d677f924-9bb0-483f-a65d-f92a1f26db12",
+            "onAlwaysNodeIds": [],
+            "onSuccessNodeIds": [],
+            "onFailureNodeIds": []
+          }
+        ]
+      },
+      "actionType": "LinkedActions",
+      "noVerbLinkage": false,
+      "verbListText": "fix",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Success": ""
+      },
+      "childCommandForwardingMode": "None",
+      "similarChildDispatchMode": "SingleMatchingChild"
+    },
+    {
+      "id": "d677f924-9bb0-483f-a65d-f92a1f26db12",
+      "name": "turn_page",
+      "actionType": "NextPhase",
+      "noVerbLinkage": true,
+      "verbListText": "",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Success": ""
+      },
+      "childCommandForwardingMode": "None",
+      "similarChildDispatchMode": "SingleMatchingChild"
+    }
+  ],
+  "eventSubscriptions": [
+    {
+      "id": "5f613172-2ecd-439c-b24b-437101e8a5fc",
+      "eventKey": "inventory_item_added",
+      "subscriptionName": "soundInformKeyPickup",
+      "isEnabled": true,
+      "lane": "foreground",
+      "dispatchDisposition": "bubble",
+      "subscriptionVisibleWhenContained": true,
+      "subscriptionSourceMatchMode": "AnySource",
+      "subscriptionSecondarySourceMatchMode": "SelfOnly",
+      "actionBindings": [
+        {
+          "order": 1,
+          "isEnabled": true,
+          "condition": {
+            "quantityEvaluationMode": "AllResolvedMustPass",
+            "filters": []
+          },
+          "target": {
+            "actionName": "starttimer_kkding",
+            "onMissingAction": "DiagnosticOnly",
+            "stopChainOnFailure": true
+          }
+        }
+      ]
+    }
+  ],
+  "timerDefinitions": [],
+  "soundEffectLibraryEntries": []
+}

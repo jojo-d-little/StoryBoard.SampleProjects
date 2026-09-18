@@ -1,0 +1,28 @@
+{
+  "parentCountryId": "833ba96d-0ea6-4e59-a041-edb859906f82",
+  "roomDropBehavior": "autoBasicTraversals",
+  "baseObjectsIgnoredValidationRuleIds": [],
+  "baseObjects": [],
+  "gameObjects": [],
+  "adjacencyMode": "EightDirectional",
+  "startingRoomId": "dbd17689-e6dd-40e7-b210-cf5a29faeaef",
+  "roomIds": [
+    "dbd17689-e6dd-40e7-b210-cf5a29faeaef"
+  ],
+  "roomPlacements": [],
+  "traversalConnections": [],
+  "id": "02f4f452-0197-436b-baee-fff9a3c00d8b",
+  "name": "New Area",
+  "nameInGame": "New Area",
+  "hideEmptyConfiguration": false,
+  "validationErrors": [],
+  "ignoredValidationRuleIds": [],
+  "scopeKind": "Area",
+  "baseObjectIds": [],
+  "gameObjectIds": [],
+  "gameProperties": [],
+  "additionalVerbs": [],
+  "additionalDirectionals": [],
+  "additionalDirectionalTraversalMappings": [],
+  "availableGameActions": []
+}

@@ -1,0 +1,25 @@
+{
+  "name": "RoomDesigner1",
+  "formatVersion": "1.0",
+  "sourceProjectName": "RoomDesigner1",
+  "updatedUtc": "2026-08-08T21:28:52.6549039Z",
+  "hideEmptyConfiguration": false,
+  "autoSaveSeconds": 60,
+  "roomImageCanvasWidth": 800,
+  "roomImageCanvasHeight": 600,
+  "roomDesignerGridCellSize": 40,
+  "stackScaleStepDefault": 0.08,
+  "minStackScaleDefault": 0.5,
+  "simulatorReplayFilePath": "",
+  "defaultTraversalMode": "EightDirectional",
+  "projectIgnoredValidationRuleIds": [],
+  "globalIgnoredValidationRuleIds": [],
+  "objectTemplatesIgnoredValidationRuleIds": [
+    "TRV-005"
+  ],
+  "roomTemplatesIgnoredValidationRuleIds": [],
+  "baseObjectsIgnoredValidationRuleIds": [],
+  "startingPlanetName": "New Planet",
+  "playerCharacterObjectName": "",
+  "playerIgnoredValidationRuleIds": []
+}

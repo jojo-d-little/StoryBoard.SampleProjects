@@ -1,0 +1,28 @@
+{
+  "name": "ChessDemo",
+  "formatVersion": "1.0",
+  "sourceProjectName": "ChessDemo",
+  "gameDisplayName": "Chessboard Demo",
+  "gameSummary": "This is a demonstration game focused on how to control and limit individual game piece movements.  It is not nor is it intended to be a complete chess game. It\u0027s largely focused on showing that we can define and control movements of pieces limitations of what\u0027s allowed. it does not yet have any support for pieces capturing other pieces that will likely be a future enhancement.",
+  "gamePreviewImages": [
+    "C:\\work\\GIT\\Storyboard\\Samples\\ChessDemo\\PresentationAssets\\TheBoard.png"
+  ],
+  "updatedUtc": "2026-08-08T21:28:44.6653558Z",
+  "hideEmptyConfiguration": false,
+  "autoSaveSeconds": 60,
+  "roomImageCanvasWidth": 1024,
+  "roomImageCanvasHeight": 768,
+  "roomDesignerGridCellSize": 64,
+  "stackScaleStepDefault": 0.08,
+  "minStackScaleDefault": 0.5,
+  "simulatorReplayFilePath": "",
+  "defaultTraversalMode": "EightDirectional",
+  "projectIgnoredValidationRuleIds": [],
+  "globalIgnoredValidationRuleIds": [],
+  "objectTemplatesIgnoredValidationRuleIds": [],
+  "roomTemplatesIgnoredValidationRuleIds": [],
+  "baseObjectsIgnoredValidationRuleIds": [],
+  "startingPlanetName": "Starter Planet",
+  "playerCharacterObjectName": "Player",
+  "playerIgnoredValidationRuleIds": []
+}

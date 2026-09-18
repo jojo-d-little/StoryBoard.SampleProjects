@@ -1,0 +1,111 @@
+{
+  "objectType": "Door_W",
+  "positionX": 0,
+  "positionY": 160,
+  "includeInPreview": true,
+  "linkActionsToBaseObject": false,
+  "productionName": "Door opens West from Supply Closet to Atrium.",
+  "nameSynonyms": [
+    "Atrium",
+    "door"
+  ],
+  "imageVariants": [
+    {
+      "variantName": "Closed",
+      "fullImagePath": "ASSETROOT:/PlaceHolderImages/LightDoor.png",
+      "imageLocalAlignmentRotationDegrees": 0,
+      "imageLocalAlignmentOffsetX": 25,
+      "imageLocalAlignmentOffsetY": 0,
+      "imageScale": 1,
+      "isDefault": true
+    },
+    {
+      "variantName": "Open",
+      "fullImagePath": "ASSETROOT:/PlaceHolderImages/LightDoorOpen.png",
+      "imageLocalAlignmentRotationDegrees": 0,
+      "imageLocalAlignmentOffsetX": 25,
+      "imageLocalAlignmentOffsetY": 0,
+      "imageScale": 1,
+      "isDefault": false
+    }
+  ],
+  "imageRotationDegrees": 270,
+  "renderZOrder": 1004,
+  "authoredRenderOrder": 1004,
+  "imageVariantChooserScript": "IF {owner.isOpen}\r\nOpen\r\nELSE\r\nClosed\r\nENDIF",
+  "appearance": {
+    "spatialType": "SolidObject",
+    "isMovableDefaultValue": true,
+    "footprintWidthCells": 1,
+    "footprintHeightCells": 7,
+    "footprintOrientation": "E",
+    "headingDirection": "N",
+    "objectHeightUnits": 1,
+    "isHeightPinned": false,
+    "stackScaleStepOverride": 0.1,
+    "minStackScaleOverride": 0.5
+  },
+  "isInventoriable": false,
+  "inventoryPointsDefaultValue": 1,
+  "isContainer": false,
+  "containerPointsDefaultValue": 1,
+  "isOpenable": true,
+  "isOpenDefaultValue": true,
+  "isLockable": true,
+  "isLockedDefaultValue": false,
+  "isActivatable": false,
+  "isActiveDefaultValue": false,
+  "isHidable": false,
+  "isHiddenDefaultValue": false,
+  "description": "",
+  "isQuantifiable": false,
+  "quantity": 1,
+  "quantifiablePlacementDistributionMode": "GroupedStack",
+  "containedObjects": [],
+  "id": "4e2810e7-95ab-4f6a-bfdd-7ea6144e01a3",
+  "name": "Door_W",
+  "nameInGame": "Atrium Door",
+  "hideEmptyConfiguration": false,
+  "validationErrors": [],
+  "ignoredValidationRuleIds": [],
+  "scopeKind": "GameObject",
+  "procedureIds": [],
+  "gameProperties": [
+    {
+      "id": "e5b7ce20-e172-4fba-865f-a98b6b3cfbe1",
+      "name": "isOpen",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton",
+      "sharedVariableId": "1c9bd943-d243-4a28-ad7b-75db5894c21a"
+    },
+    {
+      "id": "44f58532-3b73-448b-9fec-64b724489734",
+      "name": "isLocked",
+      "defaultValue": "false",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "d7529c06-7461-4efd-9529-572d9fb3fee7",
+      "name": "lookingFromHere",
+      "defaultValue": "the west",
+      "valueRestriction": "Unrestricted",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "f9e99b74-eaaf-4ace-961a-c98d02011dfc",
+      "name": "destinationFromHere",
+      "defaultValue": "Atrium",
+      "valueRestriction": "Unrestricted",
+      "lifetime": "Singleton"
+    }
+  ],
+  "additionalVerbs": [],
+  "additionalDirectionals": [],
+  "additionalDirectionalTraversalMappings": [],
+  "availableGameActions": [],
+  "eventSubscriptions": [],
+  "timerDefinitions": [],
+  "soundEffectLibraryEntries": []
+}

@@ -1,0 +1,83 @@
+{
+  "objectType": "Player",
+  "positionX": 0,
+  "positionY": 0,
+  "includeInPreview": true,
+  "linkActionsToBaseObject": false,
+  "productionName": "Player",
+  "nameSynonyms": [],
+  "imageVariants": [
+    {
+      "variantName": "default",
+      "fullImagePath": "",
+      "imageLocalAlignmentRotationDegrees": 0,
+      "imageLocalAlignmentOffsetX": 0,
+      "imageLocalAlignmentOffsetY": 0,
+      "imageScale": 1,
+      "isDefault": true
+    }
+  ],
+  "imageRotationDegrees": 0,
+  "isInventoriable": false,
+  "inventoryPointsDefaultValue": 1,
+  "isContainer": true,
+  "containerPointsDefaultValue": 4,
+  "isOpenable": false,
+  "isOpenDefaultValue": false,
+  "isLockable": false,
+  "isLockedDefaultValue": false,
+  "isActivatable": false,
+  "isActiveDefaultValue": false,
+  "isHidable": false,
+  "isHiddenDefaultValue": false,
+  "description": "",
+  "isQuantifiable": false,
+  "quantity": 1,
+  "quantifiablePlacementDistributionMode": "GroupedStack",
+  "containedObjects": [],
+  "id": "f631c497-5f2f-4cec-8971-8abfead1f911",
+  "name": "Player",
+  "nameInGame": "Your Stuff",
+  "hideEmptyConfiguration": false,
+  "validationErrors": [],
+  "ignoredValidationRuleIds": [],
+  "scopeKind": "GameObject",
+  "procedureIds": [],
+  "gameProperties": [
+    {
+      "id": "471257ce-a0ac-4510-ab8a-dca2586ebd26",
+      "name": "containerPoints",
+      "defaultValue": "4",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "8533811f-9c19-4cd1-9052-e72da2b69b40",
+      "name": "containerPointsRemaining",
+      "defaultValue": "4",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "b188a9bb-b73b-4a60-956c-95354f239bc8",
+      "name": "isPlayer",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "2483b27f-0faa-42ff-b56b-d00c8391edce",
+      "name": "isContainer",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    }
+  ],
+  "additionalVerbs": [],
+  "additionalDirectionals": [],
+  "additionalDirectionalTraversalMappings": [],
+  "availableGameActions": [],
+  "eventSubscriptions": [],
+  "timerDefinitions": [],
+  "soundEffectLibraryEntries": []
+}

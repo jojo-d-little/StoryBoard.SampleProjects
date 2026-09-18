@@ -1,0 +1,39 @@
+{
+  "objectType": "CreamTile",
+  "positionX": 640,
+  "positionY": 512,
+  "includeInPreview": true,
+  "linkedBaseObjectId": "c1b2bb15-0aaa-4f7b-b454-c2e0965abcef",
+  "linkActionsToBaseObject": true,
+  "productionName": "",
+  "imageRotationDegrees": 0,
+  "renderZOrder": 1005,
+  "authoredRenderOrder": 1005,
+  "quantity": 1,
+  "quantifiablePlacementDistributionMode": "IndividualInstances",
+  "containedObjects": [],
+  "id": "0ecbe8d3-9b2e-4c82-a678-9df250e73f22",
+  "name": "CreamTile",
+  "nameInGame": "CreamTile",
+  "hideEmptyConfiguration": false,
+  "scopeKind": "GameObject",
+  "gameProperties": [
+    {
+      "id": "5d84f6d6-9790-4a77-a0dd-3155c341ac75",
+      "name": "isQuantifiable",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "8ebe4178-c2e2-4f61-83b6-b1f1a6e8bafd",
+      "name": "quantity",
+      "defaultValue": "1",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    }
+  ],
+  "eventSubscriptions": [],
+  "timerDefinitions": [],
+  "soundEffectLibraryEntries": []
+}

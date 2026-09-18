@@ -1,0 +1,67 @@
+{
+  "objectType": "BlackKnight",
+  "positionX": 320,
+  "positionY": 512,
+  "includeInPreview": true,
+  "linkedBaseObjectId": "6b830b00-aaf0-4fb3-85be-7e72fa3783da",
+  "linkActionsToBaseObject": true,
+  "productionName": "inventoriableTemplate",
+  "imageRotationDegrees": 0,
+  "renderZOrder": 1076,
+  "authoredRenderOrder": 1076,
+  "quantity": 1,
+  "quantifiablePlacementDistributionMode": "IndividualInstances",
+  "containedObjects": [],
+  "id": "2fd064ce-7457-4337-a466-1e1a88405562",
+  "name": "BlackKnight",
+  "nameInGame": "BlackKnight",
+  "hideEmptyConfiguration": false,
+  "scopeKind": "GameObject",
+  "gameProperties": [
+    {
+      "id": "337c60bc-7741-4e4f-82a7-aa117c5dac66",
+      "name": "inventoryPoints",
+      "defaultValue": "1",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "03a6434b-1b75-4b5a-b5c1-3f6041344123",
+      "name": "isActive",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "739b9aa8-c157-440b-8f0a-df66c43359f0",
+      "name": "isHidden",
+      "defaultValue": "false",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "b7136202-f3e9-4f4e-89bc-19deb50690a8",
+      "name": "isQuantifiable",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "ded21093-9650-4fb3-962b-3ce1e84c7537",
+      "name": "quantity",
+      "defaultValue": "1",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "4de5f3e2-17b0-49ac-8f0d-e07907fa6a5a",
+      "name": "isMovable",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    }
+  ],
+  "eventSubscriptions": [],
+  "timerDefinitions": [],
+  "soundEffectLibraryEntries": []
+}

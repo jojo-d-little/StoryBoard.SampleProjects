@@ -1,0 +1,82 @@
+Validation report generated: 2026-09-16 09:22:44
+Project: WorkshopTutorial
+ExecutionKind: WholeProject
+RootScopePath: Global
+IncludeDescendants: True
+CandidateNodeCount: 105
+ExecutedRules: 59
+SkippedRules: 0
+StoppedEarly: False
+RemainingIssueCountAtStop: 0
+StopRuleId: (none)
+RemainingRuleCountAtStop: 0
+
+SkippedRuleId	SkipReason	SkipDetail
+
+RuleId	Severity	Path	Description	Hint
+IMG-001	Warning	Global / SampleRoom	room image slot 'North' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / SampleRoom	room image slot 'East' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / SampleRoom	room image slot 'South' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / SampleRoom	room image slot 'West' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / SampleRoom	room image slot 'Down' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / Atrium	room image slot 'North' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / Atrium	room image slot 'NorthEast' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / Atrium	room image slot 'East' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / Atrium	room image slot 'SouthEast' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / Atrium	room image slot 'South' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / Atrium	room image slot 'SouthWest' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / Atrium	room image slot 'West' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / Atrium	room image slot 'NorthWest' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / Atrium	room image slot 'Down' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / Atrium / WhiteCrate	object image variant 'default' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / Atrium / Door_N	object image variant 'Closed' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / Atrium / Door_N	object image variant 'Open' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / Atrium / Door_E	object image variant 'Closed' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / Atrium / Door_E	object image variant 'Open' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / Atrium / Door_S	object image variant 'Closed' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / Atrium / Door_S	object image variant 'Open' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / Atrium / Door_W	object image variant 'Closed' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / Atrium / Door_W	object image variant 'Open' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / Atrium / RedCrate	object image variant 'default' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / Atrium / GreenCrate	object image variant 'default' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / Atrium / BlueCrate	object image variant 'default' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / Supply Closet	room image slot 'North' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / Supply Closet	room image slot 'East' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / Supply Closet	room image slot 'South' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / Supply Closet	room image slot 'West' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / Supply Closet	room image slot 'Down' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / Supply Closet / Door_W	object image variant 'Closed' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / Supply Closet / Door_W	object image variant 'Open' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / Supply Closet / Crowbar	object image variant 'default' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / Supply Closet / Backpack	object image variant 'default' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / Supply Closet / BrassKey	object image variant 'bent' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / Supply Closet / BrassKey	object image variant 'fixed' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / Workshop	room image slot 'North' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / Workshop	room image slot 'East' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / Workshop	room image slot 'South' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / Workshop	room image slot 'West' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / Workshop	room image slot 'Down' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / Workshop / Door_S	object image variant 'Closed' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / Workshop / Door_S	object image variant 'Open' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / Workshop / Anvil	object image variant 'default' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / Workshop / Hammer	object image variant 'default' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / Workshop / Workbench	object image variant 'default' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / Exit Hall	room image slot 'North' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / Exit Hall	room image slot 'East' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / Exit Hall	room image slot 'South' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / Exit Hall	room image slot 'West' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / Exit Hall	room image slot 'Down' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / Exit Hall / Door_E	object image variant 'Closed' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / Exit Hall / Door_E	object image variant 'Open' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / No Where	room image slot 'North' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / No Where	room image slot 'East' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / No Where	room image slot 'South' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / No Where	room image slot 'West' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / No Where	room image slot 'Down' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / No Where / Door_N	object image variant 'Closed' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / No Where / Door_N	object image variant 'Open' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / UpStairs	room image slot 'North' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / UpStairs	room image slot 'East' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / UpStairs	room image slot 'South' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / UpStairs	room image slot 'West' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / Starter Planet / Starter Country / Starter Area / UpStairs	room image slot 'Down' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.

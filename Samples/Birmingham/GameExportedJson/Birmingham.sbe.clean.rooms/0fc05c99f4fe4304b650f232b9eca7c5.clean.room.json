@@ -1,0 +1,1560 @@
+{
+  "scopeKind": 6,
+  "schemaVersion": "1.0",
+  "id": "0fc05c99-f4fe-4304-b650-f232b9eca7c5",
+  "description": "",
+  "commandPhrases": [],
+  "gameObjects": [
+    {
+      "scopeKind": 7,
+      "sourceObjectId": "8284729e-e0a0-49a0-9859-039d8c94b08b",
+      "productionName": "newObject7",
+      "isInventoriable": true,
+      "inventoryPointsDefaultValue": 1,
+      "isContainer": false,
+      "containerPointsDefaultValue": 1,
+      "isOpenable": false,
+      "isOpenDefaultValue": false,
+      "isLockable": false,
+      "isLockedDefaultValue": false,
+      "isActivatable": false,
+      "isActiveDefaultValue": false,
+      "isHidable": false,
+      "isHiddenDefaultValue": false,
+      "description": "",
+      "quantity": 1,
+      "quantifiablePlacementDistributionMode": "GroupedStack",
+      "childScopes": [],
+      "name": "Box",
+      "gameProperties": [
+        {
+          "id": "0cb07893-e99b-4ecc-9c2c-1d79b1964a3c",
+          "name": "inventoryPoints",
+          "defaultValue": "1",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        }
+      ],
+      "additionalDirectionalTraversalMappings": [],
+      "availableGameActions": [
+        {
+          "id": "a21ec8b9-ff15-450b-a426-16caf8245a61",
+          "name": "look_box",
+          "actionType": "EchoMessage",
+          "verbListText": "look",
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "Success": "There is a box"
+          },
+          "childCommandForwardingMode": "None"
+        },
+        {
+          "id": "5891eb5b-d581-43fc-b3bd-c67ae099a1de",
+          "name": "pickup_box",
+          "actionType": "PutObjectInContainer",
+          "verbListText": "pickup",
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "The Box is heavy",
+            "PutFailed": "",
+            "ResolveTargetFailed": "",
+            "Success": "Picked up Box"
+          },
+          "targetContainerId": "",
+          "childCommandForwardingMode": "None"
+        }
+      ]
+    },
+    {
+      "scopeKind": 7,
+      "sourceObjectId": "358e3428-c370-41c1-9f02-89fb3dfff2d1",
+      "productionName": "newObject",
+      "isInventoriable": false,
+      "inventoryPointsDefaultValue": 1,
+      "isContainer": false,
+      "containerPointsDefaultValue": 1,
+      "isOpenable": true,
+      "isOpenDefaultValue": false,
+      "isLockable": true,
+      "isLockedDefaultValue": true,
+      "isActivatable": false,
+      "isActiveDefaultValue": false,
+      "isHidable": false,
+      "isHiddenDefaultValue": false,
+      "description": "",
+      "quantity": 1,
+      "quantifiablePlacementDistributionMode": "GroupedStack",
+      "childScopes": [],
+      "name": "Door",
+      "gameProperties": [
+        {
+          "id": "f7cf72ef-cc37-413d-9a3f-1a09efca1778",
+          "name": "isLocked",
+          "defaultValue": "true",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "6249b4b3-3e28-4c07-abce-8a69905ac7b6",
+          "name": "isOpen",
+          "defaultValue": "false",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        }
+      ],
+      "additionalVerbs": [
+        "what"
+      ],
+      "additionalDirectionalTraversalMappings": [],
+      "availableGameActions": [
+        {
+          "id": "81def9c9-3433-4ec9-970e-08d6c5561e59",
+          "name": "investigate_door",
+          "actionType": "Synonym",
+          "verbListText": "investigate",
+          "direction": "",
+          "synonymTargetActionId": "dd4e1d0c-9cc3-4ce6-9035-3a1f7e801ec1",
+          "childCommandForwardingMode": "None"
+        },
+        {
+          "id": "716f2aea-484e-434d-96cf-f337a6d60249",
+          "name": "look_door",
+          "actionType": "EchoMessage",
+          "verbListText": "look",
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "Success": "IF {Door.isOpen}\r\nThere is a door to the west, it looks open\r\nELSE\r\nThere is a closed door to the west\r\nENDIF\r\n"
+          },
+          "childCommandForwardingMode": "None"
+        },
+        {
+          "id": "a79a6942-7ff0-4603-8947-adbda8656033",
+          "name": "look_under_door",
+          "actionType": "EchoMessage",
+          "verbListText": "look",
+          "direction": "under",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "Success": "IF {Door.isLocked}\r\nThere seems to be a doorstop stuck under the door.\r\nELSE \r\nNot much going on here\r\nENDIF"
+          },
+          "childCommandForwardingMode": "None"
+        },
+        {
+          "id": "a3470569-352a-4486-af4a-dc9152f09f04",
+          "name": "open_door",
+          "actionType": "EchoMessage",
+          "noVerbLinkage": true,
+          "verbListText": "",
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "Success": "IF {Door.isOpen}\r\nIt is already open\r\nELSE IF {Door.isLocked}\r\nIt seems stuck\r\nELSE\r\nThe door slowley opens, it feels heavy\r\nENDIF"
+          },
+          "childCommandForwardingMode": "None",
+          "linkedActions": [
+            {
+              "actionId": "4c8421fb-06db-4549-af5d-4bde26012fb1",
+              "runWhen": "Always",
+              "order": 0
+            }
+          ]
+        },
+        {
+          "id": "ef2745b2-0aae-4128-88d4-822bfb5e8a71",
+          "name": "open_door_2",
+          "actionType": "LinkedActions",
+          "verbListText": "open",
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "Success": ""
+          },
+          "childCommandForwardingMode": "None",
+          "linkedActions": [
+            {
+              "actionId": "a3470569-352a-4486-af4a-dc9152f09f04",
+              "runWhen": "Always",
+              "order": 0
+            }
+          ]
+        },
+        {
+          "id": "4c8421fb-06db-4549-af5d-4bde26012fb1",
+          "name": "open_door_lock",
+          "actionType": "SetGameProperty",
+          "noVerbLinkage": true,
+          "verbListText": "",
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "SetFailed": "",
+            "Success": ""
+          },
+          "gamePropertyName": "Door.isOpen",
+          "gamePropertyValue": "true",
+          "childCommandForwardingMode": "None"
+        },
+        {
+          "id": "dd4e1d0c-9cc3-4ce6-9035-3a1f7e801ec1",
+          "name": "what_under_door",
+          "actionType": "EchoMessage",
+          "verbListText": "what",
+          "direction": "under",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "Success": "IF {Door.isLocked}\r\nThere looks to be a door stop jammed under the door\r\nENDIF"
+          },
+          "childCommandForwardingMode": "None"
+        }
+      ]
+    },
+    {
+      "scopeKind": 7,
+      "sourceObjectId": "76dabcfe-e71a-4f72-abf7-6e81c03fc397",
+      "productionName": "newObject2",
+      "isInventoriable": true,
+      "inventoryPointsDefaultValue": 1,
+      "isContainer": false,
+      "containerPointsDefaultValue": 1,
+      "isOpenable": false,
+      "isOpenDefaultValue": false,
+      "isLockable": false,
+      "isLockedDefaultValue": false,
+      "isActivatable": false,
+      "isActiveDefaultValue": false,
+      "isHidable": false,
+      "isHiddenDefaultValue": false,
+      "description": "",
+      "quantity": 1,
+      "quantifiablePlacementDistributionMode": "GroupedStack",
+      "childScopes": [],
+      "name": "DoorStop",
+      "gameProperties": [
+        {
+          "id": "52ae4702-90c9-4278-9415-218fdfaeec90",
+          "name": "inventoryPoints",
+          "defaultValue": "1",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "264b87af-7585-4214-b238-f11da4cce880",
+          "name": "isUnderDoor",
+          "defaultValue": "true",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        }
+      ],
+      "additionalVerbs": [
+        "remove"
+      ],
+      "additionalDirectionalTraversalMappings": [],
+      "availableGameActions": [
+        {
+          "id": "596f8323-fc46-4a02-93c6-c31689250890",
+          "name": "mark_removed",
+          "actionType": "EchoMessage",
+          "noVerbLinkage": true,
+          "verbListText": "",
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "Success": ""
+          },
+          "childCommandForwardingMode": "None",
+          "linkedActions": [
+            {
+              "actionId": "7c0a8578-d89e-4f9e-b6c4-d515936764d4",
+              "runWhen": "Always",
+              "order": 0
+            }
+          ]
+        },
+        {
+          "id": "1f9c04d6-2711-466d-976d-ec2fa30ac897",
+          "name": "remove_doorstop",
+          "actionType": "LinkedActions",
+          "verbListText": "remove",
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "Success": ""
+          },
+          "childCommandForwardingMode": "None",
+          "linkedActions": [
+            {
+              "actionId": "565dc2be-d936-4819-943d-598cdb034f4b",
+              "runWhen": "Always",
+              "order": 0
+            }
+          ]
+        },
+        {
+          "id": "565dc2be-d936-4819-943d-598cdb034f4b",
+          "name": "say_remove_doorstop",
+          "actionType": "EchoMessage",
+          "noVerbLinkage": true,
+          "verbListText": "",
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "Success": "IF {DoorStop.isUnderDoor}\r\nThe doorstop is removed\r\nELSE\r\nRemove it from what?\r\nENDIF"
+          },
+          "childCommandForwardingMode": "None",
+          "linkedActions": [
+            {
+              "actionId": "596f8323-fc46-4a02-93c6-c31689250890",
+              "runWhen": "Always",
+              "order": 0
+            }
+          ]
+        },
+        {
+          "id": "f3d2ff1c-2472-480a-9673-217d795073d1",
+          "name": "take_doorstop",
+          "actionType": "Synonym",
+          "verbListText": "take",
+          "direction": "",
+          "synonymTargetActionId": "1f9c04d6-2711-466d-976d-ec2fa30ac897",
+          "childCommandForwardingMode": "None"
+        },
+        {
+          "id": "7c0a8578-d89e-4f9e-b6c4-d515936764d4",
+          "name": "unlock_door",
+          "actionType": "SetGameProperty",
+          "noVerbLinkage": true,
+          "verbListText": "",
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "SetFailed": "",
+            "Success": ""
+          },
+          "gamePropertyName": "Door.isLocked",
+          "gamePropertyValue": "false",
+          "childCommandForwardingMode": "None"
+        }
+      ]
+    },
+    {
+      "scopeKind": 7,
+      "sourceObjectId": "38e5b539-393f-486a-ab1b-6b5868391f7b",
+      "linkedBaseObjectId": "876976f1-dffe-4dce-8fe5-f538fd992991",
+      "linkActionsToBaseObject": true,
+      "productionName": "newObject9",
+      "isInventoriable": true,
+      "inventoryPointsDefaultValue": 1,
+      "isContainer": false,
+      "containerPointsDefaultValue": 1,
+      "isOpenable": false,
+      "isOpenDefaultValue": false,
+      "isLockable": false,
+      "isLockedDefaultValue": false,
+      "isActivatable": true,
+      "isActiveDefaultValue": true,
+      "isHidable": true,
+      "isHiddenDefaultValue": false,
+      "description": "",
+      "isQuantifiable": true,
+      "quantity": 10,
+      "quantifiablePlacementDistributionMode": "GroupedStack",
+      "childScopes": [],
+      "name": "Flowers",
+      "gameProperties": [
+        {
+          "id": "fe838532-2cce-4fa2-831a-5902072fd429",
+          "name": "inventoryPoints",
+          "defaultValue": "1",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "57823b23-4cb9-4f7a-8f46-dae0488fd712",
+          "name": "isActive",
+          "defaultValue": "true",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "616429fd-f667-49cb-80df-b093ef79d611",
+          "name": "isHidden",
+          "defaultValue": "false",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "ed7095a0-a04a-45ba-a3bc-d5b9328640cc",
+          "name": "isQuantifiable",
+          "defaultValue": "true",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "19cc7273-04f2-4666-9187-728aa3dfb5cd",
+          "name": "quantity",
+          "defaultValue": "10",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        }
+      ],
+      "additionalDirectionalTraversalMappings": []
+    },
+    {
+      "scopeKind": 7,
+      "sourceObjectId": "ea98f05c-e967-4e9e-912e-34bee584609b",
+      "productionName": "newObject10",
+      "isInventoriable": true,
+      "inventoryPointsDefaultValue": 1,
+      "isContainer": false,
+      "containerPointsDefaultValue": 1,
+      "isOpenable": false,
+      "isOpenDefaultValue": false,
+      "isLockable": false,
+      "isLockedDefaultValue": false,
+      "isActivatable": false,
+      "isActiveDefaultValue": false,
+      "isHidable": false,
+      "isHiddenDefaultValue": false,
+      "description": "",
+      "isQuantifiable": true,
+      "quantity": 3,
+      "quantifiablePlacementDistributionMode": "GroupedStack",
+      "childScopes": [],
+      "name": "FrogHair",
+      "gameProperties": [
+        {
+          "id": "c9ad4877-e3ce-4a94-a6de-dd5707e52744",
+          "name": "inventoryPoints",
+          "defaultValue": "1",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "4d227f43-b5fb-495c-a7c3-d9fa919be01b",
+          "name": "isQuantifiable",
+          "defaultValue": "true",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "e506fc67-1572-4562-94af-7a6b3e3d6e1a",
+          "name": "quantity",
+          "defaultValue": "3",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        }
+      ],
+      "additionalDirectionalTraversalMappings": [],
+      "availableGameActions": [
+        {
+          "id": "a8915d59-e9e0-4b9e-b574-76e34125681e",
+          "name": "look_froghair",
+          "actionType": "EchoMessage",
+          "verbListText": "look",
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "Success": "There is {self.quantity} peices of {self.name}"
+          },
+          "childCommandForwardingMode": "None"
+        }
+      ]
+    },
+    {
+      "scopeKind": 7,
+      "sourceObjectId": "5dbae1a9-d16b-4679-83e2-99237459c4ed",
+      "productionName": "newObject4",
+      "isInventoriable": true,
+      "inventoryPointsDefaultValue": 1,
+      "isContainer": false,
+      "containerPointsDefaultValue": 1,
+      "isOpenable": false,
+      "isOpenDefaultValue": false,
+      "isLockable": false,
+      "isLockedDefaultValue": false,
+      "isActivatable": false,
+      "isActiveDefaultValue": false,
+      "isHidable": false,
+      "isHiddenDefaultValue": false,
+      "description": "",
+      "quantity": 1,
+      "quantifiablePlacementDistributionMode": "GroupedStack",
+      "childScopes": [],
+      "name": "Gear",
+      "gameProperties": [
+        {
+          "id": "ad64f379-faa2-4cd8-95d3-709a9140b2a1",
+          "name": "inventoryPoints",
+          "defaultValue": "1",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        }
+      ],
+      "additionalDirectionalTraversalMappings": [],
+      "availableGameActions": [
+        {
+          "id": "72be6b00-e50d-4610-98cb-912702a1dfe7",
+          "name": "look_gear",
+          "actionType": "EchoMessage",
+          "verbListText": "look",
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "Success": "There is a gear"
+          },
+          "childCommandForwardingMode": "None"
+        },
+        {
+          "id": "8f724636-1801-42b7-95c4-f236a4ca78ef",
+          "name": "pickup_gear",
+          "actionType": "PutObjectInContainer",
+          "verbListText": "pickup",
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "The gear is heavy",
+            "PutFailed": "",
+            "ResolveTargetFailed": "",
+            "Success": "Picked up the gear"
+          },
+          "targetContainerId": "",
+          "childCommandForwardingMode": "None"
+        },
+        {
+          "id": "f0cc87b4-72aa-40d2-bff4-2682917ee875",
+          "name": "use_gear",
+          "actionType": "BuildCompositeByParts",
+          "verbListText": "use",
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "Not yet",
+            "IncompleteRecipe": "You did not have everything you need. Look for {currentAction.missingParts}",
+            "NoMatchingRecipe": "What? No Match Echo",
+            "SpecifyTarget": "What did you want to build",
+            "Success": "You built a music box",
+            "TargetMismatch": "You can\u0027t build A with Z"
+          },
+          "compositeTargetObjectId": "6e16293e-509d-4855-a347-2092654e569e",
+          "compositeRecipeId": "a5a23c11-59d0-40e4-ac73-5a24b907210d",
+          "compositeRequiredPartObjectIds": [
+            "8284729e-e0a0-49a0-9859-039d8c94b08b",
+            "5dbae1a9-d16b-4679-83e2-99237459c4ed",
+            "08bd9d86-570a-466f-9b2e-670eccb8d602"
+          ],
+          "compositeStrictPartCountEnforcement": false,
+          "childCommandForwardingMode": "None"
+        }
+      ]
+    },
+    {
+      "scopeKind": 7,
+      "sourceObjectId": "93c3817c-847e-40e6-992d-afc03e3da192",
+      "productionName": "newObject3",
+      "isInventoriable": true,
+      "inventoryPointsDefaultValue": 1,
+      "isContainer": false,
+      "containerPointsDefaultValue": 1,
+      "isOpenable": false,
+      "isOpenDefaultValue": false,
+      "isLockable": false,
+      "isLockedDefaultValue": false,
+      "isActivatable": false,
+      "isActiveDefaultValue": false,
+      "isHidable": false,
+      "isHiddenDefaultValue": false,
+      "description": "",
+      "quantity": 1,
+      "quantifiablePlacementDistributionMode": "GroupedStack",
+      "childScopes": [],
+      "name": "Key",
+      "gameProperties": [
+        {
+          "id": "ba94c42d-e0f6-4df0-abd0-774fac790de9",
+          "name": "inventoryPoints",
+          "defaultValue": "1",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        }
+      ],
+      "additionalDirectionalTraversalMappings": [],
+      "availableGameActions": [
+        {
+          "id": "f7afda8c-1c71-44f7-8ca9-cada2730c85a",
+          "name": "look_key",
+          "actionType": "EchoMessage",
+          "verbListText": "look",
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "Success": "A key"
+          },
+          "childCommandForwardingMode": "None"
+        },
+        {
+          "id": "4c386521-d80a-4aab-b712-d7546567a97b",
+          "name": "put_into_key",
+          "actionType": "PutObjectInContainer",
+          "verbListText": "put",
+          "direction": "into",
+          "outcomeMessageMap": {
+            "Failure": "Key put failed",
+            "PutFailed": "",
+            "ResolveTargetFailed": "",
+            "Success": "Key in"
+          },
+          "targetContainerId": "",
+          "childCommandForwardingMode": "None"
+        }
+      ]
+    },
+    {
+      "scopeKind": 7,
+      "sourceObjectId": "0a333ad0-055e-475f-9b6b-6ea9687da8af",
+      "linkedBaseObjectId": "94e71f6c-e0d1-48e1-a3c5-234e06bb9138",
+      "linkActionsToBaseObject": true,
+      "productionName": "newObject12",
+      "isInventoriable": true,
+      "inventoryPointsDefaultValue": 1,
+      "isContainer": false,
+      "containerPointsDefaultValue": 1,
+      "isOpenable": false,
+      "isOpenDefaultValue": false,
+      "isLockable": false,
+      "isLockedDefaultValue": false,
+      "isActivatable": false,
+      "isActiveDefaultValue": false,
+      "isHidable": false,
+      "isHiddenDefaultValue": false,
+      "description": "",
+      "isQuantifiable": true,
+      "quantity": 1,
+      "quantifiablePlacementDistributionMode": "IndividualInstances",
+      "childScopes": [],
+      "name": "Marbles",
+      "gameProperties": [
+        {
+          "id": "1c432582-59ff-4380-bf18-02c7f456b577",
+          "name": "inventoryPoints",
+          "defaultValue": "1",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "41c8eb1b-8c7e-49d0-9f84-e164810bc1d8",
+          "name": "isQuantifiable",
+          "defaultValue": "true",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "0986ff2b-1d32-4eb3-9d48-695d5b05e5ab",
+          "name": "quantity",
+          "defaultValue": "1",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        }
+      ],
+      "additionalDirectionalTraversalMappings": []
+    },
+    {
+      "scopeKind": 7,
+      "sourceObjectId": "d02bddd0-a5c3-432e-999f-9d681c0f9776",
+      "linkedBaseObjectId": "0a333ad0-055e-475f-9b6b-6ea9687da8af",
+      "linkActionsToBaseObject": true,
+      "productionName": "newObject122",
+      "isInventoriable": true,
+      "inventoryPointsDefaultValue": 1,
+      "isContainer": false,
+      "containerPointsDefaultValue": 1,
+      "isOpenable": false,
+      "isOpenDefaultValue": false,
+      "isLockable": false,
+      "isLockedDefaultValue": false,
+      "isActivatable": false,
+      "isActiveDefaultValue": false,
+      "isHidable": false,
+      "isHiddenDefaultValue": false,
+      "description": "",
+      "isQuantifiable": true,
+      "quantity": 1,
+      "quantifiablePlacementDistributionMode": "IndividualInstances",
+      "childScopes": [],
+      "name": "Marbles",
+      "gameProperties": [
+        {
+          "id": "d8042046-8cd2-44cd-abcd-3e7a02e0fe64",
+          "name": "inventoryPoints",
+          "defaultValue": "1",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "393f4ee5-2eb3-42e4-8261-9ff28fb0e63a",
+          "name": "isQuantifiable",
+          "defaultValue": "true",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "22ac4907-34b7-42a1-a2cc-c9446d596d0d",
+          "name": "quantity",
+          "defaultValue": "1",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        }
+      ],
+      "additionalDirectionalTraversalMappings": []
+    },
+    {
+      "scopeKind": 7,
+      "sourceObjectId": "f4814090-1bb7-4899-93f1-1cccd7816bd7",
+      "linkedBaseObjectId": "0a333ad0-055e-475f-9b6b-6ea9687da8af",
+      "linkActionsToBaseObject": true,
+      "productionName": "newObject123",
+      "isInventoriable": true,
+      "inventoryPointsDefaultValue": 1,
+      "isContainer": false,
+      "containerPointsDefaultValue": 1,
+      "isOpenable": false,
+      "isOpenDefaultValue": false,
+      "isLockable": false,
+      "isLockedDefaultValue": false,
+      "isActivatable": false,
+      "isActiveDefaultValue": false,
+      "isHidable": false,
+      "isHiddenDefaultValue": false,
+      "description": "",
+      "isQuantifiable": true,
+      "quantity": 1,
+      "quantifiablePlacementDistributionMode": "IndividualInstances",
+      "childScopes": [],
+      "name": "Marbles",
+      "gameProperties": [
+        {
+          "id": "04de2089-26a4-46a5-892e-5da57e9e1691",
+          "name": "inventoryPoints",
+          "defaultValue": "1",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "956d896a-ca30-40bc-8f2e-6310ef30042f",
+          "name": "isQuantifiable",
+          "defaultValue": "true",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "38719dd3-9515-41ab-a656-abaeda55e8e4",
+          "name": "quantity",
+          "defaultValue": "1",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        }
+      ],
+      "additionalDirectionalTraversalMappings": []
+    },
+    {
+      "scopeKind": 7,
+      "sourceObjectId": "6e16293e-509d-4855-a347-2092654e569e",
+      "productionName": "newObject8",
+      "isInventoriable": false,
+      "inventoryPointsDefaultValue": 1,
+      "isContainer": false,
+      "containerPointsDefaultValue": 1,
+      "isOpenable": false,
+      "isOpenDefaultValue": false,
+      "isLockable": false,
+      "isLockedDefaultValue": false,
+      "isActivatable": true,
+      "isActiveDefaultValue": false,
+      "isHidable": true,
+      "isHiddenDefaultValue": true,
+      "description": "",
+      "quantity": 1,
+      "quantifiablePlacementDistributionMode": "GroupedStack",
+      "compositeRecipe": {
+        "recipeId": "a5a23c11-59d0-40e4-ac73-5a24b907210d",
+        "targetObjectId": "00000000-0000-0000-0000-000000000000",
+        "requiredParts": [
+          {
+            "partObjectId": "8284729e-e0a0-49a0-9859-039d8c94b08b",
+            "requiredQuantity": 1
+          },
+          {
+            "partObjectId": "5dbae1a9-d16b-4679-83e2-99237459c4ed",
+            "requiredQuantity": 1
+          },
+          {
+            "partObjectId": "08bd9d86-570a-466f-9b2e-670eccb8d602",
+            "requiredQuantity": 1
+          }
+        ],
+        "isReversible": true,
+        "partRequirementMode": "AllRequired",
+        "buildSuccessMessage": "You built a music box",
+        "buildFailureMessage": "You do not have what is needed yet.",
+        "breakSuccessMessage": "You broke the musicbox",
+        "breakFailureMessage": "That is one strong musicbox"
+      },
+      "childScopes": [],
+      "name": "MusicBox",
+      "gameProperties": [
+        {
+          "id": "b3711b2f-6f5e-40b6-8165-99a93a0e87ec",
+          "name": "isActive",
+          "defaultValue": "false",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "b8f5b7de-cfc6-482d-95c3-c750e3b95e45",
+          "name": "isHidden",
+          "defaultValue": "true",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        }
+      ],
+      "additionalDirectionalTraversalMappings": [],
+      "availableGameActions": [
+        {
+          "id": "84388191-a0ed-4db6-a0e4-3e97319dcfe8",
+          "name": "break_musicbox",
+          "actionType": "BreakCompositeItem",
+          "verbListText": "break",
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "We can\u0027t even break a musicbox right",
+            "MutationFailed": "",
+            "ResolveTargetFailed": "",
+            "RestoreUnavailable": "",
+            "Success": "You broke the musicbox {currentAction.recipeParts} are yours again to do with as you wish.",
+            "TargetStateInvalid": ""
+          },
+          "childCommandForwardingMode": "None"
+        },
+        {
+          "id": "6fff41c4-d4f0-4ec1-8e7f-a8f0c51bd8fa",
+          "name": "look_musicbox",
+          "actionType": "EchoMessage",
+          "verbListText": "look",
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "Success": "There is a {self.name}"
+          },
+          "childCommandForwardingMode": "None"
+        }
+      ]
+    },
+    {
+      "scopeKind": 7,
+      "sourceObjectId": "c243b658-d12b-487e-a8b7-24b52256c277",
+      "productionName": "NapSack",
+      "isInventoriable": true,
+      "inventoryPointsDefaultValue": 1,
+      "isContainer": true,
+      "containerPointsDefaultValue": 4,
+      "isOpenable": false,
+      "isOpenDefaultValue": false,
+      "isLockable": false,
+      "isLockedDefaultValue": false,
+      "isActivatable": false,
+      "isActiveDefaultValue": false,
+      "isHidable": false,
+      "isHiddenDefaultValue": false,
+      "description": "",
+      "quantity": 1,
+      "quantifiablePlacementDistributionMode": "GroupedStack",
+      "containedObjects": [
+        {
+          "scopeKind": 7,
+          "sourceObjectId": "b89a6fab-3b03-4266-ab7e-e4521db19a3b",
+          "designTimeParentObjectId": "c243b658-d12b-487e-a8b7-24b52256c277",
+          "productionName": "newObject5",
+          "isInventoriable": true,
+          "inventoryPointsDefaultValue": 1,
+          "isContainer": false,
+          "containerPointsDefaultValue": 1,
+          "isOpenable": false,
+          "isOpenDefaultValue": false,
+          "isLockable": false,
+          "isLockedDefaultValue": false,
+          "isActivatable": false,
+          "isActiveDefaultValue": false,
+          "isHidable": false,
+          "isHiddenDefaultValue": false,
+          "description": "",
+          "quantity": 1,
+          "quantifiablePlacementDistributionMode": "GroupedStack",
+          "childScopes": [],
+          "name": "Flint",
+          "gameProperties": [
+            {
+              "id": "39daa396-d6a8-4a38-b594-9abaa635393e",
+              "name": "inventoryPoints",
+              "defaultValue": "1",
+              "valueRestriction": "Numeric",
+              "lifetime": "Singleton"
+            }
+          ],
+          "additionalDirectionalTraversalMappings": []
+        }
+      ],
+      "childScopes": [
+        {
+          "scopeKind": 7,
+          "scopeName": "Flint",
+          "scopeNameInGame": "Flint",
+          "runtimeParentScopeNodeId": null,
+          "scopeTokens": [
+            "Flint"
+          ],
+          "parentScope": null,
+          "childScopes": [],
+          "additionalVerbs": [],
+          "additionalDirectionals": [],
+          "additionalDirectionalTraversalMappings": []
+        }
+      ],
+      "name": "NapSack",
+      "gameProperties": [
+        {
+          "id": "da9c8242-f7a5-45cc-9d69-4e7f0502b6f3",
+          "name": "capacityPointShareDivider",
+          "defaultValue": "4",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "3aaf76af-6fd3-44ec-86e2-75ac152677e6",
+          "name": "containerPoints",
+          "defaultValue": "4",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "3a56257f-76b8-4b64-b475-4ef43836d4c4",
+          "name": "containerPointsRemaining",
+          "defaultValue": "4",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "8d85f96c-106b-4e68-b224-6b17374a32c4",
+          "name": "inventoryPoints",
+          "defaultValue": "1",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        }
+      ],
+      "additionalDirectionalTraversalMappings": [],
+      "availableGameActions": [
+        {
+          "id": "cd0b6936-9eb3-4577-ab2a-0c3509efb54f",
+          "name": "drop_napsack",
+          "actionType": "RemoveObjectFromContainer",
+          "verbListText": "drop",
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "RemoveFailed": "",
+            "ResolveSourceFailed": "",
+            "Success": ""
+          },
+          "childCommandForwardingMode": "None"
+        },
+        {
+          "id": "d9d45645-d7a2-4757-855a-1941d3f4e172",
+          "name": "look_napsack",
+          "actionType": "EchoMessage",
+          "verbListText": "look",
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "Success": "A napsack, is there anythign in it?  {NapSack.containerPoints} {NapSack.inventoryPoints} {NapSack.containerPointsRemaining}"
+          },
+          "childCommandForwardingMode": "None"
+        },
+        {
+          "id": "7816c0ac-76a0-4c50-ab37-4981eeba3dd3",
+          "name": "pickup_napsack",
+          "actionType": "PutObjectInContainer",
+          "verbListText": "pickup",
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "napsack heavy",
+            "PutFailed": "",
+            "ResolveTargetFailed": "",
+            "Success": "picked up napsack"
+          },
+          "targetContainerId": "",
+          "childCommandForwardingMode": "None"
+        }
+      ]
+    },
+    {
+      "scopeKind": 7,
+      "sourceObjectId": "08bd9d86-570a-466f-9b2e-670eccb8d602",
+      "productionName": "newObject6",
+      "isInventoriable": true,
+      "inventoryPointsDefaultValue": 1,
+      "isContainer": false,
+      "containerPointsDefaultValue": 1,
+      "isOpenable": false,
+      "isOpenDefaultValue": false,
+      "isLockable": false,
+      "isLockedDefaultValue": false,
+      "isActivatable": false,
+      "isActiveDefaultValue": false,
+      "isHidable": false,
+      "isHiddenDefaultValue": false,
+      "description": "",
+      "quantity": 1,
+      "quantifiablePlacementDistributionMode": "GroupedStack",
+      "childScopes": [],
+      "name": "Needle",
+      "gameProperties": [
+        {
+          "id": "716283b0-d160-4351-a43a-31dbde522fe3",
+          "name": "inventoryPoints",
+          "defaultValue": "1",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        }
+      ],
+      "additionalDirectionalTraversalMappings": [],
+      "availableGameActions": [
+        {
+          "id": "d8f0a042-79b1-405e-bb66-2c6b2e41e4e9",
+          "name": "look_needle",
+          "actionType": "EchoMessage",
+          "verbListText": "look",
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "Success": "There is a needle on the floor"
+          },
+          "childCommandForwardingMode": "None"
+        },
+        {
+          "id": "7aad44f3-ea6a-4a2a-b6de-85334097a0cd",
+          "name": "pickup_needle",
+          "actionType": "PutObjectInContainer",
+          "verbListText": "pickup",
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "Needle is heavy",
+            "PutFailed": "",
+            "ResolveTargetFailed": "",
+            "Success": "Picked up the needle"
+          },
+          "targetContainerId": "",
+          "childCommandForwardingMode": "None"
+        }
+      ]
+    },
+    {
+      "scopeKind": 7,
+      "sourceObjectId": "3de5912e-4a94-47de-8e1f-64b39f1b688c",
+      "productionName": "newObject11",
+      "isInventoriable": true,
+      "inventoryPointsDefaultValue": 1,
+      "isContainer": false,
+      "containerPointsDefaultValue": 1,
+      "isOpenable": false,
+      "isOpenDefaultValue": false,
+      "isLockable": false,
+      "isLockedDefaultValue": false,
+      "isActivatable": true,
+      "isActiveDefaultValue": false,
+      "isHidable": true,
+      "isHiddenDefaultValue": true,
+      "description": "",
+      "quantity": 1,
+      "quantifiablePlacementDistributionMode": "GroupedStack",
+      "compositeRecipe": {
+        "recipeId": "692bbe29-1667-46a1-8574-c38b2aaf2fcd",
+        "targetObjectId": "00000000-0000-0000-0000-000000000000",
+        "requiredParts": [
+          {
+            "partObjectId": "38e5b539-393f-486a-ab1b-6b5868391f7b",
+            "requiredQuantity": 1
+          },
+          {
+            "partObjectId": "ea98f05c-e967-4e9e-912e-34bee584609b",
+            "requiredQuantity": 1
+          }
+        ],
+        "isReversible": true,
+        "partRequirementMode": "AllRequired",
+        "buildSuccessMessage": "A magic smoke ball appears in the middle of the room",
+        "buildFailureMessage": "Well I guess I\u0027m not a wizard",
+        "breakSuccessMessage": "The smokeball vanishes and all that is left is a small pile of flowers and froghair",
+        "breakFailureMessage": "That is one tough smoke ball"
+      },
+      "childScopes": [],
+      "name": "SmokeBall",
+      "gameProperties": [
+        {
+          "id": "8ed24a02-2935-44fa-8bdd-ff9df5a44a6e",
+          "name": "inventoryPoints",
+          "defaultValue": "1",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "37790a9d-630f-4c52-97ab-26b0ddd89c7f",
+          "name": "isActive",
+          "defaultValue": "false",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "76fde511-fa36-4ed3-92dd-4d561ee2bf29",
+          "name": "isHidden",
+          "defaultValue": "true",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        }
+      ],
+      "additionalDirectionalTraversalMappings": [],
+      "availableGameActions": [
+        {
+          "id": "b350cdaf-f27b-433b-aff0-f4faa4a177ba",
+          "name": "look_smokeball",
+          "actionType": "EchoMessage",
+          "verbListText": "look",
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "Success": "IF NOT{self.isHidden}\r\nThere is a {self.name}\r\nENDIF"
+          },
+          "childCommandForwardingMode": "None"
+        }
+      ]
+    },
+    {
+      "scopeKind": 7,
+      "sourceObjectId": "ddc7b484-dea2-4a31-a8d5-e336cb67ae92",
+      "productionName": "Window",
+      "isInventoriable": false,
+      "inventoryPointsDefaultValue": 1,
+      "isContainer": false,
+      "containerPointsDefaultValue": 1,
+      "isOpenable": true,
+      "isOpenDefaultValue": false,
+      "isLockable": false,
+      "isLockedDefaultValue": false,
+      "isActivatable": false,
+      "isActiveDefaultValue": false,
+      "isHidable": false,
+      "isHiddenDefaultValue": false,
+      "description": "",
+      "quantity": 1,
+      "quantifiablePlacementDistributionMode": "GroupedStack",
+      "childScopes": [],
+      "name": "Window",
+      "gameProperties": [
+        {
+          "id": "69d226bf-af8e-4cc8-9c07-062f1d93453a",
+          "name": "isOpen",
+          "defaultValue": "false",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        }
+      ],
+      "additionalDirectionalTraversalMappings": [],
+      "availableGameActions": [
+        {
+          "id": "64d84f8d-8d81-425f-83e5-8cb8dc3a6a58",
+          "name": "Action",
+          "actionType": "SetGameProperty",
+          "verbListText": "open",
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "SetFailed": "",
+            "Success": "You opened the window"
+          },
+          "gamePropertyName": "Window.isOpen",
+          "gamePropertyValue": "true",
+          "childCommandForwardingMode": "None"
+        },
+        {
+          "id": "91e3b441-53ff-4562-b3fe-162847007f70",
+          "name": "Action",
+          "actionType": "EchoMessage",
+          "verbListText": "look",
+          "direction": "out",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "Success": "IF {Window.isOpen}\r\nThere is a street below with a hussel and bussel of activity\r\nENDIF"
+          },
+          "childCommandForwardingMode": "None"
+        },
+        {
+          "id": "14a56a29-0352-4fb4-9000-8341eaa69ba8",
+          "name": "lookAtWindow",
+          "actionType": "EchoMessage",
+          "verbListText": "look",
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "Success": "IF {Window.isOpen}\r\nThere is an open window to the east overlooking the street\r\nELSE\r\nThere is a closed window to the east\r\nENDIF"
+          },
+          "childCommandForwardingMode": "None"
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "slot": "Default",
+      "useDefaultImage": false,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "Down",
+      "useDefaultImage": true,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "East",
+      "useDefaultImage": true,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "North",
+      "useDefaultImage": true,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "NorthEast",
+      "useDefaultImage": true,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "NorthWest",
+      "useDefaultImage": true,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "South",
+      "useDefaultImage": true,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "SouthEast",
+      "useDefaultImage": true,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "SouthWest",
+      "useDefaultImage": true,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "Up",
+      "useDefaultImage": true,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "West",
+      "useDefaultImage": true,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    }
+  ],
+  "childScopes": [
+    {
+      "scopeKind": 7,
+      "scopeName": "Box",
+      "scopeNameInGame": "Box",
+      "runtimeParentScopeNodeId": null,
+      "scopeTokens": [
+        "Box"
+      ],
+      "parentScope": null,
+      "childScopes": [],
+      "additionalVerbs": [],
+      "additionalDirectionals": [],
+      "additionalDirectionalTraversalMappings": []
+    },
+    {
+      "scopeKind": 7,
+      "scopeName": "Door",
+      "scopeNameInGame": "Door",
+      "runtimeParentScopeNodeId": null,
+      "scopeTokens": [
+        "Door"
+      ],
+      "parentScope": null,
+      "childScopes": [],
+      "additionalVerbs": [
+        "what"
+      ],
+      "additionalDirectionals": [],
+      "additionalDirectionalTraversalMappings": []
+    },
+    {
+      "scopeKind": 7,
+      "scopeName": "DoorStop",
+      "scopeNameInGame": "DoorStop",
+      "runtimeParentScopeNodeId": null,
+      "scopeTokens": [
+        "DoorStop"
+      ],
+      "parentScope": null,
+      "childScopes": [],
+      "additionalVerbs": [
+        "remove"
+      ],
+      "additionalDirectionals": [],
+      "additionalDirectionalTraversalMappings": []
+    },
+    {
+      "scopeKind": 7,
+      "scopeName": "Flowers",
+      "scopeNameInGame": "Flowers",
+      "runtimeParentScopeNodeId": null,
+      "scopeTokens": [
+        "Flowers"
+      ],
+      "parentScope": null,
+      "childScopes": [],
+      "additionalVerbs": [],
+      "additionalDirectionals": [],
+      "additionalDirectionalTraversalMappings": []
+    },
+    {
+      "scopeKind": 7,
+      "scopeName": "FrogHair",
+      "scopeNameInGame": "FrogHair",
+      "runtimeParentScopeNodeId": null,
+      "scopeTokens": [
+        "FrogHair"
+      ],
+      "parentScope": null,
+      "childScopes": [],
+      "additionalVerbs": [],
+      "additionalDirectionals": [],
+      "additionalDirectionalTraversalMappings": []
+    },
+    {
+      "scopeKind": 7,
+      "scopeName": "Gear",
+      "scopeNameInGame": "Gear",
+      "runtimeParentScopeNodeId": null,
+      "scopeTokens": [
+        "Gear"
+      ],
+      "parentScope": null,
+      "childScopes": [],
+      "additionalVerbs": [],
+      "additionalDirectionals": [],
+      "additionalDirectionalTraversalMappings": []
+    },
+    {
+      "scopeKind": 7,
+      "scopeName": "Key",
+      "scopeNameInGame": "Key",
+      "runtimeParentScopeNodeId": null,
+      "scopeTokens": [
+        "Key"
+      ],
+      "parentScope": null,
+      "childScopes": [],
+      "additionalVerbs": [],
+      "additionalDirectionals": [],
+      "additionalDirectionalTraversalMappings": []
+    },
+    {
+      "scopeKind": 7,
+      "scopeName": "Marbles",
+      "scopeNameInGame": "Marbles",
+      "runtimeParentScopeNodeId": null,
+      "scopeTokens": [
+        "Marbles"
+      ],
+      "parentScope": null,
+      "childScopes": [],
+      "additionalVerbs": [],
+      "additionalDirectionals": [],
+      "additionalDirectionalTraversalMappings": []
+    },
+    {
+      "scopeKind": 7,
+      "scopeName": "Marbles",
+      "scopeNameInGame": "Marbles",
+      "runtimeParentScopeNodeId": null,
+      "scopeTokens": [
+        "Marbles"
+      ],
+      "parentScope": null,
+      "childScopes": [],
+      "additionalVerbs": [],
+      "additionalDirectionals": [],
+      "additionalDirectionalTraversalMappings": []
+    },
+    {
+      "scopeKind": 7,
+      "scopeName": "Marbles",
+      "scopeNameInGame": "Marbles",
+      "runtimeParentScopeNodeId": null,
+      "scopeTokens": [
+        "Marbles"
+      ],
+      "parentScope": null,
+      "childScopes": [],
+      "additionalVerbs": [],
+      "additionalDirectionals": [],
+      "additionalDirectionalTraversalMappings": []
+    },
+    {
+      "scopeKind": 7,
+      "scopeName": "MusicBox",
+      "scopeNameInGame": "MusicBox",
+      "runtimeParentScopeNodeId": null,
+      "scopeTokens": [
+        "MusicBox"
+      ],
+      "parentScope": null,
+      "childScopes": [],
+      "additionalVerbs": [],
+      "additionalDirectionals": [],
+      "additionalDirectionalTraversalMappings": []
+    },
+    {
+      "scopeKind": 7,
+      "scopeName": "NapSack",
+      "scopeNameInGame": "NapSack",
+      "runtimeParentScopeNodeId": null,
+      "scopeTokens": [
+        "NapSack"
+      ],
+      "parentScope": null,
+      "childScopes": [
+        {
+          "scopeKind": 7,
+          "scopeName": "Flint",
+          "scopeNameInGame": "Flint",
+          "runtimeParentScopeNodeId": null,
+          "scopeTokens": [
+            "Flint"
+          ],
+          "parentScope": null,
+          "childScopes": [],
+          "additionalVerbs": [],
+          "additionalDirectionals": [],
+          "additionalDirectionalTraversalMappings": []
+        }
+      ],
+      "additionalVerbs": [],
+      "additionalDirectionals": [],
+      "additionalDirectionalTraversalMappings": []
+    },
+    {
+      "scopeKind": 7,
+      "scopeName": "Needle",
+      "scopeNameInGame": "Needle",
+      "runtimeParentScopeNodeId": null,
+      "scopeTokens": [
+        "Needle"
+      ],
+      "parentScope": null,
+      "childScopes": [],
+      "additionalVerbs": [],
+      "additionalDirectionals": [],
+      "additionalDirectionalTraversalMappings": []
+    },
+    {
+      "scopeKind": 7,
+      "scopeName": "SmokeBall",
+      "scopeNameInGame": "SmokeBall",
+      "runtimeParentScopeNodeId": null,
+      "scopeTokens": [
+        "SmokeBall"
+      ],
+      "parentScope": null,
+      "childScopes": [],
+      "additionalVerbs": [],
+      "additionalDirectionals": [],
+      "additionalDirectionalTraversalMappings": []
+    },
+    {
+      "scopeKind": 7,
+      "scopeName": "Window",
+      "scopeNameInGame": "Window",
+      "runtimeParentScopeNodeId": null,
+      "scopeTokens": [
+        "Window"
+      ],
+      "parentScope": null,
+      "childScopes": [],
+      "additionalVerbs": [],
+      "additionalDirectionals": [],
+      "additionalDirectionalTraversalMappings": []
+    }
+  ],
+  "name": "OpeningRoom",
+  "additionalDirectionals": [
+    "under"
+  ],
+  "additionalDirectionalTraversalMappings": [],
+  "availableGameActions": [
+    {
+      "id": "65ec9db6-eefe-42ed-81c8-b5a0433e8be4",
+      "name": "go_west_openingroom",
+      "actionType": "NavigateDirection",
+      "verbListText": "go",
+      "direction": "west",
+      "outcomeMessageMap": {
+        "AmbiguousTraversal": "Multiple exits are available. Specify a direction.",
+        "DirectionRequired": "Specify a direction.",
+        "Failure": "",
+        "Moved": "There is nowhere to go from here.",
+        "MoveFailed": "You cannot move right now.",
+        "NoExitInDirection": "You cannot go that way.",
+        "NoTraversableExit": "There is nowhere to go from here.",
+        "Success": "You move to the next room.",
+        "TraversalBlocked": "That way is blocked."
+      },
+      "childCommandForwardingMode": "None"
+    },
+    {
+      "id": "c198f88f-3035-4a2d-a0fd-6c11a02f9440",
+      "name": "look_openingroom",
+      "actionType": "EchoMessage",
+      "verbListText": "look",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "",
+        "Success": "Looks like a room"
+      },
+      "childCommandForwardingMode": "ChildrenAfterParent"
+    }
+  ]
+}

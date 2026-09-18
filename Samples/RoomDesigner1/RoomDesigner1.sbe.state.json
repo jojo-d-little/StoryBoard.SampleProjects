@@ -1,0 +1,12 @@
+{
+  "uiState": {
+    "planetName": "New Planet",
+    "countryName": "New Country",
+    "areaName": "New Area",
+    "mapDesignerAreaId": "ed6fd885-3e09-4fc1-8428-6b08d9984c99",
+    "selectedWorkspaceTabIndex": 1,
+    "lastSelectedNodePath": "project:global/planet:f9ceecf92a814bd187e8301022726c88/country:52f0677504b94933bed8d33073ed9f91/area:ed6fd8853e094fc184286b08d9984c99/room:d43dc3ad884f4ec1bc33b95af7f03554/scoped-actions:Room/scoped-action:3449278b01114a6eab522f201ef67e41",
+    "lastTreeValidationActionId": "validate-whole-project",
+    "lastTreeValidationCompletionMode": "FullReport"
+  }
+}

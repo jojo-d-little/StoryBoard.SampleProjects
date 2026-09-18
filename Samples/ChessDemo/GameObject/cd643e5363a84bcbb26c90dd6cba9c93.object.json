@@ -1,0 +1,67 @@
+{
+  "objectType": "WhitePawn",
+  "positionX": 448,
+  "positionY": 128,
+  "includeInPreview": true,
+  "linkedBaseObjectId": "2ca8c057-710c-40fb-a1fa-487f4b1933d7",
+  "linkActionsToBaseObject": true,
+  "productionName": "inventoriableTemplate",
+  "imageRotationDegrees": 0,
+  "renderZOrder": 1085,
+  "authoredRenderOrder": 1085,
+  "quantity": 1,
+  "quantifiablePlacementDistributionMode": "IndividualInstances",
+  "containedObjects": [],
+  "id": "cd643e53-63a8-4bcb-b26c-90dd6cba9c93",
+  "name": "WhitePawn",
+  "nameInGame": "WhitePawn",
+  "hideEmptyConfiguration": false,
+  "scopeKind": "GameObject",
+  "gameProperties": [
+    {
+      "id": "3a8dda6b-427e-4771-b181-39741fff79f8",
+      "name": "inventoryPoints",
+      "defaultValue": "1",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "4b11f233-af82-4d69-93ee-0d6eb3fd54e9",
+      "name": "isActive",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "a1a4e3ba-8829-42fa-9ada-3a3068060344",
+      "name": "isHidden",
+      "defaultValue": "false",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "98e5d7ab-35e7-4754-9c4d-6b616fc1c42a",
+      "name": "isMovable",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "17b006b6-2e46-43fc-8c68-66f6e2872d3d",
+      "name": "isQuantifiable",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "dfe7ba15-524c-42f3-b94b-00712c4ea4e6",
+      "name": "quantity",
+      "defaultValue": "1",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    }
+  ],
+  "eventSubscriptions": [],
+  "timerDefinitions": [],
+  "soundEffectLibraryEntries": []
+}

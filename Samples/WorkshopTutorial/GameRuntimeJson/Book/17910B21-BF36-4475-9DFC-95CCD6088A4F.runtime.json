@@ -1,0 +1,16 @@
+{
+  "phaseKey": "chapter-3",
+  "phaseTier": "Chapter",
+  "displayName": "Chapter Three",
+  "title": "A search for a way out",
+  "prologue": "Where can we use our new key",
+  "parentPhaseId": "43d2c4e0-c4d1-4cc2-8969-9ea32f476a0f",
+  "childPhaseIds": [
+    "ab7d1119-4654-4d9b-a290-2f750fe9e3cb",
+    "65f109b8-8536-4bc1-acda-1a2f6aac7815"
+  ],
+  "Id": "17910b21-bf36-4475-9dfc-95ccd6088a4f",
+  "name": "Chapter Three",
+  "nameInGame": "Chapter Three",
+  "scopeKind": "Chapter"
+}

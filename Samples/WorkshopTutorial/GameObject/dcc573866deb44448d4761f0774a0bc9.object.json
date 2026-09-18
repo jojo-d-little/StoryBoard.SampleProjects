@@ -1,0 +1,128 @@
+{
+  "objectType": "Door_E",
+  "positionX": 760,
+  "positionY": 160,
+  "includeInPreview": true,
+  "linkActionsToBaseObject": false,
+  "productionName": "Door opens East from Atrium to Supply Closet.",
+  "nameSynonyms": [
+    "door"
+  ],
+  "imageVariants": [
+    {
+      "variantName": "Closed",
+      "fullImagePath": "ASSETROOT:/PlaceHolderImages/LightDoor.png",
+      "imageLocalAlignmentRotationDegrees": 0,
+      "imageLocalAlignmentOffsetX": 25,
+      "imageLocalAlignmentOffsetY": 0,
+      "imageScale": 1,
+      "isDefault": true
+    },
+    {
+      "variantName": "Open",
+      "fullImagePath": "ASSETROOT:/PlaceHolderImages/LightDoorOpen.png",
+      "imageLocalAlignmentRotationDegrees": 0,
+      "imageLocalAlignmentOffsetX": 25,
+      "imageLocalAlignmentOffsetY": 0,
+      "imageScale": 1,
+      "isDefault": false
+    }
+  ],
+  "imageRotationDegrees": 90,
+  "renderZOrder": 1006,
+  "authoredRenderOrder": 1003,
+  "imageVariantChooserScript": "IF {owner.isOpen}\r\n\u0022Open\u0022\r\nELSE\r\n\u0022Closed\u0022\r\nENDIF",
+  "appearance": {
+    "spatialType": "SolidObject",
+    "isMovableDefaultValue": true,
+    "footprintWidthCells": 1,
+    "footprintHeightCells": 7,
+    "footprintOrientation": "E",
+    "headingDirection": "N",
+    "objectHeightUnits": 1,
+    "isHeightPinned": false,
+    "stackScaleStepOverride": 0.1,
+    "minStackScaleOverride": 0.5
+  },
+  "isInventoriable": false,
+  "inventoryPointsDefaultValue": 1,
+  "isContainer": false,
+  "containerPointsDefaultValue": 1,
+  "isOpenable": true,
+  "isOpenDefaultValue": true,
+  "isLockable": true,
+  "isLockedDefaultValue": false,
+  "isActivatable": false,
+  "isActiveDefaultValue": false,
+  "isHidable": false,
+  "isHiddenDefaultValue": false,
+  "description": "",
+  "isQuantifiable": false,
+  "quantity": 1,
+  "quantifiablePlacementDistributionMode": "GroupedStack",
+  "containedObjects": [],
+  "id": "dcc57386-6deb-4444-8d47-61f0774a0bc9",
+  "name": "Door_E",
+  "nameInGame": "Supply Closet",
+  "hideEmptyConfiguration": false,
+  "validationErrors": [],
+  "ignoredValidationRuleIds": [],
+  "scopeKind": "GameObject",
+  "procedureIds": [],
+  "gameProperties": [
+    {
+      "id": "0feb701e-dae5-4d6e-89df-1b230f77e90c",
+      "name": "isOpen",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton",
+      "sharedVariableId": "1c9bd943-d243-4a28-ad7b-75db5894c21a"
+    },
+    {
+      "id": "62bd536a-26be-45d0-bcb6-dbe5105dc548",
+      "name": "isLocked",
+      "defaultValue": "false",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "8829723f-2472-44c6-b2ff-61a0e0cf9cb5",
+      "name": "lookingFromHere",
+      "defaultValue": "the east",
+      "valueRestriction": "Unrestricted",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "0eaed288-2d83-4840-8caf-8476f5cb9386",
+      "name": "destinationFromHere",
+      "defaultValue": "Supply Closet",
+      "valueRestriction": "Unrestricted",
+      "lifetime": "Singleton"
+    }
+  ],
+  "additionalVerbs": [],
+  "additionalDirectionals": [],
+  "additionalDirectionalTraversalMappings": [],
+  "availableGameActions": [
+    {
+      "id": "83da42da-c0b7-4679-a0b5-bd51510fe727",
+      "name": "look_door_e",
+      "payload": {
+        "$payloadType": "echoMessage"
+      },
+      "actionType": "EchoMessage",
+      "noVerbLinkage": false,
+      "verbListText": "look",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "",
+        "Success": "There is a door to {self.destinationFromHere} to {self.lookingFromHere}"
+      },
+      "childCommandForwardingMode": "None",
+      "similarChildDispatchMode": "SingleMatchingChild"
+    }
+  ],
+  "eventSubscriptions": [],
+  "timerDefinitions": [],
+  "soundEffectLibraryEntries": []
+}

@@ -1,0 +1,18 @@
+Validation report generated: 2026-08-16 12:51:27
+Project: ObjectPlayLevel1
+ExecutionKind: WholeProject
+RootScopePath: Global
+IncludeDescendants: True
+CandidateNodeCount: 26
+ExecutedRules: 52
+SkippedRules: 0
+StoppedEarly: False
+RemainingIssueCountAtStop: 0
+StopRuleId: (none)
+RemainingRuleCountAtStop: 0
+
+SkippedRuleId	SkipReason	SkipDetail
+
+RuleId	Severity	Path	Description	Hint
+OBJ-005	Warning	Global / New Planet / New Country / New Area / New Room / Ball	object 'Ball' is included in room preview but has no configured default image path.	Assign a default image variant path or uncheck Include In Preview.
+OBJ-005	Warning	Global / New Planet / New Country / New Area / New Room / Pouch	object 'Pouch' is included in room preview but has no configured default image path.	Assign a default image variant path or uncheck Include In Preview.

@@ -1,0 +1,160 @@
+{
+  "linkActionsToBaseObject": false,
+  "productionName": "inventoriableTemplate",
+  "imageVariants": [
+    {
+      "variantName": "default",
+      "fullImagePath": "assets/images/_shared/87f084dcdc4e9ea360a6608d881e8622a059e74768e322a3eaf4115eeb70a6b9__small-brown-backpack.png",
+      "imageLocalAlignmentOffsetX": 10,
+      "imageLocalAlignmentOffsetY": 1,
+      "imageScale": 0.57,
+      "isDefault": true,
+      "imagePathSemantics": "runtimeExportRelative"
+    }
+  ],
+  "imageRotationDegrees": 0,
+  "renderZOrder": 1002,
+  "authoredRenderOrder": 1002,
+  "appearance": {
+    "spatialType": "SolidObject",
+    "isMovable": true,
+    "isMovableDefaultValue": true,
+    "stackGroup": 2,
+    "footprintWidthCells": 3,
+    "footprintHeightCells": 3,
+    "footprintOrientation": "North",
+    "headingDirection": "North",
+    "objectHeightUnits": 2,
+    "stackScaleStepOverride": 0.2,
+    "minStackScaleOverride": 0.33
+  },
+  "isInventoriable": true,
+  "inventoryPointsDefaultValue": 1,
+  "isContainer": true,
+  "containerPointsDefaultValue": 10,
+  "isOpenable": false,
+  "isOpenDefaultValue": false,
+  "isLockable": false,
+  "isLockedDefaultValue": false,
+  "isActivatable": true,
+  "isActiveDefaultValue": true,
+  "isHidable": true,
+  "isHiddenDefaultValue": false,
+  "description": "Template with pickup/drop baseline actions.",
+  "isQuantifiable": false,
+  "quantity": 1,
+  "quantifiablePlacementDistributionMode": "GroupedStack",
+  "isRuntimeMaterialized": false,
+  "Id": "98b8bd1c-3591-4138-a71e-b4fae94da9d4",
+  "name": "Backpack",
+  "nameInGame": "Backpack",
+  "scopeKind": "GameObject",
+  "gameProperties": [
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "capacityPointShareDivider",
+      "defaultValue": "4",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "containerPoints",
+      "defaultValue": "10",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "containerPointsRemaining",
+      "defaultValue": "10",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "imageRotationDegrees",
+      "defaultValue": "0",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "imageScale",
+      "defaultValue": "0.57",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "inventoryPoints",
+      "defaultValue": "1",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "isActive",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "b4835370-4034-4ad4-b786-2dac587eac8a",
+      "name": "isContainer",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "isHidden",
+      "defaultValue": "false",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "isMovable",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "positionX",
+      "defaultValue": "480",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "positionY",
+      "defaultValue": "360",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    }
+  ],
+  "availableGameActions": [
+    {
+      "id": "c99b751c-2dc9-4d29-a249-43be0d1471c7",
+      "name": "look_ball",
+      "payload": {
+        "$payloadType": "echoMessage"
+      },
+      "actionType": "EchoMessage",
+      "noVerbLinkage": false,
+      "verbListText": "look, inspect",
+      "verbs": [
+        "look",
+        "inspect"
+      ],
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "",
+        "Success": "There is a {self.name}, it looks to be about {self.inventoryPoints} heavy"
+      },
+      "childCommandForwardingMode": "None"
+    }
+  ]
+}

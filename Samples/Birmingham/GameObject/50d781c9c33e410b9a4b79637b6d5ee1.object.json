@@ -1,0 +1,51 @@
+{
+  "objectType": "Marbles",
+  "positionX": 0,
+  "positionY": 0,
+  "includeInPreview": true,
+  "linkedBaseObjectId": "0a333ad0-055e-475f-9b6b-6ea9687da8af",
+  "linkActionsToBaseObject": true,
+  "productionName": "newObject124",
+  "imageRotationDegrees": 0,
+  "renderZOrder": 1003,
+  "quantity": 1,
+  "quantifiablePlacementDistributionMode": "IndividualInstances",
+  "containedObjects": [],
+  "id": "50d781c9-c33e-410b-9a4b-79637b6d5ee1",
+  "name": "Marbles",
+  "hideEmptyConfiguration": false,
+  "scopeKind": "GameObject",
+  "gameProperties": [
+    {
+      "id": "a4d78669-6d9c-4105-91f8-a6709ccdec6c",
+      "name": "inventoryPoints",
+      "defaultValue": "1",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "c201cd45-f0e9-422b-9667-9668d0d7f19f",
+      "name": "isQuantifiable",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "644f2938-eb4c-48ed-bbe9-dfd38693764d",
+      "name": "quantity",
+      "defaultValue": "1",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "85088ea6-800d-4e76-8955-ab02731c835e",
+      "name": "isMovable",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    }
+  ],
+  "eventSubscriptions": [],
+  "timerDefinitions": [],
+  "soundEffectLibraryEntries": []
+}

@@ -1,0 +1,27 @@
+{
+  "parentPlanetId": "25b8e27c-3d40-4a91-a710-c9f4f70f6d01",
+  "baseObjectsIgnoredValidationRuleIds": [],
+  "baseObjects": [],
+  "gameObjects": [],
+  "startingAreaName": "Starter Area",
+  "areaIds": [
+    "f5b97d33-4ba2-42ff-8a41-129326fd8fc6"
+  ],
+  "id": "56a02162-fb18-44e5-b206-d4f2fd88241e",
+  "name": "Starter Country",
+  "nameInGame": "Starter Country",
+  "hideEmptyConfiguration": false,
+  "validationErrors": [],
+  "ignoredValidationRuleIds": [],
+  "scopeKind": "Country",
+  "baseObjectIds": [],
+  "gameObjectIds": [],
+  "gameProperties": [],
+  "additionalVerbs": [],
+  "additionalDirectionals": [],
+  "additionalDirectionalTraversalMappings": [],
+  "availableGameActions": [],
+  "eventSubscriptions": [],
+  "timerDefinitions": [],
+  "soundEffectLibraryEntries": []
+}

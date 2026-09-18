@@ -1,0 +1,149 @@
+{
+  "objectType": "Backpack",
+  "positionX": 480,
+  "positionY": 360,
+  "includeInPreview": true,
+  "linkActionsToBaseObject": false,
+  "productionName": "inventoriableTemplate",
+  "nameSynonyms": [],
+  "imageVariants": [
+    {
+      "variantName": "default",
+      "fullImagePath": "ASSETROOT:/PlaceHolderImages/small-brown-backpack.png",
+      "imageLocalAlignmentRotationDegrees": 0,
+      "imageLocalAlignmentOffsetX": 10,
+      "imageLocalAlignmentOffsetY": 1,
+      "imageScale": 0.57,
+      "isDefault": true
+    }
+  ],
+  "imageRotationDegrees": 0,
+  "renderZOrder": 1002,
+  "authoredRenderOrder": 1002,
+  "appearance": {
+    "spatialType": "SolidObject",
+    "isMovable": true,
+    "isMovableDefaultValue": true,
+    "stackGroup": 2,
+    "footprintWidthCells": 3,
+    "footprintHeightCells": 3,
+    "footprintOrientation": "N",
+    "headingDirection": "N",
+    "objectHeightUnits": 2,
+    "isHeightPinned": false,
+    "stackScaleStepOverride": 0.2,
+    "minStackScaleOverride": 0.33
+  },
+  "isInventoriable": true,
+  "inventoryPointsDefaultValue": 1,
+  "isContainer": true,
+  "containerPointsDefaultValue": 10,
+  "isOpenable": false,
+  "isOpenDefaultValue": false,
+  "isLockable": false,
+  "isLockedDefaultValue": false,
+  "isActivatable": true,
+  "isActiveDefaultValue": true,
+  "isHidable": true,
+  "isHiddenDefaultValue": false,
+  "description": "Template with pickup/drop baseline actions.",
+  "isQuantifiable": false,
+  "quantity": 1,
+  "quantifiablePlacementDistributionMode": "GroupedStack",
+  "containedObjects": [],
+  "id": "98b8bd1c-3591-4138-a71e-b4fae94da9d4",
+  "name": "Backpack",
+  "nameInGame": "Backpack",
+  "hideEmptyConfiguration": false,
+  "validationErrors": [],
+  "ignoredValidationRuleIds": [],
+  "scopeKind": "GameObject",
+  "procedureIds": [],
+  "gameProperties": [
+    {
+      "id": "d17ce0f0-adaf-4b8e-b9ca-95d3654caf8a",
+      "name": "inventoryPoints",
+      "defaultValue": "1",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "421b5455-e7a5-46a6-9ebd-8b7e54227e7f",
+      "name": "isActive",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "9784592a-49be-4c4b-a8a8-124100b9f1de",
+      "name": "isHidden",
+      "defaultValue": "false",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "4a0b8c82-a3d6-4cae-a275-aa91a1df1df5",
+      "name": "containerPoints",
+      "defaultValue": "10",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "995cd895-de0e-4b5c-b521-ea6aaf89bfa8",
+      "name": "containerPointsRemaining",
+      "defaultValue": "10",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "f66d9bb8-dee2-405f-8c14-9aed66343151",
+      "name": "capacityPointShareDivider",
+      "defaultValue": "4",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "fd920dc9-3883-4928-baaf-d681734131b9",
+      "name": "isMovable",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "b4835370-4034-4ad4-b786-2dac587eac8a",
+      "name": "isContainer",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    }
+  ],
+  "additionalVerbs": [],
+  "additionalDirectionals": [],
+  "additionalDirectionalTraversalMappings": [],
+  "availableGameActions": [
+    {
+      "id": "c99b751c-2dc9-4d29-a249-43be0d1471c7",
+      "name": "look_ball",
+      "payload": {
+        "$payloadType": "echoMessage"
+      },
+      "actionType": "EchoMessage",
+      "noVerbLinkage": false,
+      "verbListText": "look, inspect",
+      "verbs": [
+        "look",
+        "inspect"
+      ],
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "",
+        "Success": "There is a {self.name}, it looks to be about {self.inventoryPoints} heavy"
+      },
+      "childCommandForwardingMode": "None",
+      "similarChildDispatchMode": "SingleMatchingChild"
+    }
+  ],
+  "eventSubscriptions": [],
+  "timerDefinitions": [],
+  "soundEffectLibraryEntries": []
+}

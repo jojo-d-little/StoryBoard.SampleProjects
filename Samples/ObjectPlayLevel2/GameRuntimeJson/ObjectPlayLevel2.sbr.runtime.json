@@ -1,0 +1,46 @@
+{
+  "planetIds": [
+    "9f0f42e8-4fcc-4711-9a24-8cac61e64fe2"
+  ],
+  "schemaVersion": "1.0",
+  "autoSaveSeconds": 60,
+  "roomImageCanvasWidth": 800,
+  "roomImageCanvasHeight": 600,
+  "roomDesignerGridCellSize": 40,
+  "startingPlanetName": "New Planet",
+  "name": "ObjectPlayLevel2",
+  "nameInGame": "ObjectPlayLevel2",
+  "scopeKind": "Global",
+  "gameObjectIds": [
+    "80f01fc2-6fd5-4573-992e-6caa6565a414"
+  ],
+  "gameProperties": [],
+  "additionalVerbs": [
+    "break",
+    "close",
+    "drop",
+    "get",
+    "go",
+    "grab",
+    "inspect",
+    "look",
+    "open",
+    "put",
+    "remove",
+    "take",
+    "talk",
+    "use"
+  ],
+  "additionalDirectionals": [
+    "north",
+    "south",
+    "east",
+    "west",
+    "northeast",
+    "southeast",
+    "northwest",
+    "southwest",
+    "up",
+    "down"
+  ]
+}

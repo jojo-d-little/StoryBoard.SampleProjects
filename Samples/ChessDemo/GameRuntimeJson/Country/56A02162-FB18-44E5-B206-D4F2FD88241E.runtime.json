@@ -1,0 +1,14 @@
+{
+  "startingAreaName": "TheGameArea",
+  "areaIds": [
+    "f5b97d33-4ba2-42ff-8a41-129326fd8fc6"
+  ],
+  "Id": "56a02162-fb18-44e5-b206-d4f2fd88241e",
+  "name": "Starter Country",
+  "nameInGame": "Starter Country",
+  "scopeKind": "Country",
+  "gameProperties": [],
+  "additionalVerbs": [],
+  "additionalDirectionals": [],
+  "availableGameActions": []
+}

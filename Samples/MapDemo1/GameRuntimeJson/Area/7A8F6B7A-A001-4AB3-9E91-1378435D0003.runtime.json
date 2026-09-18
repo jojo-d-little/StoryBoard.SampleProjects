@@ -1,0 +1,28 @@
+{
+  "adjacencyMode": "FourDirectional",
+  "roomIds": [
+    "c753728e-7649-460c-9d3a-26a889e1baf6",
+    "e1e89618-11af-431d-90a2-2a29be475639"
+  ],
+  "roomPlacements": [
+    {
+      "roomId": "c753728e-7649-460c-9d3a-26a889e1baf6",
+      "x": 564,
+      "y": 164
+    },
+    {
+      "roomId": "e1e89618-11af-431d-90a2-2a29be475639",
+      "x": 564,
+      "y": 304
+    }
+  ],
+  "links": [],
+  "Id": "7a8f6b7a-a001-4ab3-9e91-1378435d0003",
+  "name": "Freebird Farm",
+  "nameInGame": "Freebird Farm",
+  "scopeKind": "Area",
+  "gameProperties": [],
+  "additionalVerbs": [],
+  "additionalDirectionals": [],
+  "availableGameActions": []
+}

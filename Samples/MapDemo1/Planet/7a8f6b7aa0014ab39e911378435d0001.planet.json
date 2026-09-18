@@ -1,0 +1,26 @@
+{
+  "baseObjectsIgnoredValidationRuleIds": [],
+  "baseObjects": [],
+  "gameObjects": [],
+  "startingCountryName": "USA",
+  "countryIds": [
+    "7a8f6b7a-a001-4ab3-9e91-1378435d0002"
+  ],
+  "id": "7a8f6b7a-a001-4ab3-9e91-1378435d0001",
+  "name": "Earth",
+  "nameInGame": "Earth",
+  "hideEmptyConfiguration": false,
+  "validationErrors": [],
+  "ignoredValidationRuleIds": [],
+  "scopeKind": "Planet",
+  "baseObjectIds": [],
+  "gameObjectIds": [],
+  "gameProperties": [],
+  "additionalVerbs": [],
+  "additionalDirectionals": [],
+  "additionalDirectionalTraversalMappings": [],
+  "availableGameActions": [],
+  "eventSubscriptions": [],
+  "timerDefinitions": [],
+  "soundEffectLibraryEntries": []
+}

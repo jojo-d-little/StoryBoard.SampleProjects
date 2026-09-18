@@ -1,0 +1,177 @@
+{
+  "gameObjects": [],
+  "description": "",
+  "roomImageCanvasWidth": 800,
+  "roomImageCanvasHeight": 600,
+  "roomDisplayMode": "Overlay",
+  "producerNotes": "",
+  "images": [
+    {
+      "slot": "North",
+      "overlayRenderOrder": 100,
+      "overlayOffsetX": 0,
+      "overlayOffsetY": 0,
+      "overlayRotationDegrees": 180,
+      "fullImagePath": "ASSETROOT:/PlaceHolderImages/LongBrickWall.png",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "NorthEast",
+      "overlayRenderOrder": 200,
+      "overlayOffsetX": 0,
+      "overlayOffsetY": 0,
+      "overlayRotationDegrees": 0,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "East",
+      "overlayRenderOrder": 100,
+      "overlayOffsetX": 0,
+      "overlayOffsetY": 0,
+      "overlayRotationDegrees": 180,
+      "fullImagePath": "ASSETROOT:/PlaceHolderImages/ShortBrickWall.png",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "SouthEast",
+      "overlayRenderOrder": 200,
+      "overlayOffsetX": 0,
+      "overlayOffsetY": 0,
+      "overlayRotationDegrees": 0,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "South",
+      "overlayRenderOrder": 100,
+      "overlayOffsetX": 0,
+      "overlayOffsetY": 0,
+      "overlayRotationDegrees": 0,
+      "fullImagePath": "ASSETROOT:/PlaceHolderImages/LongBrickWall.png",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "SouthWest",
+      "overlayRenderOrder": 200,
+      "overlayOffsetX": 0,
+      "overlayOffsetY": 0,
+      "overlayRotationDegrees": 0,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "West",
+      "overlayRenderOrder": 100,
+      "overlayOffsetX": 0,
+      "overlayOffsetY": 0,
+      "overlayRotationDegrees": 0,
+      "fullImagePath": "ASSETROOT:/PlaceHolderImages/ShortBrickWall.png",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "NorthWest",
+      "overlayRenderOrder": 200,
+      "overlayOffsetX": 0,
+      "overlayOffsetY": 0,
+      "overlayRotationDegrees": 0,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "Up",
+      "overlayRenderOrder": 150,
+      "overlayOffsetX": 0,
+      "overlayOffsetY": 0,
+      "overlayRotationDegrees": 0,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "Down",
+      "overlayRenderOrder": 0,
+      "overlayOffsetX": 0,
+      "overlayOffsetY": 0,
+      "overlayRotationDegrees": 0,
+      "fullImagePath": "ASSETROOT:/PlaceHolderImages/DarkBrownWoodenFloor800x600.png",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "Default",
+      "overlayRenderOrder": 150,
+      "overlayOffsetX": 0,
+      "overlayOffsetY": 0,
+      "overlayRotationDegrees": 0,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    }
+  ],
+  "id": "4035eae7-6167-4991-8000-ec84f42a8104",
+  "name": "SampleRoom",
+  "nameInGame": "SampleRoom",
+  "hideEmptyConfiguration": false,
+  "validationErrors": [],
+  "ignoredValidationRuleIds": [],
+  "scopeKind": "RoomTemplates",
+  "gameObjectIds": [],
+  "gameProperties": [],
+  "additionalVerbs": [],
+  "additionalDirectionals": [],
+  "additionalDirectionalTraversalMappings": [],
+  "availableGameActions": [
+    {
+      "id": "b2c5c96b-f5d1-40ae-b1c2-c7c2d690e207",
+      "name": "look_sampleroom",
+      "payload": {
+        "$payloadType": "echoMessage"
+      },
+      "actionType": "EchoMessage",
+      "noVerbLinkage": false,
+      "verbListText": "look",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "",
+        "Success": "Looks like you are in the {self.name}"
+      },
+      "childCommandForwardingMode": "ChildrenAfterParent",
+      "similarChildDispatchMode": "SingleMatchingChild"
+    },
+    {
+      "id": "95159d3c-7236-4a9d-9a63-4134e607b76e",
+      "name": "go_sampleroom",
+      "payload": {
+        "$payloadType": "navigateToAdjacent"
+      },
+      "actionType": "NavigateToAdjacent",
+      "noVerbLinkage": false,
+      "verbListText": "go",
+      "direction": "",
+      "outcomeMessageMap": {
+        "DirectionRequired": "Move which way?",
+        "DoorClosed": "The door appears to be closed in that direction.",
+        "Failure": "",
+        "Moved": "You moved to the {currentAction.DestinationRoomName} leaving the {currentAction.PriorRoomName} behind.",
+        "MoveFailed": "Move Failed",
+        "Success": "",
+        "TraversalAmbiguous": "Not sure where you mean.",
+        "TraversalNotPassable": "You can\u0027t go there right now.",
+        "UnknownDestination": "Not sure where that is."
+      },
+      "childCommandForwardingMode": "None",
+      "similarChildDispatchMode": "SingleMatchingChild"
+    }
+  ],
+  "timerDefinitions": [],
+  "soundEffectLibraryEntries": []
+}

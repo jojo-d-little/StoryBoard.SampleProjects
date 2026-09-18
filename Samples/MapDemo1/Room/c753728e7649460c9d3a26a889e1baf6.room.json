@@ -1,0 +1,23 @@
+{
+  "gameObjects": [],
+  "description": "",
+  "roomDisplayMode": "Independent",
+  "producerNotes": "",
+  "images": [],
+  "id": "c753728e-7649-460c-9d3a-26a889e1baf6",
+  "name": "Foyer",
+  "nameInGame": "Foyer",
+  "hideEmptyConfiguration": false,
+  "validationErrors": [],
+  "ignoredValidationRuleIds": [],
+  "scopeKind": "Room",
+  "gameObjectIds": [],
+  "gameProperties": [],
+  "additionalVerbs": [],
+  "additionalDirectionals": [],
+  "additionalDirectionalTraversalMappings": [],
+  "availableGameActions": [],
+  "eventSubscriptions": [],
+  "timerDefinitions": [],
+  "soundEffectLibraryEntries": []
+}

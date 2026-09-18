@@ -1,0 +1,115 @@
+{
+  "linkActionsToBaseObject": false,
+  "productionName": "Door opens East from Exit Hall to Atrium.",
+  "imageVariants": [
+    {
+      "variantName": "Closed",
+      "fullImagePath": "assets/images/_shared/40e594f6012b5047629c3070aa3312adb36e42d9cfac87126b644cf1f1a6753d__LightDoor.png",
+      "imageLocalAlignmentOffsetX": 6,
+      "imageScale": 1,
+      "isDefault": true,
+      "imagePathSemantics": "runtimeExportRelative"
+    },
+    {
+      "variantName": "Open",
+      "fullImagePath": "assets/images/_shared/003ec19aecb997f39c85fc3796c89ca8d01768923d9d1c0d34ab97efdfa7824b__LightDoorOpen.png",
+      "imageScale": 1,
+      "isDefault": false,
+      "imagePathSemantics": "runtimeExportRelative"
+    }
+  ],
+  "imageRotationDegrees": 90,
+  "renderZOrder": 1001,
+  "authoredRenderOrder": 1001,
+  "appearance": {
+    "spatialType": "SolidObject",
+    "isMovableDefaultValue": true,
+    "footprintWidthCells": 6,
+    "footprintHeightCells": 1,
+    "footprintOrientation": "North",
+    "headingDirection": "North",
+    "objectHeightUnits": 1,
+    "stackScaleStepOverride": 0.1,
+    "minStackScaleOverride": 0.5
+  },
+  "isInventoriable": false,
+  "inventoryPointsDefaultValue": 1,
+  "isContainer": false,
+  "containerPointsDefaultValue": 1,
+  "isOpenable": true,
+  "isOpenDefaultValue": false,
+  "isLockable": true,
+  "isLockedDefaultValue": true,
+  "isActivatable": false,
+  "isActiveDefaultValue": false,
+  "isHidable": false,
+  "isHiddenDefaultValue": false,
+  "description": "",
+  "isQuantifiable": false,
+  "quantity": 1,
+  "quantifiablePlacementDistributionMode": "GroupedStack",
+  "isRuntimeMaterialized": false,
+  "Id": "5e4be976-904c-413e-ae8c-adfd5ce693f6",
+  "name": "Door_E",
+  "nameInGame": "Door_E",
+  "scopeKind": "GameObject",
+  "gameProperties": [
+    {
+      "id": "6b3da938-63bc-41e0-8da0-029c0576d4a4",
+      "name": "destinationFromHere",
+      "defaultValue": "Atrium",
+      "valueRestriction": "Unrestricted",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "imageRotationDegrees",
+      "defaultValue": "90",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "imageScale",
+      "defaultValue": "1",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "isLocked",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "isOpen",
+      "defaultValue": "false",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton",
+      "sharedVariableId": "a1c21979-f7d0-44d3-bf2d-1874b9235c7d"
+    },
+    {
+      "id": "2b912442-a6dd-48c6-9eba-c67f72348f03",
+      "name": "lookingFromHere",
+      "defaultValue": "the east",
+      "valueRestriction": "Unrestricted",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "positionX",
+      "defaultValue": "760",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "positionY",
+      "defaultValue": "200",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    }
+  ]
+}

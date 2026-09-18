@@ -1,0 +1,1568 @@
+{
+  "schemaVersion": "1.0",
+  "createdUtc": "2026-08-11T02:49:10.0899903Z",
+  "runtimeBuildVersion": "1.0.0.0",
+  "baseGame": {
+    "gameProjectId": "ObjectPlayLevel3",
+    "gameProjectLocatorHint": "..\\GameRuntimeJson\\ObjectPlayLevel3.sbr.runtime.json"
+  },
+  "snapshot": {
+    "sessionId": "session-20260811024910090",
+    "activeRoomScopeNodeId": "c21d94be-ab63-4ddb-8754-a7a07a95be34",
+    "rootScopeNode": {
+      "scopeNodeId": "global",
+      "scopeNodeKind": "Global",
+      "scopeNodeName": "ObjectPlayLevel3",
+      "childScopes": [
+        {
+          "scopeNodeId": "68b39ae3-d758-a23a-72d6-39fb5f15987b",
+          "parentScopeNodeId": "global",
+          "scopeNodeKind": "Planet",
+          "scopeNodeName": "New Planet",
+          "childScopes": [
+            {
+              "scopeNodeId": "adc8a4f3-8751-4616-a421-60ae0f33b076",
+              "parentScopeNodeId": "68b39ae3-d758-a23a-72d6-39fb5f15987b",
+              "scopeNodeKind": "Country",
+              "scopeNodeName": "New Country",
+              "childScopes": [
+                {
+                  "scopeNodeId": "1f64275b-cc60-c4ec-05a3-c381116ea853",
+                  "parentScopeNodeId": "adc8a4f3-8751-4616-a421-60ae0f33b076",
+                  "scopeNodeKind": "Area",
+                  "scopeNodeName": "New Area",
+                  "childScopes": [
+                    {
+                      "scopeNodeId": "c21d94be-ab63-4ddb-8754-a7a07a95be34",
+                      "parentScopeNodeId": "1f64275b-cc60-c4ec-05a3-c381116ea853",
+                      "scopeNodeKind": "Room",
+                      "scopeNodeName": "PlayRoom",
+                      "variableStates": [
+                        {
+                          "variableId": "roomGridCellSize",
+                          "value": 40
+                        }
+                      ],
+                      "objectStates": [
+                        {
+                          "scopeNodeId": "2b335bcb-be26-48c8-9f44-196303e782ff",
+                          "scopeNodeKind": "GameObject",
+                          "scopeNodeName": "Flowers",
+                          "linkedBaseObjectId": "dc4a594f-d6a5-405f-96d5-2af3bdab5c33",
+                          "isRuntimeMaterialized": false,
+                          "variableStates": [
+                            {
+                              "variableId": "imageRotationDegrees",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "imageScale",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "inventoryPoints",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "isActive",
+                              "value": true
+                            },
+                            {
+                              "variableId": "isHidden",
+                              "value": false
+                            },
+                            {
+                              "variableId": "isMovable",
+                              "value": true
+                            },
+                            {
+                              "variableId": "isQuantifiable",
+                              "value": true
+                            },
+                            {
+                              "variableId": "positionX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "positionY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "quantity",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "authoredRenderOrder",
+                              "value": 1002
+                            },
+                            {
+                              "variableId": "spatialType",
+                              "value": "SolidObject"
+                            },
+                            {
+                              "variableId": "stackGroup",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "stackOrder",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "baseImageScale",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "footprintWidthCells",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "footprintHeightCells",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "footprintOrientation",
+                              "value": "N"
+                            },
+                            {
+                              "variableId": "objectHeightUnits",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "authoredBaseHeightInRoom",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "isHeightPinned",
+                              "value": false
+                            },
+                            {
+                              "variableId": "occupiedCellIds",
+                              "value": "A.A"
+                            },
+                            {
+                              "variableId": "occupancyDerivationSourceEcho",
+                              "value": "x=0;y=0;anchor=TopLeft;footprint=1x1;orientation=N;cell=40"
+                            },
+                            {
+                              "variableId": "effectiveHeightInRoom",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "effectiveRenderZOrder",
+                              "value": 1002
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentOffsetX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentOffsetY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentRotationDegrees",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderAnchorX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderAnchorY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderIconOffsetX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderIconOffsetY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderPositionX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderPositionY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderRotationDegrees",
+                              "value": 0
+                            }
+                          ]
+                        },
+                        {
+                          "scopeNodeId": "89b85921-6953-4caf-9696-082df48de556",
+                          "scopeNodeKind": "GameObject",
+                          "scopeNodeName": "Flowers",
+                          "linkedBaseObjectId": "dc4a594f-d6a5-405f-96d5-2af3bdab5c33",
+                          "isRuntimeMaterialized": false,
+                          "variableStates": [
+                            {
+                              "variableId": "imageRotationDegrees",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "imageScale",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "inventoryPoints",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "isActive",
+                              "value": true
+                            },
+                            {
+                              "variableId": "isHidden",
+                              "value": false
+                            },
+                            {
+                              "variableId": "isMovable",
+                              "value": true
+                            },
+                            {
+                              "variableId": "isQuantifiable",
+                              "value": true
+                            },
+                            {
+                              "variableId": "positionX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "positionY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "quantity",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "authoredRenderOrder",
+                              "value": 1005
+                            },
+                            {
+                              "variableId": "spatialType",
+                              "value": "SolidObject"
+                            },
+                            {
+                              "variableId": "stackGroup",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "stackOrder",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "baseImageScale",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "footprintWidthCells",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "footprintHeightCells",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "footprintOrientation",
+                              "value": "N"
+                            },
+                            {
+                              "variableId": "objectHeightUnits",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "authoredBaseHeightInRoom",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "isHeightPinned",
+                              "value": false
+                            },
+                            {
+                              "variableId": "occupiedCellIds",
+                              "value": "A.A"
+                            },
+                            {
+                              "variableId": "occupancyDerivationSourceEcho",
+                              "value": "x=0;y=0;anchor=TopLeft;footprint=1x1;orientation=N;cell=40"
+                            },
+                            {
+                              "variableId": "effectiveHeightInRoom",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "effectiveRenderZOrder",
+                              "value": 1006
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentOffsetX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentOffsetY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentRotationDegrees",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderAnchorX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderAnchorY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderIconOffsetX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderIconOffsetY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderPositionX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderPositionY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderRotationDegrees",
+                              "value": 0
+                            }
+                          ]
+                        },
+                        {
+                          "scopeNodeId": "8d129415-a802-4533-921e-ae6c8f25509b",
+                          "scopeNodeKind": "GameObject",
+                          "scopeNodeName": "Flowers",
+                          "linkedBaseObjectId": "dc4a594f-d6a5-405f-96d5-2af3bdab5c33",
+                          "isRuntimeMaterialized": false,
+                          "variableStates": [
+                            {
+                              "variableId": "imageRotationDegrees",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "imageScale",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "inventoryPoints",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "isActive",
+                              "value": true
+                            },
+                            {
+                              "variableId": "isHidden",
+                              "value": false
+                            },
+                            {
+                              "variableId": "isMovable",
+                              "value": true
+                            },
+                            {
+                              "variableId": "isQuantifiable",
+                              "value": true
+                            },
+                            {
+                              "variableId": "positionX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "positionY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "quantity",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "authoredRenderOrder",
+                              "value": 1004
+                            },
+                            {
+                              "variableId": "spatialType",
+                              "value": "SolidObject"
+                            },
+                            {
+                              "variableId": "stackGroup",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "stackOrder",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "baseImageScale",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "footprintWidthCells",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "footprintHeightCells",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "footprintOrientation",
+                              "value": "N"
+                            },
+                            {
+                              "variableId": "objectHeightUnits",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "authoredBaseHeightInRoom",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "isHeightPinned",
+                              "value": false
+                            },
+                            {
+                              "variableId": "occupiedCellIds",
+                              "value": "A.A"
+                            },
+                            {
+                              "variableId": "occupancyDerivationSourceEcho",
+                              "value": "x=0;y=0;anchor=TopLeft;footprint=1x1;orientation=N;cell=40"
+                            },
+                            {
+                              "variableId": "effectiveHeightInRoom",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "effectiveRenderZOrder",
+                              "value": 1005
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentOffsetX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentOffsetY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentRotationDegrees",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderAnchorX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderAnchorY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderIconOffsetX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderIconOffsetY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderPositionX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderPositionY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderRotationDegrees",
+                              "value": 0
+                            }
+                          ]
+                        },
+                        {
+                          "scopeNodeId": "8d7207b8-6c7b-4c37-98fa-e696d7caca9a",
+                          "scopeNodeKind": "GameObject",
+                          "scopeNodeName": "Coins",
+                          "isRuntimeMaterialized": false,
+                          "variableStates": [
+                            {
+                              "variableId": "imageRotationDegrees",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "imageScale",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "inventoryPoints",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "isActive",
+                              "value": true
+                            },
+                            {
+                              "variableId": "isHidden",
+                              "value": false
+                            },
+                            {
+                              "variableId": "isMovable",
+                              "value": true
+                            },
+                            {
+                              "variableId": "isQuantifiable",
+                              "value": true
+                            },
+                            {
+                              "variableId": "positionX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "positionY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "quantity",
+                              "value": 10
+                            },
+                            {
+                              "variableId": "authoredRenderOrder",
+                              "value": 1001
+                            },
+                            {
+                              "variableId": "spatialType",
+                              "value": "SolidObject"
+                            },
+                            {
+                              "variableId": "stackGroup",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "stackOrder",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "baseImageScale",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "footprintWidthCells",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "footprintHeightCells",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "footprintOrientation",
+                              "value": "N"
+                            },
+                            {
+                              "variableId": "objectHeightUnits",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "authoredBaseHeightInRoom",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "isHeightPinned",
+                              "value": false
+                            },
+                            {
+                              "variableId": "quantifiablePlacementDistributionMode",
+                              "value": "GroupedStack"
+                            },
+                            {
+                              "variableId": "occupiedCellIds",
+                              "value": "A.A"
+                            },
+                            {
+                              "variableId": "occupancyDerivationSourceEcho",
+                              "value": "x=0;y=0;anchor=TopLeft;footprint=1x1;orientation=N;cell=40"
+                            },
+                            {
+                              "variableId": "effectiveHeightInRoom",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "effectiveRenderZOrder",
+                              "value": 1001
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentOffsetX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentOffsetY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentRotationDegrees",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderAnchorX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderAnchorY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderIconOffsetX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderIconOffsetY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderPositionX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderPositionY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderRotationDegrees",
+                              "value": 0
+                            }
+                          ]
+                        },
+                        {
+                          "scopeNodeId": "d938108b-36fb-4b06-866d-708188f85f58",
+                          "scopeNodeKind": "GameObject",
+                          "scopeNodeName": "Dinner Date",
+                          "isRuntimeMaterialized": false,
+                          "variableStates": [
+                            {
+                              "variableId": "imageRotationDegrees",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "imageScale",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "inventoryPoints",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "isActive",
+                              "value": false
+                            },
+                            {
+                              "variableId": "isHidden",
+                              "value": true
+                            },
+                            {
+                              "variableId": "isMovable",
+                              "value": true
+                            },
+                            {
+                              "variableId": "isQuantifiable",
+                              "value": true
+                            },
+                            {
+                              "variableId": "positionX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "positionY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "quantity",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "authoredRenderOrder",
+                              "value": 1007
+                            },
+                            {
+                              "variableId": "spatialType",
+                              "value": "SolidObject"
+                            },
+                            {
+                              "variableId": "stackGroup",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "stackOrder",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "baseImageScale",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "footprintWidthCells",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "footprintHeightCells",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "footprintOrientation",
+                              "value": "N"
+                            },
+                            {
+                              "variableId": "objectHeightUnits",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "authoredBaseHeightInRoom",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "isHeightPinned",
+                              "value": false
+                            },
+                            {
+                              "variableId": "quantifiablePlacementDistributionMode",
+                              "value": "GroupedStack"
+                            },
+                            {
+                              "variableId": "occupiedCellIds",
+                              "value": "A.A"
+                            },
+                            {
+                              "variableId": "occupancyDerivationSourceEcho",
+                              "value": "x=0;y=0;anchor=TopLeft;footprint=1x1;orientation=N;cell=40"
+                            },
+                            {
+                              "variableId": "effectiveHeightInRoom",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "effectiveRenderZOrder",
+                              "value": 1010
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentOffsetX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentOffsetY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentRotationDegrees",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderAnchorX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderAnchorY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderIconOffsetX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderIconOffsetY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderPositionX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderPositionY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderRotationDegrees",
+                              "value": 0
+                            }
+                          ]
+                        },
+                        {
+                          "scopeNodeId": "dc4a594f-d6a5-405f-96d5-2af3bdab5c33",
+                          "scopeNodeKind": "GameObject",
+                          "scopeNodeName": "Flowers",
+                          "isRuntimeMaterialized": false,
+                          "variableStates": [
+                            {
+                              "variableId": "imageRotationDegrees",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "imageScale",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "inventoryPoints",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "isActive",
+                              "value": true
+                            },
+                            {
+                              "variableId": "isHidden",
+                              "value": false
+                            },
+                            {
+                              "variableId": "isMovable",
+                              "value": true
+                            },
+                            {
+                              "variableId": "isQuantifiable",
+                              "value": true
+                            },
+                            {
+                              "variableId": "positionX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "positionY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "quantity",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "authoredRenderOrder",
+                              "value": 1006
+                            },
+                            {
+                              "variableId": "spatialType",
+                              "value": "SolidObject"
+                            },
+                            {
+                              "variableId": "stackGroup",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "stackOrder",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "baseImageScale",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "footprintWidthCells",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "footprintHeightCells",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "footprintOrientation",
+                              "value": "N"
+                            },
+                            {
+                              "variableId": "objectHeightUnits",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "authoredBaseHeightInRoom",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "isHeightPinned",
+                              "value": false
+                            },
+                            {
+                              "variableId": "quantifiablePlacementDistributionMode",
+                              "value": "IndividualInstances"
+                            },
+                            {
+                              "variableId": "occupiedCellIds",
+                              "value": "A.A"
+                            },
+                            {
+                              "variableId": "occupancyDerivationSourceEcho",
+                              "value": "x=0;y=0;anchor=TopLeft;footprint=1x1;orientation=N;cell=40"
+                            },
+                            {
+                              "variableId": "effectiveHeightInRoom",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "effectiveRenderZOrder",
+                              "value": 1007
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentOffsetX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentOffsetY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentRotationDegrees",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderAnchorX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderAnchorY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderIconOffsetX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderIconOffsetY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderPositionX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderPositionY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderRotationDegrees",
+                              "value": 0
+                            }
+                          ]
+                        },
+                        {
+                          "scopeNodeId": "f1f2e53a-23aa-4d4e-ad8f-a26f9bd0aded",
+                          "scopeNodeKind": "GameObject",
+                          "scopeNodeName": "Flowers",
+                          "linkedBaseObjectId": "dc4a594f-d6a5-405f-96d5-2af3bdab5c33",
+                          "isRuntimeMaterialized": false,
+                          "variableStates": [
+                            {
+                              "variableId": "imageRotationDegrees",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "imageScale",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "inventoryPoints",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "isActive",
+                              "value": true
+                            },
+                            {
+                              "variableId": "isHidden",
+                              "value": false
+                            },
+                            {
+                              "variableId": "isMovable",
+                              "value": true
+                            },
+                            {
+                              "variableId": "isQuantifiable",
+                              "value": true
+                            },
+                            {
+                              "variableId": "positionX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "positionY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "quantity",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "authoredRenderOrder",
+                              "value": 1003
+                            },
+                            {
+                              "variableId": "spatialType",
+                              "value": "SolidObject"
+                            },
+                            {
+                              "variableId": "stackGroup",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "stackOrder",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "baseImageScale",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "footprintWidthCells",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "footprintHeightCells",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "footprintOrientation",
+                              "value": "N"
+                            },
+                            {
+                              "variableId": "objectHeightUnits",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "authoredBaseHeightInRoom",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "isHeightPinned",
+                              "value": false
+                            },
+                            {
+                              "variableId": "occupiedCellIds",
+                              "value": "A.A"
+                            },
+                            {
+                              "variableId": "occupancyDerivationSourceEcho",
+                              "value": "x=0;y=0;anchor=TopLeft;footprint=1x1;orientation=N;cell=40"
+                            },
+                            {
+                              "variableId": "effectiveHeightInRoom",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "effectiveRenderZOrder",
+                              "value": 1003
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentOffsetX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentOffsetY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentRotationDegrees",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderAnchorX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderAnchorY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderIconOffsetX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderIconOffsetY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderPositionX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderPositionY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderRotationDegrees",
+                              "value": 0
+                            }
+                          ]
+                        },
+                        {
+                          "scopeNodeId": "4e044054-0a64-4b53-9475-22f2d0d9193b",
+                          "scopeNodeKind": "GameObject",
+                          "scopeNodeName": "Todd\u0027s Pocket",
+                          "isRuntimeMaterialized": false,
+                          "variableStates": [
+                            {
+                              "variableId": "containerPoints",
+                              "value": 4
+                            },
+                            {
+                              "variableId": "containerPointsRemaining",
+                              "value": 4
+                            },
+                            {
+                              "variableId": "imageRotationDegrees",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "imageScale",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "inventoryPoints",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "isMovable",
+                              "value": true
+                            },
+                            {
+                              "variableId": "isPlayer",
+                              "value": true
+                            },
+                            {
+                              "variableId": "positionX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "positionY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "authoredRenderOrder",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "spatialType",
+                              "value": "SolidObject"
+                            },
+                            {
+                              "variableId": "stackGroup",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "stackOrder",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "baseImageScale",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "footprintWidthCells",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "footprintHeightCells",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "footprintOrientation",
+                              "value": "N"
+                            },
+                            {
+                              "variableId": "objectHeightUnits",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "authoredBaseHeightInRoom",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "isHeightPinned",
+                              "value": false
+                            },
+                            {
+                              "variableId": "occupiedCellIds",
+                              "value": "A.A"
+                            },
+                            {
+                              "variableId": "occupancyDerivationSourceEcho",
+                              "value": "x=0;y=0;anchor=TopLeft;footprint=1x1;orientation=N;cell=40"
+                            },
+                            {
+                              "variableId": "effectiveHeightInRoom",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "effectiveRenderZOrder",
+                              "value": 1004
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentOffsetX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentOffsetY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentRotationDegrees",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderAnchorX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderAnchorY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderIconOffsetX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderIconOffsetY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderPositionX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderPositionY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderRotationDegrees",
+                              "value": 0
+                            }
+                          ]
+                        },
+                        {
+                          "scopeNodeId": "b699c87a-6ebd-4bca-8e8f-a3abfd33fce0",
+                          "scopeNodeKind": "GameObject",
+                          "scopeNodeName": "Flowers",
+                          "linkedBaseObjectId": "dc4a594f-d6a5-405f-96d5-2af3bdab5c33",
+                          "isRuntimeMaterialized": true,
+                          "variableStates": [
+                            {
+                              "variableId": "imageRotationDegrees",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "imageScale",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "inventoryPoints",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "isActive",
+                              "value": true
+                            },
+                            {
+                              "variableId": "isHidden",
+                              "value": false
+                            },
+                            {
+                              "variableId": "isMovable",
+                              "value": true
+                            },
+                            {
+                              "variableId": "isQuantifiable",
+                              "value": true
+                            },
+                            {
+                              "variableId": "positionX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "positionY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "quantity",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "authoredRenderOrder",
+                              "value": 1006
+                            },
+                            {
+                              "variableId": "spatialType",
+                              "value": "SolidObject"
+                            },
+                            {
+                              "variableId": "stackGroup",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "stackOrder",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "baseImageScale",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "footprintWidthCells",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "footprintHeightCells",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "footprintOrientation",
+                              "value": "N"
+                            },
+                            {
+                              "variableId": "objectHeightUnits",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "authoredBaseHeightInRoom",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "isHeightPinned",
+                              "value": false
+                            },
+                            {
+                              "variableId": "quantifiablePlacementDistributionMode",
+                              "value": "IndividualInstances"
+                            },
+                            {
+                              "variableId": "occupiedCellIds",
+                              "value": "A.A"
+                            },
+                            {
+                              "variableId": "occupancyDerivationSourceEcho",
+                              "value": "x=0;y=0;anchor=TopLeft;footprint=1x1;orientation=N;cell=40"
+                            },
+                            {
+                              "variableId": "effectiveHeightInRoom",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "effectiveRenderZOrder",
+                              "value": 1009
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentOffsetX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentOffsetY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentRotationDegrees",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderAnchorX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderAnchorY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderIconOffsetX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderIconOffsetY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderPositionX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderPositionY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderRotationDegrees",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "isRuntimeMaterialized",
+                              "value": true
+                            }
+                          ]
+                        },
+                        {
+                          "scopeNodeId": "da6ea781-bae4-4e55-99d6-b71f5c66bc0f",
+                          "scopeNodeKind": "GameObject",
+                          "scopeNodeName": "Flowers",
+                          "linkedBaseObjectId": "dc4a594f-d6a5-405f-96d5-2af3bdab5c33",
+                          "isRuntimeMaterialized": true,
+                          "variableStates": [
+                            {
+                              "variableId": "imageRotationDegrees",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "imageScale",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "inventoryPoints",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "isActive",
+                              "value": true
+                            },
+                            {
+                              "variableId": "isHidden",
+                              "value": false
+                            },
+                            {
+                              "variableId": "isMovable",
+                              "value": true
+                            },
+                            {
+                              "variableId": "isQuantifiable",
+                              "value": true
+                            },
+                            {
+                              "variableId": "positionX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "positionY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "quantity",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "authoredRenderOrder",
+                              "value": 1006
+                            },
+                            {
+                              "variableId": "spatialType",
+                              "value": "SolidObject"
+                            },
+                            {
+                              "variableId": "stackGroup",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "stackOrder",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "baseImageScale",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "footprintWidthCells",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "footprintHeightCells",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "footprintOrientation",
+                              "value": "N"
+                            },
+                            {
+                              "variableId": "objectHeightUnits",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "authoredBaseHeightInRoom",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "isHeightPinned",
+                              "value": false
+                            },
+                            {
+                              "variableId": "quantifiablePlacementDistributionMode",
+                              "value": "IndividualInstances"
+                            },
+                            {
+                              "variableId": "occupiedCellIds",
+                              "value": "A.A"
+                            },
+                            {
+                              "variableId": "occupancyDerivationSourceEcho",
+                              "value": "x=0;y=0;anchor=TopLeft;footprint=1x1;orientation=N;cell=40"
+                            },
+                            {
+                              "variableId": "effectiveHeightInRoom",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "effectiveRenderZOrder",
+                              "value": 1008
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentOffsetX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentOffsetY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentRotationDegrees",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderAnchorX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderAnchorY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderIconOffsetX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderIconOffsetY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderPositionX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderPositionY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderRotationDegrees",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "isRuntimeMaterialized",
+                              "value": true
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "linkActionsToBaseObject": false,
+  "productionName": "newTemplateObject",
+  "imageRotationDegrees": 0,
+  "renderZOrder": 1001,
+  "isInventoriable": false,
+  "inventoryPointsDefaultValue": 1,
+  "isContainer": false,
+  "containerPointsDefaultValue": 1,
+  "isOpenable": true,
+  "isOpenDefaultValue": false,
+  "isLockable": true,
+  "isLockedDefaultValue": true,
+  "isActivatable": false,
+  "isActiveDefaultValue": false,
+  "isHidable": false,
+  "isHiddenDefaultValue": false,
+  "description": "",
+  "isQuantifiable": false,
+  "quantity": 1,
+  "quantifiablePlacementDistributionMode": "GroupedStack",
+  "isRuntimeMaterialized": false,
+  "Id": "e8e3063d-5795-4b75-969e-8af13e80838f",
+  "name": "DoorToOpeningRoom",
+  "nameInGame": "DoorToOpeningRoom",
+  "scopeKind": "GameObject",
+  "gameProperties": [
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "imageRotationDegrees",
+      "defaultValue": "0",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "imageScale",
+      "defaultValue": "1",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "isLocked",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "isOpen",
+      "defaultValue": "false",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton",
+      "sharedVariableId": "df1b02c9-11d7-484c-b1ab-0e6748605f6f"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "positionX",
+      "defaultValue": "0",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "positionY",
+      "defaultValue": "0",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    }
+  ],
+  "availableGameActions": [
+    {
+      "id": "fbf93a0f-e925-492e-b1e4-8c1540e8494b",
+      "name": "close_door_message",
+      "payload": {
+        "$payloadType": "echoMessage"
+      },
+      "actionType": "EchoMessage",
+      "noVerbLinkage": true,
+      "verbListText": "",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "",
+        "Success": "IF NOT{self.isOpen}\r\nThe door is alreadu closed\r\nRETURN SUCCESS\r\nELSE IF \r\nThe door closes\r\nRETURN SUCCESS\r\nENDIF"
+      },
+      "childCommandForwardingMode": "None"
+    },
+    {
+      "id": "7a5f7a06-3015-4184-9ee9-1acf6556bac6",
+      "name": "close_standardlockabledoor",
+      "actionType": "LinkedActions",
+      "noVerbLinkage": false,
+      "verbListText": "close",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "",
+        "Success": ""
+      },
+      "childCommandForwardingMode": "None"
+    },
+    {
+      "id": "23f7070e-0f25-4f4b-9bc8-2b7d4a7df878",
+      "name": "door_open_message",
+      "payload": {
+        "$payloadType": "echoMessage"
+      },
+      "actionType": "EchoMessage",
+      "noVerbLinkage": true,
+      "verbListText": "",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "",
+        "Success": "IF {self.isOpen}\r\nDoor is already open.\r\nRETURN SUCCESS\r\nELSE IF {self.isLocked}\r\nDoor is locked\r\nRETURN FAILURE\r\nELSE\r\nThe door opens\r\nRETURN SUCCESS\r\nENDIF\r\n"
+      },
+      "childCommandForwardingMode": "None"
+    },
+    {
+      "id": "578c2303-db22-4fa3-b475-07c2871ac173",
+      "name": "look_standardlockabledoor",
+      "payload": {
+        "$payloadType": "echoMessage"
+      },
+      "actionType": "EchoMessage",
+      "noVerbLinkage": false,
+      "verbListText": "look",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "",
+        "Success": "IF {self.isOpen}\r\nThere is an open door\r\nELSE \r\nThere is a closed door\r\nENDIF"
+      },
+      "childCommandForwardingMode": "None"
+    },
+    {
+      "id": "5f2a99dd-4a1c-4075-bb5c-6ea9bbd27d70",
+      "name": "mark_door_closed",
+      "payload": {
+        "$payloadType": "setGameProperty",
+        "propertyName": "self.isOpen",
+        "propertyValue": "false"
+      },
+      "actionType": "SetGameProperty",
+      "noVerbLinkage": true,
+      "verbListText": "",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "",
+        "SetFailed": "",
+        "Success": ""
+      },
+      "childCommandForwardingMode": "None"
+    },
+    {
+      "id": "4ca223f1-a711-4fc3-80b1-058d89264e78",
+      "name": "mark_door_open",
+      "payload": {
+        "$payloadType": "setGameProperty",
+        "propertyName": "self.isOpen",
+        "propertyValue": "true"
+      },
+      "actionType": "SetGameProperty",
+      "noVerbLinkage": true,
+      "verbListText": "",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "",
+        "SetFailed": "",
+        "Success": ""
+      },
+      "childCommandForwardingMode": "None"
+    },
+    {
+      "id": "1a8138e4-84ad-4952-b8ef-ca6c953a4da7",
+      "name": "open_standardlockabledoor",
+      "actionType": "LinkedActions",
+      "noVerbLinkage": false,
+      "verbListText": "open",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "",
+        "Success": ""
+      },
+      "childCommandForwardingMode": "None"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+Preview run at 2026-07-26 15:26:53
+Mode=RepairMissingSources; References=2; Actionable=0.
+
+Global / Object Templates / BasicDoor | object:variant:Closed:full | C:\work\HobbyStuff\storyboarding\PlaceHolderImages\DarkDoor.png | Source available
+Global / Object Templates / BasicDoor | object:variant:Open:full | C:\work\HobbyStuff\storyboarding\PlaceHolderImages\DarkDoorOpen.png | Source available

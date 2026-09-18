@@ -1,0 +1,138 @@
+{
+  "linkActionsToBaseObject": false,
+  "productionName": "Door opens East from Atrium to Supply Closet.",
+  "nameSynonyms": [
+    "door"
+  ],
+  "imageVariants": [
+    {
+      "variantName": "Closed",
+      "fullImagePath": "assets/images/_shared/40e594f6012b5047629c3070aa3312adb36e42d9cfac87126b644cf1f1a6753d__LightDoor.png",
+      "imageLocalAlignmentOffsetX": 25,
+      "imageScale": 1,
+      "isDefault": true,
+      "imagePathSemantics": "runtimeExportRelative"
+    },
+    {
+      "variantName": "Open",
+      "fullImagePath": "assets/images/_shared/003ec19aecb997f39c85fc3796c89ca8d01768923d9d1c0d34ab97efdfa7824b__LightDoorOpen.png",
+      "imageLocalAlignmentOffsetX": 25,
+      "imageScale": 1,
+      "isDefault": false,
+      "imagePathSemantics": "runtimeExportRelative"
+    }
+  ],
+  "imageRotationDegrees": 90,
+  "renderZOrder": 1006,
+  "authoredRenderOrder": 1003,
+  "imageVariantChooserScript": "IF {owner.isOpen}\r\n\u0022Open\u0022\r\nELSE\r\n\u0022Closed\u0022\r\nENDIF",
+  "appearance": {
+    "spatialType": "SolidObject",
+    "isMovableDefaultValue": true,
+    "footprintWidthCells": 1,
+    "footprintHeightCells": 7,
+    "footprintOrientation": "East",
+    "headingDirection": "North",
+    "objectHeightUnits": 1,
+    "stackScaleStepOverride": 0.1,
+    "minStackScaleOverride": 0.5
+  },
+  "isInventoriable": false,
+  "inventoryPointsDefaultValue": 1,
+  "isContainer": false,
+  "containerPointsDefaultValue": 1,
+  "isOpenable": true,
+  "isOpenDefaultValue": true,
+  "isLockable": true,
+  "isLockedDefaultValue": false,
+  "isActivatable": false,
+  "isActiveDefaultValue": false,
+  "isHidable": false,
+  "isHiddenDefaultValue": false,
+  "description": "",
+  "isQuantifiable": false,
+  "quantity": 1,
+  "quantifiablePlacementDistributionMode": "GroupedStack",
+  "isRuntimeMaterialized": false,
+  "Id": "dcc57386-6deb-4444-8d47-61f0774a0bc9",
+  "name": "Door_E",
+  "nameInGame": "Supply Closet",
+  "scopeKind": "GameObject",
+  "gameProperties": [
+    {
+      "id": "0eaed288-2d83-4840-8caf-8476f5cb9386",
+      "name": "destinationFromHere",
+      "defaultValue": "Supply Closet",
+      "valueRestriction": "Unrestricted",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "imageRotationDegrees",
+      "defaultValue": "90",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "imageScale",
+      "defaultValue": "1",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "isLocked",
+      "defaultValue": "false",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "isOpen",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton",
+      "sharedVariableId": "1c9bd943-d243-4a28-ad7b-75db5894c21a"
+    },
+    {
+      "id": "8829723f-2472-44c6-b2ff-61a0e0cf9cb5",
+      "name": "lookingFromHere",
+      "defaultValue": "the east",
+      "valueRestriction": "Unrestricted",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "positionX",
+      "defaultValue": "760",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "positionY",
+      "defaultValue": "160",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    }
+  ],
+  "availableGameActions": [
+    {
+      "id": "83da42da-c0b7-4679-a0b5-bd51510fe727",
+      "name": "look_door_e",
+      "payload": {
+        "$payloadType": "echoMessage"
+      },
+      "actionType": "EchoMessage",
+      "noVerbLinkage": false,
+      "verbListText": "look",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "",
+        "Success": "There is a door to {self.destinationFromHere} to {self.lookingFromHere}"
+      },
+      "childCommandForwardingMode": "None"
+    }
+  ]
+}

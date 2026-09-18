@@ -1,0 +1,383 @@
+{
+  "schemaVersion": "1.0",
+  "projectName": "",
+  "createdAtUtc": "2026-09-07T15:10:30.3908740Z",
+  "steps": [
+    {
+      "sequence": 1,
+      "enteredAtUtc": "2026-07-21T14:06:25.3578376\u002B00:00",
+      "deltaMsFromPrevious": 0,
+      "commandText": "look",
+      "requestCommandCorrelationId": 0,
+      "requestRawCommandText": "look",
+      "requestClarificationAnswers": [],
+      "outputLines": [
+        "You are in the Atrium",
+        "There is a door to the south, it is not clear where it leads.",
+        "There is a door to the west It appears to be locked.",
+        "There is a Green Crate, it looks to be about 10 heavy",
+        "There is a Red Crate, it looks to be about 1 heavy",
+        "The door to the Workshop is to the north it is closed.",
+        "There is a door to Supply Closet to the east",
+        "There is a Blue Crate, it looks to be about 10 heavy"
+      ],
+      "diagnostics": [],
+      "moveLegTelemetry": [],
+      "success": true
+    },
+    {
+      "sequence": 2,
+      "enteredAtUtc": "2026-07-21T14:06:32.9650929\u002B00:00",
+      "deltaMsFromPrevious": 7607,
+      "commandText": "open workshop door",
+      "requestCommandCorrelationId": 1,
+      "requestRawCommandText": "open workshop door",
+      "requestClarificationAnswers": [],
+      "outputLines": [
+        "It seems stuck, perhaps if you had something to pry it with."
+      ],
+      "diagnostics": [
+        "Canonical pass matched object phrase \u0027workshop door\u0027 to canonical object \u0027Door_N\u0027 at token index 1.",
+        "Resolved command objects: primary=Door_N; secondary=[(none)]."
+      ],
+      "moveLegTelemetry": [],
+      "success": false
+    },
+    {
+      "sequence": 3,
+      "enteredAtUtc": "2026-07-21T14:06:35.4552101\u002B00:00",
+      "deltaMsFromPrevious": 2490,
+      "commandText": "go east",
+      "requestCommandCorrelationId": 2,
+      "requestRawCommandText": "go east",
+      "requestClarificationAnswers": [],
+      "outputLines": [
+        "You are now in Supply Closet"
+      ],
+      "diagnostics": [],
+      "moveLegTelemetry": [],
+      "success": true
+    },
+    {
+      "sequence": 4,
+      "enteredAtUtc": "2026-07-21T14:06:40.7731059\u002B00:00",
+      "deltaMsFromPrevious": 5317,
+      "commandText": "get crowbar",
+      "requestCommandCorrelationId": 3,
+      "requestRawCommandText": "get crowbar",
+      "requestClarificationAnswers": [],
+      "outputLines": [
+        "You don\u0027t have room for that, perhaps you need some help."
+      ],
+      "diagnostics": [
+        "Resolved command objects: primary=Crowbar; secondary=[(none)].",
+        "PutObjectInContainer defaulted target container to invocation-context active player container \u0027room:Player\u0027.",
+        "PutObjectInContainer capacity: totalCapacity=4, totalUsedPoints=0, totalRemainingCapacity=4, totalInventoryPointsNeeded=5.",
+        "PutObjectInContainer formula: remaining = totalCapacity - totalUsedPoints = 4 - 0 = 4; requires remaining \u003E= totalInventoryPointsNeeded (5).",
+        "Container \u0027Player\u0027 does not have enough capacity (4 available, 5 needed)."
+      ],
+      "moveLegTelemetry": [],
+      "success": false
+    },
+    {
+      "sequence": 5,
+      "enteredAtUtc": "2026-07-21T14:06:53.0588284\u002B00:00",
+      "deltaMsFromPrevious": 12285,
+      "commandText": "put crowbar in backpack",
+      "requestCommandCorrelationId": 4,
+      "requestRawCommandText": "put crowbar in backpack",
+      "requestClarificationAnswers": [],
+      "outputLines": [
+        "The Crowbar is now in Backpack"
+      ],
+      "diagnostics": [
+        "Resolved command objects: primary=Crowbar; secondary=[Backpack].",
+        "PutObjectInContainer resolved target container from command secondary object \u0027Backpack\u0027 as \u0027room:Backpack\u0027.",
+        "PutObjectInContainer capacity: totalCapacity=10, totalUsedPoints=0, totalRemainingCapacity=10, totalInventoryPointsNeeded=5.",
+        "PutObjectInContainer formula: remaining = totalCapacity - totalUsedPoints = 10 - 0 = 10; requires remaining \u003E= totalInventoryPointsNeeded (5)."
+      ],
+      "moveLegTelemetry": [],
+      "success": true
+    },
+    {
+      "sequence": 6,
+      "enteredAtUtc": "2026-07-21T14:06:57.2302648\u002B00:00",
+      "deltaMsFromPrevious": 4171,
+      "commandText": "get backpack",
+      "requestCommandCorrelationId": 5,
+      "requestRawCommandText": "get backpack",
+      "requestClarificationAnswers": [],
+      "outputLines": [
+        "The Backpack is now in Your Stuff"
+      ],
+      "diagnostics": [
+        "Resolved command objects: primary=Backpack; secondary=[(none)].",
+        "PutObjectInContainer defaulted target container to invocation-context active player container \u0027room:Player\u0027.",
+        "PutObjectInContainer capacity: totalCapacity=4, totalUsedPoints=0, totalRemainingCapacity=4, totalInventoryPointsNeeded=3.",
+        "PutObjectInContainer formula: remaining = totalCapacity - totalUsedPoints = 4 - 0 = 4; requires remaining \u003E= totalInventoryPointsNeeded (3)."
+      ],
+      "moveLegTelemetry": [],
+      "success": true
+    },
+    {
+      "sequence": 7,
+      "enteredAtUtc": "2026-07-21T14:06:59.0836693\u002B00:00",
+      "deltaMsFromPrevious": 1853,
+      "commandText": "get key",
+      "requestCommandCorrelationId": 6,
+      "requestRawCommandText": "get key",
+      "requestClarificationAnswers": [],
+      "outputLines": [
+        "The BrassKey is now in Your Stuff"
+      ],
+      "diagnostics": [
+        "Resolved synonym phrase \u0027key\u0027 to canonical object \u0027BrassKey\u0027.",
+        "Unique synonym pass resolved one or more object references.",
+        "Resolved command objects: primary=BrassKey; secondary=[(none)].",
+        "PutObjectInContainer defaulted target container to invocation-context active player container \u0027room:Player\u0027.",
+        "PutObjectInContainer capacity: totalCapacity=4, totalUsedPoints=3, totalRemainingCapacity=1, totalInventoryPointsNeeded=1.",
+        "PutObjectInContainer formula: remaining = totalCapacity - totalUsedPoints = 4 - 3 = 1; requires remaining \u003E= totalInventoryPointsNeeded (1)."
+      ],
+      "moveLegTelemetry": [],
+      "success": true
+    },
+    {
+      "sequence": 8,
+      "enteredAtUtc": "2026-07-21T14:07:02.8244338\u002B00:00",
+      "deltaMsFromPrevious": 3740,
+      "commandText": "go west",
+      "requestCommandCorrelationId": 7,
+      "requestRawCommandText": "go west",
+      "requestClarificationAnswers": [],
+      "outputLines": [
+        "You left the Supply Closet and enter the Atrium"
+      ],
+      "diagnostics": [],
+      "moveLegTelemetry": [],
+      "success": true
+    },
+    {
+      "sequence": 9,
+      "enteredAtUtc": "2026-07-21T14:08:06.6806594\u002B00:00",
+      "deltaMsFromPrevious": 63856,
+      "commandText": "pry workshop door",
+      "requestCommandCorrelationId": 8,
+      "requestRawCommandText": "pry workshop door",
+      "requestClarificationAnswers": [],
+      "outputLines": [
+        "That seemed to loosen it"
+      ],
+      "diagnostics": [
+        "Canonical pass matched object phrase \u0027workshop door\u0027 to canonical object \u0027Door_N\u0027 at token index 1.",
+        "Resolved command objects: primary=Door_N; secondary=[(none)]."
+      ],
+      "moveLegTelemetry": [],
+      "success": true
+    },
+    {
+      "sequence": 10,
+      "enteredAtUtc": "2026-07-21T14:08:15.8494977\u002B00:00",
+      "deltaMsFromPrevious": 9168,
+      "commandText": "open door",
+      "requestCommandCorrelationId": 9,
+      "requestRawCommandText": "open door",
+      "requestClarificationAnswers": [],
+      "outputLines": [],
+      "diagnostics": [
+        "Synonym phrase \u0027door\u0027 is ambiguous across 3 object candidates."
+      ],
+      "moveLegTelemetry": [],
+      "success": false
+    },
+    {
+      "sequence": 11,
+      "enteredAtUtc": "2026-07-21T14:08:28.6213562\u002B00:00",
+      "deltaMsFromPrevious": 12771,
+      "commandText": "3",
+      "requestCommandCorrelationId": 9,
+      "requestRawCommandText": "open door",
+      "requestClarificationAnswers": [
+        {
+          "slotId": "synonym:0:door",
+          "selectedObjectScopeNodeId": "d1f9944a-6985-4cb3-a659-dc3b2253a57a"
+        }
+      ],
+      "outputLines": [
+        "The workshop door opens"
+      ],
+      "diagnostics": [
+        "Resolved command objects: primary=Door_N; secondary=[(none)]."
+      ],
+      "moveLegTelemetry": [],
+      "success": true
+    },
+    {
+      "sequence": 12,
+      "enteredAtUtc": "2026-07-21T14:08:32.5779822\u002B00:00",
+      "deltaMsFromPrevious": 3956,
+      "commandText": "go north",
+      "requestCommandCorrelationId": 10,
+      "requestRawCommandText": "go north",
+      "requestClarificationAnswers": [],
+      "outputLines": [
+        "You are now in Workshop"
+      ],
+      "diagnostics": [],
+      "moveLegTelemetry": [],
+      "success": true
+    },
+    {
+      "sequence": 13,
+      "enteredAtUtc": "2026-07-21T14:08:37.8044703\u002B00:00",
+      "deltaMsFromPrevious": 5226,
+      "commandText": "drop key",
+      "requestCommandCorrelationId": 11,
+      "requestRawCommandText": "drop key",
+      "requestClarificationAnswers": [],
+      "outputLines": [
+        "The Brass Key is now in the Workshop"
+      ],
+      "diagnostics": [
+        "Resolved synonym phrase \u0027key\u0027 to canonical object \u0027BrassKey\u0027.",
+        "Unique synonym pass resolved one or more object references.",
+        "Resolved command objects: primary=BrassKey; secondary=[(none)].",
+        "RemoveObjectFromContainer inferred source container from runtime scope tree as \u0027room:Player\u0027.",
+        "RemoveObjectFromContainer capacity: totalCapacity=4, totalUsedPoints=4, totalRemainingCapacity=0, totalInventoryPointsNeeded=1, internalPlayerTransfer=true.",
+        "RemoveObjectFromContainer capacity gate bypassed: source container is already within player inventory.",
+        "timerCompletion: timerKey=timer.sound.knockKnockDing; reason=Success; success=true"
+      ],
+      "moveLegTelemetry": [],
+      "success": true
+    },
+    {
+      "sequence": 14,
+      "enteredAtUtc": "2026-07-21T14:08:42.132346\u002B00:00",
+      "deltaMsFromPrevious": 4327,
+      "commandText": "fix key",
+      "requestCommandCorrelationId": 12,
+      "requestRawCommandText": "fix key",
+      "requestClarificationAnswers": [],
+      "outputLines": [
+        "You used the hammer and the anvil to mend the key.  It is straightened and seems like it may work again."
+      ],
+      "diagnostics": [
+        "Resolved synonym phrase \u0027key\u0027 to canonical object \u0027BrassKey\u0027.",
+        "Unique synonym pass resolved one or more object references.",
+        "Resolved command objects: primary=BrassKey; secondary=[(none)].",
+        "InvokeProcedure \u002780423a4c102742479f327762dcee7ad2\u0027 executed successfully."
+      ],
+      "moveLegTelemetry": [],
+      "success": true
+    },
+    {
+      "sequence": 15,
+      "enteredAtUtc": "2026-07-21T14:08:46.3412557\u002B00:00",
+      "deltaMsFromPrevious": 4208,
+      "commandText": "get key",
+      "requestCommandCorrelationId": 13,
+      "requestRawCommandText": "get key",
+      "requestClarificationAnswers": [],
+      "outputLines": [
+        "The BrassKey is now in Your Stuff"
+      ],
+      "diagnostics": [
+        "Resolved synonym phrase \u0027key\u0027 to canonical object \u0027BrassKey\u0027.",
+        "Unique synonym pass resolved one or more object references.",
+        "Resolved command objects: primary=BrassKey; secondary=[(none)].",
+        "PutObjectInContainer defaulted target container to invocation-context active player container \u0027room:Player\u0027.",
+        "PutObjectInContainer capacity: totalCapacity=4, totalUsedPoints=3, totalRemainingCapacity=1, totalInventoryPointsNeeded=1.",
+        "PutObjectInContainer formula: remaining = totalCapacity - totalUsedPoints = 4 - 3 = 1; requires remaining \u003E= totalInventoryPointsNeeded (1).",
+        "StartTimer replaced existing timer \u0027timer.sound.knockKnockDing\u0027 in owner scope \u0027Player\u0027."
+      ],
+      "moveLegTelemetry": [],
+      "success": true
+    },
+    {
+      "sequence": 16,
+      "enteredAtUtc": "2026-07-21T14:08:50.8229203\u002B00:00",
+      "deltaMsFromPrevious": 4481,
+      "commandText": "go south",
+      "requestCommandCorrelationId": 14,
+      "requestRawCommandText": "go south",
+      "requestClarificationAnswers": [],
+      "outputLines": [
+        "You left the Workshop and enter the Atrium"
+      ],
+      "diagnostics": [],
+      "moveLegTelemetry": [],
+      "success": true
+    },
+    {
+      "sequence": 17,
+      "enteredAtUtc": "2026-07-21T14:08:55.2220718\u002B00:00",
+      "deltaMsFromPrevious": 4399,
+      "commandText": "unlock door",
+      "requestCommandCorrelationId": 15,
+      "requestRawCommandText": "unlock door",
+      "requestClarificationAnswers": [],
+      "outputLines": [],
+      "diagnostics": [
+        "Synonym phrase \u0027door\u0027 is ambiguous across 3 object candidates."
+      ],
+      "moveLegTelemetry": [],
+      "success": false
+    },
+    {
+      "sequence": 18,
+      "enteredAtUtc": "2026-07-21T14:08:56.9309047\u002B00:00",
+      "deltaMsFromPrevious": 1708,
+      "commandText": "1",
+      "requestCommandCorrelationId": 15,
+      "requestRawCommandText": "unlock door",
+      "requestClarificationAnswers": [
+        {
+          "slotId": "synonym:0:door",
+          "selectedObjectScopeNodeId": "7a2d6901-3ebb-42cf-b686-51509adf6134"
+        }
+      ],
+      "outputLines": [
+        "You unlocked the Exit Hall Door"
+      ],
+      "diagnostics": [
+        "Resolved command objects: primary=Door_W; secondary=[(none)]."
+      ],
+      "moveLegTelemetry": [],
+      "success": true
+    },
+    {
+      "sequence": 19,
+      "enteredAtUtc": "2026-07-21T14:09:06.4255019\u002B00:00",
+      "deltaMsFromPrevious": 9494,
+      "commandText": "open exit hall door",
+      "requestCommandCorrelationId": 16,
+      "requestRawCommandText": "open exit hall door",
+      "requestClarificationAnswers": [],
+      "outputLines": [
+        "The Exit Hall Door opens"
+      ],
+      "diagnostics": [
+        "Canonical pass matched object phrase \u0027exit hall door\u0027 to canonical object \u0027Door_W\u0027 at token index 1.",
+        "Resolved command objects: primary=Door_W; secondary=[(none)]."
+      ],
+      "moveLegTelemetry": [],
+      "success": true
+    },
+    {
+      "sequence": 20,
+      "enteredAtUtc": "2026-07-21T14:09:09.1629973\u002B00:00",
+      "deltaMsFromPrevious": 2737,
+      "commandText": "go west",
+      "requestCommandCorrelationId": 17,
+      "requestRawCommandText": "go west",
+      "requestClarificationAnswers": [],
+      "outputLines": [
+        "You are now in Exit Hall"
+      ],
+      "diagnostics": [
+        "timerCompletion: timerKey=timer.sound.knockKnockDing; reason=Success; success=true"
+      ],
+      "moveLegTelemetry": [],
+      "success": true
+    }
+  ]
+}

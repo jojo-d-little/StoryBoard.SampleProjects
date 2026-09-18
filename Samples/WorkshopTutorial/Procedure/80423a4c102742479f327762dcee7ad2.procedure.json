@@ -1,0 +1,53 @@
+{
+  "id": "80423a4c-1027-4247-9f32-7762dcee7ad2",
+  "name": "FixKey",
+  "procedureSummary": "Fixed",
+  "procedureDescription": "You used the hammer and the anvil to mend the key.  It is straightened and seems like it may work again.",
+  "participants": [
+    {
+      "objectId": "4592818b-3fd1-4682-9aa7-a14ebca79f8e",
+      "matchKind": "ObjectId",
+      "matchValue": "4592818b3fd146829aa7a14ebca79f8e",
+      "satisfactionMode": "ExplicitMentionRequired",
+      "quantity": 1,
+      "optionalPart": false,
+      "consumptionPolicy": "None",
+      "variableRequirements": [
+        {
+          "variableName": "isBent",
+          "operator": "Equals",
+          "expectedValue": "true",
+          "quantityEvaluationMode": "AllResolvedMustPass"
+        }
+      ]
+    },
+    {
+      "objectId": "8e99a6aa-e3c8-4e93-a755-8543e0b25aab",
+      "matchKind": "ObjectId",
+      "matchValue": "8e99a6aae3c84e93a7558543e0b25aab",
+      "satisfactionMode": "PresenceRequired",
+      "quantity": 1,
+      "optionalPart": false,
+      "consumptionPolicy": "None",
+      "variableRequirements": []
+    },
+    {
+      "objectId": "0e056671-5c01-433c-8144-5b9d3a998d2f",
+      "matchKind": "ObjectId",
+      "matchValue": "0e0566715c01433c81445b9d3a998d2f",
+      "satisfactionMode": "PresenceRequired",
+      "quantity": 1,
+      "optionalPart": false,
+      "consumptionPolicy": "None",
+      "variableRequirements": []
+    }
+  ],
+  "participantMutations": [
+    {
+      "objectId": "4592818b-3fd1-4682-9aa7-a14ebca79f8e",
+      "operation": "SetVariable",
+      "variableName": "isBent",
+      "value": "false"
+    }
+  ]
+}

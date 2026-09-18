@@ -1,0 +1,30 @@
+{
+  "name": "WorkshopTutorial",
+  "formatVersion": "1.0",
+  "sourceProjectName": "WorkshopTutorial",
+  "gameDisplayName": "The Workshop Tutorial",
+  "gameSummary": "This is a small demonstration game intended to show off specific features that are available in the game engine. You can move some boxes around. You can stack them on each other. You can collect some items repair a key and open a door. just a basic little demo",
+  "gamePreviewImages": [
+    "C:\\work\\GIT\\Storyboard\\docs\\graphic-artist-how-tos\\RoomImages\\assets\\final\\Atrium.png"
+  ],
+  "updatedUtc": "2026-08-07T04:35:29.4420681Z",
+  "hideEmptyConfiguration": false,
+  "autoSaveSeconds": 60,
+  "roomImageCanvasWidth": 800,
+  "roomImageCanvasHeight": 600,
+  "roomDesignerGridCellSize": 40,
+  "stackScaleStepDefault": 0.1,
+  "minStackScaleDefault": 0.5,
+  "simulatorReplayFilePath": "",
+  "defaultTraversalMode": "EightDirectional",
+  "projectIgnoredValidationRuleIds": [],
+  "globalIgnoredValidationRuleIds": [],
+  "objectTemplatesIgnoredValidationRuleIds": [
+    "TRV-005"
+  ],
+  "roomTemplatesIgnoredValidationRuleIds": [],
+  "baseObjectsIgnoredValidationRuleIds": [],
+  "startingPlanetName": "Starter Planet",
+  "playerCharacterObjectName": "Player",
+  "playerIgnoredValidationRuleIds": []
+}

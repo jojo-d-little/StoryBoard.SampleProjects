@@ -1,0 +1,11 @@
+{
+  "uiState": {
+    "planetName": "Earth",
+    "countryName": "USA",
+    "areaName": "",
+    "selectedWorkspaceTabIndex": 1,
+    "lastSelectedNodePath": "project:global/planet:7a8f6b7aa0014ab39e911378435d0001/country:7a8f6b7aa0014ab39e911378435d0002/properties:Country",
+    "lastTreeValidationActionId": "validate-whole-project",
+    "lastTreeValidationCompletionMode": "FullReport"
+  }
+}

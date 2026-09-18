@@ -1,0 +1,29 @@
+Validation report generated: 2026-09-14 11:12:37
+Project: ObjectPlayLevel3
+ExecutionKind: WholeProject
+RootScopePath: Global
+IncludeDescendants: True
+CandidateNodeCount: 65
+ExecutedRules: 59
+SkippedRules: 0
+StoppedEarly: False
+RemainingIssueCountAtStop: 0
+StopRuleId: (none)
+RemainingRuleCountAtStop: 0
+
+SkippedRuleId	SkipReason	SkipDetail
+
+RuleId	Severity	Path	Description	Hint
+IMG-001	Warning	Global / SampleRoom	room image slot 'North' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / SampleRoom	room image slot 'East' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / SampleRoom	room image slot 'South' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / SampleRoom	room image slot 'West' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+IMG-001	Warning	Global / SampleRoom	room image slot 'Down' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.
+OBJ-005	Warning	Global / New Planet / New Country / New Area / PlayRoom / Date	object 'Date' is included in room preview but has no configured default image path.	Assign a default image variant path or uncheck Include In Preview.
+OBJ-005	Warning	Global / New Planet / New Country / New Area / PlayRoom / Flowers	object 'Flowers' is included in room preview but has no configured default image path.	Assign a default image variant path or uncheck Include In Preview.
+OBJ-005	Warning	Global / New Planet / New Country / New Area / PlayRoom / Flowers	object 'Flowers' is included in room preview but has no configured default image path.	Assign a default image variant path or uncheck Include In Preview.
+OBJ-005	Warning	Global / New Planet / New Country / New Area / PlayRoom / Flowers	object 'Flowers' is included in room preview but has no configured default image path.	Assign a default image variant path or uncheck Include In Preview.
+OBJ-005	Warning	Global / New Planet / New Country / New Area / PlayRoom / Flowers	object 'Flowers' is included in room preview but has no configured default image path.	Assign a default image variant path or uncheck Include In Preview.
+OBJ-005	Warning	Global / New Planet / New Country / New Area / PlayRoom / Flowers	object 'Flowers' is included in room preview but has no configured default image path.	Assign a default image variant path or uncheck Include In Preview.
+OBJ-005	Warning	Global / New Planet / New Country / New Area / PlayRoom / Coins	object 'Coins' is included in room preview but has no configured default image path.	Assign a default image variant path or uncheck Include In Preview.
+SCR-001	Warning	Global / New Planet / New Country / New Area / PlayRoom / Coins / Action:use_ball	Action 'use_ball' OutcomeMessageMap[Success]: Line 1: Unknown reference '{currentAction.providedParts[1]}' (not found in scope).	

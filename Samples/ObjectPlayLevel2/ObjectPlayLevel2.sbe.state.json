@@ -1,0 +1,11 @@
+{
+  "uiState": {
+    "planetName": "New Planet",
+    "countryName": "New Country",
+    "areaName": "New Area",
+    "selectedWorkspaceTabIndex": 0,
+    "lastSelectedNodePath": "project:global/planet:9f0f42e84fcc47119a248cac61e64fe2/country:614b6b0d143e4f52a9581f33d045d95c/area:f2121f6056d347e081ce09d6b7da4b6e/room:cf9420d898da4ae5818424ceee6c1f9e/room-objects:cf9420d898da4ae5818424ceee6c1f9e/object:Froghair#0/scoped-actions:Object/scoped-action:43f54efb135a4683b45d89c7f11f6cb1",
+    "lastTreeValidationActionId": "validate-whole-project",
+    "lastTreeValidationCompletionMode": "FullReport"
+  }
+}

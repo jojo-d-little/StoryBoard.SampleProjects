@@ -1,0 +1,92 @@
+{
+  "schemaVersion": "1.0",
+  "projectName": "",
+  "createdAtUtc": "2026-09-07T15:10:23.1534695Z",
+  "steps": [
+    {
+      "sequence": 1,
+      "enteredAtUtc": "2026-08-08T20:54:51.2145478\u002B00:00",
+      "deltaMsFromPrevious": 0,
+      "commandText": "look",
+      "requestCommandCorrelationId": null,
+      "requestRawCommandText": "",
+      "requestClarificationAnswers": [],
+      "outputLines": [
+        "You are in a magic room, lets do some magic",
+        "There is a Froghair, it looks to be about 1 heavy",
+        "There is a TeaLeaves, it looks to be about 1 heavy"
+      ],
+      "diagnostics": [],
+      "moveLegTelemetry": [],
+      "success": true
+    },
+    {
+      "sequence": 2,
+      "enteredAtUtc": "2026-08-08T20:55:15.1521075\u002B00:00",
+      "deltaMsFromPrevious": 23937,
+      "commandText": "use froghair and tealeaves",
+      "requestCommandCorrelationId": null,
+      "requestRawCommandText": "",
+      "requestClarificationAnswers": [],
+      "outputLines": [
+        "A magic SmokeBall appears."
+      ],
+      "diagnostics": [
+        "Resolved command objects: primary=Froghair; secondary=[TeaLeaves].",
+        "BuildCompositeByParts success. Built \u0027SmokeBall\u0027 using 2 part unit(s): Froghair, TeaLeaves."
+      ],
+      "moveLegTelemetry": [],
+      "success": true
+    },
+    {
+      "sequence": 3,
+      "enteredAtUtc": "2026-08-08T20:55:25.3170382\u002B00:00",
+      "deltaMsFromPrevious": 10164,
+      "commandText": "look",
+      "requestCommandCorrelationId": null,
+      "requestRawCommandText": "",
+      "requestClarificationAnswers": [],
+      "outputLines": [
+        "You are in a magic room, lets do some magic",
+        "There is a SmokeBall, it looks to be about 1 heavy"
+      ],
+      "diagnostics": [],
+      "moveLegTelemetry": [],
+      "success": true
+    },
+    {
+      "sequence": 4,
+      "enteredAtUtc": "2026-08-08T20:55:32.4617561\u002B00:00",
+      "deltaMsFromPrevious": 7144,
+      "commandText": "break smokeball",
+      "requestCommandCorrelationId": 3,
+      "requestRawCommandText": "break smokeball",
+      "requestClarificationAnswers": [],
+      "outputLines": [
+        "The SmokeBall seemed to vanish"
+      ],
+      "diagnostics": [
+        "Resolved command objects: primary=SmokeBall; secondary=[(none)]."
+      ],
+      "moveLegTelemetry": [],
+      "success": true
+    },
+    {
+      "sequence": 5,
+      "enteredAtUtc": "2026-08-08T20:55:42.2571513\u002B00:00",
+      "deltaMsFromPrevious": 9795,
+      "commandText": "look",
+      "requestCommandCorrelationId": 4,
+      "requestRawCommandText": "look",
+      "requestClarificationAnswers": [],
+      "outputLines": [
+        "You are in a magic room, lets do some magic",
+        "There is a Froghair, it looks to be about 1 heavy",
+        "There is a TeaLeaves, it looks to be about 1 heavy"
+      ],
+      "diagnostics": [],
+      "moveLegTelemetry": [],
+      "success": true
+    }
+  ]
+}

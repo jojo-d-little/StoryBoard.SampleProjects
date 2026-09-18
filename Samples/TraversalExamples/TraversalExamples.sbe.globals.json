@@ -1,0 +1,132 @@
+{
+  "gameObjects": [],
+  "baseObjects": [],
+  "planetIds": [
+    "52c5b5b4-6224-4d17-b601-07efe6dd20ad"
+  ],
+  "sharedVariables": [
+    {
+      "id": "3e35e480-28b2-4a65-883d-9e9cd7fabe3a",
+      "name": "Shared-3e35e480"
+    },
+    {
+      "id": "58003757-5f18-453d-819a-9ec668034a58",
+      "name": "Shared-58003757"
+    },
+    {
+      "id": "6b06850d-014b-4c2f-99fd-8794f5b23740",
+      "name": "Shared-6b06850d"
+    },
+    {
+      "id": "85a47217-f184-421f-ac66-cfd7224063c8",
+      "name": "Shared-85a47217"
+    },
+    {
+      "id": "9fdce60a-0104-4fcc-8b32-e353bbcd24ae",
+      "name": "Shared-9fdce60a"
+    },
+    {
+      "id": "a5d5d156-6edc-493d-a2cf-17d9bc107fc0",
+      "name": "Shared-a5d5d156"
+    },
+    {
+      "id": "a8f707ac-0b0f-4c81-9c57-13e2323db2ce",
+      "name": "Shared-a8f707ac"
+    },
+    {
+      "id": "b9d975a2-363e-4ba0-9297-5caaf55d8ab0",
+      "name": "Shared-b9d975a2"
+    },
+    {
+      "id": "e00591ea-e540-4bf7-90d6-26cf30dfeece",
+      "name": "Shared-e00591ea"
+    }
+  ],
+  "objectTemplateIds": [
+    "034a1e60-a544-4a03-a3a1-dd09d87c3ce7",
+    "03d06d14-f2d2-4811-ae62-970a7b586b19",
+    "0d61181d-67d3-40d6-989f-0a1d1f289dac"
+  ],
+  "objectTemplates": [],
+  "roomTemplateIds": [],
+  "roomTemplates": [],
+  "id": "00000000-0000-0000-0000-000000000000",
+  "name": "",
+  "nameInGame": "",
+  "hideEmptyConfiguration": false,
+  "validationErrors": [],
+  "ignoredValidationRuleIds": [],
+  "scopeKind": "Global",
+  "baseObjectIds": [],
+  "gameObjectIds": [
+    "8c857700-89b0-45d5-9402-a2aba072e92d",
+    "90f4cd5b-849e-4596-8c9f-6d6e177f2a32"
+  ],
+  "procedureIds": [],
+  "gameProperties": [],
+  "additionalVerbs": [
+    "go",
+    "look",
+    "open",
+    "close",
+    "take",
+    "drop",
+    "use",
+    "talk",
+    "investigate",
+    "put",
+    "pickup",
+    "break"
+  ],
+  "additionalDirectionals": [
+    "north",
+    "south",
+    "east",
+    "west",
+    "northeast",
+    "southeast",
+    "northwest",
+    "southwest",
+    "up",
+    "down",
+    "out",
+    "into",
+    "left",
+    "right"
+  ],
+  "additionalDirectionalTraversalMappings": [
+    {
+      "token": "down",
+      "traversalDirection": "South"
+    },
+    {
+      "token": "east",
+      "traversalDirection": "East"
+    },
+    {
+      "token": "left",
+      "traversalDirection": "West"
+    },
+    {
+      "token": "north",
+      "traversalDirection": "North"
+    },
+    {
+      "token": "right",
+      "traversalDirection": "East"
+    },
+    {
+      "token": "south",
+      "traversalDirection": "South"
+    },
+    {
+      "token": "up",
+      "traversalDirection": "North"
+    },
+    {
+      "token": "west",
+      "traversalDirection": "West"
+    }
+  ],
+  "availableGameActions": []
+}

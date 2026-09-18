@@ -1,0 +1,115 @@
+{
+  "linkActionsToBaseObject": false,
+  "productionName": "Door opens South from Workshop to Atrium.",
+  "imageVariants": [
+    {
+      "variantName": "Closed",
+      "fullImagePath": "assets/images/_shared/40e594f6012b5047629c3070aa3312adb36e42d9cfac87126b644cf1f1a6753d__LightDoor.png",
+      "imageLocalAlignmentOffsetX": 6,
+      "imageScale": 1,
+      "isDefault": true,
+      "imagePathSemantics": "runtimeExportRelative"
+    },
+    {
+      "variantName": "Open",
+      "fullImagePath": "assets/images/_shared/003ec19aecb997f39c85fc3796c89ca8d01768923d9d1c0d34ab97efdfa7824b__LightDoorOpen.png",
+      "imageLocalAlignmentOffsetY": 8,
+      "imageScale": 1,
+      "isDefault": false,
+      "imagePathSemantics": "runtimeExportRelative"
+    }
+  ],
+  "imageRotationDegrees": 180,
+  "renderZOrder": 1004,
+  "authoredRenderOrder": 1004,
+  "imageVariantChooserScript": "IF {owner.isOpen}\r\n\u0022Open\u0022\r\nELSE\r\n\u0022Closed\u0022\r\nENDIF",
+  "appearance": {
+    "spatialType": "SolidObject",
+    "isMovableDefaultValue": true,
+    "footprintWidthCells": 6,
+    "footprintHeightCells": 1,
+    "footprintOrientation": "North",
+    "headingDirection": "North",
+    "objectHeightUnits": 1
+  },
+  "isInventoriable": false,
+  "inventoryPointsDefaultValue": 1,
+  "isContainer": false,
+  "containerPointsDefaultValue": 1,
+  "isOpenable": true,
+  "isOpenDefaultValue": false,
+  "isLockable": true,
+  "isLockedDefaultValue": true,
+  "isActivatable": false,
+  "isActiveDefaultValue": false,
+  "isHidable": false,
+  "isHiddenDefaultValue": false,
+  "description": "",
+  "isQuantifiable": false,
+  "quantity": 1,
+  "quantifiablePlacementDistributionMode": "GroupedStack",
+  "isRuntimeMaterialized": false,
+  "Id": "9e4841e5-ce5d-484d-9fc3-9b27e059412b",
+  "name": "Door_S",
+  "nameInGame": "Door_S",
+  "scopeKind": "GameObject",
+  "gameProperties": [
+    {
+      "id": "977a1ad6-cdbf-440d-b49f-4942ba5da716",
+      "name": "destinationFromHere",
+      "defaultValue": "Atrium",
+      "valueRestriction": "Unrestricted",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "imageRotationDegrees",
+      "defaultValue": "180",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "imageScale",
+      "defaultValue": "1",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "isLocked",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "isOpen",
+      "defaultValue": "false",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton",
+      "sharedVariableId": "0f9b0c7e-e448-4caf-8297-fc96f13e3eb3"
+    },
+    {
+      "id": "a35d61ba-8a72-4862-b00b-df1ecc0ec1de",
+      "name": "lookingFromHere",
+      "defaultValue": "the south",
+      "valueRestriction": "Unrestricted",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "positionX",
+      "defaultValue": "280",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "positionY",
+      "defaultValue": "558",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    }
+  ]
+}

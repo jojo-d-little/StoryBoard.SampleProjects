@@ -1,0 +1,90 @@
+{
+  "schemaVersion": "1.0",
+  "projectName": "Birmingham",
+  "createdAtUtc": "2026-09-07T15:10:19.0894147Z",
+  "steps": [
+    {
+      "sequence": 1,
+      "enteredAtUtc": "2026-06-27T16:19:09.0451649\u002B00:00",
+      "deltaMsFromPrevious": 0,
+      "commandText": "look",
+      "requestCommandCorrelationId": null,
+      "requestRawCommandText": "",
+      "requestClarificationAnswers": [],
+      "outputLines": [
+        "Looks like a room",
+        "There is a needle on the floor",
+        "There are 3 Marbles",
+        "There is a closed door to the west",
+        "There are 10 Flowers",
+        "There is a gear",
+        "There is a box",
+        "A key",
+        "A napsack, is there anythign in it?  4 1 3",
+        "There is a closed window to the east",
+        "There is 3 peices of FrogHair"
+      ],
+      "diagnostics": [],
+      "moveLegTelemetry": [],
+      "success": true
+    },
+    {
+      "sequence": 2,
+      "enteredAtUtc": "2026-06-27T16:19:25.4546389\u002B00:00",
+      "deltaMsFromPrevious": 16409,
+      "commandText": "put key into napsack",
+      "requestCommandCorrelationId": null,
+      "requestRawCommandText": "",
+      "requestClarificationAnswers": [],
+      "outputLines": [
+        "Key in"
+      ],
+      "diagnostics": [
+        "Resolved command objects: primary=Key; secondary=[NapSack].",
+        "PutObjectInContainer resolved target container from command secondary object \u0027NapSack\u0027 as \u0027room:NapSack\u0027.",
+        "PutObjectInContainer capacity: totalCapacity=4, totalUsedPoints=1, totalRemainingCapacity=3, totalInventoryPointsNeeded=1.",
+        "PutObjectInContainer formula: remaining = totalCapacity - totalUsedPoints = 4 - 1 = 3; requires remaining \u003E= totalInventoryPointsNeeded (1)."
+      ],
+      "moveLegTelemetry": [],
+      "success": true
+    },
+    {
+      "sequence": 3,
+      "enteredAtUtc": "2026-06-27T16:19:32.4627992\u002B00:00",
+      "deltaMsFromPrevious": 7008,
+      "commandText": "pickup napsack",
+      "requestCommandCorrelationId": null,
+      "requestRawCommandText": "",
+      "requestClarificationAnswers": [],
+      "outputLines": [
+        "picked up napsack"
+      ],
+      "diagnostics": [
+        "Resolved command objects: primary=NapSack; secondary=[(none)].",
+        "PutObjectInContainer defaulted target container to invocation-context active player container \u0027room:ThePlayer\u0027.",
+        "PutObjectInContainer capacity: totalCapacity=4, totalUsedPoints=0, totalRemainingCapacity=4, totalInventoryPointsNeeded=2.",
+        "PutObjectInContainer formula: remaining = totalCapacity - totalUsedPoints = 4 - 0 = 4; requires remaining \u003E= totalInventoryPointsNeeded (2)."
+      ],
+      "moveLegTelemetry": [],
+      "success": true
+    },
+    {
+      "sequence": 4,
+      "enteredAtUtc": "2026-06-27T16:20:10.7027663\u002B00:00",
+      "deltaMsFromPrevious": 38239,
+      "commandText": "drop napsack",
+      "requestCommandCorrelationId": null,
+      "requestRawCommandText": "",
+      "requestClarificationAnswers": [],
+      "outputLines": [],
+      "diagnostics": [
+        "Resolved command objects: primary=NapSack; secondary=[(none)].",
+        "RemoveObjectFromContainer inferred source container from runtime scope tree as \u0027room:ThePlayer\u0027.",
+        "RemoveObjectFromContainer capacity: totalCapacity=4, totalUsedPoints=2, totalRemainingCapacity=2, totalInventoryPointsNeeded=2, internalPlayerTransfer=true.",
+        "RemoveObjectFromContainer capacity gate bypassed: source container is already within player inventory."
+      ],
+      "moveLegTelemetry": [],
+      "success": true
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "description": "",
+  "roomImageCanvasWidth": 800,
+  "roomImageCanvasHeight": 600,
+  "roomDisplayMode": "Overlay",
+  "images": [
+    {
+      "slot": "Default",
+      "overlayRenderOrder": 150,
+      "overlayOffsetX": 0,
+      "overlayOffsetY": 0,
+      "overlayRotationDegrees": 0,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": "",
+      "imagePathSemantics": "runtimeExportRelative"
+    },
+    {
+      "slot": "Down",
+      "overlayRenderOrder": 0,
+      "overlayOffsetX": 0,
+      "overlayOffsetY": 0,
+      "overlayRotationDegrees": 0,
+      "fullImagePath": "assets/images/_shared/7bc4fd3cfc03a0636edeece94b6f865692f80c41fe62337c47ab48658273be87__DarkBrownWoodenFloor800x600.png",
+      "grayMapImagePath": "",
+      "normalMapImagePath": "",
+      "imagePathSemantics": "runtimeExportRelative"
+    },
+    {
+      "slot": "East",
+      "overlayRenderOrder": 100,
+      "overlayOffsetX": 0,
+      "overlayOffsetY": 0,
+      "overlayRotationDegrees": 180,
+      "fullImagePath": "assets/images/_shared/7ae7e8867d92162a6d3dfb8bc7de9a9bd2ae6d255eab1db7ee29cd807bd54621__ShortBrickWall.png",
+      "grayMapImagePath": "",
+      "normalMapImagePath": "",
+      "imagePathSemantics": "runtimeExportRelative"
+    },
+    {
+      "slot": "North",
+      "overlayRenderOrder": 100,
+      "overlayOffsetX": 0,
+      "overlayOffsetY": 0,
+      "overlayRotationDegrees": 180,
+      "fullImagePath": "assets/images/_shared/84c8f14bc09348dea467172e1df774dd5ce4aadda9856f4ec558a97c1a40141f__LongBrickWall.png",
+      "grayMapImagePath": "",
+      "normalMapImagePath": "",
+      "imagePathSemantics": "runtimeExportRelative"
+    },
+    {
+      "slot": "NorthEast",
+      "overlayRenderOrder": 200,
+      "overlayOffsetX": 0,
+      "overlayOffsetY": 0,
+      "overlayRotationDegrees": 0,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": "",
+      "imagePathSemantics": "runtimeExportRelative"
+    },
+    {
+      "slot": "NorthWest",
+      "overlayRenderOrder": 200,
+      "overlayOffsetX": 0,
+      "overlayOffsetY": 0,
+      "overlayRotationDegrees": 0,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": "",
+      "imagePathSemantics": "runtimeExportRelative"
+    },
+    {
+      "slot": "South",
+      "overlayRenderOrder": 100,
+      "overlayOffsetX": 0,
+      "overlayOffsetY": 0,
+      "overlayRotationDegrees": 0,
+      "fullImagePath": "assets/images/_shared/7084e498381348715044686a6e3ee7cfe99c4cacc0baf1ae8cb1f982c1eec627__LongBrickWall_MidDoor.png",
+      "grayMapImagePath": "",
+      "normalMapImagePath": "",
+      "imagePathSemantics": "runtimeExportRelative"
+    },
+    {
+      "slot": "SouthEast",
+      "overlayRenderOrder": 200,
+      "overlayOffsetX": 0,
+      "overlayOffsetY": 0,
+      "overlayRotationDegrees": 0,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": "",
+      "imagePathSemantics": "runtimeExportRelative"
+    },
+    {
+      "slot": "SouthWest",
+      "overlayRenderOrder": 200,
+      "overlayOffsetX": 0,
+      "overlayOffsetY": 0,
+      "overlayRotationDegrees": 0,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": "",
+      "imagePathSemantics": "runtimeExportRelative"
+    },
+    {
+      "slot": "Up",
+      "overlayRenderOrder": 150,
+      "overlayOffsetX": 0,
+      "overlayOffsetY": 0,
+      "overlayRotationDegrees": 0,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": "",
+      "imagePathSemantics": "runtimeExportRelative"
+    },
+    {
+      "slot": "West",
+      "overlayRenderOrder": 100,
+      "overlayOffsetX": 0,
+      "overlayOffsetY": 0,
+      "overlayRotationDegrees": 0,
+      "fullImagePath": "assets/images/_shared/7ae7e8867d92162a6d3dfb8bc7de9a9bd2ae6d255eab1db7ee29cd807bd54621__ShortBrickWall.png",
+      "grayMapImagePath": "",
+      "normalMapImagePath": "",
+      "imagePathSemantics": "runtimeExportRelative"
+    }
+  ],
+  "Id": "0f7b95eb-27c9-4752-90e9-c749c51dd569",
+  "name": "Workshop",
+  "nameInGame": "Workshop",
+  "scopeKind": "Room",
+  "gameObjectIds": [
+    "0e056671-5c01-433c-8144-5b9d3a998d2f",
+    "8e99a6aa-e3c8-4e93-a755-8543e0b25aab",
+    "9e4841e5-ce5d-484d-9fc3-9b27e059412b",
+    "ba71190a-49f8-4289-92e6-4df8715144e9"
+  ],
+  "availableGameActions": []
+}

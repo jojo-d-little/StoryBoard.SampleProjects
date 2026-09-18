@@ -1,0 +1,486 @@
+{
+  "scopeKind": 6,
+  "schemaVersion": "1.0",
+  "id": "3f41a18e-ec99-4099-b279-8fbc581cc211",
+  "description": "",
+  "commandPhrases": [],
+  "gameObjects": [
+    {
+      "scopeKind": 7,
+      "sourceObjectId": "e8e3063d-5795-4b75-969e-8af13e80838f",
+      "productionName": "newTemplateObject",
+      "isInventoriable": false,
+      "inventoryPointsDefaultValue": 1,
+      "isContainer": false,
+      "containerPointsDefaultValue": 1,
+      "isOpenable": true,
+      "isOpenDefaultValue": false,
+      "isLockable": true,
+      "isLockedDefaultValue": true,
+      "isActivatable": false,
+      "isActiveDefaultValue": false,
+      "isHidable": false,
+      "isHiddenDefaultValue": false,
+      "description": "",
+      "quantity": 1,
+      "quantifiablePlacementDistributionMode": "GroupedStack",
+      "childScopes": [],
+      "name": "DoorToOpeningRoom",
+      "gameProperties": [
+        {
+          "id": "2d366ab6-90b9-45ad-be3b-539c594b99f3",
+          "name": "isLocked",
+          "defaultValue": "true",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "e95d9d17-5ff3-4094-a0a4-746a2db811d7",
+          "name": "isOpen",
+          "defaultValue": "false",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        }
+      ],
+      "additionalDirectionalTraversalMappings": [],
+      "availableGameActions": [
+        {
+          "id": "fbf93a0f-e925-492e-b1e4-8c1540e8494b",
+          "name": "close_door_message",
+          "actionType": "EchoMessage",
+          "noVerbLinkage": true,
+          "verbListText": "",
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "Success": "IF NOT{self.isOpen}\r\nThe door is alreadu closed\r\nRETURN SUCCESS\r\nELSE IF \r\nThe door closes\r\nRETURN SUCCESS\r\nENDIF"
+          },
+          "childCommandForwardingMode": "None",
+          "linkedActions": [
+            {
+              "actionId": "5f2a99dd-4a1c-4075-bb5c-6ea9bbd27d70",
+              "runWhen": "Always",
+              "order": 0
+            }
+          ]
+        },
+        {
+          "id": "7a5f7a06-3015-4184-9ee9-1acf6556bac6",
+          "name": "close_standardlockabledoor",
+          "actionType": "LinkedActions",
+          "verbListText": "close",
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "Success": ""
+          },
+          "childCommandForwardingMode": "None",
+          "linkedActions": [
+            {
+              "actionId": "fbf93a0f-e925-492e-b1e4-8c1540e8494b",
+              "runWhen": "Always",
+              "order": 0
+            }
+          ]
+        },
+        {
+          "id": "23f7070e-0f25-4f4b-9bc8-2b7d4a7df878",
+          "name": "door_open_message",
+          "actionType": "EchoMessage",
+          "noVerbLinkage": true,
+          "verbListText": "",
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "Success": "IF {self.isOpen}\r\nDoor is already open.\r\nRETURN SUCCESS\r\nELSE IF {self.isLocked}\r\nDoor is locked\r\nRETURN FAILURE\r\nELSE\r\nThe door opens\r\nRETURN SUCCESS\r\nENDIF\r\n"
+          },
+          "childCommandForwardingMode": "None",
+          "linkedActions": [
+            {
+              "actionId": "4ca223f1-a711-4fc3-80b1-058d89264e78",
+              "runWhen": "Always",
+              "order": 0
+            }
+          ]
+        },
+        {
+          "id": "578c2303-db22-4fa3-b475-07c2871ac173",
+          "name": "look_standardlockabledoor",
+          "actionType": "EchoMessage",
+          "verbListText": "look",
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "Success": "IF {self.isOpen}\r\nThere is an open door\r\nELSE \r\nThere is a closed door\r\nENDIF"
+          },
+          "childCommandForwardingMode": "None"
+        },
+        {
+          "id": "5f2a99dd-4a1c-4075-bb5c-6ea9bbd27d70",
+          "name": "mark_door_closed",
+          "actionType": "SetGameProperty",
+          "noVerbLinkage": true,
+          "verbListText": "",
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "SetFailed": "",
+            "Success": ""
+          },
+          "gamePropertyName": "self.isOpen",
+          "gamePropertyValue": "false",
+          "childCommandForwardingMode": "None"
+        },
+        {
+          "id": "4ca223f1-a711-4fc3-80b1-058d89264e78",
+          "name": "mark_door_open",
+          "actionType": "SetGameProperty",
+          "noVerbLinkage": true,
+          "verbListText": "",
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "SetFailed": "",
+            "Success": ""
+          },
+          "gamePropertyName": "self.isOpen",
+          "gamePropertyValue": "true",
+          "childCommandForwardingMode": "None"
+        },
+        {
+          "id": "1a8138e4-84ad-4952-b8ef-ca6c953a4da7",
+          "name": "open_standardlockabledoor",
+          "actionType": "LinkedActions",
+          "verbListText": "open",
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "Success": ""
+          },
+          "childCommandForwardingMode": "None",
+          "linkedActions": [
+            {
+              "actionId": "23f7070e-0f25-4f4b-9bc8-2b7d4a7df878",
+              "runWhen": "Always",
+              "order": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scopeKind": 7,
+      "sourceObjectId": "1fcfaf02-5aae-430c-ab13-3a669a0b50da",
+      "linkedBaseObjectId": "38e5b539-393f-486a-ab1b-6b5868391f7b",
+      "linkActionsToBaseObject": true,
+      "productionName": "newObject92",
+      "isInventoriable": true,
+      "inventoryPointsDefaultValue": 1,
+      "isContainer": false,
+      "containerPointsDefaultValue": 1,
+      "isOpenable": false,
+      "isOpenDefaultValue": false,
+      "isLockable": false,
+      "isLockedDefaultValue": false,
+      "isActivatable": true,
+      "isActiveDefaultValue": true,
+      "isHidable": true,
+      "isHiddenDefaultValue": false,
+      "description": "",
+      "isQuantifiable": true,
+      "quantity": 2,
+      "quantifiablePlacementDistributionMode": "GroupedStack",
+      "childScopes": [],
+      "name": "Flowers",
+      "gameProperties": [
+        {
+          "id": "652ab698-e6aa-4de6-88df-e0d7a93eea8b",
+          "name": "inventoryPoints",
+          "defaultValue": "1",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "4bee43f2-f954-4857-9e3a-19db8e7fd8a3",
+          "name": "isActive",
+          "defaultValue": "true",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "c28c9d35-157b-4990-af4c-8ad92b71d5a1",
+          "name": "isHidden",
+          "defaultValue": "false",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "2751d3f0-4689-468d-b7dc-fbcfaae818ed",
+          "name": "isQuantifiable",
+          "defaultValue": "true",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "e6304e20-cf64-4ef2-8af0-04326fd3ac51",
+          "name": "quantity",
+          "defaultValue": "2",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        }
+      ],
+      "additionalDirectionalTraversalMappings": []
+    },
+    {
+      "scopeKind": 7,
+      "sourceObjectId": "50d781c9-c33e-410b-9a4b-79637b6d5ee1",
+      "linkedBaseObjectId": "0a333ad0-055e-475f-9b6b-6ea9687da8af",
+      "linkActionsToBaseObject": true,
+      "productionName": "newObject124",
+      "isInventoriable": true,
+      "inventoryPointsDefaultValue": 1,
+      "isContainer": false,
+      "containerPointsDefaultValue": 1,
+      "isOpenable": false,
+      "isOpenDefaultValue": false,
+      "isLockable": false,
+      "isLockedDefaultValue": false,
+      "isActivatable": false,
+      "isActiveDefaultValue": false,
+      "isHidable": false,
+      "isHiddenDefaultValue": false,
+      "description": "",
+      "isQuantifiable": true,
+      "quantity": 1,
+      "quantifiablePlacementDistributionMode": "IndividualInstances",
+      "childScopes": [],
+      "name": "Marbles",
+      "gameProperties": [
+        {
+          "id": "a4d78669-6d9c-4105-91f8-a6709ccdec6c",
+          "name": "inventoryPoints",
+          "defaultValue": "1",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "c201cd45-f0e9-422b-9667-9668d0d7f19f",
+          "name": "isQuantifiable",
+          "defaultValue": "true",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "644f2938-eb4c-48ed-bbe9-dfd38693764d",
+          "name": "quantity",
+          "defaultValue": "1",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        }
+      ],
+      "additionalDirectionalTraversalMappings": []
+    },
+    {
+      "scopeKind": 7,
+      "sourceObjectId": "46f6199a-6a8b-4aa1-909a-f7f472dd05e1",
+      "linkedBaseObjectId": "0a333ad0-055e-475f-9b6b-6ea9687da8af",
+      "linkActionsToBaseObject": true,
+      "productionName": "newObject125",
+      "isInventoriable": true,
+      "inventoryPointsDefaultValue": 1,
+      "isContainer": false,
+      "containerPointsDefaultValue": 1,
+      "isOpenable": false,
+      "isOpenDefaultValue": false,
+      "isLockable": false,
+      "isLockedDefaultValue": false,
+      "isActivatable": false,
+      "isActiveDefaultValue": false,
+      "isHidable": false,
+      "isHiddenDefaultValue": false,
+      "description": "",
+      "isQuantifiable": true,
+      "quantity": 1,
+      "quantifiablePlacementDistributionMode": "IndividualInstances",
+      "childScopes": [],
+      "name": "Marbles",
+      "gameProperties": [
+        {
+          "id": "c9252b81-9483-473a-ac86-77c5892f88d6",
+          "name": "inventoryPoints",
+          "defaultValue": "1",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "7bff715a-d4a4-46da-b44a-14cfd7c78a31",
+          "name": "isQuantifiable",
+          "defaultValue": "true",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "25cd9a58-0e01-4975-bf72-364170028c2c",
+          "name": "quantity",
+          "defaultValue": "1",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        }
+      ],
+      "additionalDirectionalTraversalMappings": []
+    }
+  ],
+  "images": [
+    {
+      "slot": "Default",
+      "useDefaultImage": false,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "Down",
+      "useDefaultImage": true,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "East",
+      "useDefaultImage": true,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "North",
+      "useDefaultImage": true,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "NorthEast",
+      "useDefaultImage": true,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "NorthWest",
+      "useDefaultImage": true,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "South",
+      "useDefaultImage": true,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "SouthEast",
+      "useDefaultImage": true,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "SouthWest",
+      "useDefaultImage": true,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "Up",
+      "useDefaultImage": true,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "West",
+      "useDefaultImage": true,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    }
+  ],
+  "childScopes": [
+    {
+      "scopeKind": 7,
+      "scopeName": "DoorToOpeningRoom",
+      "scopeNameInGame": "DoorToOpeningRoom",
+      "runtimeParentScopeNodeId": null,
+      "scopeTokens": [
+        "DoorToOpeningRoom"
+      ],
+      "parentScope": null,
+      "childScopes": [],
+      "additionalVerbs": [],
+      "additionalDirectionals": [],
+      "additionalDirectionalTraversalMappings": []
+    },
+    {
+      "scopeKind": 7,
+      "scopeName": "Flowers",
+      "scopeNameInGame": "Flowers",
+      "runtimeParentScopeNodeId": null,
+      "scopeTokens": [
+        "Flowers"
+      ],
+      "parentScope": null,
+      "childScopes": [],
+      "additionalVerbs": [],
+      "additionalDirectionals": [],
+      "additionalDirectionalTraversalMappings": []
+    },
+    {
+      "scopeKind": 7,
+      "scopeName": "Marbles",
+      "scopeNameInGame": "Marbles",
+      "runtimeParentScopeNodeId": null,
+      "scopeTokens": [
+        "Marbles"
+      ],
+      "parentScope": null,
+      "childScopes": [],
+      "additionalVerbs": [],
+      "additionalDirectionals": [],
+      "additionalDirectionalTraversalMappings": []
+    },
+    {
+      "scopeKind": 7,
+      "scopeName": "Marbles",
+      "scopeNameInGame": "Marbles",
+      "runtimeParentScopeNodeId": null,
+      "scopeTokens": [
+        "Marbles"
+      ],
+      "parentScope": null,
+      "childScopes": [],
+      "additionalVerbs": [],
+      "additionalDirectionals": [],
+      "additionalDirectionalTraversalMappings": []
+    }
+  ],
+  "name": "OpeningHallway",
+  "additionalDirectionalTraversalMappings": [],
+  "availableGameActions": [
+    {
+      "id": "1d3e2514-ba95-4f80-995a-b9255af959b0",
+      "name": "look_openinghallway",
+      "actionType": "EchoMessage",
+      "verbListText": "look",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "",
+        "Success": "You are at one end of a long hallway"
+      },
+      "childCommandForwardingMode": "ChildrenAfterParent"
+    }
+  ]
+}

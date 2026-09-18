@@ -1,0 +1,11 @@
+{
+  "uiState": {
+    "planetName": "New Planet",
+    "countryName": "New Country",
+    "areaName": "New Area",
+    "selectedWorkspaceTabIndex": 2,
+    "lastSelectedNodePath": "project:global/planet:52c5b5b462244d17b60107efe6dd20ad/country:61da6ea057ae4f0980a203ec37b02752/area:9d59079eee6b42cb80a319aaff7e3afe/room:a7346ad562374f149b25b14bff6d91b8/scoped-actions:Room/scoped-action:ee30c34f4eee435ea28ff24be63d61c6",
+    "lastTreeValidationActionId": "validate-whole-project",
+    "lastTreeValidationCompletionMode": "FullReport"
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "objectType": "MusicBox",
+  "positionX": 0,
+  "positionY": 0,
+  "includeInPreview": true,
+  "linkActionsToBaseObject": false,
+  "productionName": "newObject8",
+  "nameSynonyms": [],
+  "imageVariants": [],
+  "imageRotationDegrees": 0,
+  "renderZOrder": 1007,
+  "isInventoriable": false,
+  "inventoryPointsDefaultValue": 1,
+  "isContainer": false,
+  "containerPointsDefaultValue": 1,
+  "isOpenable": false,
+  "isOpenDefaultValue": false,
+  "isLockable": false,
+  "isLockedDefaultValue": false,
+  "isActivatable": true,
+  "isActiveDefaultValue": false,
+  "isHidable": true,
+  "isHiddenDefaultValue": true,
+  "description": "",
+  "isQuantifiable": false,
+  "quantity": 1,
+  "quantifiablePlacementDistributionMode": "GroupedStack",
+  "compositeRecipe": {
+    "recipeId": "a5a23c11-59d0-40e4-ac73-5a24b907210d",
+    "targetObjectId": "6e16293e-509d-4855-a347-2092654e569e",
+    "requiredParts": [
+      {
+        "partObjectId": "8284729e-e0a0-49a0-9859-039d8c94b08b",
+        "requiredQuantity": 1,
+        "optionalPart": false,
+        "matchKind": "ObjectId",
+        "matchValue": "",
+        "satisfactionMode": "PossessionRequired",
+        "consumptionPolicy": "None",
+        "variableRequirements": []
+      },
+      {
+        "partObjectId": "5dbae1a9-d16b-4679-83e2-99237459c4ed",
+        "requiredQuantity": 1,
+        "optionalPart": false,
+        "matchKind": "ObjectId",
+        "matchValue": "",
+        "satisfactionMode": "PossessionRequired",
+        "consumptionPolicy": "None",
+        "variableRequirements": []
+      },
+      {
+        "partObjectId": "08bd9d86-570a-466f-9b2e-670eccb8d602",
+        "requiredQuantity": 1,
+        "optionalPart": false,
+        "matchKind": "ObjectId",
+        "matchValue": "",
+        "satisfactionMode": "PossessionRequired",
+        "consumptionPolicy": "None",
+        "variableRequirements": []
+      }
+    ],
+    "isReversible": true,
+    "partRequirementMode": "AllRequired"
+  },
+  "containedObjects": [],
+  "id": "6e16293e-509d-4855-a347-2092654e569e",
+  "name": "MusicBox",
+  "nameInGame": "MusicBox",
+  "hideEmptyConfiguration": false,
+  "validationErrors": [],
+  "ignoredValidationRuleIds": [],
+  "scopeKind": "GameObject",
+  "procedureIds": [],
+  "gameProperties": [
+    {
+      "id": "b3711b2f-6f5e-40b6-8165-99a93a0e87ec",
+      "name": "isActive",
+      "defaultValue": "false",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "b8f5b7de-cfc6-482d-95c3-c750e3b95e45",
+      "name": "isHidden",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    }
+  ],
+  "additionalVerbs": [],
+  "additionalDirectionals": [],
+  "additionalDirectionalTraversalMappings": [],
+  "availableGameActions": [
+    {
+      "id": "84388191-a0ed-4db6-a0e4-3e97319dcfe8",
+      "name": "break_musicbox",
+      "payload": {
+        "$payloadType": "breakCompositeItem",
+        "compositeTargetObjectId": "00000000-0000-0000-0000-000000000000",
+        "compositePartConsumptionMode": "ContainedInComposite"
+      },
+      "actionType": "BreakCompositeItem",
+      "noVerbLinkage": false,
+      "verbListText": "break",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "We can\u0027t even break a musicbox right",
+        "MutationFailed": "",
+        "ResolveTargetFailed": "",
+        "RestoreUnavailable": "",
+        "Success": "You broke the musicbox {currentAction.recipeParts} are yours again to do with as you wish.",
+        "TargetStateInvalid": ""
+      },
+      "childCommandForwardingMode": "None",
+      "similarChildDispatchMode": "SingleMatchingChild"
+    },
+    {
+      "id": "6fff41c4-d4f0-4ec1-8e7f-a8f0c51bd8fa",
+      "name": "look_musicbox",
+      "payload": {
+        "$payloadType": "echoMessage"
+      },
+      "actionType": "EchoMessage",
+      "noVerbLinkage": false,
+      "verbListText": "look",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "",
+        "Success": "There is a {self.name}"
+      },
+      "childCommandForwardingMode": "None",
+      "similarChildDispatchMode": "SingleMatchingChild"
+    }
+  ],
+  "eventSubscriptions": [],
+  "timerDefinitions": [],
+  "soundEffectLibraryEntries": []
+}

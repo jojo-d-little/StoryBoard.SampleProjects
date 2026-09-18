@@ -1,0 +1,17 @@
+Validation report generated: 2026-07-09 23:40:09
+Project: BaseItemTesting
+ExecutionKind: WholeProject
+RootScopePath: Global
+IncludeDescendants: True
+CandidateNodeCount: 13
+ExecutedRules: 27
+SkippedRules: 0
+StoppedEarly: False
+RemainingIssueCountAtStop: 0
+StopRuleId: (none)
+RemainingRuleCountAtStop: 0
+
+SkippedRuleId	SkipReason	SkipDetail
+
+RuleId	Severity	Path	Description	Hint
+PROJ-004	Error	Project	No game object is marked as player. Exactly one object variable 'isPlayer' must default to true.	

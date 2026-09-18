@@ -1,0 +1,180 @@
+{
+  "objectType": "Door",
+  "positionX": 0,
+  "positionY": 0,
+  "includeInPreview": true,
+  "linkActionsToBaseObject": false,
+  "productionName": "newObject",
+  "nameSynonyms": [],
+  "imageVariants": [],
+  "imageRotationDegrees": 0,
+  "renderZOrder": 1014,
+  "isInventoriable": false,
+  "inventoryPointsDefaultValue": 1,
+  "isContainer": false,
+  "containerPointsDefaultValue": 1,
+  "isOpenable": true,
+  "isOpenDefaultValue": false,
+  "isLockable": true,
+  "isLockedDefaultValue": true,
+  "isActivatable": false,
+  "isActiveDefaultValue": false,
+  "isHidable": false,
+  "isHiddenDefaultValue": false,
+  "description": "",
+  "isQuantifiable": false,
+  "quantity": 1,
+  "quantifiablePlacementDistributionMode": "GroupedStack",
+  "containedObjects": [],
+  "id": "358e3428-c370-41c1-9f02-89fb3dfff2d1",
+  "name": "Door",
+  "nameInGame": "Door",
+  "hideEmptyConfiguration": false,
+  "validationErrors": [],
+  "ignoredValidationRuleIds": [],
+  "scopeKind": "GameObject",
+  "procedureIds": [],
+  "gameProperties": [
+    {
+      "id": "6249b4b3-3e28-4c07-abce-8a69905ac7b6",
+      "name": "isOpen",
+      "defaultValue": "false",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton",
+      "sharedVariableId": "df1b02c9-11d7-484c-b1ab-0e6748605f6f"
+    },
+    {
+      "id": "f7cf72ef-cc37-413d-9a3f-1a09efca1778",
+      "name": "isLocked",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    }
+  ],
+  "additionalVerbs": [
+    "what"
+  ],
+  "additionalDirectionals": [],
+  "additionalDirectionalTraversalMappings": [],
+  "availableGameActions": [
+    {
+      "id": "716f2aea-484e-434d-96cf-f337a6d60249",
+      "name": "look_door",
+      "payload": {
+        "$payloadType": "echoMessage"
+      },
+      "actionType": "EchoMessage",
+      "noVerbLinkage": false,
+      "verbListText": "look",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "",
+        "Success": "IF {Door.isOpen}\r\nThere is a door to the west, it looks open\r\nELSE\r\nThere is a closed door to the west\r\nENDIF\r\n"
+      },
+      "childCommandForwardingMode": "None",
+      "similarChildDispatchMode": "SingleMatchingChild"
+    },
+    {
+      "id": "a3470569-352a-4486-af4a-dc9152f09f04",
+      "name": "open_door",
+      "payload": {
+        "$payloadType": "echoMessage"
+      },
+      "actionType": "EchoMessage",
+      "noVerbLinkage": true,
+      "verbListText": "",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "",
+        "Success": "IF {Door.isOpen}\r\nIt is already open\r\nELSE IF {Door.isLocked}\r\nIt seems stuck\r\nELSE\r\nThe door slowley opens, it feels heavy\r\nENDIF"
+      },
+      "childCommandForwardingMode": "None",
+      "similarChildDispatchMode": "SingleMatchingChild"
+    },
+    {
+      "id": "a79a6942-7ff0-4603-8947-adbda8656033",
+      "name": "look_under_door",
+      "payload": {
+        "$payloadType": "echoMessage"
+      },
+      "actionType": "EchoMessage",
+      "noVerbLinkage": false,
+      "verbListText": "look",
+      "direction": "under",
+      "outcomeMessageMap": {
+        "Failure": "",
+        "Success": "IF {Door.isLocked}\r\nThere seems to be a doorstop stuck under the door.\r\nELSE \r\nNot much going on here\r\nENDIF"
+      },
+      "childCommandForwardingMode": "None",
+      "similarChildDispatchMode": "SingleMatchingChild"
+    },
+    {
+      "id": "dd4e1d0c-9cc3-4ce6-9035-3a1f7e801ec1",
+      "name": "what_under_door",
+      "payload": {
+        "$payloadType": "echoMessage"
+      },
+      "actionType": "EchoMessage",
+      "noVerbLinkage": false,
+      "verbListText": "what",
+      "direction": "under",
+      "outcomeMessageMap": {
+        "Failure": "",
+        "Success": "IF {Door.isLocked}\r\nThere looks to be a door stop jammed under the door\r\nENDIF"
+      },
+      "childCommandForwardingMode": "None",
+      "similarChildDispatchMode": "SingleMatchingChild"
+    },
+    {
+      "id": "81def9c9-3433-4ec9-970e-08d6c5561e59",
+      "name": "investigate_door",
+      "payload": {
+        "$payloadType": "synonym",
+        "targetActionId": "dd4e1d0c-9cc3-4ce6-9035-3a1f7e801ec1"
+      },
+      "actionType": "Synonym",
+      "noVerbLinkage": false,
+      "verbListText": "investigate",
+      "direction": "",
+      "childCommandForwardingMode": "None",
+      "similarChildDispatchMode": "SingleMatchingChild"
+    },
+    {
+      "id": "ef2745b2-0aae-4128-88d4-822bfb5e8a71",
+      "name": "open_door_2",
+      "actionType": "LinkedActions",
+      "noVerbLinkage": false,
+      "verbListText": "open",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "",
+        "Success": ""
+      },
+      "childCommandForwardingMode": "None",
+      "similarChildDispatchMode": "SingleMatchingChild"
+    },
+    {
+      "id": "4c8421fb-06db-4549-af5d-4bde26012fb1",
+      "name": "open_door_lock",
+      "payload": {
+        "$payloadType": "setGameProperty",
+        "propertyName": "Door.isOpen",
+        "propertyValue": "true"
+      },
+      "actionType": "SetGameProperty",
+      "noVerbLinkage": true,
+      "verbListText": "",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "",
+        "SetFailed": "",
+        "Success": ""
+      },
+      "childCommandForwardingMode": "None",
+      "similarChildDispatchMode": "SingleMatchingChild"
+    }
+  ],
+  "eventSubscriptions": [],
+  "timerDefinitions": [],
+  "soundEffectLibraryEntries": []
+}

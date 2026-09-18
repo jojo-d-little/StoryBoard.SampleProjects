@@ -1,0 +1,189 @@
+{
+  "schemaVersion": "1.0",
+  "name": "ObjectPlayLevel1",
+  "autoSaveSeconds": 60,
+  "roomDesignerGridCellSize": 40,
+  "commandVerbs": [
+    "go",
+    "look",
+    "open",
+    "close",
+    "take",
+    "drop",
+    "use",
+    "talk",
+    "put",
+    "grab",
+    "get",
+    "inspect",
+    "remove"
+  ],
+  "directionals": [
+    "north",
+    "south",
+    "east",
+    "west",
+    "northeast",
+    "southeast",
+    "northwest",
+    "southwest",
+    "up",
+    "down",
+    "from",
+    "into",
+    "on",
+    "under",
+    "over"
+  ],
+  "startingPlanetName": "New Planet",
+  "gameProperties": [],
+  "playerGameProperties": [],
+  "availableGameActions": [],
+  "gameObjects": [
+    {
+      "scopeKind": 7,
+      "sourceObjectId": "d029f4e3-4745-40e8-970b-8962b3cfb9d3",
+      "productionName": "player",
+      "nameInGame": "Todd\u0027s Pocket",
+      "isInventoriable": true,
+      "inventoryPointsDefaultValue": 1,
+      "isContainer": true,
+      "containerPointsDefaultValue": 4,
+      "isOpenable": false,
+      "isOpenDefaultValue": false,
+      "isLockable": false,
+      "isLockedDefaultValue": false,
+      "isActivatable": false,
+      "isActiveDefaultValue": false,
+      "isHidable": false,
+      "isHiddenDefaultValue": false,
+      "description": "",
+      "quantity": 1,
+      "quantifiablePlacementDistributionMode": "GroupedStack",
+      "childScopes": [],
+      "name": "PlayerX",
+      "gameProperties": [
+        {
+          "id": "5b6d018e-9bf3-4fdb-8886-21360e7f97ee",
+          "name": "containerPoints",
+          "defaultValue": "4",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "84b5e084-94fc-4f42-b31f-cb20c50842be",
+          "name": "containerPointsRemaining",
+          "defaultValue": "4",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "c81df2f1-a778-4129-98c0-46b54839f54d",
+          "name": "inventoryPoints",
+          "defaultValue": "1",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "171930a7-6bcd-4f7d-9589-ca96a6fcd283",
+          "name": "isPlayer",
+          "defaultValue": "true",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        }
+      ],
+      "additionalDirectionalTraversalMappings": []
+    }
+  ],
+  "planets": [
+    {
+      "scopeKind": 3,
+      "startingCountryName": "New Country",
+      "countries": [
+        {
+          "scopeKind": 4,
+          "startingAreaName": "New Area",
+          "areas": [
+            {
+              "scopeKind": 5,
+              "adjacencyMode": "EightDirectional",
+              "startingRoomId": "9b598406-1f54-44e1-a058-befc9e88f732",
+              "roomIds": [
+                "9b598406-1f54-44e1-a058-befc9e88f732"
+              ],
+              "childScopes": [],
+              "name": "New Area",
+              "gameProperties": [],
+              "additionalVerbs": [],
+              "additionalDirectionals": [],
+              "additionalDirectionalTraversalMappings": [],
+              "availableGameActions": []
+            }
+          ],
+          "childScopes": [
+            {
+              "scopeKind": 5,
+              "scopeName": "New Area",
+              "scopeNameInGame": "New Area",
+              "roomId": null,
+              "objectId": null,
+              "scopeTokens": [
+                "New Area"
+              ],
+              "parentScope": null,
+              "childScopes": [],
+              "additionalVerbs": [],
+              "additionalDirectionals": [],
+              "additionalDirectionalTraversalMappings": []
+            }
+          ],
+          "name": "New Country",
+          "gameProperties": [],
+          "additionalVerbs": [],
+          "additionalDirectionals": [],
+          "additionalDirectionalTraversalMappings": [],
+          "availableGameActions": []
+        }
+      ],
+      "childScopes": [
+        {
+          "scopeKind": 4,
+          "scopeName": "New Country",
+          "scopeNameInGame": "New Country",
+          "roomId": null,
+          "objectId": null,
+          "scopeTokens": [
+            "New Country"
+          ],
+          "parentScope": null,
+          "childScopes": [
+            {
+              "scopeKind": 5,
+              "scopeName": "New Area",
+              "scopeNameInGame": "New Area",
+              "roomId": null,
+              "objectId": null,
+              "scopeTokens": [
+                "New Area"
+              ],
+              "parentScope": null,
+              "childScopes": [],
+              "additionalVerbs": [],
+              "additionalDirectionals": [],
+              "additionalDirectionalTraversalMappings": []
+            }
+          ],
+          "additionalVerbs": [],
+          "additionalDirectionals": [],
+          "additionalDirectionalTraversalMappings": []
+        }
+      ],
+      "name": "New Planet",
+      "gameProperties": [],
+      "additionalVerbs": [],
+      "additionalDirectionals": [],
+      "additionalDirectionalTraversalMappings": [],
+      "availableGameActions": []
+    }
+  ]
+}

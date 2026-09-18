@@ -1,0 +1,67 @@
+{
+  "objectType": "WhiteBishop",
+  "positionX": 384,
+  "positionY": 64,
+  "includeInPreview": true,
+  "linkedBaseObjectId": "deaba097-f121-492c-a0eb-b161d2331bbb",
+  "linkActionsToBaseObject": true,
+  "productionName": "inventoriableTemplate",
+  "imageRotationDegrees": 0,
+  "renderZOrder": 1096,
+  "authoredRenderOrder": 1096,
+  "quantity": 1,
+  "quantifiablePlacementDistributionMode": "IndividualInstances",
+  "containedObjects": [],
+  "id": "20f19908-f6f0-4ac7-a9bf-2ec9e3b37d8d",
+  "name": "WhiteBishop",
+  "nameInGame": "WhiteBishop",
+  "hideEmptyConfiguration": false,
+  "scopeKind": "GameObject",
+  "gameProperties": [
+    {
+      "id": "c0308162-6cc5-4b64-86d6-445c0aa0772a",
+      "name": "inventoryPoints",
+      "defaultValue": "1",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "acd6e5c5-2436-4283-a144-338064be7d77",
+      "name": "isActive",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "4219197d-aada-4c15-8612-6dee0883e792",
+      "name": "isHidden",
+      "defaultValue": "false",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "085ea820-2db0-4e64-8f41-f973185d2cfd",
+      "name": "isMovable",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "e8a4a70c-bcb8-4aef-bf83-ce98c3466f95",
+      "name": "isQuantifiable",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "6be73eea-3f30-403d-a857-93a2d6a5c0d3",
+      "name": "quantity",
+      "defaultValue": "1",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    }
+  ],
+  "eventSubscriptions": [],
+  "timerDefinitions": [],
+  "soundEffectLibraryEntries": []
+}

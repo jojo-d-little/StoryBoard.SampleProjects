@@ -1,0 +1,64 @@
+{
+  "objectType": "Flowers",
+  "positionX": 0,
+  "positionY": 0,
+  "includeInPreview": true,
+  "linkedBaseObjectId": "dc4a594f-d6a5-405f-96d5-2af3bdab5c33",
+  "linkActionsToBaseObject": true,
+  "productionName": "inventoriableTemplate",
+  "imageRotationDegrees": 0,
+  "renderZOrder": 1002,
+  "quantity": 1,
+  "quantifiablePlacementDistributionMode": "IndividualInstances",
+  "containedObjects": [],
+  "id": "2b335bcb-be26-48c8-9f44-196303e782ff",
+  "name": "Flowers",
+  "hideEmptyConfiguration": false,
+  "scopeKind": "GameObject",
+  "gameProperties": [
+    {
+      "id": "ffc98cbd-131d-4ba1-80db-460f09029858",
+      "name": "inventoryPoints",
+      "defaultValue": "1",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "79e2eda5-7063-4313-9c6c-b84ff618fa59",
+      "name": "isActive",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "46a4ad51-0748-4168-b3ee-35c6a1d32bc0",
+      "name": "isHidden",
+      "defaultValue": "false",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "43c4d800-c89f-4a3c-aefb-d582a8a667e7",
+      "name": "isQuantifiable",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "96717a04-dd45-4a01-9503-6b9ccdb19844",
+      "name": "quantity",
+      "defaultValue": "1",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "e231e22f-64f9-402b-b0cb-063a41832f71",
+      "name": "isMovable",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    }
+  ],
+  "eventSubscriptions": [],
+  "soundEffectLibraryEntries": []
+}

@@ -1,0 +1,26 @@
+{
+  "baseObjectsIgnoredValidationRuleIds": [],
+  "baseObjects": [],
+  "gameObjects": [],
+  "startingCountryName": "Starter Country",
+  "countryIds": [
+    "56a02162-fb18-44e5-b206-d4f2fd88241e"
+  ],
+  "id": "25b8e27c-3d40-4a91-a710-c9f4f70f6d01",
+  "name": "Starter Planet",
+  "nameInGame": "Starter Planet",
+  "hideEmptyConfiguration": false,
+  "validationErrors": [],
+  "ignoredValidationRuleIds": [],
+  "scopeKind": "Planet",
+  "baseObjectIds": [],
+  "gameObjectIds": [],
+  "gameProperties": [],
+  "additionalVerbs": [],
+  "additionalDirectionals": [],
+  "additionalDirectionalTraversalMappings": [],
+  "availableGameActions": [],
+  "eventSubscriptions": [],
+  "timerDefinitions": [],
+  "soundEffectLibraryEntries": []
+}

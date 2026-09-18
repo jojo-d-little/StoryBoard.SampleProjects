@@ -1,0 +1,213 @@
+{
+  "linkActionsToBaseObject": false,
+  "productionName": "inventoriableTemplate",
+  "imageVariants": [
+    {
+      "variantName": "default",
+      "fullImagePath": "assets/images/_shared/13081c4ddf93fde19db53205ff0207f58fc019418f856bdb38b926bba3537545__RockHammer.png",
+      "imageScale": 0.8,
+      "isDefault": true,
+      "imagePathSemantics": "runtimeExportRelative"
+    }
+  ],
+  "imageRotationDegrees": 0,
+  "renderZOrder": 1002,
+  "authoredRenderOrder": 1002,
+  "appearance": {
+    "spatialType": "SolidObject",
+    "isMovable": true,
+    "isMovableDefaultValue": true,
+    "stackGroup": 2,
+    "footprintWidthCells": 2,
+    "footprintHeightCells": 2,
+    "footprintOrientation": "North",
+    "headingDirection": "North",
+    "objectHeightUnits": 1
+  },
+  "isInventoriable": true,
+  "inventoryPointsDefaultValue": 1,
+  "isContainer": false,
+  "containerPointsDefaultValue": 1,
+  "isOpenable": false,
+  "isOpenDefaultValue": false,
+  "isLockable": false,
+  "isLockedDefaultValue": false,
+  "isActivatable": true,
+  "isActiveDefaultValue": true,
+  "isHidable": true,
+  "isHiddenDefaultValue": false,
+  "description": "Template with pickup/drop baseline actions.",
+  "isQuantifiable": false,
+  "quantity": 1,
+  "quantifiablePlacementDistributionMode": "GroupedStack",
+  "isRuntimeMaterialized": false,
+  "Id": "0e056671-5c01-433c-8144-5b9d3a998d2f",
+  "name": "Hammer",
+  "nameInGame": "Hammer",
+  "scopeKind": "GameObject",
+  "gameProperties": [
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "imageRotationDegrees",
+      "defaultValue": "0",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "imageScale",
+      "defaultValue": "0.8",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "inventoryPoints",
+      "defaultValue": "1",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "isActive",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "isHidden",
+      "defaultValue": "false",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "isMovable",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "positionX",
+      "defaultValue": "320",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "positionY",
+      "defaultValue": "120",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    }
+  ],
+  "availableGameActions": [
+    {
+      "id": "0e34d9c8-db53-431e-98eb-5ae6312d460b",
+      "name": "drop",
+      "payload": {
+        "$payloadType": "removeObjectFromContainer",
+        "targetContainerId": ""
+      },
+      "actionType": "RemoveObjectFromContainer",
+      "noVerbLinkage": false,
+      "verbListText": "drop",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "",
+        "RemoveFailed": "",
+        "ResolveSourceFailed": "",
+        "Success": ""
+      },
+      "childCommandForwardingMode": "None"
+    },
+    {
+      "id": "cb9fd20d-f18a-4257-ae0c-203399dba35e",
+      "name": "get_ball",
+      "payload": {
+        "$payloadType": "putObjectInContainer",
+        "targetContainerId": ""
+      },
+      "actionType": "PutObjectInContainer",
+      "noVerbLinkage": false,
+      "verbListText": "put, get, grab, take",
+      "verbs": [
+        "put",
+        "get",
+        "grab",
+        "take"
+      ],
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "",
+        "PutFailed": "",
+        "ResolveTargetFailed": "",
+        "Success": "The {self.name} is now in the {currentAction.targetContainerName}"
+      },
+      "childCommandForwardingMode": "None"
+    },
+    {
+      "id": "8151c08e-f454-4768-b3f3-86c6c11c8a06",
+      "name": "get_ball_from",
+      "payload": {
+        "$payloadType": "removeObjectFromContainer",
+        "targetContainerId": ""
+      },
+      "actionType": "RemoveObjectFromContainer",
+      "noVerbLinkage": false,
+      "verbListText": "get, grab, remove, take",
+      "verbs": [
+        "get",
+        "grab",
+        "remove",
+        "take"
+      ],
+      "direction": "from",
+      "outcomeMessageMap": {
+        "Failure": "",
+        "RemoveFailed": "",
+        "ResolveSourceFailed": "",
+        "Success": "You took the {self.name} from the {currentAction.sourceContainerName}"
+      },
+      "childCommandForwardingMode": "None"
+    },
+    {
+      "id": "4f1a3a34-7230-4498-b998-4513d28997a3",
+      "name": "look_ball",
+      "payload": {
+        "$payloadType": "echoMessage"
+      },
+      "actionType": "EchoMessage",
+      "noVerbLinkage": false,
+      "verbListText": "look, inspect",
+      "verbs": [
+        "look",
+        "inspect"
+      ],
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "",
+        "Success": "There is a {self.name}, it looks to be about {self.inventoryPoints} heavy"
+      },
+      "childCommandForwardingMode": "None"
+    },
+    {
+      "id": "fe736108-8ad9-45ce-8990-4c37dc434f69",
+      "name": "use_ball",
+      "payload": {
+        "$payloadType": "echoMessage"
+      },
+      "actionType": "EchoMessage",
+      "noVerbLinkage": false,
+      "verbListText": "use",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "",
+        "Success": "You used the {self.name}, but for what exactly?"
+      },
+      "childCommandForwardingMode": "None"
+    }
+  ]
+}

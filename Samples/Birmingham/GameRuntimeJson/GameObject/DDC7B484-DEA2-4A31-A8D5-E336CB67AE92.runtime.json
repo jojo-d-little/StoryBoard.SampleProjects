@@ -1,0 +1,117 @@
+{
+  "linkActionsToBaseObject": false,
+  "productionName": "Window",
+  "imageRotationDegrees": 0,
+  "renderZOrder": 1015,
+  "isInventoriable": false,
+  "inventoryPointsDefaultValue": 1,
+  "isContainer": false,
+  "containerPointsDefaultValue": 1,
+  "isOpenable": true,
+  "isOpenDefaultValue": false,
+  "isLockable": false,
+  "isLockedDefaultValue": false,
+  "isActivatable": false,
+  "isActiveDefaultValue": false,
+  "isHidable": false,
+  "isHiddenDefaultValue": false,
+  "description": "",
+  "isQuantifiable": false,
+  "quantity": 1,
+  "quantifiablePlacementDistributionMode": "GroupedStack",
+  "isRuntimeMaterialized": false,
+  "Id": "ddc7b484-dea2-4a31-a8d5-e336cb67ae92",
+  "name": "Window",
+  "nameInGame": "Window",
+  "scopeKind": "GameObject",
+  "gameProperties": [
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "imageRotationDegrees",
+      "defaultValue": "0",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "imageScale",
+      "defaultValue": "1",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "isOpen",
+      "defaultValue": "false",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "positionX",
+      "defaultValue": "0",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "positionY",
+      "defaultValue": "0",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    }
+  ],
+  "availableGameActions": [
+    {
+      "id": "64d84f8d-8d81-425f-83e5-8cb8dc3a6a58",
+      "name": "Action",
+      "payload": {
+        "$payloadType": "setGameProperty",
+        "propertyName": "Window.isOpen",
+        "propertyValue": "true"
+      },
+      "actionType": "SetGameProperty",
+      "noVerbLinkage": false,
+      "verbListText": "open",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "",
+        "SetFailed": "",
+        "Success": "You opened the window"
+      },
+      "childCommandForwardingMode": "None"
+    },
+    {
+      "id": "91e3b441-53ff-4562-b3fe-162847007f70",
+      "name": "Action",
+      "payload": {
+        "$payloadType": "echoMessage"
+      },
+      "actionType": "EchoMessage",
+      "noVerbLinkage": false,
+      "verbListText": "look",
+      "direction": "out",
+      "outcomeMessageMap": {
+        "Failure": "",
+        "Success": "IF {Window.isOpen}\r\nThere is a street below with a hussel and bussel of activity\r\nENDIF"
+      },
+      "childCommandForwardingMode": "None"
+    },
+    {
+      "id": "14a56a29-0352-4fb4-9000-8341eaa69ba8",
+      "name": "lookAtWindow",
+      "payload": {
+        "$payloadType": "echoMessage"
+      },
+      "actionType": "EchoMessage",
+      "noVerbLinkage": false,
+      "verbListText": "look",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "",
+        "Success": "IF {Window.isOpen}\r\nThere is an open window to the east overlooking the street\r\nELSE\r\nThere is a closed window to the east\r\nENDIF"
+      },
+      "childCommandForwardingMode": "None"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "objectType": "Rock",
+  "positionX": 0,
+  "positionY": 0,
+  "includeInPreview": true,
+  "linkedBaseObjectId": "48fcd2fc-10b9-41bb-a297-c1f9cbccfcc2",
+  "linkActionsToBaseObject": true,
+  "productionName": "",
+  "imageRotationDegrees": 0,
+  "renderZOrder": 1001,
+  "quantity": 1,
+  "quantifiablePlacementDistributionMode": "IndividualInstances",
+  "containedObjects": [],
+  "id": "8ba7f050-55a9-461a-b18b-7bbdcb815879",
+  "name": "Rock",
+  "hideEmptyConfiguration": false,
+  "scopeKind": "GameObject",
+  "gameProperties": [
+    {
+      "id": "87de7914-7e6f-4d3e-97a8-90c70dc8bd2b",
+      "name": "inventoryPoints",
+      "defaultValue": "1",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "39e78e3f-d868-48a4-aa4a-ed7da8b4059d",
+      "name": "isActive",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "03665338-b6f0-4488-bc4d-6032c64216e2",
+      "name": "isHidden",
+      "defaultValue": "false",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "2ca9b72e-5b5b-4e80-be15-2f85d42bc6d5",
+      "name": "isQuantifiable",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "21fa8214-81d8-4f8a-bcf1-8bfc4c57316a",
+      "name": "quantity",
+      "defaultValue": "1",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "cdbc8b40-de9d-44f2-b56a-f140b98982d0",
+      "name": "isMovable",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    }
+  ]
+}

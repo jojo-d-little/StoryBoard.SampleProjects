@@ -1,0 +1,189 @@
+{
+  "description": "",
+  "roomDisplayMode": "Overlay",
+  "images": [
+    {
+      "slot": "Default",
+      "overlayRenderOrder": 150,
+      "overlayOffsetX": 0,
+      "overlayOffsetY": 0,
+      "overlayRotationDegrees": 0,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": "",
+      "imagePathSemantics": "runtimeExportRelative"
+    },
+    {
+      "slot": "Down",
+      "overlayRenderOrder": 0,
+      "overlayOffsetX": 0,
+      "overlayOffsetY": 0,
+      "overlayRotationDegrees": 0,
+      "fullImagePath": "assets/images/_shared/7bc4fd3cfc03a0636edeece94b6f865692f80c41fe62337c47ab48658273be87__DarkBrownWoodenFloor800x600.png",
+      "grayMapImagePath": "",
+      "normalMapImagePath": "",
+      "imagePathSemantics": "runtimeExportRelative"
+    },
+    {
+      "slot": "East",
+      "overlayRenderOrder": 100,
+      "overlayOffsetX": 0,
+      "overlayOffsetY": 0,
+      "overlayRotationDegrees": 180,
+      "fullImagePath": "assets/images/_shared/1334e05a4c445ce256b03ff1d2b7070dbc799fa903da418ccdb83c27b1810713__ShortBrickWall.png",
+      "grayMapImagePath": "",
+      "normalMapImagePath": "",
+      "imagePathSemantics": "runtimeExportRelative"
+    },
+    {
+      "slot": "North",
+      "overlayRenderOrder": 100,
+      "overlayOffsetX": 0,
+      "overlayOffsetY": 0,
+      "overlayRotationDegrees": 180,
+      "fullImagePath": "assets/images/_shared/84c8f14bc09348dea467172e1df774dd5ce4aadda9856f4ec558a97c1a40141f__LongBrickWall.png",
+      "grayMapImagePath": "",
+      "normalMapImagePath": "",
+      "imagePathSemantics": "runtimeExportRelative"
+    },
+    {
+      "slot": "NorthEast",
+      "overlayRenderOrder": 200,
+      "overlayOffsetX": 0,
+      "overlayOffsetY": 0,
+      "overlayRotationDegrees": 0,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": "",
+      "imagePathSemantics": "runtimeExportRelative"
+    },
+    {
+      "slot": "NorthWest",
+      "overlayRenderOrder": 200,
+      "overlayOffsetX": 0,
+      "overlayOffsetY": 0,
+      "overlayRotationDegrees": 0,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": "",
+      "imagePathSemantics": "runtimeExportRelative"
+    },
+    {
+      "slot": "South",
+      "overlayRenderOrder": 100,
+      "overlayOffsetX": 0,
+      "overlayOffsetY": 0,
+      "overlayRotationDegrees": 0,
+      "fullImagePath": "assets/images/_shared/84c8f14bc09348dea467172e1df774dd5ce4aadda9856f4ec558a97c1a40141f__LongBrickWall.png",
+      "grayMapImagePath": "",
+      "normalMapImagePath": "",
+      "imagePathSemantics": "runtimeExportRelative"
+    },
+    {
+      "slot": "SouthEast",
+      "overlayRenderOrder": 200,
+      "overlayOffsetX": 0,
+      "overlayOffsetY": 0,
+      "overlayRotationDegrees": 0,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": "",
+      "imagePathSemantics": "runtimeExportRelative"
+    },
+    {
+      "slot": "SouthWest",
+      "overlayRenderOrder": 200,
+      "overlayOffsetX": 0,
+      "overlayOffsetY": 0,
+      "overlayRotationDegrees": 0,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": "",
+      "imagePathSemantics": "runtimeExportRelative"
+    },
+    {
+      "slot": "Up",
+      "overlayRenderOrder": 150,
+      "overlayOffsetX": 0,
+      "overlayOffsetY": 0,
+      "overlayRotationDegrees": 0,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": "",
+      "imagePathSemantics": "runtimeExportRelative"
+    },
+    {
+      "slot": "West",
+      "overlayRenderOrder": 100,
+      "overlayOffsetX": 0,
+      "overlayOffsetY": 0,
+      "overlayRotationDegrees": 0,
+      "fullImagePath": "assets/images/_shared/1334e05a4c445ce256b03ff1d2b7070dbc799fa903da418ccdb83c27b1810713__ShortBrickWall.png",
+      "grayMapImagePath": "",
+      "normalMapImagePath": "",
+      "imagePathSemantics": "runtimeExportRelative"
+    }
+  ],
+  "Id": "d43dc3ad-884f-4ec1-bc33-b95af7f03554",
+  "name": "OpeningRoom",
+  "nameInGame": "OpeningRoom",
+  "scopeKind": "Room",
+  "gameObjectIds": [
+    "246b2547-b691-43c9-bfbe-6bf4694b8ac3",
+    "2c82b97f-6dc1-4e68-83d1-011b5617da79",
+    "35451864-485a-4f5b-ad23-c91ce432fe1f",
+    "c2ec344a-6348-43b9-be70-04383d982ec1"
+  ],
+  "availableGameActions": [
+    {
+      "id": "3449278b-0111-4a6e-ab52-2f201ef67e41",
+      "name": "go_openingroom",
+      "payload": {
+        "$payloadType": "navigateToAdjacent"
+      },
+      "actionType": "NavigateToAdjacent",
+      "noVerbLinkage": false,
+      "verbListText": "go",
+      "direction": "",
+      "outcomeMessageMap": {
+        "AmbiguousTraversal": "Multiple exits are available. Specify a direction.",
+        "DirectionRequired": "Specify a direction.",
+        "DoorClosed": "The door is closed that direction",
+        "Failure": "",
+        "Moved": "You move to the next room.",
+        "MoveFailed": "You cannot move right now.",
+        "NoExitInDirection": "You cannot go that way.",
+        "NoTraversableExit": "There is nowhere to go from here.",
+        "Success": "",
+        "TraversalAmbiguous": "Wheres?",
+        "TraversalBlocked": "That way is blocked.",
+        "TraversalNotPassable": "Can\u0027t seen to go that way.",
+        "UnknownDestination": "Not sure where that is"
+      },
+      "childCommandForwardingMode": "None"
+    },
+    {
+      "id": "c3babf07-6c4d-408b-b645-572a420f2375",
+      "name": "walk_direction",
+      "payload": {
+        "$payloadType": "navigateDirection"
+      },
+      "actionType": "NavigateDirection",
+      "noVerbLinkage": false,
+      "verbListText": "walk",
+      "direction": "",
+      "outcomeMessageMap": {
+        "AmbiguousTraversal": "Multiple exits are available. Specify a direction.",
+        "DirectionRequired": "Specify a direction.",
+        "Failure": "f",
+        "Moved": "You move to the next room.",
+        "MoveFailed": "You cannot move right now.",
+        "NoExitInDirection": "You cannot go that way.",
+        "NoTraversableExit": "There is nowhere to go from here.",
+        "Success": "s",
+        "TraversalBlocked": "That way is blocked."
+      },
+      "childCommandForwardingMode": "None"
+    }
+  ]
+}

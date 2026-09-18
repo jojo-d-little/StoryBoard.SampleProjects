@@ -1,0 +1,49 @@
+{
+  "planetIds": [
+    "52c5b5b4-6224-4d17-b601-07efe6dd20ad"
+  ],
+  "schemaVersion": "1.0",
+  "autoSaveSeconds": 60,
+  "roomImageCanvasWidth": 800,
+  "roomImageCanvasHeight": 600,
+  "roomDesignerGridCellSize": 40,
+  "startingPlanetName": "New Planet",
+  "name": "TraversalExamples",
+  "nameInGame": "TraversalExamples",
+  "scopeKind": "Global",
+  "gameObjectIds": [
+    "8c857700-89b0-45d5-9402-a2aba072e92d",
+    "90f4cd5b-849e-4596-8c9f-6d6e177f2a32"
+  ],
+  "gameProperties": [],
+  "additionalVerbs": [
+    "break",
+    "close",
+    "drop",
+    "go",
+    "investigate",
+    "look",
+    "open",
+    "pickup",
+    "put",
+    "take",
+    "talk",
+    "use"
+  ],
+  "additionalDirectionals": [
+    "north",
+    "south",
+    "east",
+    "west",
+    "northeast",
+    "southeast",
+    "northwest",
+    "southwest",
+    "up",
+    "down",
+    "out",
+    "into",
+    "left",
+    "right"
+  ]
+}

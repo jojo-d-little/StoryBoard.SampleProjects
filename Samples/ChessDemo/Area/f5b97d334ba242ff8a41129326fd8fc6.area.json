@@ -1,0 +1,31 @@
+{
+  "parentCountryId": "56a02162-fb18-44e5-b206-d4f2fd88241e",
+  "roomDropBehavior": "keepDisconnected",
+  "baseObjectsIgnoredValidationRuleIds": [],
+  "baseObjects": [],
+  "gameObjects": [],
+  "adjacencyMode": "EightDirectional",
+  "startingRoomId": "f3211ed7-0612-41b9-93af-2c983b20f0c5",
+  "roomIds": [
+    "f3211ed7-0612-41b9-93af-2c983b20f0c5"
+  ],
+  "roomPlacements": [],
+  "traversalConnections": [],
+  "id": "f5b97d33-4ba2-42ff-8a41-129326fd8fc6",
+  "name": "TheGameArea",
+  "nameInGame": "TheGameArea",
+  "hideEmptyConfiguration": false,
+  "validationErrors": [],
+  "ignoredValidationRuleIds": [],
+  "scopeKind": "Area",
+  "baseObjectIds": [],
+  "gameObjectIds": [],
+  "gameProperties": [],
+  "additionalVerbs": [],
+  "additionalDirectionals": [],
+  "additionalDirectionalTraversalMappings": [],
+  "availableGameActions": [],
+  "eventSubscriptions": [],
+  "timerDefinitions": [],
+  "soundEffectLibraryEntries": []
+}

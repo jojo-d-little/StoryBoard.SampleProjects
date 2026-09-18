@@ -1,0 +1,20 @@
+{
+  "phaseKey": "chapter-1",
+  "phaseTier": "Chapter",
+  "displayName": "Chapter One",
+  "title": "Where am I and what am I to do?",
+  "titlePresentationCueEffectKey": "text.hudoverlay.manualscroll.manualdismiss",
+  "narrative": "After a few moments to take in his surroundings he realizes his choice of exploring or escaping isn\u0027t much of a choice at all. In fact, they look like they\u0027re the same thing His next steps no different one way or the other. The only real choice is mindset And under most circumstances, he could control it, but that eerie creaking has him wandering towards thoughts escape involuntarily.",
+  "narrativePresentationCueEffectKey": "text.hudoverlay.autoscroll.manualdismiss",
+  "parentPhaseId": "43d2c4e0-c4d1-4cc2-8969-9ea32f476a0f",
+  "childPhaseIds": [
+    "452ba0b1-3880-4bed-abf6-9020da8f44ff",
+    "da05d56f-829c-424f-8c30-989e24ab3aba"
+  ],
+  "phaseAmbientSoundEffectId": "96b705b8-9a31-421d-bc98-2055fe62e7e4",
+  "phaseAmbientTimerKey": "timer.amb.sound.chapter",
+  "Id": "67c8efd2-65d9-47bb-9b3c-2a9a6ef0c52a",
+  "name": "Chapter One",
+  "nameInGame": "Chapter One",
+  "scopeKind": "Chapter"
+}

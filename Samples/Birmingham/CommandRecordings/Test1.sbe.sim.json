@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "1.0",
+  "projectName": "Birmingham",
+  "createdAtUtc": "2026-06-23T22:32:10.831872+00:00",
+  "steps": [
+    {
+      "sequence": 1,
+      "enteredAtUtc": "2026-06-23T22:31:27.320932+00:00",
+      "deltaMsFromPrevious": 0,
+      "commandText": "look",
+      "outputLines": [
+        "Looks like a room",
+        "There is a closed window",
+        "There is a closed door"
+      ],
+      "diagnostics": [],
+      "success": true
+    },
+    {
+      "sequence": 2,
+      "enteredAtUtc": "2026-06-23T22:31:30.7079867+00:00",
+      "deltaMsFromPrevious": 3387,
+      "commandText": "look door",
+      "outputLines": [
+        "There is a closed door"
+      ],
+      "diagnostics": [],
+      "success": true
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "LinkedActions": {
+    "Success": "",
+    "Failure": ""
+  },
+  "Synonym": {
+    "Success": "",
+    "Failure": ""
+  },
+  "EchoMessage": {
+    "Success": "",
+    "Failure": ""
+  },
+  "NavigateDirection": {
+    "Success": "",
+    "Failure": "",
+    "Moved": "",
+    "DirectionRequired": "",
+    "NoExitInDirection": "",
+    "NoTraversableExit": "",
+    "AmbiguousTraversal": "",
+    "TraversalBlocked": "",
+    "MoveFailed": ""
+  },
+  "NavigateToAdjacent": {
+    "Success": "",
+    "Failure": "",
+    "Moved": "",
+    "UnknownDestination": "",
+    "DirectionRequired": "",
+    "DoorClosed": "",
+    "TraversalNotPassable": "",
+    "TraversalAmbiguous": "",
+    "MoveFailed": ""
+  },
+  "SetGameProperty": {
+    "Success": "",
+    "Failure": "",
+    "SetFailed": ""
+  },
+  "CheckGameProperty": {
+    "Success": "",
+    "Failure": "",
+    "PropertyMissing": "",
+    "ValueMismatch": ""
+  },
+  "PutObjectInContainer": {
+    "Success": "",
+    "Failure": "",
+    "ResolveTargetFailed": "",
+    "PutFailed": ""
+  },
+  "RemoveObjectFromContainer": {
+    "Success": "",
+    "Failure": "",
+    "ResolveSourceFailed": "",
+    "RemoveFailed": ""
+  },
+  "OpenObject": {
+    "Success": "",
+    "Failure": "",
+    "ObjectNotOpenable": "",
+    "ObjectLocked": "",
+    "ObjectAlreadyOpen": ""
+  },
+  "CloseObject": {
+    "Success": "",
+    "Failure": "",
+    "ObjectNotClosable": "",
+    "ObjectAlreadyClosed": ""
+  },
+  "UnlockObject": {
+    "Success": "",
+    "Failure": "",
+    "ObjectNotLockable": "",
+    "ObjectAlreadyUnlocked": "",
+    "NoUnlockRequirementsDefined": "",
+    "MissingRequiredKeys": "",
+    "WrongKey": "",
+    "KeyVariableRequirementsNotMet": ""
+  },
+  "LockObject": {
+    "Success": "",
+    "Failure": "",
+    "ObjectNotLockable": "",
+    "ObjectAlreadyLocked": "",
+    "NoLockRequirementsDefined": "",
+    "MissingRequiredKeys": "",
+    "WrongKey": "",
+    "KeyVariableRequirementsNotMet": ""
+  },
+  "InvokeProcedure": {
+    "Success": "",
+    "Failure": "",
+    "ProcedureNotFound": "",
+    "ParticipantRequirementsNotMet": "",
+    "ParticipantVariableRequirementsNotMet": "",
+    "PreconditionsFailed": "",
+    "MutationFailed": ""
+  },
+  "MaterializeObjectCopy": {
+    "Success": "",
+    "Failure": "",
+    "SourceNotFound": "",
+    "CurrentRoomUnavailable": "",
+    "MaterializationFailed": ""
+  },
+  "BuildCompositeByTarget": {
+    "Success": "",
+    "Failure": "",
+    "IncompleteRecipe": "",
+    "SpecifyTarget": "",
+    "TargetMismatch": ""
+  },
+  "BuildCompositeByParts": {
+    "Success": "",
+    "Failure": "",
+    "IncompleteRecipe": "",
+    "SpecifyTarget": "",
+    "TargetMismatch": "",
+    "NoMatchingRecipe": ""
+  },
+  "BreakCompositeItem": {
+    "Success": "",
+    "Failure": "",
+    "ResolveTargetFailed": "",
+    "TargetStateInvalid": "",
+    "RestoreUnavailable": "",
+    "MutationFailed": ""
+  }
+}

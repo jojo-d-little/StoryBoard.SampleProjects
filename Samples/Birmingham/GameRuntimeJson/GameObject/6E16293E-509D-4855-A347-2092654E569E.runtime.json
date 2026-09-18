@@ -1,0 +1,149 @@
+{
+  "linkActionsToBaseObject": false,
+  "productionName": "newObject8",
+  "imageRotationDegrees": 0,
+  "renderZOrder": 1007,
+  "isInventoriable": false,
+  "inventoryPointsDefaultValue": 1,
+  "isContainer": false,
+  "containerPointsDefaultValue": 1,
+  "isOpenable": false,
+  "isOpenDefaultValue": false,
+  "isLockable": false,
+  "isLockedDefaultValue": false,
+  "isActivatable": true,
+  "isActiveDefaultValue": false,
+  "isHidable": true,
+  "isHiddenDefaultValue": true,
+  "description": "",
+  "isQuantifiable": false,
+  "quantity": 1,
+  "quantifiablePlacementDistributionMode": "GroupedStack",
+  "compositeRecipe": {
+    "recipeId": "a5a23c11-59d0-40e4-ac73-5a24b907210d",
+    "targetObjectId": "00000000-0000-0000-0000-000000000000",
+    "requiredParts": [
+      {
+        "partObjectId": "8284729e-e0a0-49a0-9859-039d8c94b08b",
+        "requiredQuantity": 1,
+        "optionalPart": false,
+        "matchKind": "ObjectId",
+        "matchValue": "",
+        "satisfactionMode": "PossessionRequired",
+        "consumptionPolicy": "None",
+        "variableRequirements": []
+      },
+      {
+        "partObjectId": "5dbae1a9-d16b-4679-83e2-99237459c4ed",
+        "requiredQuantity": 1,
+        "optionalPart": false,
+        "matchKind": "ObjectId",
+        "matchValue": "",
+        "satisfactionMode": "PossessionRequired",
+        "consumptionPolicy": "None",
+        "variableRequirements": []
+      },
+      {
+        "partObjectId": "08bd9d86-570a-466f-9b2e-670eccb8d602",
+        "requiredQuantity": 1,
+        "optionalPart": false,
+        "matchKind": "ObjectId",
+        "matchValue": "",
+        "satisfactionMode": "PossessionRequired",
+        "consumptionPolicy": "None",
+        "variableRequirements": []
+      }
+    ],
+    "isReversible": true,
+    "partRequirementMode": "AllRequired"
+  },
+  "isRuntimeMaterialized": false,
+  "Id": "6e16293e-509d-4855-a347-2092654e569e",
+  "name": "MusicBox",
+  "nameInGame": "MusicBox",
+  "scopeKind": "GameObject",
+  "gameProperties": [
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "imageRotationDegrees",
+      "defaultValue": "0",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "imageScale",
+      "defaultValue": "1",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "isActive",
+      "defaultValue": "false",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "isHidden",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "positionX",
+      "defaultValue": "0",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "positionY",
+      "defaultValue": "0",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    }
+  ],
+  "availableGameActions": [
+    {
+      "id": "84388191-a0ed-4db6-a0e4-3e97319dcfe8",
+      "name": "break_musicbox",
+      "payload": {
+        "$payloadType": "breakCompositeItem",
+        "compositeTargetObjectId": "00000000-0000-0000-0000-000000000000",
+        "compositePartConsumptionMode": "ContainedInComposite"
+      },
+      "actionType": "BreakCompositeItem",
+      "noVerbLinkage": false,
+      "verbListText": "break",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "We can\u0027t even break a musicbox right",
+        "MutationFailed": "",
+        "ResolveTargetFailed": "",
+        "RestoreUnavailable": "",
+        "Success": "You broke the musicbox {currentAction.recipeParts} are yours again to do with as you wish.",
+        "TargetStateInvalid": ""
+      },
+      "childCommandForwardingMode": "None"
+    },
+    {
+      "id": "6fff41c4-d4f0-4ec1-8e7f-a8f0c51bd8fa",
+      "name": "look_musicbox",
+      "payload": {
+        "$payloadType": "echoMessage"
+      },
+      "actionType": "EchoMessage",
+      "noVerbLinkage": false,
+      "verbListText": "look",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "",
+        "Success": "There is a {self.name}"
+      },
+      "childCommandForwardingMode": "None"
+    }
+  ]
+}

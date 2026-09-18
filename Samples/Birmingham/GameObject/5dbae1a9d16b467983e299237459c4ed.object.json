@@ -1,0 +1,142 @@
+{
+  "objectType": "Gear",
+  "positionX": 0,
+  "positionY": 0,
+  "includeInPreview": true,
+  "linkActionsToBaseObject": false,
+  "productionName": "newObject4",
+  "nameSynonyms": [],
+  "imageVariants": [],
+  "imageRotationDegrees": 0,
+  "renderZOrder": 1010,
+  "appearance": {
+    "spatialType": "SolidObject",
+    "isMovable": true,
+    "isMovableDefaultValue": true,
+    "footprintWidthCells": 1,
+    "footprintHeightCells": 1,
+    "footprintOrientation": "N",
+    "headingDirection": "N",
+    "objectHeightUnits": 1,
+    "isHeightPinned": false
+  },
+  "isInventoriable": true,
+  "inventoryPointsDefaultValue": 1,
+  "isContainer": false,
+  "containerPointsDefaultValue": 1,
+  "isOpenable": false,
+  "isOpenDefaultValue": false,
+  "isLockable": false,
+  "isLockedDefaultValue": false,
+  "isActivatable": false,
+  "isActiveDefaultValue": false,
+  "isHidable": false,
+  "isHiddenDefaultValue": false,
+  "description": "",
+  "isQuantifiable": false,
+  "quantity": 1,
+  "quantifiablePlacementDistributionMode": "GroupedStack",
+  "containedObjects": [],
+  "id": "5dbae1a9-d16b-4679-83e2-99237459c4ed",
+  "name": "Gear",
+  "nameInGame": "Gear",
+  "hideEmptyConfiguration": false,
+  "validationErrors": [],
+  "ignoredValidationRuleIds": [],
+  "scopeKind": "GameObject",
+  "procedureIds": [],
+  "gameProperties": [
+    {
+      "id": "ad64f379-faa2-4cd8-95d3-709a9140b2a1",
+      "name": "inventoryPoints",
+      "defaultValue": "1",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "2325220b-56b9-45c7-94d1-d67eb318e76f",
+      "name": "isMovable",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    }
+  ],
+  "additionalVerbs": [],
+  "additionalDirectionals": [],
+  "additionalDirectionalTraversalMappings": [],
+  "availableGameActions": [
+    {
+      "id": "8f724636-1801-42b7-95c4-f236a4ca78ef",
+      "name": "pickup_gear",
+      "payload": {
+        "$payloadType": "putObjectInContainer",
+        "targetContainerId": ""
+      },
+      "actionType": "PutObjectInContainer",
+      "noVerbLinkage": false,
+      "verbListText": "pickup",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "The gear is heavy",
+        "PutFailed": "",
+        "ResolveTargetFailed": "",
+        "Success": "Picked up the gear"
+      },
+      "childCommandForwardingMode": "None",
+      "similarChildDispatchMode": "SingleMatchingChild"
+    },
+    {
+      "id": "72be6b00-e50d-4610-98cb-912702a1dfe7",
+      "name": "look_gear",
+      "payload": {
+        "$payloadType": "echoMessage"
+      },
+      "actionType": "EchoMessage",
+      "noVerbLinkage": false,
+      "verbListText": "look",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "",
+        "Success": "There is a gear"
+      },
+      "childCommandForwardingMode": "None",
+      "similarChildDispatchMode": "SingleMatchingChild"
+    },
+    {
+      "id": "f0cc87b4-72aa-40d2-bff4-2682917ee875",
+      "name": "use_gear",
+      "payload": {
+        "$payloadType": "buildCompositeByParts",
+        "compositeTargetObjectId": "6e16293e-509d-4855-a347-2092654e569e",
+        "compositeRecipeId": "a5a23c11-59d0-40e4-ac73-5a24b907210d",
+        "compositeRequiredPartObjectIds": [
+          "8284729e-e0a0-49a0-9859-039d8c94b08b",
+          "5dbae1a9-d16b-4679-83e2-99237459c4ed",
+          "08bd9d86-570a-466f-9b2e-670eccb8d602"
+        ],
+        "compositeStrictPartCountEnforcement": false,
+        "compositeMinimumRequiredPartCount": 1,
+        "compositeMatchMode": "AllRequired",
+        "compositeAmbiguityPolicy": "FailWithHint",
+        "compositePartConsumptionMode": "ContainedInComposite"
+      },
+      "actionType": "BuildCompositeByParts",
+      "noVerbLinkage": false,
+      "verbListText": "use",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "Not yet",
+        "IncompleteRecipe": "You did not have everything you need. Look for {currentAction.missingParts}",
+        "NoMatchingRecipe": "What? No Match Echo",
+        "SpecifyTarget": "What did you want to build",
+        "Success": "You built a music box",
+        "TargetMismatch": "You can\u0027t build A with Z"
+      },
+      "childCommandForwardingMode": "None",
+      "similarChildDispatchMode": "SingleMatchingChild"
+    }
+  ],
+  "eventSubscriptions": [],
+  "timerDefinitions": [],
+  "soundEffectLibraryEntries": []
+}

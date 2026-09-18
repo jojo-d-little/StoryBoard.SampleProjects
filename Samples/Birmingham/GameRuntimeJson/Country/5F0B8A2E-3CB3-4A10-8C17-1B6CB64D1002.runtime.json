@@ -1,0 +1,17 @@
+{
+  "startingAreaName": "Birmingham-Hotel",
+  "areaIds": [
+    "5f0b8a2e-3cb3-4a10-8c17-1b6cb64d1003"
+  ],
+  "Id": "5f0b8a2e-3cb3-4a10-8c17-1b6cb64d1002",
+  "name": "UK",
+  "nameInGame": "UK",
+  "scopeKind": "Country",
+  "baseObjectIds": [
+    "876976f1-dffe-4dce-8fe5-f538fd992991"
+  ],
+  "gameProperties": [],
+  "additionalVerbs": [],
+  "additionalDirectionals": [],
+  "availableGameActions": []
+}

@@ -1,0 +1,147 @@
+{
+  "scopeKind": 6,
+  "schemaVersion": "1.0",
+  "id": "c2260717-f088-4b57-97c3-30c6cdc01d5a",
+  "description": "",
+  "commandPhrases": [],
+  "gameObjects": [
+    {
+      "scopeKind": 7,
+      "sourceObjectId": "523c2df4-86bf-4efa-a6ee-ab08c1ba5925",
+      "productionName": "Door opens SouthEast from New Room 6 to CentralRoom.",
+      "isInventoriable": false,
+      "inventoryPointsDefaultValue": 1,
+      "isContainer": false,
+      "containerPointsDefaultValue": 1,
+      "isOpenable": true,
+      "isOpenDefaultValue": false,
+      "isLockable": true,
+      "isLockedDefaultValue": true,
+      "isActivatable": false,
+      "isActiveDefaultValue": false,
+      "isHidable": false,
+      "isHiddenDefaultValue": false,
+      "description": "",
+      "quantity": 1,
+      "quantifiablePlacementDistributionMode": "GroupedStack",
+      "childScopes": [],
+      "name": "Door_SE",
+      "gameProperties": [
+        {
+          "id": "67f800b7-4d31-4a02-837e-7aebe9f86628",
+          "name": "isLocked",
+          "defaultValue": "true",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "bd9a70fd-1e84-4bb2-9239-965d2a86a8d0",
+          "name": "isOpen",
+          "defaultValue": "false",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        }
+      ],
+      "additionalDirectionalTraversalMappings": []
+    }
+  ],
+  "images": [
+    {
+      "slot": "Default",
+      "useDefaultImage": false,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "Down",
+      "useDefaultImage": true,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "East",
+      "useDefaultImage": true,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "North",
+      "useDefaultImage": true,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "NorthEast",
+      "useDefaultImage": true,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "NorthWest",
+      "useDefaultImage": true,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "South",
+      "useDefaultImage": true,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "SouthEast",
+      "useDefaultImage": true,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "SouthWest",
+      "useDefaultImage": true,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "Up",
+      "useDefaultImage": true,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "West",
+      "useDefaultImage": true,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    }
+  ],
+  "childScopes": [
+    {
+      "scopeKind": 7,
+      "scopeName": "Door_SE",
+      "scopeNameInGame": "Door_SE",
+      "roomId": null,
+      "objectId": null,
+      "scopeTokens": [
+        "Door_SE"
+      ],
+      "parentScope": null,
+      "childScopes": [],
+      "additionalVerbs": [],
+      "additionalDirectionals": [],
+      "additionalDirectionalTraversalMappings": []
+    }
+  ],
+  "name": "New Room 6",
+  "additionalDirectionalTraversalMappings": [],
+  "availableGameActions": []
+}

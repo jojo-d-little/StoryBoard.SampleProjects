@@ -1,0 +1,13 @@
+{
+  "phaseKey": "page-4",
+  "phaseTier": "Page",
+  "displayName": "Page Four",
+  "title": "A shiny new key",
+  "prologue": "With a repaired key I think we are ready to get out of here.",
+  "parentPhaseId": "255f5a34-96fd-48b5-b617-3adfb542c561",
+  "childPhaseIds": [],
+  "Id": "93cde732-cc33-42e0-9903-e613529275f9",
+  "name": "Page Four",
+  "nameInGame": "Page Four",
+  "scopeKind": "Page"
+}

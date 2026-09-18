@@ -1,0 +1,353 @@
+{
+  "schemaVersion": "1.0",
+  "name": "Birmingham",
+  "roomDesignerGridCellSize": 40,
+  "autoSaveSeconds": 60,
+  "commandVerbs": [
+    "go",
+    "look",
+    "open",
+    "close",
+    "take",
+    "drop",
+    "use",
+    "talk",
+    "investigate",
+    "put",
+    "pickup",
+    "break"
+  ],
+  "directionals": [
+    "north",
+    "south",
+    "east",
+    "west",
+    "up",
+    "down",
+    "out",
+    "into",
+    "left",
+    "right"
+  ],
+  "startingPlanetName": "Earth",
+  "playerCharacterObjectName": "ThePlayer",
+  "gameProperties": [],
+  "playerGameProperties": [],
+  "availableGameActions": [],
+  "gameObjects": [
+    {
+      "scopeKind": 7,
+      "sourceObjectId": "cec66601-fb3e-4759-b64f-1bb717ebc214",
+      "productionName": "ThePlayer",
+      "isInventoriable": false,
+      "inventoryPointsDefaultValue": 1,
+      "isContainer": true,
+      "containerPointsDefaultValue": 4,
+      "isOpenable": false,
+      "isOpenDefaultValue": false,
+      "isLockable": false,
+      "isLockedDefaultValue": false,
+      "isActivatable": false,
+      "isActiveDefaultValue": false,
+      "isHidable": false,
+      "isHiddenDefaultValue": false,
+      "description": "",
+      "quantity": 1,
+      "quantifiablePlacementDistributionMode": "GroupedStack",
+      "childScopes": [],
+      "name": "ThePlayer",
+      "gameProperties": [
+        {
+          "id": "884cb915-1176-42a0-b286-b81cb6d8e632",
+          "name": "containerPoints",
+          "defaultValue": "4",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "adafbb21-eeb7-48de-8a95-73986e0f92e2",
+          "name": "containerPointsRemaining",
+          "defaultValue": "4",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "121302a1-981b-43ae-81ff-a4f40428fef7",
+          "name": "isPlayer",
+          "defaultValue": "true",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        }
+      ],
+      "additionalDirectionalTraversalMappings": []
+    }
+  ],
+  "planets": [
+    {
+      "scopeKind": 3,
+      "startingCountryName": "UK",
+      "countries": [
+        {
+          "scopeKind": 4,
+          "startingAreaName": "Birmingham-Hotel",
+          "areas": [
+            {
+              "scopeKind": 5,
+              "adjacencyMode": "FourDirectional",
+              "startingRoomId": "0fc05c99-f4fe-4304-b650-f232b9eca7c5",
+              "roomIds": [
+                "0fc05c99-f4fe-4304-b650-f232b9eca7c5",
+                "3f41a18e-ec99-4099-b279-8fbc581cc211"
+              ],
+              "childScopes": [],
+              "name": "Birmingham-Hotel",
+              "gameProperties": [],
+              "additionalVerbs": [],
+              "additionalDirectionals": [],
+              "additionalDirectionalTraversalMappings": [],
+              "availableGameActions": []
+            }
+          ],
+          "baseObjects": [
+            {
+              "scopeKind": 7,
+              "sourceObjectId": "876976f1-dffe-4dce-8fe5-f538fd992991",
+              "productionName": "newObject9",
+              "isInventoriable": true,
+              "inventoryPointsDefaultValue": 1,
+              "isContainer": false,
+              "containerPointsDefaultValue": 1,
+              "isOpenable": false,
+              "isOpenDefaultValue": false,
+              "isLockable": false,
+              "isLockedDefaultValue": false,
+              "isActivatable": true,
+              "isActiveDefaultValue": true,
+              "isHidable": true,
+              "isHiddenDefaultValue": false,
+              "description": "",
+              "isQuantifiable": true,
+              "quantity": 10,
+              "quantifiablePlacementDistributionMode": "GroupedStack",
+              "childScopes": [],
+              "name": "Flowers",
+              "gameProperties": [
+                {
+                  "id": "ad80e4f9-a8c8-4b8f-8180-21afb17a0fdf",
+                  "name": "inventoryPoints",
+                  "defaultValue": "1",
+                  "valueRestriction": "Numeric",
+                  "lifetime": "Singleton"
+                },
+                {
+                  "id": "f9c0cb2e-ac6f-432e-85b2-5109c7ddf12f",
+                  "name": "isActive",
+                  "defaultValue": "true",
+                  "valueRestriction": "TrueFalse",
+                  "lifetime": "Singleton"
+                },
+                {
+                  "id": "6249c3d2-ea2b-4371-a671-da22668b9311",
+                  "name": "isHidden",
+                  "defaultValue": "false",
+                  "valueRestriction": "TrueFalse",
+                  "lifetime": "Singleton"
+                },
+                {
+                  "id": "be9e84e2-59c3-4e6e-90a8-9404bb9c6cb4",
+                  "name": "isQuantifiable",
+                  "defaultValue": "true",
+                  "valueRestriction": "TrueFalse",
+                  "lifetime": "Singleton"
+                },
+                {
+                  "id": "b87d1637-8dad-4ce3-bdde-5c3346c01834",
+                  "name": "quantity",
+                  "defaultValue": "10",
+                  "valueRestriction": "Numeric",
+                  "lifetime": "Singleton"
+                }
+              ],
+              "additionalDirectionalTraversalMappings": [],
+              "availableGameActions": [
+                {
+                  "id": "604748ac-fabc-49f1-8dfd-9016e43c2299",
+                  "name": "look_flowers",
+                  "actionType": "EchoMessage",
+                  "verbListText": "look",
+                  "direction": "",
+                  "outcomeMessageMap": {
+                    "Failure": "",
+                    "Success": "There are {self.quantity} {self.name}"
+                  },
+                  "childCommandForwardingMode": "None"
+                },
+                {
+                  "id": "dc2025d7-147d-4ade-aeea-abc24f328d2b",
+                  "name": "use_flowers",
+                  "actionType": "BuildCompositeByParts",
+                  "verbListText": "use",
+                  "direction": "",
+                  "outcomeMessageMap": {
+                    "Failure": "Failed to create smokeball",
+                    "IncompleteRecipe": "smokeball parts are not all here",
+                    "NoMatchingRecipe": "Not sure you can use it that way.",
+                    "SpecifyTarget": "???",
+                    "Success": "A mysterious smoke ball has appeared in the room",
+                    "TargetMismatch": "Looks like you are missing some {currentAction.missingParts[0]}"
+                  },
+                  "compositeTargetObjectId": "790f35ea-8959-a176-5e5a-8e806fb1cf76",
+                  "compositeRecipeId": "692bbe29-1667-46a1-8574-c38b2aaf2fcd",
+                  "compositeRequiredPartObjectIds": [
+                    "27809491-a511-5eea-e506-5db363e5e177",
+                    "27809491-a511-5eea-e506-5db363e5e177",
+                    "27809491-a511-5eea-e506-5db363e5e177",
+                    "15d839bd-6149-6dd4-ec6e-3323d2ede224",
+                    "15d839bd-6149-6dd4-ec6e-3323d2ede224"
+                  ],
+                  "compositeStrictPartCountEnforcement": true,
+                  "childCommandForwardingMode": "None"
+                }
+              ]
+            }
+          ],
+          "childScopes": [
+            {
+              "scopeKind": 5,
+              "scopeName": "Birmingham-Hotel",
+              "scopeNameInGame": "Birmingham-Hotel",
+              "runtimeParentScopeNodeId": null,
+              "scopeTokens": [
+                "Birmingham-Hotel"
+              ],
+              "parentScope": null,
+              "childScopes": [],
+              "additionalVerbs": [],
+              "additionalDirectionals": [],
+              "additionalDirectionalTraversalMappings": []
+            }
+          ],
+          "name": "UK",
+          "gameProperties": [],
+          "additionalVerbs": [],
+          "additionalDirectionals": [],
+          "additionalDirectionalTraversalMappings": [],
+          "availableGameActions": []
+        }
+      ],
+      "baseObjects": [
+        {
+          "scopeKind": 7,
+          "sourceObjectId": "94e71f6c-e0d1-48e1-a3c5-234e06bb9138",
+          "productionName": "newObject12",
+          "isInventoriable": true,
+          "inventoryPointsDefaultValue": 1,
+          "isContainer": false,
+          "containerPointsDefaultValue": 1,
+          "isOpenable": false,
+          "isOpenDefaultValue": false,
+          "isLockable": false,
+          "isLockedDefaultValue": false,
+          "isActivatable": false,
+          "isActiveDefaultValue": false,
+          "isHidable": false,
+          "isHiddenDefaultValue": false,
+          "description": "",
+          "isQuantifiable": true,
+          "quantity": 1,
+          "quantifiablePlacementDistributionMode": "IndividualInstances",
+          "childScopes": [],
+          "name": "Marbles",
+          "gameProperties": [
+            {
+              "id": "f87b221d-07e8-4ebc-a123-0d01b92df599",
+              "name": "inventoryPoints",
+              "defaultValue": "1",
+              "valueRestriction": "Numeric",
+              "lifetime": "Singleton"
+            },
+            {
+              "id": "3b8e0e6d-610f-4fff-ad8b-1a46052e64ca",
+              "name": "isQuantifiable",
+              "defaultValue": "true",
+              "valueRestriction": "TrueFalse",
+              "lifetime": "Singleton"
+            },
+            {
+              "id": "1610ccdc-68c9-4179-bf60-80b978ecb1fc",
+              "name": "quantity",
+              "defaultValue": "1",
+              "valueRestriction": "Numeric",
+              "lifetime": "Singleton"
+            }
+          ],
+          "additionalDirectionalTraversalMappings": [],
+          "availableGameActions": [
+            {
+              "id": "49f8f87e-ef89-444e-8f5c-6f5c3f27da49",
+              "name": "look_simplevisible",
+              "actionType": "EchoMessage",
+              "verbListText": "look",
+              "direction": "",
+              "outcomeMessageMap": {
+                "Failure": "",
+                "Success": "There are {self.nearByQuantity} {self.name}"
+              },
+              "childCommandForwardingMode": "None"
+            }
+          ]
+        }
+      ],
+      "childScopes": [
+        {
+          "scopeKind": 4,
+          "scopeName": "UK",
+          "scopeNameInGame": "UK",
+          "runtimeParentScopeNodeId": null,
+          "scopeTokens": [
+            "UK"
+          ],
+          "parentScope": null,
+          "childScopes": [
+            {
+              "scopeKind": 5,
+              "scopeName": "Birmingham-Hotel",
+              "scopeNameInGame": "Birmingham-Hotel",
+              "runtimeParentScopeNodeId": null,
+              "scopeTokens": [
+                "Birmingham-Hotel"
+              ],
+              "parentScope": null,
+              "childScopes": [],
+              "additionalVerbs": [],
+              "additionalDirectionals": [],
+              "additionalDirectionalTraversalMappings": []
+            }
+          ],
+          "additionalVerbs": [],
+          "additionalDirectionals": [],
+          "additionalDirectionalTraversalMappings": []
+        }
+      ],
+      "name": "Earth",
+      "gameProperties": [],
+      "additionalVerbs": [],
+      "additionalDirectionals": [],
+      "additionalDirectionalTraversalMappings": [],
+      "availableGameActions": [
+        {
+          "id": "8914549f-c808-495d-abe0-04acb9830827",
+          "name": "WhatOnEarth",
+          "actionType": "EchoMessage",
+          "verbListText": "*",
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "Success": "What on Earth are you doing here?"
+          },
+          "childCommandForwardingMode": "None"
+        }
+      ]
+    }
+  ]
+}

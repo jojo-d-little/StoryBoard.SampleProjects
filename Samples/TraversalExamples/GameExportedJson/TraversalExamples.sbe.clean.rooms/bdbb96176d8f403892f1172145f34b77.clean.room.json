@@ -1,0 +1,325 @@
+{
+  "scopeKind": 6,
+  "schemaVersion": "1.0",
+  "id": "bdbb9617-6d8f-4038-92f1-172145f34b77",
+  "description": "",
+  "commandPhrases": [],
+  "gameObjects": [
+    {
+      "scopeKind": 7,
+      "sourceObjectId": "a0bfd498-fac9-421b-9bf3-119667d74ca9",
+      "productionName": "Door opens North from New Room 4 to CentralRoom.",
+      "isInventoriable": false,
+      "inventoryPointsDefaultValue": 1,
+      "isContainer": false,
+      "containerPointsDefaultValue": 1,
+      "isOpenable": true,
+      "isOpenDefaultValue": true,
+      "isLockable": true,
+      "isLockedDefaultValue": false,
+      "isActivatable": false,
+      "isActiveDefaultValue": false,
+      "isHidable": false,
+      "isHiddenDefaultValue": false,
+      "description": "",
+      "quantity": 1,
+      "quantifiablePlacementDistributionMode": "GroupedStack",
+      "childScopes": [],
+      "name": "Door_N",
+      "gameProperties": [
+        {
+          "id": "d23c3b91-0e29-48a8-a26d-2e27d2c62fed",
+          "name": "isLocked",
+          "defaultValue": "false",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "ee40290e-abdc-4c27-8420-71c7114726e0",
+          "name": "isOpen",
+          "defaultValue": "true",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        }
+      ],
+      "additionalDirectionalTraversalMappings": []
+    },
+    {
+      "scopeKind": 7,
+      "sourceObjectId": "4002c0ea-3194-47bf-9435-bd4bc5ac44bc",
+      "productionName": "Door opens North from New Room 4 to CentralRoom.",
+      "isInventoriable": false,
+      "inventoryPointsDefaultValue": 1,
+      "isContainer": false,
+      "containerPointsDefaultValue": 1,
+      "isOpenable": true,
+      "isOpenDefaultValue": false,
+      "isLockable": true,
+      "isLockedDefaultValue": true,
+      "isActivatable": false,
+      "isActiveDefaultValue": false,
+      "isHidable": false,
+      "isHiddenDefaultValue": false,
+      "description": "",
+      "quantity": 1,
+      "quantifiablePlacementDistributionMode": "GroupedStack",
+      "childScopes": [],
+      "name": "Door_N_2",
+      "gameProperties": [
+        {
+          "id": "c486e647-0a0e-4e42-9254-162b3139986e",
+          "name": "isLocked",
+          "defaultValue": "true",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "13cb95a3-ff6d-45be-94ef-2e3a4c75be70",
+          "name": "isOpen",
+          "defaultValue": "false",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        }
+      ],
+      "additionalDirectionalTraversalMappings": [],
+      "availableGameActions": [
+        {
+          "id": "9e374cf6-5b23-4e48-994d-2ff4245f751d",
+          "name": "close_door_message",
+          "actionType": "EchoMessage",
+          "noVerbLinkage": true,
+          "verbListText": "",
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "Success": "IF NOT{self.isOpen}\r\nThe door is alreadu closed\r\nRETURN SUCCESS\r\nELSE IF \r\nThe door closes\r\nRETURN SUCCESS\r\nENDIF"
+          },
+          "childCommandForwardingMode": "None",
+          "linkedActions": [
+            {
+              "actionId": "8f7308ca-b3ba-476e-8118-8d3263282c54",
+              "runWhen": "Always",
+              "order": 0
+            }
+          ]
+        },
+        {
+          "id": "de1b222b-9328-4c70-844d-fc2998d2ad9c",
+          "name": "close_standardlockabledoor",
+          "actionType": "LinkedActions",
+          "verbListText": "close",
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "Success": ""
+          },
+          "childCommandForwardingMode": "None",
+          "linkedActions": [
+            {
+              "actionId": "9e374cf6-5b23-4e48-994d-2ff4245f751d",
+              "runWhen": "Always",
+              "order": 0
+            }
+          ]
+        },
+        {
+          "id": "64bb21bc-6471-4cb1-b612-855325aa0ccc",
+          "name": "door_open_message",
+          "actionType": "EchoMessage",
+          "noVerbLinkage": true,
+          "verbListText": "",
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "Success": "IF {self.isOpen}\r\nDoor is already open.\r\nRETURN SUCCESS\r\nELSE IF {self.isLocked}\r\nDoor is locked\r\nRETURN FAILURE\r\nELSE\r\nThe door opens\r\nRETURN SUCCESS\r\nENDIF\r\n"
+          },
+          "childCommandForwardingMode": "None",
+          "linkedActions": [
+            {
+              "actionId": "4123f77e-f1ac-45f8-92a3-a75e35a37952",
+              "runWhen": "Always",
+              "order": 0
+            }
+          ]
+        },
+        {
+          "id": "5902cccb-5044-48be-9bd1-92cce89a779d",
+          "name": "look_standardlockabledoor",
+          "actionType": "EchoMessage",
+          "verbListText": "look",
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "Success": "IF {self.isOpen}\r\nThere is an open door\r\nELSE \r\nThere is a closed door\r\nENDIF"
+          },
+          "childCommandForwardingMode": "None"
+        },
+        {
+          "id": "8f7308ca-b3ba-476e-8118-8d3263282c54",
+          "name": "mark_door_closed",
+          "actionType": "SetGameProperty",
+          "noVerbLinkage": true,
+          "verbListText": "",
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "SetFailed": "",
+            "Success": ""
+          },
+          "gamePropertyName": "self.isOpen",
+          "gamePropertyValue": "false",
+          "childCommandForwardingMode": "None"
+        },
+        {
+          "id": "4123f77e-f1ac-45f8-92a3-a75e35a37952",
+          "name": "mark_door_open",
+          "actionType": "SetGameProperty",
+          "noVerbLinkage": true,
+          "verbListText": "",
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "SetFailed": "",
+            "Success": ""
+          },
+          "gamePropertyName": "self.isOpen",
+          "gamePropertyValue": "true",
+          "childCommandForwardingMode": "None"
+        },
+        {
+          "id": "a4ca57c8-919a-4e31-b2fd-9a2edaada8b2",
+          "name": "open_standardlockabledoor",
+          "actionType": "LinkedActions",
+          "verbListText": "open",
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "Success": ""
+          },
+          "childCommandForwardingMode": "None",
+          "linkedActions": [
+            {
+              "actionId": "64bb21bc-6471-4cb1-b612-855325aa0ccc",
+              "runWhen": "Always",
+              "order": 0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "slot": "Default",
+      "useDefaultImage": false,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "Down",
+      "useDefaultImage": true,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "East",
+      "useDefaultImage": true,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "North",
+      "useDefaultImage": true,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "NorthEast",
+      "useDefaultImage": true,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "NorthWest",
+      "useDefaultImage": true,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "South",
+      "useDefaultImage": true,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "SouthEast",
+      "useDefaultImage": true,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "SouthWest",
+      "useDefaultImage": true,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "Up",
+      "useDefaultImage": true,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "West",
+      "useDefaultImage": true,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    }
+  ],
+  "childScopes": [
+    {
+      "scopeKind": 7,
+      "scopeName": "Door_N",
+      "scopeNameInGame": "Door_N",
+      "roomId": null,
+      "objectId": null,
+      "scopeTokens": [
+        "Door_N"
+      ],
+      "parentScope": null,
+      "childScopes": [],
+      "additionalVerbs": [],
+      "additionalDirectionals": [],
+      "additionalDirectionalTraversalMappings": []
+    },
+    {
+      "scopeKind": 7,
+      "scopeName": "Door_N_2",
+      "scopeNameInGame": "Door_N_2",
+      "roomId": null,
+      "objectId": null,
+      "scopeTokens": [
+        "Door_N_2"
+      ],
+      "parentScope": null,
+      "childScopes": [],
+      "additionalVerbs": [],
+      "additionalDirectionals": [],
+      "additionalDirectionalTraversalMappings": []
+    }
+  ],
+  "name": "New Room 4",
+  "additionalDirectionalTraversalMappings": [],
+  "availableGameActions": []
+}

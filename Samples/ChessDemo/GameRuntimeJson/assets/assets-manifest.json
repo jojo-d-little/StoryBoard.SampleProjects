@@ -1,0 +1,336 @@
+{
+  "schemaVersion": "1.0",
+  "images": [
+    {
+      "hash": "024667c165e2efaedde08e2d11dcea6a685f45c09d7db98ab44abad58d63aa9c",
+      "sha256": "024667c165e2efaedde08e2d11dcea6a685f45c09d7db98ab44abad58d63aa9c",
+      "sizeBytes": 21779,
+      "imagePathSemantics": "runtimeExportRelative",
+      "exportedPath": "assets/images/_shared/024667c165e2efaedde08e2d11dcea6a685f45c09d7db98ab44abad58d63aa9c__WhiteChessBishop.png",
+      "sourcePaths": [
+        "ASSETROOT:/PlaceHolderImages/WhiteChessBishop.png"
+      ],
+      "references": [
+        "object:20f19908f6f04ac7a9bf2ec9e3b37d8d:variant:default:full",
+        "object:b38fecd32f9e47b3b4c3dd94fa42f5d3:variant:default:full",
+        "object:deaba097f121492ca0ebb161d2331bbb:variant:default:full"
+      ]
+    },
+    {
+      "hash": "12251e687313394ea54d5dd2fbb84926262908bc8e87151e35b8371a37732fae",
+      "sha256": "12251e687313394ea54d5dd2fbb84926262908bc8e87151e35b8371a37732fae",
+      "sizeBytes": 12225,
+      "imagePathSemantics": "runtimeExportRelative",
+      "exportedPath": "assets/images/_shared/12251e687313394ea54d5dd2fbb84926262908bc8e87151e35b8371a37732fae__DarkDoor.png",
+      "sourcePaths": [
+        "ASSETROOT:/PlaceHolderImages/DarkDoor.png"
+      ],
+      "references": [
+        "templateObject:0df7d21c2d224ef98b373eebd9b07dc0:variant:Closed:full"
+      ]
+    },
+    {
+      "hash": "34495dd461ee138dc7a61eb7278c6baef493b89e1f225064b27bed0ae7430473",
+      "sha256": "34495dd461ee138dc7a61eb7278c6baef493b89e1f225064b27bed0ae7430473",
+      "sizeBytes": 28447,
+      "imagePathSemantics": "runtimeExportRelative",
+      "exportedPath": "assets/images/_shared/34495dd461ee138dc7a61eb7278c6baef493b89e1f225064b27bed0ae7430473__WhiteChessKing.png",
+      "sourcePaths": [
+        "ASSETROOT:/PlaceHolderImages/WhiteChessKing.png"
+      ],
+      "references": [
+        "object:6a7af88a52744ef1a1520876fbbb5daa:variant:default:full",
+        "object:cd0a11bffa814133ac411ad5f07a722c:variant:default:full"
+      ]
+    },
+    {
+      "hash": "354b13941dff55d444d3b933456309776136eb2e2c9dd9b8ad05b2db7a0b8c9c",
+      "sha256": "354b13941dff55d444d3b933456309776136eb2e2c9dd9b8ad05b2db7a0b8c9c",
+      "sizeBytes": 776521,
+      "imagePathSemantics": "runtimeExportRelative",
+      "exportedPath": "assets/images/previewImages/354b13941dff55d444d3b933456309776136eb2e2c9dd9b8ad05b2db7a0b8c9c__TheBoard.png",
+      "sourcePaths": [
+        "C:\\work\\GIT\\Storyboard\\Samples\\ChessDemo\\PresentationAssets\\TheBoard.png"
+      ],
+      "references": [
+        "project:previewImage:0"
+      ]
+    },
+    {
+      "hash": "41ee9ead17e05133be0374fc3c0a344d7a28922bed988568ce5bd921a6c46670",
+      "sha256": "41ee9ead17e05133be0374fc3c0a344d7a28922bed988568ce5bd921a6c46670",
+      "sizeBytes": 21627,
+      "imagePathSemantics": "runtimeExportRelative",
+      "exportedPath": "assets/images/_shared/41ee9ead17e05133be0374fc3c0a344d7a28922bed988568ce5bd921a6c46670__BlackChessQueen.png",
+      "sourcePaths": [
+        "ASSETROOT:/PlaceHolderImages/BlackChessQueen.png"
+      ],
+      "references": [
+        "object:9a4a7d4cf8a44ae28db80ce40e215ffb:variant:default:full",
+        "object:a005217f4aed4b81a50644003c07615d:variant:default:full"
+      ]
+    },
+    {
+      "hash": "4d487273e63aa7674654c5dafe964b6f810acd0e16c5175e76cc00015f935b8b",
+      "sha256": "4d487273e63aa7674654c5dafe964b6f810acd0e16c5175e76cc00015f935b8b",
+      "sizeBytes": 34498,
+      "imagePathSemantics": "runtimeExportRelative",
+      "exportedPath": "assets/images/_shared/4d487273e63aa7674654c5dafe964b6f810acd0e16c5175e76cc00015f935b8b__WhiteChessKnight.png",
+      "sourcePaths": [
+        "ASSETROOT:/PlaceHolderImages/WhiteChessKnight.png"
+      ],
+      "references": [
+        "object:303e39b9f0c6498da99186acc1101987:variant:default:full",
+        "object:9590e07864504e6ab8aec754df6c63f5:variant:default:full",
+        "object:9ae01353fe8449f5ad240dec9e23f667:variant:default:full"
+      ]
+    },
+    {
+      "hash": "4f9c38d990b59e74cc9f31bbd9d0a442d8dfb2162c5fab29600bfd49de99cc3e",
+      "sha256": "4f9c38d990b59e74cc9f31bbd9d0a442d8dfb2162c5fab29600bfd49de99cc3e",
+      "sizeBytes": 12458,
+      "imagePathSemantics": "runtimeExportRelative",
+      "exportedPath": "assets/images/_shared/4f9c38d990b59e74cc9f31bbd9d0a442d8dfb2162c5fab29600bfd49de99cc3e__DarkDoorOpen.png",
+      "sourcePaths": [
+        "ASSETROOT:/PlaceHolderImages/DarkDoorOpen.png"
+      ],
+      "references": [
+        "templateObject:0df7d21c2d224ef98b373eebd9b07dc0:variant:Open:full"
+      ]
+    },
+    {
+      "hash": "5a8ccf5e671e3f2ad350fdfaa70c6c89b75e96b7c2b770553730b3b0ca0e9f39",
+      "sha256": "5a8ccf5e671e3f2ad350fdfaa70c6c89b75e96b7c2b770553730b3b0ca0e9f39",
+      "sizeBytes": 22603,
+      "imagePathSemantics": "runtimeExportRelative",
+      "exportedPath": "assets/images/_shared/5a8ccf5e671e3f2ad350fdfaa70c6c89b75e96b7c2b770553730b3b0ca0e9f39__WhiteChessCastle.png",
+      "sourcePaths": [
+        "ASSETROOT:/PlaceHolderImages/WhiteChessCastle.png"
+      ],
+      "references": [
+        "object:92b1a09a9b08498d95ca9e3ea8c44743:variant:default:full",
+        "object:9c7371fb2efb4a63b4bfe06c4ab432e0:variant:default:full",
+        "object:d81ca4f2fb9342b09bd1a34b89428d87:variant:default:full"
+      ]
+    },
+    {
+      "hash": "6b9dbeb73d9ee88a3994f6dd39b6b7982df95013c31c931be09f11ee5af7bf3a",
+      "sha256": "6b9dbeb73d9ee88a3994f6dd39b6b7982df95013c31c931be09f11ee5af7bf3a",
+      "sizeBytes": 37320,
+      "imagePathSemantics": "runtimeExportRelative",
+      "exportedPath": "assets/images/_shared/6b9dbeb73d9ee88a3994f6dd39b6b7982df95013c31c931be09f11ee5af7bf3a__CreamTile-64x64.png",
+      "sourcePaths": [
+        "ASSETROOT:/PlaceHolderImages/CreamTile-64x64.png"
+      ],
+      "references": [
+        "object:0ecbe8d39b2e4c82a6789df250e73f22:variant:default:full",
+        "object:2dffe60230504f589b54203d1baa5b95:variant:default:full",
+        "object:3500f7614c45422880f25579b44030ed:variant:default:full",
+        "object:403c6e3ab78b42bca0cfd38f1c51c1ba:variant:default:full",
+        "object:42923f9add3d4f20afb3029ec40201d4:variant:default:full",
+        "object:46758bb67ba64ead992c92ba667f400e:variant:default:full",
+        "object:479bc7bdb30c4af687af74663d667813:variant:default:full",
+        "object:4e4ba2b8273e40f8aab6a74908428cf0:variant:default:full",
+        "object:4eebd0be63d747218293add1492d893a:variant:default:full",
+        "object:56797797aba942a19796f73a9c853d94:variant:default:full",
+        "object:603073bff747424aa562ef05ee1bce84:variant:default:full",
+        "object:671195f3b23240f9a36e94bddd022059:variant:default:full",
+        "object:6e23fab8940d41c7b69457ed3654fb47:variant:default:full",
+        "object:6ed7b19452c745e4b5945518ebca0cc4:variant:default:full",
+        "object:7538f3127e3d41d7ae26b41e2e2cc6a3:variant:default:full",
+        "object:779a7c1e0cf4448ea54647e4d9844b77:variant:default:full",
+        "object:7a9b2566a41b4dc6a9d2e281b128c15e:variant:default:full",
+        "object:7d4ed83d4db04363a2c88b418340d07a:variant:default:full",
+        "object:7ea89d6f7dcd4ab5ae90048bce677658:variant:default:full",
+        "object:846172dadbdc4e369322902e748a08d7:variant:default:full",
+        "object:8a9f3a42982a44f6889fa7d44147261b:variant:default:full",
+        "object:8b16c964c4b64619ada8e174aadd986c:variant:default:full",
+        "object:b4ce9fff11e04f81916d704a5caf2b57:variant:default:full",
+        "object:b73c9098d2094c508b290ec3520f4c36:variant:default:full",
+        "object:b8a323a3b00e4a9294675e12ab0fd071:variant:default:full",
+        "object:ba061983c51c4b7d843881bcd70b8114:variant:default:full",
+        "object:bd120de04e1b436085241f0136bbe5c2:variant:default:full",
+        "object:c1b2bb150aaa4f7bb454c2e0965abcef:variant:default:full",
+        "object:c24f151d23394ea0a3eed4c6d701bb87:variant:default:full",
+        "object:cb4e78ed36c344dd84cd24ee4be8dd38:variant:default:full",
+        "object:d55fbdda7f954dbf97c77b71fca5cb7a:variant:default:full",
+        "object:dce08d0c91d34e02ade51648d1e9ff18:variant:default:full",
+        "object:eb07cd34245143acb7f9dd02f0fd8913:variant:default:full"
+      ]
+    },
+    {
+      "hash": "8fb028d849d85d7f625229fbb00a49051f3a203a7a980a0b85e377c2e01d7184",
+      "sha256": "8fb028d849d85d7f625229fbb00a49051f3a203a7a980a0b85e377c2e01d7184",
+      "sizeBytes": 13477,
+      "imagePathSemantics": "runtimeExportRelative",
+      "exportedPath": "assets/images/_shared/8fb028d849d85d7f625229fbb00a49051f3a203a7a980a0b85e377c2e01d7184__BlackChessPawn.png",
+      "sourcePaths": [
+        "ASSETROOT:/PlaceHolderImages/BlackChessPawn.png"
+      ],
+      "references": [
+        "object:29327c79ae0b42bb81d573d71078b10e:variant:default:full",
+        "object:648c0f529272460a841245f22e706119:variant:default:full",
+        "object:9283d3a508df4112855049e20e389110:variant:default:full",
+        "object:adc219b2dfdb43af91933bc90ba25ab6:variant:default:full",
+        "object:b3e4cd14c4de4d248d93406cc881a6f7:variant:default:full",
+        "object:e5601bbbf123403baec23c9aa53d95c6:variant:default:full",
+        "object:ef0f76f7f71f4299a931921185f90756:variant:default:full",
+        "object:f674fc785a7d4577a9520fba5c70d15b:variant:default:full",
+        "object:f767ca41aacf4fbb9c0115485a2c3c72:variant:default:full"
+      ]
+    },
+    {
+      "hash": "90090d087da024b1a6e2bd8514752a3d749b9d7a7c011d0ef8ce35f9f53a2750",
+      "sha256": "90090d087da024b1a6e2bd8514752a3d749b9d7a7c011d0ef8ce35f9f53a2750",
+      "sizeBytes": 14987,
+      "imagePathSemantics": "runtimeExportRelative",
+      "exportedPath": "assets/images/_shared/90090d087da024b1a6e2bd8514752a3d749b9d7a7c011d0ef8ce35f9f53a2750__WhiteChessPawn.png",
+      "sourcePaths": [
+        "ASSETROOT:/PlaceHolderImages/WhiteChessPawn.png"
+      ],
+      "references": [
+        "object:2ca8c057710c40fba1fa487f4b1933d7:variant:default:full",
+        "object:391a3254373a43c0a9652de0ad529d79:variant:default:full",
+        "object:bbd3a371a4fe4736b278279e76dbea54:variant:default:full",
+        "object:bccd7c9ca4c5437aa2ef62869e399048:variant:default:full",
+        "object:bfe1ca86b8644b93a6a60d84b8e021bb:variant:default:full",
+        "object:c6e125474931424bbe4a2aa310a0ab77:variant:default:full",
+        "object:cd643e5363a84bcbb26c90dd6cba9c93:variant:default:full",
+        "object:d86840f755c74cdd8445dba8c5767ac8:variant:default:full",
+        "object:ec7f82fa36754c81a26aece15c6694dc:variant:default:full"
+      ]
+    },
+    {
+      "hash": "9f97ff0a1ff41392bcb0783c34b3a976f1fce44c016257c6b2029373ac1e333b",
+      "sha256": "9f97ff0a1ff41392bcb0783c34b3a976f1fce44c016257c6b2029373ac1e333b",
+      "sizeBytes": 44464,
+      "imagePathSemantics": "runtimeExportRelative",
+      "exportedPath": "assets/images/_shared/9f97ff0a1ff41392bcb0783c34b3a976f1fce44c016257c6b2029373ac1e333b__BlueTile-64x64.png",
+      "sourcePaths": [
+        "ASSETROOT:/PlaceHolderImages/BlueTile-64x64.png"
+      ],
+      "references": [
+        "object:0977c682ac644a06b0db93bed76c8cbd:variant:default:full",
+        "object:0d4cd1e3b9504bc584bda353cfa3d0e0:variant:default:full",
+        "object:1032ddaad5e54fb28599d39dab5d9c8d:variant:default:full",
+        "object:12c0016709c548a8a5ab12d3a560f82f:variant:default:full",
+        "object:1ab18ade405d46b8a3be66bd273e086c:variant:default:full",
+        "object:232f7fde1ffb4d71808ed4b0a1034c92:variant:default:full",
+        "object:2fa2012afd1e4d9ba1743ea91cf784d3:variant:default:full",
+        "object:35b4d03bcef44f938f7ff12a59fae974:variant:default:full",
+        "object:42e51d6b4289451992afcb4edbdcea14:variant:default:full",
+        "object:46027c64fc934f4a99d95bab973b4099:variant:default:full",
+        "object:4b95e527fc394fdc90364a45717d65e6:variant:default:full",
+        "object:52e9e1eb6c0f465b9b695fbad89710c0:variant:default:full",
+        "object:6200edd0f3a242339ca55a6f46b0a742:variant:default:full",
+        "object:647e7177bd3c4ed6919fed635bd03320:variant:default:full",
+        "object:66cfc9365f714dc08501d349da9fdd2d:variant:default:full",
+        "object:66f3ef882187491fbb90881720f54903:variant:default:full",
+        "object:6bd7555740374b069ccf140463e015ee:variant:default:full",
+        "object:6dcea7c9cc8b44b59cda3552ff31394c:variant:default:full",
+        "object:78b86fa9a0054b09bd27e6da4de48db4:variant:default:full",
+        "object:7c0d0908558942fa8f248639fdd2c838:variant:default:full",
+        "object:8680b8b562964e2b86c2d711f5d64bc4:variant:default:full",
+        "object:9ece58aaead94dbc8c0d54ead177b4cc:variant:default:full",
+        "object:ba768642c40e46bbb9c287667f97257e:variant:default:full",
+        "object:bb12057eb62f4ca8aa1c1ac83278ad41:variant:default:full",
+        "object:bf83ea23a2554522ad49b49f7ddf9f12:variant:default:full",
+        "object:c63e0509561a4d599a89071a09812144:variant:default:full",
+        "object:ce93728951404323b1af4ac0bf3249f3:variant:default:full",
+        "object:d4e30d63866d4194bbee312f6ae44de0:variant:default:full",
+        "object:d5cfe03c9c174f30a9ad442213428162:variant:default:full",
+        "object:df9a0acc63194eb084bb541ce8c65576:variant:default:full",
+        "object:e286a451f6064a70a5ccef47ea047d03:variant:default:full",
+        "object:e64be604f0d742be88171e042bdea6e5:variant:default:full",
+        "object:fccd763b3b4c4731979719fb35ef3018:variant:default:full"
+      ]
+    },
+    {
+      "hash": "afde64348ba77456e58d33f9cde4ffd90dfab55cf0fae0c90ddf8b9ea065256d",
+      "sha256": "afde64348ba77456e58d33f9cde4ffd90dfab55cf0fae0c90ddf8b9ea065256d",
+      "sizeBytes": 972318,
+      "imagePathSemantics": "runtimeExportRelative",
+      "exportedPath": "assets/images/_shared/afde64348ba77456e58d33f9cde4ffd90dfab55cf0fae0c90ddf8b9ea065256d__GrassLightGreen-1024-768.png",
+      "sourcePaths": [
+        "ASSETROOT:/PlaceHolderImages/GrassLightGreen-1024-768.png"
+      ],
+      "references": [
+        "room:f3211ed7061241b993af2c983b20f0c5:slot:Down:full"
+      ]
+    },
+    {
+      "hash": "b47ee08c797318c391ee7c2ab31f8022bb113ca11107e528aacbcc90ec2811fc",
+      "sha256": "b47ee08c797318c391ee7c2ab31f8022bb113ca11107e528aacbcc90ec2811fc",
+      "sizeBytes": 20852,
+      "imagePathSemantics": "runtimeExportRelative",
+      "exportedPath": "assets/images/_shared/b47ee08c797318c391ee7c2ab31f8022bb113ca11107e528aacbcc90ec2811fc__BlackChessBishop.png",
+      "sourcePaths": [
+        "ASSETROOT:/PlaceHolderImages/BlackChessBishop.png"
+      ],
+      "references": [
+        "object:59090866b62c47e4ab1b200bc2299d62:variant:default:full",
+        "object:66790959fa324124b5e07b752889509b:variant:default:full",
+        "object:b6027e5920af435f9a69e61a0e185deb:variant:default:full"
+      ]
+    },
+    {
+      "hash": "be93865ca8029ffca3adb63a340c299e8baa6941c8b0b6b229f3a956a807c689",
+      "sha256": "be93865ca8029ffca3adb63a340c299e8baa6941c8b0b6b229f3a956a807c689",
+      "sizeBytes": 25061,
+      "imagePathSemantics": "runtimeExportRelative",
+      "exportedPath": "assets/images/_shared/be93865ca8029ffca3adb63a340c299e8baa6941c8b0b6b229f3a956a807c689__WhiteChessQueen.png",
+      "sourcePaths": [
+        "ASSETROOT:/PlaceHolderImages/WhiteChessQueen.png"
+      ],
+      "references": [
+        "object:08bef9200d9f47349c50c51a657d93f6:variant:default:full",
+        "object:d83d6a96af1d4d21b23156bb8e6a1b35:variant:default:full"
+      ]
+    },
+    {
+      "hash": "da2d3f3c77c594b5ba1d43f1397deff883f13d326b4ca59db73eb9439b4287bd",
+      "sha256": "da2d3f3c77c594b5ba1d43f1397deff883f13d326b4ca59db73eb9439b4287bd",
+      "sizeBytes": 18767,
+      "imagePathSemantics": "runtimeExportRelative",
+      "exportedPath": "assets/images/_shared/da2d3f3c77c594b5ba1d43f1397deff883f13d326b4ca59db73eb9439b4287bd__BlackChessCastle.png",
+      "sourcePaths": [
+        "ASSETROOT:/PlaceHolderImages/BlackChessCastle.png"
+      ],
+      "references": [
+        "object:6d9f576c4ef141ccac69fc0c0d72a9ab:variant:default:full",
+        "object:a32eaf6866d04d7ab5638d4718451efc:variant:default:full",
+        "object:d21f6d1627aa42579f673a54a83ac1a3:variant:default:full"
+      ]
+    },
+    {
+      "hash": "efc170d8bccc6c885dc82422641eefe129127fd75dd8adc89ef26d173b725e6a",
+      "sha256": "efc170d8bccc6c885dc82422641eefe129127fd75dd8adc89ef26d173b725e6a",
+      "sizeBytes": 25601,
+      "imagePathSemantics": "runtimeExportRelative",
+      "exportedPath": "assets/images/_shared/efc170d8bccc6c885dc82422641eefe129127fd75dd8adc89ef26d173b725e6a__BlackChessKing.png",
+      "sourcePaths": [
+        "ASSETROOT:/PlaceHolderImages/BlackChessKing.png"
+      ],
+      "references": [
+        "object:48ffff136a054bfdbbf420920dae302b:variant:default:full",
+        "object:6745052c85874fba8d38d766d973fe0d:variant:default:full"
+      ]
+    },
+    {
+      "hash": "f7b6e6e712e79f82718cb5867e0365d4d554fcb941f80113147913d18177af1a",
+      "sha256": "f7b6e6e712e79f82718cb5867e0365d4d554fcb941f80113147913d18177af1a",
+      "sizeBytes": 27902,
+      "imagePathSemantics": "runtimeExportRelative",
+      "exportedPath": "assets/images/_shared/f7b6e6e712e79f82718cb5867e0365d4d554fcb941f80113147913d18177af1a__BlackChessKnight.png",
+      "sourcePaths": [
+        "ASSETROOT:/PlaceHolderImages/BlackChessKnight.png"
+      ],
+      "references": [
+        "object:2fd064ce74574337a4661e1a88405562:variant:default:full",
+        "object:6b830b00aaf04fb385be7e72fa3783da:variant:default:full",
+        "object:ff115f6b5f58417b904ae2ece7a06bd3:variant:default:full"
+      ]
+    }
+  ],
+  "unresolvedSources": []
+}

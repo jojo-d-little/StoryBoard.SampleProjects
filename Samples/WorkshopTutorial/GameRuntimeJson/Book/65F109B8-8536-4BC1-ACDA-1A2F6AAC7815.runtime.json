@@ -1,0 +1,13 @@
+{
+  "phaseKey": "page-6",
+  "phaseTier": "Page",
+  "displayName": "Page Six",
+  "title": "An Escape",
+  "prologue": "You have found your way out of the workshop....what ever will you do with you new found freedom.",
+  "parentPhaseId": "17910b21-bf36-4475-9dfc-95ccd6088a4f",
+  "childPhaseIds": [],
+  "Id": "65f109b8-8536-4bc1-acda-1a2f6aac7815",
+  "name": "Page Six",
+  "nameInGame": "Page Six",
+  "scopeKind": "Page"
+}

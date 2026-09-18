@@ -1,0 +1,13 @@
+{
+  "schemaVersion": "1.0",
+  "areas": [
+    {
+      "planet": "New Planet",
+      "country": "New Country",
+      "area": "New Area",
+      "adjacencyMode": "EightDirectional",
+      "links": [],
+      "roomPlacements": []
+    }
+  ]
+}

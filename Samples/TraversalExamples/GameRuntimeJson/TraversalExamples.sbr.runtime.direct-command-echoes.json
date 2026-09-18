@@ -1,0 +1,185 @@
+{
+  "version": "1.0",
+  "directCommandEchoes": [
+    {
+      "requestKind": "MoveByWaypoints",
+      "targetResolutionIntent": "ActiveObject",
+      "commandResultCode": "Completed",
+      "script": "[TODO] MoveByWaypoints | ActiveObject | Completed"
+    },
+    {
+      "requestKind": "MoveByWaypoints",
+      "targetResolutionIntent": "ActiveObject",
+      "commandResultCode": "ExecutionModeRollbackApplied",
+      "script": "[TODO] MoveByWaypoints | ActiveObject | ExecutionModeRollbackApplied"
+    },
+    {
+      "requestKind": "MoveByWaypoints",
+      "targetResolutionIntent": "ActiveObject",
+      "commandResultCode": "InvalidRestrictedLegDirection",
+      "script": "[TODO] MoveByWaypoints | ActiveObject | InvalidRestrictedLegDirection"
+    },
+    {
+      "requestKind": "MoveByWaypoints",
+      "targetResolutionIntent": "ActiveObject",
+      "commandResultCode": "InvalidWaypointPayload",
+      "script": "[TODO] MoveByWaypoints | ActiveObject | InvalidWaypointPayload"
+    },
+    {
+      "requestKind": "MoveByWaypoints",
+      "targetResolutionIntent": "ActiveObject",
+      "commandResultCode": "LegBlockedByCollision",
+      "script": "[TODO] MoveByWaypoints | ActiveObject | LegBlockedByCollision"
+    },
+    {
+      "requestKind": "MoveByWaypoints",
+      "targetResolutionIntent": "ActiveObject",
+      "commandResultCode": "LegBlockedByRestriction",
+      "script": "[TODO] MoveByWaypoints | ActiveObject | LegBlockedByRestriction"
+    },
+    {
+      "requestKind": "MoveByWaypoints",
+      "targetResolutionIntent": "ActiveObject",
+      "commandResultCode": "LegCountExceeded",
+      "script": "[TODO] MoveByWaypoints | ActiveObject | LegCountExceeded"
+    },
+    {
+      "requestKind": "MoveByWaypoints",
+      "targetResolutionIntent": "ActiveObject",
+      "commandResultCode": "PartialCompleted",
+      "script": "[TODO] MoveByWaypoints | ActiveObject | PartialCompleted"
+    },
+    {
+      "requestKind": "MoveByWaypoints",
+      "targetResolutionIntent": "ActiveObject",
+      "commandResultCode": "UnresolvedTarget",
+      "script": "[TODO] MoveByWaypoints | ActiveObject | UnresolvedTarget"
+    },
+    {
+      "requestKind": "MoveByWaypoints",
+      "targetResolutionIntent": "ActiveObject",
+      "commandResultCode": "WaypointOutOfBounds",
+      "script": "[TODO] MoveByWaypoints | ActiveObject | WaypointOutOfBounds"
+    },
+    {
+      "requestKind": "MoveByWaypoints",
+      "targetResolutionIntent": "ObjectAtFirstWaypoint",
+      "commandResultCode": "Completed",
+      "script": "[TODO] MoveByWaypoints | ObjectAtFirstWaypoint | Completed"
+    },
+    {
+      "requestKind": "MoveByWaypoints",
+      "targetResolutionIntent": "ObjectAtFirstWaypoint",
+      "commandResultCode": "ExecutionModeRollbackApplied",
+      "script": "[TODO] MoveByWaypoints | ObjectAtFirstWaypoint | ExecutionModeRollbackApplied"
+    },
+    {
+      "requestKind": "MoveByWaypoints",
+      "targetResolutionIntent": "ObjectAtFirstWaypoint",
+      "commandResultCode": "InvalidRestrictedLegDirection",
+      "script": "[TODO] MoveByWaypoints | ObjectAtFirstWaypoint | InvalidRestrictedLegDirection"
+    },
+    {
+      "requestKind": "MoveByWaypoints",
+      "targetResolutionIntent": "ObjectAtFirstWaypoint",
+      "commandResultCode": "InvalidWaypointPayload",
+      "script": "[TODO] MoveByWaypoints | ObjectAtFirstWaypoint | InvalidWaypointPayload"
+    },
+    {
+      "requestKind": "MoveByWaypoints",
+      "targetResolutionIntent": "ObjectAtFirstWaypoint",
+      "commandResultCode": "LegBlockedByCollision",
+      "script": "[TODO] MoveByWaypoints | ObjectAtFirstWaypoint | LegBlockedByCollision"
+    },
+    {
+      "requestKind": "MoveByWaypoints",
+      "targetResolutionIntent": "ObjectAtFirstWaypoint",
+      "commandResultCode": "LegBlockedByRestriction",
+      "script": "[TODO] MoveByWaypoints | ObjectAtFirstWaypoint | LegBlockedByRestriction"
+    },
+    {
+      "requestKind": "MoveByWaypoints",
+      "targetResolutionIntent": "ObjectAtFirstWaypoint",
+      "commandResultCode": "LegCountExceeded",
+      "script": "[TODO] MoveByWaypoints | ObjectAtFirstWaypoint | LegCountExceeded"
+    },
+    {
+      "requestKind": "MoveByWaypoints",
+      "targetResolutionIntent": "ObjectAtFirstWaypoint",
+      "commandResultCode": "PartialCompleted",
+      "script": "[TODO] MoveByWaypoints | ObjectAtFirstWaypoint | PartialCompleted"
+    },
+    {
+      "requestKind": "MoveByWaypoints",
+      "targetResolutionIntent": "ObjectAtFirstWaypoint",
+      "commandResultCode": "UnresolvedTarget",
+      "script": "[TODO] MoveByWaypoints | ObjectAtFirstWaypoint | UnresolvedTarget"
+    },
+    {
+      "requestKind": "MoveByWaypoints",
+      "targetResolutionIntent": "ObjectAtFirstWaypoint",
+      "commandResultCode": "WaypointOutOfBounds",
+      "script": "[TODO] MoveByWaypoints | ObjectAtFirstWaypoint | WaypointOutOfBounds"
+    },
+    {
+      "requestKind": "MoveByWaypoints",
+      "targetResolutionIntent": "Player",
+      "commandResultCode": "Completed",
+      "script": "[TODO] MoveByWaypoints | Player | Completed"
+    },
+    {
+      "requestKind": "MoveByWaypoints",
+      "targetResolutionIntent": "Player",
+      "commandResultCode": "ExecutionModeRollbackApplied",
+      "script": "[TODO] MoveByWaypoints | Player | ExecutionModeRollbackApplied"
+    },
+    {
+      "requestKind": "MoveByWaypoints",
+      "targetResolutionIntent": "Player",
+      "commandResultCode": "InvalidRestrictedLegDirection",
+      "script": "[TODO] MoveByWaypoints | Player | InvalidRestrictedLegDirection"
+    },
+    {
+      "requestKind": "MoveByWaypoints",
+      "targetResolutionIntent": "Player",
+      "commandResultCode": "InvalidWaypointPayload",
+      "script": "[TODO] MoveByWaypoints | Player | InvalidWaypointPayload"
+    },
+    {
+      "requestKind": "MoveByWaypoints",
+      "targetResolutionIntent": "Player",
+      "commandResultCode": "LegBlockedByCollision",
+      "script": "[TODO] MoveByWaypoints | Player | LegBlockedByCollision"
+    },
+    {
+      "requestKind": "MoveByWaypoints",
+      "targetResolutionIntent": "Player",
+      "commandResultCode": "LegBlockedByRestriction",
+      "script": "[TODO] MoveByWaypoints | Player | LegBlockedByRestriction"
+    },
+    {
+      "requestKind": "MoveByWaypoints",
+      "targetResolutionIntent": "Player",
+      "commandResultCode": "LegCountExceeded",
+      "script": "[TODO] MoveByWaypoints | Player | LegCountExceeded"
+    },
+    {
+      "requestKind": "MoveByWaypoints",
+      "targetResolutionIntent": "Player",
+      "commandResultCode": "PartialCompleted",
+      "script": "[TODO] MoveByWaypoints | Player | PartialCompleted"
+    },
+    {
+      "requestKind": "MoveByWaypoints",
+      "targetResolutionIntent": "Player",
+      "commandResultCode": "UnresolvedTarget",
+      "script": "[TODO] MoveByWaypoints | Player | UnresolvedTarget"
+    },
+    {
+      "requestKind": "MoveByWaypoints",
+      "targetResolutionIntent": "Player",
+      "commandResultCode": "WaypointOutOfBounds",
+      "script": "[TODO] MoveByWaypoints | Player | WaypointOutOfBounds"
+    }
+  ]
+}

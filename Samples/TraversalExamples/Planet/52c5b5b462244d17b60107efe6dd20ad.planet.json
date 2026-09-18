@@ -1,0 +1,23 @@
+{
+  "baseObjectsIgnoredValidationRuleIds": [],
+  "baseObjects": [],
+  "gameObjects": [],
+  "startingCountryName": "New Country",
+  "countryIds": [
+    "61da6ea0-57ae-4f09-80a2-03ec37b02752"
+  ],
+  "id": "52c5b5b4-6224-4d17-b601-07efe6dd20ad",
+  "name": "New Planet",
+  "nameInGame": "New Planet",
+  "hideEmptyConfiguration": false,
+  "validationErrors": [],
+  "ignoredValidationRuleIds": [],
+  "scopeKind": "Planet",
+  "baseObjectIds": [],
+  "gameObjectIds": [],
+  "gameProperties": [],
+  "additionalVerbs": [],
+  "additionalDirectionals": [],
+  "additionalDirectionalTraversalMappings": [],
+  "availableGameActions": []
+}

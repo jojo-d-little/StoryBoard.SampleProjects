@@ -1,0 +1,362 @@
+{
+  "scopeKind": 6,
+  "schemaVersion": "1.0",
+  "id": "9b598406-1f54-44e1-a058-befc9e88f732",
+  "description": "",
+  "commandPhrases": [],
+  "gameObjects": [
+    {
+      "scopeKind": 7,
+      "sourceObjectId": "615c592b-5a80-451c-a420-0f5e8b2cd752",
+      "productionName": "inventoriableTemplate",
+      "isInventoriable": true,
+      "inventoryPointsDefaultValue": 1,
+      "isContainer": false,
+      "containerPointsDefaultValue": 1,
+      "isOpenable": false,
+      "isOpenDefaultValue": false,
+      "isLockable": false,
+      "isLockedDefaultValue": false,
+      "isActivatable": true,
+      "isActiveDefaultValue": true,
+      "isHidable": true,
+      "isHiddenDefaultValue": false,
+      "description": "Template with pickup/drop baseline actions.",
+      "quantity": 1,
+      "quantifiablePlacementDistributionMode": "GroupedStack",
+      "childScopes": [],
+      "name": "Ball",
+      "gameProperties": [
+        {
+          "id": "2ee51aed-0bd7-4463-84d4-578e83c3d877",
+          "name": "inventoryPoints",
+          "defaultValue": "1",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "6dfcd5ce-b47a-4352-bbfd-0ca80d343df8",
+          "name": "isActive",
+          "defaultValue": "true",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "be93a584-ba20-4e7c-b158-04764e440196",
+          "name": "isHidden",
+          "defaultValue": "false",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        }
+      ],
+      "additionalDirectionalTraversalMappings": [],
+      "availableGameActions": [
+        {
+          "id": "16f7038c-c1fb-4293-80a9-355d9df69ae2",
+          "name": "drop",
+          "actionType": "RemoveObjectFromContainer",
+          "verbListText": "drop",
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "RemoveFailed": "",
+            "ResolveSourceFailed": "",
+            "Success": "Dropped the {self.name}"
+          },
+          "childCommandForwardingMode": "None"
+        },
+        {
+          "id": "2175cf90-aeaf-4245-a5e2-f7400b72c889",
+          "name": "get_ball",
+          "actionType": "PutObjectInContainer",
+          "verbListText": "put, get, grab, take",
+          "verbs": [
+            "put",
+            "get",
+            "grab",
+            "take"
+          ],
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "PutFailed": "",
+            "ResolveTargetFailed": "",
+            "Success": "The {self.name} is now in the {currentAction.targetContainerName}"
+          },
+          "targetContainerId": "",
+          "childCommandForwardingMode": "None"
+        },
+        {
+          "id": "9e0f1b79-b88c-4546-9d1e-2c3e811fe426",
+          "name": "get_ball_from",
+          "actionType": "RemoveObjectFromContainer",
+          "verbListText": "get, grab, remove, take",
+          "verbs": [
+            "get",
+            "grab",
+            "remove",
+            "take"
+          ],
+          "direction": "from",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "RemoveFailed": "",
+            "ResolveSourceFailed": "",
+            "Success": "You took the {self.name} from the {currentAction.sourceContainerName}"
+          },
+          "childCommandForwardingMode": "None"
+        },
+        {
+          "id": "2d79d22c-ef11-4633-8f11-bda4e06b1d18",
+          "name": "look_ball",
+          "actionType": "EchoMessage",
+          "verbListText": "look, inspect",
+          "verbs": [
+            "look",
+            "inspect"
+          ],
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "Success": "There is a {self.name}, it looks to be about {self.inventoryPoints} heavy"
+          },
+          "childCommandForwardingMode": "None"
+        },
+        {
+          "id": "0caa7885-ca0b-45b2-b462-d97719c1d66f",
+          "name": "use_ball",
+          "actionType": "EchoMessage",
+          "verbListText": "use",
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "Success": "You used the {self.name}, but for what exactly?"
+          },
+          "childCommandForwardingMode": "None"
+        }
+      ]
+    },
+    {
+      "scopeKind": 7,
+      "sourceObjectId": "7a40970d-d1e2-4023-a4b6-73f3c3488960",
+      "productionName": "inventoriableTemplate",
+      "isInventoriable": true,
+      "inventoryPointsDefaultValue": 1,
+      "isContainer": true,
+      "containerPointsDefaultValue": 3,
+      "isOpenable": false,
+      "isOpenDefaultValue": false,
+      "isLockable": false,
+      "isLockedDefaultValue": false,
+      "isActivatable": false,
+      "isActiveDefaultValue": false,
+      "isHidable": false,
+      "isHiddenDefaultValue": false,
+      "description": "Template with pickup/drop baseline actions.",
+      "quantity": 1,
+      "quantifiablePlacementDistributionMode": "GroupedStack",
+      "childScopes": [],
+      "name": "Pouch",
+      "gameProperties": [
+        {
+          "id": "f1a06fa0-1774-4650-93f1-09bbe10e8a24",
+          "name": "containerPoints",
+          "defaultValue": "3",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "dfebd147-3371-4bea-a48b-b6d4c1f16d76",
+          "name": "containerPointsRemaining",
+          "defaultValue": "3",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "1d20ceb7-60ce-4c75-9233-3480721881b9",
+          "name": "inventoryPoints",
+          "defaultValue": "1",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        }
+      ],
+      "additionalDirectionalTraversalMappings": [],
+      "availableGameActions": [
+        {
+          "id": "060d6358-7d31-4229-be34-2cf2158ea088",
+          "name": "drop",
+          "actionType": "RemoveObjectFromContainer",
+          "verbListText": "drop",
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "RemoveFailed": "",
+            "ResolveSourceFailed": "",
+            "Success": "Dropped the {self.name}"
+          },
+          "childCommandForwardingMode": "None"
+        },
+        {
+          "id": "098d0ab9-b752-416a-9112-da6fef8b08fa",
+          "name": "look_pouch",
+          "actionType": "EchoMessage",
+          "verbListText": "look",
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "Success": "There is a {self.name} it looks like it can hold {self.containerPointsRemaining} points"
+          },
+          "childCommandForwardingMode": "None"
+        },
+        {
+          "id": "ea274177-d69f-42b0-8474-2faf58e1512f",
+          "name": "pickup",
+          "actionType": "PutObjectInContainer",
+          "verbListText": "pickup, get, grab, take",
+          "verbs": [
+            "pickup",
+            "get",
+            "grab",
+            "take"
+          ],
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "Cannot pick that up.",
+            "PutFailed": "",
+            "ResolveTargetFailed": "",
+            "Success": "Picked up."
+          },
+          "targetContainerId": "",
+          "childCommandForwardingMode": "None"
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "slot": "Default",
+      "useDefaultImage": false,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "Down",
+      "useDefaultImage": true,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "East",
+      "useDefaultImage": true,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "North",
+      "useDefaultImage": true,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "NorthEast",
+      "useDefaultImage": true,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "NorthWest",
+      "useDefaultImage": true,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "South",
+      "useDefaultImage": true,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "SouthEast",
+      "useDefaultImage": true,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "SouthWest",
+      "useDefaultImage": true,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "Up",
+      "useDefaultImage": true,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "West",
+      "useDefaultImage": true,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    }
+  ],
+  "childScopes": [
+    {
+      "scopeKind": 7,
+      "scopeName": "Ball",
+      "scopeNameInGame": "Ball",
+      "roomId": null,
+      "objectId": null,
+      "scopeTokens": [
+        "Ball"
+      ],
+      "parentScope": null,
+      "childScopes": [],
+      "additionalVerbs": [],
+      "additionalDirectionals": [],
+      "additionalDirectionalTraversalMappings": []
+    },
+    {
+      "scopeKind": 7,
+      "scopeName": "Pouch",
+      "scopeNameInGame": "Pouch",
+      "roomId": null,
+      "objectId": null,
+      "scopeTokens": [
+        "Pouch"
+      ],
+      "parentScope": null,
+      "childScopes": [],
+      "additionalVerbs": [],
+      "additionalDirectionals": [],
+      "additionalDirectionalTraversalMappings": []
+    }
+  ],
+  "name": "New Room",
+  "additionalDirectionalTraversalMappings": [],
+  "availableGameActions": [
+    {
+      "id": "3ce9f796-6349-435f-8e70-feda77952d9c",
+      "name": "look_new_room",
+      "actionType": "EchoMessage",
+      "verbListText": "look",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "",
+        "Success": "We are in a playroom"
+      },
+      "childCommandForwardingMode": "ChildrenAfterParent"
+    }
+  ]
+}

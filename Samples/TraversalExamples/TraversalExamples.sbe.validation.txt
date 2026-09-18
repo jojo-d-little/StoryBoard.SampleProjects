@@ -1,0 +1,18 @@
+Validation report generated: 2026-07-10 19:00:02
+Project: TraversalExamples
+ExecutionKind: WholeProject
+RootScopePath: Global
+IncludeDescendants: True
+CandidateNodeCount: 105
+ExecutedRules: 27
+SkippedRules: 0
+StoppedEarly: False
+RemainingIssueCountAtStop: 0
+StopRuleId: (none)
+RemainingRuleCountAtStop: 0
+
+SkippedRuleId	SkipReason	SkipDetail
+
+RuleId	Severity	Path	Description	Hint
+TRV-005	Warning	Global / Templates / StandardLockableDoor	openable door convention: door isOpen is not linked to anything via shared variable.	Link this door's isOpen to a shared variable used by traversal isPassable.
+SCR-003	Error	Global / New Planet / New Country / New Area / CentralRoom / Action:close_centralroom	Action 'close_centralroom' OutcomeMessageMap[Success]: Line 1: IF block is missing ENDIF.	

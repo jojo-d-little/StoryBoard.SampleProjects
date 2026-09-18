@@ -1,0 +1,367 @@
+{
+  "linkActionsToBaseObject": false,
+  "productionName": "inventoriableTemplate",
+  "imageVariants": [
+    {
+      "variantName": "default",
+      "fullImagePath": "assets/images/_shared/024667c165e2efaedde08e2d11dcea6a685f45c09d7db98ab44abad58d63aa9c__WhiteChessBishop.png",
+      "imageLocalAlignmentOffsetX": 13,
+      "imageLocalAlignmentOffsetY": -9,
+      "imageScale": 0.32,
+      "isDefault": true,
+      "imagePathSemantics": "runtimeExportRelative"
+    }
+  ],
+  "imageRotationDegrees": 0,
+  "appearance": {
+    "spatialType": "SolidObject",
+    "isMovable": true,
+    "isMovableDefaultValue": true,
+    "stackGroup": 1,
+    "footprintWidthCells": 1,
+    "footprintHeightCells": 1,
+    "footprintOrientation": "North",
+    "headingDirection": "North",
+    "objectHeightUnits": 1,
+    "stackScaleStepOverride": 0.08,
+    "minStackScaleOverride": 0.5,
+    "movementRestrictions": {
+      "firstUnstacked": {
+        "n": {
+          "maxDistance": 0,
+          "allowJumpOver": false
+        },
+        "ne": {
+          "maxDistance": 20,
+          "allowJumpOver": false
+        },
+        "e": {
+          "maxDistance": 0,
+          "allowJumpOver": false
+        },
+        "se": {
+          "maxDistance": 20,
+          "allowJumpOver": false
+        },
+        "s": {
+          "maxDistance": 0,
+          "allowJumpOver": false
+        },
+        "sw": {
+          "maxDistance": 20,
+          "allowJumpOver": false
+        },
+        "w": {
+          "maxDistance": 0,
+          "allowJumpOver": false
+        },
+        "nw": {
+          "maxDistance": 20,
+          "allowJumpOver": false
+        }
+      },
+      "firstStacked": {
+        "n": {
+          "maxDistance": 0,
+          "allowJumpOver": false
+        },
+        "ne": {
+          "maxDistance": 20,
+          "allowJumpOver": false
+        },
+        "e": {
+          "maxDistance": 0,
+          "allowJumpOver": false
+        },
+        "se": {
+          "maxDistance": 20,
+          "allowJumpOver": false
+        },
+        "s": {
+          "maxDistance": 0,
+          "allowJumpOver": false
+        },
+        "sw": {
+          "maxDistance": 20,
+          "allowJumpOver": false
+        },
+        "w": {
+          "maxDistance": 0,
+          "allowJumpOver": false
+        },
+        "nw": {
+          "maxDistance": 20,
+          "allowJumpOver": false
+        }
+      },
+      "subsequentUnstacked": {
+        "n": {
+          "maxDistance": 0,
+          "allowJumpOver": false
+        },
+        "ne": {
+          "maxDistance": 20,
+          "allowJumpOver": false
+        },
+        "e": {
+          "maxDistance": 0,
+          "allowJumpOver": false
+        },
+        "se": {
+          "maxDistance": 20,
+          "allowJumpOver": false
+        },
+        "s": {
+          "maxDistance": 0,
+          "allowJumpOver": false
+        },
+        "sw": {
+          "maxDistance": 20,
+          "allowJumpOver": false
+        },
+        "w": {
+          "maxDistance": 0,
+          "allowJumpOver": false
+        },
+        "nw": {
+          "maxDistance": 20,
+          "allowJumpOver": false
+        }
+      },
+      "subsequentStacked": {
+        "n": {
+          "maxDistance": 0,
+          "allowJumpOver": false
+        },
+        "ne": {
+          "maxDistance": 20,
+          "allowJumpOver": false
+        },
+        "e": {
+          "maxDistance": 0,
+          "allowJumpOver": false
+        },
+        "se": {
+          "maxDistance": 20,
+          "allowJumpOver": false
+        },
+        "s": {
+          "maxDistance": 0,
+          "allowJumpOver": false
+        },
+        "sw": {
+          "maxDistance": 20,
+          "allowJumpOver": false
+        },
+        "w": {
+          "maxDistance": 0,
+          "allowJumpOver": false
+        },
+        "nw": {
+          "maxDistance": 20,
+          "allowJumpOver": false
+        }
+      }
+    }
+  },
+  "isInventoriable": true,
+  "inventoryPointsDefaultValue": 1,
+  "isContainer": false,
+  "containerPointsDefaultValue": 1,
+  "isOpenable": false,
+  "isOpenDefaultValue": false,
+  "isLockable": false,
+  "isLockedDefaultValue": false,
+  "isActivatable": true,
+  "isActiveDefaultValue": true,
+  "isHidable": true,
+  "isHiddenDefaultValue": false,
+  "description": "Template with pickup/drop baseline actions.",
+  "isQuantifiable": true,
+  "quantity": 1,
+  "quantifiablePlacementDistributionMode": "IndividualInstances",
+  "isRuntimeMaterialized": false,
+  "Id": "deaba097-f121-492c-a0eb-b161d2331bbb",
+  "name": "WhiteBishop",
+  "nameInGame": "WhiteBishop",
+  "scopeKind": "GameObject",
+  "gameProperties": [
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "imageRotationDegrees",
+      "defaultValue": "0",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "imageScale",
+      "defaultValue": "0.32",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "inventoryPoints",
+      "defaultValue": "1",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "isActive",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "isHidden",
+      "defaultValue": "false",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "isMovable",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "isQuantifiable",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "positionX",
+      "defaultValue": "0",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "positionY",
+      "defaultValue": "0",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "quantity",
+      "defaultValue": "1",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    }
+  ],
+  "availableGameActions": [
+    {
+      "id": "d191502b-7ae9-4435-864a-cf6abfc79e1a",
+      "name": "drop",
+      "payload": {
+        "$payloadType": "removeObjectFromContainer",
+        "targetContainerId": ""
+      },
+      "actionType": "RemoveObjectFromContainer",
+      "noVerbLinkage": false,
+      "verbListText": "drop",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "",
+        "RemoveFailed": "",
+        "ResolveSourceFailed": "",
+        "Success": ""
+      },
+      "childCommandForwardingMode": "None"
+    },
+    {
+      "id": "23219039-7ab7-4b6b-9303-3e472ae1f675",
+      "name": "get_ball",
+      "payload": {
+        "$payloadType": "putObjectInContainer",
+        "targetContainerId": ""
+      },
+      "actionType": "PutObjectInContainer",
+      "noVerbLinkage": false,
+      "verbListText": "put, get, grab, take",
+      "verbs": [
+        "put",
+        "get",
+        "grab",
+        "take"
+      ],
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "",
+        "PutFailed": "",
+        "ResolveTargetFailed": "",
+        "Success": "The {self.name} is now in the {currentAction.targetContainerName}"
+      },
+      "childCommandForwardingMode": "None"
+    },
+    {
+      "id": "38ed9230-879b-4977-ab37-701c49a733f2",
+      "name": "get_ball_from",
+      "payload": {
+        "$payloadType": "removeObjectFromContainer",
+        "targetContainerId": ""
+      },
+      "actionType": "RemoveObjectFromContainer",
+      "noVerbLinkage": false,
+      "verbListText": "get, grab, remove, take",
+      "verbs": [
+        "get",
+        "grab",
+        "remove",
+        "take"
+      ],
+      "direction": "from",
+      "outcomeMessageMap": {
+        "Failure": "",
+        "RemoveFailed": "",
+        "ResolveSourceFailed": "",
+        "Success": "You took the {self.name} from the {currentAction.sourceContainerName}"
+      },
+      "childCommandForwardingMode": "None"
+    },
+    {
+      "id": "519343f1-6fc4-4a39-9b59-2d6e200c81dc",
+      "name": "look_ball",
+      "payload": {
+        "$payloadType": "echoMessage"
+      },
+      "actionType": "EchoMessage",
+      "noVerbLinkage": false,
+      "verbListText": "look, inspect",
+      "verbs": [
+        "look",
+        "inspect"
+      ],
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "",
+        "Success": "There is a {self.name}, it looks to be about {self.inventoryPoints} heavy"
+      },
+      "childCommandForwardingMode": "None"
+    },
+    {
+      "id": "4e1c0e29-43dc-4619-9450-de337d485bab",
+      "name": "use_ball",
+      "payload": {
+        "$payloadType": "echoMessage"
+      },
+      "actionType": "EchoMessage",
+      "noVerbLinkage": false,
+      "verbListText": "use",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "",
+        "Success": "You used the {self.name}, but for what exactly?"
+      },
+      "childCommandForwardingMode": "None"
+    }
+  ]
+}

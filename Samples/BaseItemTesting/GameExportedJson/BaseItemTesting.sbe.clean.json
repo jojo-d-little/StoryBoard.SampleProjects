@@ -1,0 +1,368 @@
+{
+  "schemaVersion": "1.0",
+  "name": "BaseItemTesting",
+  "roomDesignerGridCellSize": 40,
+  "autoSaveSeconds": 60,
+  "commandVerbs": [
+    "go",
+    "look",
+    "open",
+    "close",
+    "take",
+    "drop",
+    "use",
+    "talk",
+    "put",
+    "grab",
+    "get",
+    "inspect",
+    "remove",
+    "break"
+  ],
+  "directionals": [
+    "north",
+    "south",
+    "east",
+    "west",
+    "northeast",
+    "southeast",
+    "northwest",
+    "southwest",
+    "up",
+    "down",
+    "from",
+    "into",
+    "on",
+    "under",
+    "over"
+  ],
+  "startingPlanetName": "New Planet",
+  "gameProperties": [],
+  "playerGameProperties": [],
+  "availableGameActions": [],
+  "gameObjects": [
+    {
+      "scopeKind": 7,
+      "sourceObjectId": "4083277d-4e83-4be8-af70-0cf1be3a72c2",
+      "productionName": "",
+      "isInventoriable": true,
+      "inventoryPointsDefaultValue": 1,
+      "isContainer": false,
+      "containerPointsDefaultValue": 1,
+      "isOpenable": false,
+      "isOpenDefaultValue": false,
+      "isLockable": false,
+      "isLockedDefaultValue": false,
+      "isActivatable": false,
+      "isActiveDefaultValue": false,
+      "isHidable": false,
+      "isHiddenDefaultValue": false,
+      "description": "",
+      "quantity": 1,
+      "quantifiablePlacementDistributionMode": "GroupedStack",
+      "childScopes": [],
+      "name": "Player",
+      "gameProperties": [
+        {
+          "id": "d6caa8ec-1613-421d-b470-c7cfc2fadd0f",
+          "name": "inventoryPoints",
+          "defaultValue": "1",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        }
+      ],
+      "additionalDirectionalTraversalMappings": []
+    },
+    {
+      "scopeKind": 7,
+      "sourceObjectId": "770b4b96-54fc-4193-af80-daf032f2bbd2",
+      "productionName": "player",
+      "nameInGame": "Todd\u0027s Pocket",
+      "isInventoriable": true,
+      "inventoryPointsDefaultValue": 1,
+      "isContainer": true,
+      "containerPointsDefaultValue": 4,
+      "isOpenable": false,
+      "isOpenDefaultValue": false,
+      "isLockable": false,
+      "isLockedDefaultValue": false,
+      "isActivatable": false,
+      "isActiveDefaultValue": false,
+      "isHidable": false,
+      "isHiddenDefaultValue": false,
+      "description": "",
+      "quantity": 1,
+      "quantifiablePlacementDistributionMode": "GroupedStack",
+      "childScopes": [],
+      "name": "PlayerX",
+      "gameProperties": [
+        {
+          "id": "498f9ee9-a628-45c8-86b0-05fe8f88eab3",
+          "name": "containerPoints",
+          "defaultValue": "4",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "987b2726-15cc-4080-8f47-da72dac875ae",
+          "name": "containerPointsRemaining",
+          "defaultValue": "4",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "5e195f53-3132-4973-bff1-c71e11f868e9",
+          "name": "inventoryPoints",
+          "defaultValue": "1",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "eeeef794-c99a-4cf7-90ce-7e8b546e4001",
+          "name": "isPlayer",
+          "defaultValue": "true",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        }
+      ],
+      "additionalDirectionalTraversalMappings": []
+    }
+  ],
+  "planets": [
+    {
+      "scopeKind": 3,
+      "startingCountryName": "New Country",
+      "countries": [
+        {
+          "scopeKind": 4,
+          "startingAreaName": "New Area",
+          "areas": [
+            {
+              "scopeKind": 5,
+              "adjacencyMode": "EightDirectional",
+              "startingRoomId": "dbd17689-e6dd-40e7-b210-cf5a29faeaef",
+              "roomIds": [
+                "dbd17689-e6dd-40e7-b210-cf5a29faeaef"
+              ],
+              "childScopes": [],
+              "name": "New Area",
+              "gameProperties": [],
+              "additionalVerbs": [],
+              "additionalDirectionals": [],
+              "additionalDirectionalTraversalMappings": [],
+              "availableGameActions": []
+            }
+          ],
+          "baseObjects": [
+            {
+              "scopeKind": 7,
+              "sourceObjectId": "48fcd2fc-10b9-41bb-a297-c1f9cbccfcc2",
+              "productionName": "",
+              "nameInGame": "The Rock",
+              "isInventoriable": true,
+              "inventoryPointsDefaultValue": 1,
+              "isContainer": false,
+              "containerPointsDefaultValue": 1,
+              "isOpenable": false,
+              "isOpenDefaultValue": false,
+              "isLockable": false,
+              "isLockedDefaultValue": false,
+              "isActivatable": true,
+              "isActiveDefaultValue": true,
+              "isHidable": true,
+              "isHiddenDefaultValue": false,
+              "description": "Template with pickup/drop baseline actions.",
+              "isQuantifiable": true,
+              "quantity": 1,
+              "quantifiablePlacementDistributionMode": "IndividualInstances",
+              "childScopes": [],
+              "name": "Rock",
+              "gameProperties": [
+                {
+                  "id": "f28c6348-d598-434f-b222-a3ff60750b88",
+                  "name": "inventoryPoints",
+                  "defaultValue": "1",
+                  "valueRestriction": "Numeric",
+                  "lifetime": "Singleton"
+                },
+                {
+                  "id": "1f2f3360-3bb4-45ff-8c58-ebd67710b7ce",
+                  "name": "isActive",
+                  "defaultValue": "true",
+                  "valueRestriction": "TrueFalse",
+                  "lifetime": "Singleton"
+                },
+                {
+                  "id": "c1c19eb3-1e0c-4ac5-8cdb-3850d4e5b75e",
+                  "name": "isHidden",
+                  "defaultValue": "false",
+                  "valueRestriction": "TrueFalse",
+                  "lifetime": "Singleton"
+                },
+                {
+                  "id": "9262a531-6643-4afb-b92d-0d225032f9b4",
+                  "name": "isQuantifiable",
+                  "defaultValue": "true",
+                  "valueRestriction": "TrueFalse",
+                  "lifetime": "Singleton"
+                },
+                {
+                  "id": "4aae3b07-8f98-4b38-94da-994b250231c3",
+                  "name": "quantity",
+                  "defaultValue": "1",
+                  "valueRestriction": "Numeric",
+                  "lifetime": "Singleton"
+                }
+              ],
+              "additionalDirectionalTraversalMappings": [],
+              "availableGameActions": [
+                {
+                  "id": "626d0d98-18a7-4b5d-8061-d37c34e54eee",
+                  "name": "drop",
+                  "actionType": "RemoveObjectFromContainer",
+                  "verbListText": "drop",
+                  "direction": "",
+                  "outcomeMessageMap": {
+                    "Failure": "",
+                    "RemoveFailed": "",
+                    "ResolveSourceFailed": "",
+                    "Success": ""
+                  },
+                  "childCommandForwardingMode": "None"
+                },
+                {
+                  "id": "60b10bbc-10a9-49f9-9a74-44e3a7285ab8",
+                  "name": "get_ball",
+                  "actionType": "PutObjectInContainer",
+                  "verbListText": "put, get, grab, take",
+                  "verbs": [
+                    "put",
+                    "get",
+                    "grab",
+                    "take"
+                  ],
+                  "direction": "",
+                  "outcomeMessageMap": {
+                    "Failure": "",
+                    "PutFailed": "",
+                    "ResolveTargetFailed": "",
+                    "Success": "The {self.name} is now in the {currentAction.targetContainerName}"
+                  },
+                  "targetContainerId": "",
+                  "childCommandForwardingMode": "None"
+                },
+                {
+                  "id": "6451ffac-3a96-4396-b107-be5b34891694",
+                  "name": "get_ball_from",
+                  "actionType": "RemoveObjectFromContainer",
+                  "verbListText": "get, grab, remove, take",
+                  "verbs": [
+                    "get",
+                    "grab",
+                    "remove",
+                    "take"
+                  ],
+                  "direction": "from",
+                  "outcomeMessageMap": {
+                    "Failure": "",
+                    "RemoveFailed": "",
+                    "ResolveSourceFailed": "",
+                    "Success": "You took the {self.name} from the {currentAction.sourceContainerName}"
+                  },
+                  "childCommandForwardingMode": "None"
+                },
+                {
+                  "id": "c2153108-afeb-4230-bef5-13386c1d0c3b",
+                  "name": "look_ball",
+                  "actionType": "EchoMessage",
+                  "verbListText": "look, inspect",
+                  "verbs": [
+                    "look",
+                    "inspect"
+                  ],
+                  "direction": "",
+                  "outcomeMessageMap": {
+                    "Failure": "",
+                    "Success": "There is a {self.name}, it looks to be about {self.inventoryPoints} heavy"
+                  },
+                  "childCommandForwardingMode": "None"
+                },
+                {
+                  "id": "8835d1bc-7ebe-4928-bb6d-7746e6ab26ae",
+                  "name": "use_ball",
+                  "actionType": "EchoMessage",
+                  "verbListText": "use",
+                  "direction": "",
+                  "outcomeMessageMap": {
+                    "Failure": "",
+                    "Success": "You used the {self.name}, but for what exactly?"
+                  },
+                  "childCommandForwardingMode": "None"
+                }
+              ]
+            }
+          ],
+          "childScopes": [
+            {
+              "scopeKind": 5,
+              "scopeName": "New Area",
+              "scopeNameInGame": "New Area",
+              "runtimeParentScopeNodeId": null,
+              "scopeTokens": [
+                "New Area"
+              ],
+              "parentScope": null,
+              "childScopes": [],
+              "additionalVerbs": [],
+              "additionalDirectionals": [],
+              "additionalDirectionalTraversalMappings": []
+            }
+          ],
+          "name": "New Country",
+          "gameProperties": [],
+          "additionalVerbs": [],
+          "additionalDirectionals": [],
+          "additionalDirectionalTraversalMappings": [],
+          "availableGameActions": []
+        }
+      ],
+      "childScopes": [
+        {
+          "scopeKind": 4,
+          "scopeName": "New Country",
+          "scopeNameInGame": "New Country",
+          "runtimeParentScopeNodeId": null,
+          "scopeTokens": [
+            "New Country"
+          ],
+          "parentScope": null,
+          "childScopes": [
+            {
+              "scopeKind": 5,
+              "scopeName": "New Area",
+              "scopeNameInGame": "New Area",
+              "runtimeParentScopeNodeId": null,
+              "scopeTokens": [
+                "New Area"
+              ],
+              "parentScope": null,
+              "childScopes": [],
+              "additionalVerbs": [],
+              "additionalDirectionals": [],
+              "additionalDirectionalTraversalMappings": []
+            }
+          ],
+          "additionalVerbs": [],
+          "additionalDirectionals": [],
+          "additionalDirectionalTraversalMappings": []
+        }
+      ],
+      "name": "New Planet",
+      "gameProperties": [],
+      "additionalVerbs": [],
+      "additionalDirectionals": [],
+      "additionalDirectionalTraversalMappings": [],
+      "availableGameActions": []
+    }
+  ]
+}

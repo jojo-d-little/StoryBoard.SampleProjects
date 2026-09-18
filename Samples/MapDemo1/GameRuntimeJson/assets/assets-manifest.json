@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "1.0",
+  "images": [
+    {
+      "hash": "03ddbfe969a2b18b4ecbc7f4822abf80c4b39679b29b19c69e045bb0b3cb291d",
+      "imagePathSemantics": "runtimeExportRelative",
+      "exportedPath": "assets/images/_shared/03ddbfe969a2b18b4ecbc7f4822abf80c4b39679b29b19c69e045bb0b3cb291d__scaled_full.png",
+      "sourcePaths": [
+        "C:\\work\\HobbyStuff\\FBF_StoryBoardDemo\\Kitchen\\scaled_full.png"
+      ],
+      "references": [
+        "room:e1e8961811af431d90a22a29be475639:slot:Default:full"
+      ]
+    },
+    {
+      "hash": "3a127704c1a6f05a5330e38ad55215e26475cd5d8a6c188ecf65e0a39da4f990",
+      "imagePathSemantics": "runtimeExportRelative",
+      "exportedPath": "assets/images/_shared/3a127704c1a6f05a5330e38ad55215e26475cd5d8a6c188ecf65e0a39da4f990__normalmap.png",
+      "sourcePaths": [
+        "C:\\work\\HobbyStuff\\FBF_StoryBoardDemo\\Kitchen\\normalmap.png"
+      ],
+      "references": [
+        "room:e1e8961811af431d90a22a29be475639:slot:Default:normal"
+      ]
+    },
+    {
+      "hash": "e0468e959ea2fbba7623e7f803014f3251d363af153c5c424aa6f7d74bb11293",
+      "imagePathSemantics": "runtimeExportRelative",
+      "exportedPath": "assets/images/_shared/e0468e959ea2fbba7623e7f803014f3251d363af153c5c424aa6f7d74bb11293__depthmap.png",
+      "sourcePaths": [
+        "C:\\work\\HobbyStuff\\FBF_StoryBoardDemo\\Kitchen\\depthmap.png"
+      ],
+      "references": [
+        "room:e1e8961811af431d90a22a29be475639:slot:Default:gray"
+      ]
+    }
+  ],
+  "unresolvedSources": []
+}

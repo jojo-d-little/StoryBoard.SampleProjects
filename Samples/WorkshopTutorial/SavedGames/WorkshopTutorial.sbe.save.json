@@ -1,0 +1,2528 @@
+{
+  "schemaVersion": "1.0",
+  "createdUtc": "2026-08-11T01:11:30.4573053Z",
+  "runtimeBuildVersion": "1.0.0.0",
+  "baseGame": {
+    "gameProjectId": "WorkshopTutorial",
+    "gameProjectLocatorHint": "..\\GameRuntimeJson\\WorkshopTutorial.sbr.runtime.json"
+  },
+  "snapshot": {
+    "sessionId": "session-20260811011130457",
+    "activeRoomScopeNodeId": "6a2b490b-2f6f-4527-8294-976194437296",
+    "rootScopeNode": {
+      "scopeNodeId": "global",
+      "scopeNodeKind": "Global",
+      "scopeNodeName": "WorkshopTutorial",
+      "childScopes": [
+        {
+          "scopeNodeId": "b59a600d-f4da-900a-f9f9-2104dea3f8d2",
+          "parentScopeNodeId": "global",
+          "scopeNodeKind": "Planet",
+          "scopeNodeName": "Starter Planet",
+          "childScopes": [
+            {
+              "scopeNodeId": "ff62da7b-8024-6d81-8987-0352ae58fbf5",
+              "parentScopeNodeId": "b59a600d-f4da-900a-f9f9-2104dea3f8d2",
+              "scopeNodeKind": "Country",
+              "scopeNodeName": "Starter Country",
+              "childScopes": [
+                {
+                  "scopeNodeId": "2339c890-ba73-6396-5ae8-14513110400d",
+                  "parentScopeNodeId": "ff62da7b-8024-6d81-8987-0352ae58fbf5",
+                  "scopeNodeKind": "Area",
+                  "scopeNodeName": "Starter Area",
+                  "childScopes": [
+                    {
+                      "scopeNodeId": "0996d450-b8bf-42b0-8efa-4ed9753baed4",
+                      "parentScopeNodeId": "2339c890-ba73-6396-5ae8-14513110400d",
+                      "scopeNodeKind": "Room",
+                      "scopeNodeName": "Exit Hall",
+                      "variableStates": [
+                        {
+                          "variableId": "roomGridCellSize",
+                          "value": 40
+                        }
+                      ],
+                      "objectStates": [
+                        {
+                          "scopeNodeId": "5e4be976-904c-413e-ae8c-adfd5ce693f6",
+                          "scopeNodeKind": "GameObject",
+                          "scopeNodeName": "Door_E",
+                          "variableStates": [
+                            {
+                              "variableId": "destinationFromHere",
+                              "value": "Atrium"
+                            },
+                            {
+                              "variableId": "imageRotationDegrees",
+                              "value": 90
+                            },
+                            {
+                              "variableId": "imageScale",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "isLocked",
+                              "value": true
+                            },
+                            {
+                              "variableId": "isOpen",
+                              "value": false
+                            },
+                            {
+                              "variableId": "lookingFromHere",
+                              "value": "the east"
+                            },
+                            {
+                              "variableId": "positionX",
+                              "value": 760
+                            },
+                            {
+                              "variableId": "positionY",
+                              "value": 200
+                            },
+                            {
+                              "variableId": "authoredRenderOrder",
+                              "value": 1001
+                            },
+                            {
+                              "variableId": "spatialType",
+                              "value": "SolidObject"
+                            },
+                            {
+                              "variableId": "stackGroup",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "stackOrder",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "stackScaleStepOverride",
+                              "value": 0.1
+                            },
+                            {
+                              "variableId": "minStackScaleOverride",
+                              "value": 0.5
+                            },
+                            {
+                              "variableId": "baseImageScale",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "footprintWidthCells",
+                              "value": 6
+                            },
+                            {
+                              "variableId": "footprintHeightCells",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "footprintOrientation",
+                              "value": "N"
+                            },
+                            {
+                              "variableId": "objectHeightUnits",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "authoredBaseHeightInRoom",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "isHeightPinned",
+                              "value": false
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "scopeNodeId": "0f7b95eb-27c9-4752-90e9-c749c51dd569",
+                      "parentScopeNodeId": "2339c890-ba73-6396-5ae8-14513110400d",
+                      "scopeNodeKind": "Room",
+                      "scopeNodeName": "Workshop",
+                      "variableStates": [
+                        {
+                          "variableId": "roomGridCellSize",
+                          "value": 40
+                        }
+                      ],
+                      "objectStates": [
+                        {
+                          "scopeNodeId": "0e056671-5c01-433c-8144-5b9d3a998d2f",
+                          "scopeNodeKind": "GameObject",
+                          "scopeNodeName": "Hammer",
+                          "variableStates": [
+                            {
+                              "variableId": "imageRotationDegrees",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "imageScale",
+                              "value": 0.8
+                            },
+                            {
+                              "variableId": "inventoryPoints",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "isActive",
+                              "value": true
+                            },
+                            {
+                              "variableId": "isHidden",
+                              "value": false
+                            },
+                            {
+                              "variableId": "isMovable",
+                              "value": true
+                            },
+                            {
+                              "variableId": "positionX",
+                              "value": 320
+                            },
+                            {
+                              "variableId": "positionY",
+                              "value": 120
+                            },
+                            {
+                              "variableId": "authoredRenderOrder",
+                              "value": 1002
+                            },
+                            {
+                              "variableId": "spatialType",
+                              "value": "SolidObject"
+                            },
+                            {
+                              "variableId": "stackGroup",
+                              "value": 2
+                            },
+                            {
+                              "variableId": "stackOrder",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "baseImageScale",
+                              "value": 0.8
+                            },
+                            {
+                              "variableId": "footprintWidthCells",
+                              "value": 2
+                            },
+                            {
+                              "variableId": "footprintHeightCells",
+                              "value": 2
+                            },
+                            {
+                              "variableId": "footprintOrientation",
+                              "value": "N"
+                            },
+                            {
+                              "variableId": "objectHeightUnits",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "authoredBaseHeightInRoom",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "isHeightPinned",
+                              "value": false
+                            }
+                          ]
+                        },
+                        {
+                          "scopeNodeId": "8e99a6aa-e3c8-4e93-a755-8543e0b25aab",
+                          "scopeNodeKind": "GameObject",
+                          "scopeNodeName": "Anvil",
+                          "variableStates": [
+                            {
+                              "variableId": "imageRotationDegrees",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "imageScale",
+                              "value": 0.21
+                            },
+                            {
+                              "variableId": "positionX",
+                              "value": 440
+                            },
+                            {
+                              "variableId": "positionY",
+                              "value": 120
+                            },
+                            {
+                              "variableId": "authoredRenderOrder",
+                              "value": 1003
+                            },
+                            {
+                              "variableId": "spatialType",
+                              "value": "SolidObject"
+                            },
+                            {
+                              "variableId": "stackGroup",
+                              "value": 2
+                            },
+                            {
+                              "variableId": "stackOrder",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "baseImageScale",
+                              "value": 0.21
+                            },
+                            {
+                              "variableId": "footprintWidthCells",
+                              "value": 3
+                            },
+                            {
+                              "variableId": "footprintHeightCells",
+                              "value": 2
+                            },
+                            {
+                              "variableId": "footprintOrientation",
+                              "value": "N"
+                            },
+                            {
+                              "variableId": "objectHeightUnits",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "authoredBaseHeightInRoom",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "isHeightPinned",
+                              "value": false
+                            }
+                          ]
+                        },
+                        {
+                          "scopeNodeId": "9e4841e5-ce5d-484d-9fc3-9b27e059412b",
+                          "scopeNodeKind": "GameObject",
+                          "scopeNodeName": "Door_S",
+                          "variableStates": [
+                            {
+                              "variableId": "destinationFromHere",
+                              "value": "Atrium"
+                            },
+                            {
+                              "variableId": "imageRotationDegrees",
+                              "value": 180
+                            },
+                            {
+                              "variableId": "imageScale",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "isLocked",
+                              "value": true
+                            },
+                            {
+                              "variableId": "isOpen",
+                              "value": false
+                            },
+                            {
+                              "variableId": "lookingFromHere",
+                              "value": "the south"
+                            },
+                            {
+                              "variableId": "positionX",
+                              "value": 280
+                            },
+                            {
+                              "variableId": "positionY",
+                              "value": 558
+                            },
+                            {
+                              "variableId": "authoredRenderOrder",
+                              "value": 1004
+                            },
+                            {
+                              "variableId": "spatialType",
+                              "value": "SolidObject"
+                            },
+                            {
+                              "variableId": "stackGroup",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "stackOrder",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "baseImageScale",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "footprintWidthCells",
+                              "value": 6
+                            },
+                            {
+                              "variableId": "footprintHeightCells",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "footprintOrientation",
+                              "value": "N"
+                            },
+                            {
+                              "variableId": "objectHeightUnits",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "authoredBaseHeightInRoom",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "isHeightPinned",
+                              "value": false
+                            }
+                          ]
+                        },
+                        {
+                          "scopeNodeId": "ba71190a-49f8-4289-92e6-4df8715144e9",
+                          "scopeNodeKind": "GameObject",
+                          "scopeNodeName": "Workbench",
+                          "variableStates": [
+                            {
+                              "variableId": "imageRotationDegrees",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "imageScale",
+                              "value": 0.38
+                            },
+                            {
+                              "variableId": "positionX",
+                              "value": 317.7000045776367
+                            },
+                            {
+                              "variableId": "positionY",
+                              "value": 95
+                            },
+                            {
+                              "variableId": "authoredRenderOrder",
+                              "value": 1001
+                            },
+                            {
+                              "variableId": "spatialType",
+                              "value": "SolidObject"
+                            },
+                            {
+                              "variableId": "stackGroup",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "stackOrder",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "baseImageScale",
+                              "value": 0.38
+                            },
+                            {
+                              "variableId": "footprintWidthCells",
+                              "value": 6
+                            },
+                            {
+                              "variableId": "footprintHeightCells",
+                              "value": 4
+                            },
+                            {
+                              "variableId": "footprintOrientation",
+                              "value": "N"
+                            },
+                            {
+                              "variableId": "objectHeightUnits",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "authoredBaseHeightInRoom",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "isHeightPinned",
+                              "value": false
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "scopeNodeId": "698a46f4-73bc-4e9e-8333-e2ed555417fc",
+                      "parentScopeNodeId": "2339c890-ba73-6396-5ae8-14513110400d",
+                      "scopeNodeKind": "Room",
+                      "scopeNodeName": "Atrium",
+                      "variableStates": [
+                        {
+                          "variableId": "roomGridCellSize",
+                          "value": 40
+                        }
+                      ],
+                      "objectStates": [
+                        {
+                          "scopeNodeId": "5980b99e-ec8b-4a67-95fd-80ff5b66998b",
+                          "scopeNodeKind": "GameObject",
+                          "scopeNodeName": "Door_S",
+                          "variableStates": [
+                            {
+                              "variableId": "destinationFromHere",
+                              "value": "No Where"
+                            },
+                            {
+                              "variableId": "imageRotationDegrees",
+                              "value": 180
+                            },
+                            {
+                              "variableId": "imageScale",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "isLocked",
+                              "value": true
+                            },
+                            {
+                              "variableId": "isOpen",
+                              "value": false
+                            },
+                            {
+                              "variableId": "lookingFromHere",
+                              "value": "the south"
+                            },
+                            {
+                              "variableId": "positionX",
+                              "value": 280
+                            },
+                            {
+                              "variableId": "positionY",
+                              "value": 560
+                            },
+                            {
+                              "variableId": "authoredRenderOrder",
+                              "value": 1002
+                            },
+                            {
+                              "variableId": "spatialType",
+                              "value": "SolidObject"
+                            },
+                            {
+                              "variableId": "stackGroup",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "stackOrder",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "baseImageScale",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "footprintWidthCells",
+                              "value": 6
+                            },
+                            {
+                              "variableId": "footprintHeightCells",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "footprintOrientation",
+                              "value": "N"
+                            },
+                            {
+                              "variableId": "objectHeightUnits",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "authoredBaseHeightInRoom",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "isHeightPinned",
+                              "value": false
+                            },
+                            {
+                              "variableId": "occupiedCellIds",
+                              "value": "H.O,I.O,J.O,K.O,L.O,M.O"
+                            },
+                            {
+                              "variableId": "occupancyDerivationSourceEcho",
+                              "value": "x=280;y=560;anchor=TopLeft;footprint=6x1;orientation=N;cell=40"
+                            },
+                            {
+                              "variableId": "effectiveHeightInRoom",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "effectiveRenderZOrder",
+                              "value": 1005
+                            },
+                            {
+                              "variableId": "selectedVariantFullImagePath",
+                              "value": "assets/images/_shared/2b124225eef076e228126f492e92dd3ffffcefdf6490d9a87d876cd4ef64dfde__LightDoor.png"
+                            },
+                            {
+                              "variableId": "selectedImagePath",
+                              "value": "assets/images/_shared/2b124225eef076e228126f492e92dd3ffffcefdf6490d9a87d876cd4ef64dfde__LightDoor.png"
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentOffsetX",
+                              "value": 6
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentOffsetY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentRotationDegrees",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderAnchorX",
+                              "value": 280
+                            },
+                            {
+                              "variableId": "renderAnchorY",
+                              "value": 560
+                            },
+                            {
+                              "variableId": "renderIconOffsetX",
+                              "value": 234
+                            },
+                            {
+                              "variableId": "renderIconOffsetY",
+                              "value": 40
+                            },
+                            {
+                              "variableId": "renderPositionX",
+                              "value": 514
+                            },
+                            {
+                              "variableId": "renderPositionY",
+                              "value": 600
+                            },
+                            {
+                              "variableId": "renderRotationDegrees",
+                              "value": 180
+                            }
+                          ]
+                        },
+                        {
+                          "scopeNodeId": "7a2d6901-3ebb-42cf-b686-51509adf6134",
+                          "scopeNodeKind": "GameObject",
+                          "scopeNodeName": "Exit Hall Door",
+                          "variableStates": [
+                            {
+                              "variableId": "destinationFromHere",
+                              "value": "Exit Hall"
+                            },
+                            {
+                              "variableId": "imageRotationDegrees",
+                              "value": 270
+                            },
+                            {
+                              "variableId": "imageScale",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "isLocked",
+                              "value": true
+                            },
+                            {
+                              "variableId": "isOpen",
+                              "value": false
+                            },
+                            {
+                              "variableId": "lookingFromHere",
+                              "value": "the west"
+                            },
+                            {
+                              "variableId": "positionX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "positionY",
+                              "value": 160
+                            },
+                            {
+                              "variableId": "authoredRenderOrder",
+                              "value": 1001
+                            },
+                            {
+                              "variableId": "spatialType",
+                              "value": "SolidObject"
+                            },
+                            {
+                              "variableId": "stackGroup",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "stackOrder",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "stackScaleStepOverride",
+                              "value": 0.1
+                            },
+                            {
+                              "variableId": "minStackScaleOverride",
+                              "value": 0.5
+                            },
+                            {
+                              "variableId": "baseImageScale",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "footprintWidthCells",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "footprintHeightCells",
+                              "value": 7
+                            },
+                            {
+                              "variableId": "footprintOrientation",
+                              "value": "E"
+                            },
+                            {
+                              "variableId": "objectHeightUnits",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "authoredBaseHeightInRoom",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "isHeightPinned",
+                              "value": false
+                            },
+                            {
+                              "variableId": "occupiedCellIds",
+                              "value": "A.E,A.F,A.G,A.H,A.I,A.J,A.K"
+                            },
+                            {
+                              "variableId": "occupancyDerivationSourceEcho",
+                              "value": "x=0;y=160;anchor=TopLeft;footprint=1x7;orientation=E;cell=40"
+                            },
+                            {
+                              "variableId": "effectiveHeightInRoom",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "effectiveRenderZOrder",
+                              "value": 1003
+                            },
+                            {
+                              "variableId": "selectedVariantFullImagePath",
+                              "value": "assets/images/_shared/2b124225eef076e228126f492e92dd3ffffcefdf6490d9a87d876cd4ef64dfde__LightDoor.png"
+                            },
+                            {
+                              "variableId": "selectedImagePath",
+                              "value": "assets/images/_shared/2b124225eef076e228126f492e92dd3ffffcefdf6490d9a87d876cd4ef64dfde__LightDoor.png"
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentOffsetX",
+                              "value": 25
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentOffsetY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentRotationDegrees",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderAnchorX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderAnchorY",
+                              "value": 160
+                            },
+                            {
+                              "variableId": "renderIconOffsetX",
+                              "value": -4.592425496802574E-15
+                            },
+                            {
+                              "variableId": "renderIconOffsetY",
+                              "value": 255
+                            },
+                            {
+                              "variableId": "renderPositionX",
+                              "value": -4.592425496802574E-15
+                            },
+                            {
+                              "variableId": "renderPositionY",
+                              "value": 415
+                            },
+                            {
+                              "variableId": "renderRotationDegrees",
+                              "value": 270
+                            }
+                          ]
+                        },
+                        {
+                          "scopeNodeId": "a408591b-08aa-45fc-a396-9b9477cead5e",
+                          "scopeNodeKind": "GameObject",
+                          "scopeNodeName": "Green Crate",
+                          "variableStates": [
+                            {
+                              "variableId": "imageRotationDegrees",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "imageScale",
+                              "value": 0.17
+                            },
+                            {
+                              "variableId": "inventoryPoints",
+                              "value": 10
+                            },
+                            {
+                              "variableId": "isActive",
+                              "value": true
+                            },
+                            {
+                              "variableId": "isHidden",
+                              "value": false
+                            },
+                            {
+                              "variableId": "isMovable",
+                              "value": true
+                            },
+                            {
+                              "variableId": "positionX",
+                              "value": 560
+                            },
+                            {
+                              "variableId": "positionY",
+                              "value": 120
+                            },
+                            {
+                              "variableId": "authoredRenderOrder",
+                              "value": 1002
+                            },
+                            {
+                              "variableId": "spatialType",
+                              "value": "SolidObject"
+                            },
+                            {
+                              "variableId": "stackGroup",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "stackOrder",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "stackScaleStepOverride",
+                              "value": 0.1
+                            },
+                            {
+                              "variableId": "minStackScaleOverride",
+                              "value": 0.5
+                            },
+                            {
+                              "variableId": "baseImageScale",
+                              "value": 0.17
+                            },
+                            {
+                              "variableId": "footprintWidthCells",
+                              "value": 2
+                            },
+                            {
+                              "variableId": "footprintHeightCells",
+                              "value": 2
+                            },
+                            {
+                              "variableId": "footprintOrientation",
+                              "value": "N"
+                            },
+                            {
+                              "variableId": "objectHeightUnits",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "authoredBaseHeightInRoom",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "isHeightPinned",
+                              "value": false
+                            },
+                            {
+                              "variableId": "occupiedCellIds",
+                              "value": "O.D,P.D,O.E,P.E"
+                            },
+                            {
+                              "variableId": "occupancyDerivationSourceEcho",
+                              "value": "x=560;y=120;anchor=TopLeft;footprint=2x2;orientation=N;cell=40"
+                            },
+                            {
+                              "variableId": "effectiveHeightInRoom",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "effectiveRenderZOrder",
+                              "value": 1004
+                            },
+                            {
+                              "variableId": "selectedVariantFullImagePath",
+                              "value": "assets/images/_shared/b4a70f05a6e0161a2524d684fe1a4ec3fc231cf8d1702f4a81fb69f275751621__GreenCrate.png"
+                            },
+                            {
+                              "variableId": "selectedImagePath",
+                              "value": "assets/images/_shared/b4a70f05a6e0161a2524d684fe1a4ec3fc231cf8d1702f4a81fb69f275751621__GreenCrate.png"
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentOffsetX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentOffsetY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentRotationDegrees",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderAnchorX",
+                              "value": 560
+                            },
+                            {
+                              "variableId": "renderAnchorY",
+                              "value": 120
+                            },
+                            {
+                              "variableId": "renderIconOffsetX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderIconOffsetY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderPositionX",
+                              "value": 560
+                            },
+                            {
+                              "variableId": "renderPositionY",
+                              "value": 120
+                            },
+                            {
+                              "variableId": "renderRotationDegrees",
+                              "value": 0
+                            }
+                          ]
+                        },
+                        {
+                          "scopeNodeId": "bb53c4f2-0cee-48af-94b8-719bc40312ae",
+                          "scopeNodeKind": "GameObject",
+                          "scopeNodeName": "Red Crate",
+                          "variableStates": [
+                            {
+                              "variableId": "imageRotationDegrees",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "imageScale",
+                              "value": 0.17
+                            },
+                            {
+                              "variableId": "inventoryPoints",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "isActive",
+                              "value": true
+                            },
+                            {
+                              "variableId": "isHidden",
+                              "value": false
+                            },
+                            {
+                              "variableId": "isMovable",
+                              "value": true
+                            },
+                            {
+                              "variableId": "positionX",
+                              "value": 160
+                            },
+                            {
+                              "variableId": "positionY",
+                              "value": 120
+                            },
+                            {
+                              "variableId": "authoredRenderOrder",
+                              "value": 1003
+                            },
+                            {
+                              "variableId": "spatialType",
+                              "value": "SolidObject"
+                            },
+                            {
+                              "variableId": "stackGroup",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "stackOrder",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "stackScaleStepOverride",
+                              "value": 0.1
+                            },
+                            {
+                              "variableId": "minStackScaleOverride",
+                              "value": 0.5
+                            },
+                            {
+                              "variableId": "baseImageScale",
+                              "value": 0.17
+                            },
+                            {
+                              "variableId": "footprintWidthCells",
+                              "value": 2
+                            },
+                            {
+                              "variableId": "footprintHeightCells",
+                              "value": 2
+                            },
+                            {
+                              "variableId": "footprintOrientation",
+                              "value": "N"
+                            },
+                            {
+                              "variableId": "objectHeightUnits",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "authoredBaseHeightInRoom",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "isHeightPinned",
+                              "value": false
+                            },
+                            {
+                              "variableId": "occupiedCellIds",
+                              "value": "E.D,F.D,E.E,F.E"
+                            },
+                            {
+                              "variableId": "occupancyDerivationSourceEcho",
+                              "value": "x=160;y=120;anchor=TopLeft;footprint=2x2;orientation=N;cell=40"
+                            },
+                            {
+                              "variableId": "effectiveHeightInRoom",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "effectiveRenderZOrder",
+                              "value": 1007
+                            },
+                            {
+                              "variableId": "selectedVariantFullImagePath",
+                              "value": "assets/images/_shared/65301ec3f7e79a20b431e06d0c548b5a2f3c5aac78d92deeef4fe81cda604746__RedCrate.png"
+                            },
+                            {
+                              "variableId": "selectedImagePath",
+                              "value": "assets/images/_shared/65301ec3f7e79a20b431e06d0c548b5a2f3c5aac78d92deeef4fe81cda604746__RedCrate.png"
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentOffsetX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentOffsetY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentRotationDegrees",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderAnchorX",
+                              "value": 160
+                            },
+                            {
+                              "variableId": "renderAnchorY",
+                              "value": 120
+                            },
+                            {
+                              "variableId": "renderIconOffsetX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderIconOffsetY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderPositionX",
+                              "value": 160
+                            },
+                            {
+                              "variableId": "renderPositionY",
+                              "value": 120
+                            },
+                            {
+                              "variableId": "renderRotationDegrees",
+                              "value": 0
+                            }
+                          ]
+                        },
+                        {
+                          "scopeNodeId": "d1f9944a-6985-4cb3-a659-dc3b2253a57a",
+                          "scopeNodeKind": "GameObject",
+                          "scopeNodeName": "Workshop Door",
+                          "variableStates": [
+                            {
+                              "variableId": "destinationFromHere",
+                              "value": "Workshop"
+                            },
+                            {
+                              "variableId": "imageRotationDegrees",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "imageScale",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "isLocked",
+                              "value": true
+                            },
+                            {
+                              "variableId": "isOpen",
+                              "value": false
+                            },
+                            {
+                              "variableId": "lookingFromHere",
+                              "value": "the north"
+                            },
+                            {
+                              "variableId": "positionX",
+                              "value": 280
+                            },
+                            {
+                              "variableId": "positionY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "authoredRenderOrder",
+                              "value": 1004
+                            },
+                            {
+                              "variableId": "spatialType",
+                              "value": "SolidObject"
+                            },
+                            {
+                              "variableId": "stackGroup",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "stackOrder",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "stackScaleStepOverride",
+                              "value": 0.1
+                            },
+                            {
+                              "variableId": "minStackScaleOverride",
+                              "value": 0.5
+                            },
+                            {
+                              "variableId": "baseImageScale",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "footprintWidthCells",
+                              "value": 6
+                            },
+                            {
+                              "variableId": "footprintHeightCells",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "footprintOrientation",
+                              "value": "N"
+                            },
+                            {
+                              "variableId": "objectHeightUnits",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "authoredBaseHeightInRoom",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "isHeightPinned",
+                              "value": false
+                            },
+                            {
+                              "variableId": "occupiedCellIds",
+                              "value": "H.A,I.A,J.A,K.A,L.A,M.A"
+                            },
+                            {
+                              "variableId": "occupancyDerivationSourceEcho",
+                              "value": "x=280;y=0;anchor=TopLeft;footprint=6x1;orientation=N;cell=40"
+                            },
+                            {
+                              "variableId": "effectiveHeightInRoom",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "effectiveRenderZOrder",
+                              "value": 1008
+                            },
+                            {
+                              "variableId": "selectedVariantFullImagePath",
+                              "value": "assets/images/_shared/2b124225eef076e228126f492e92dd3ffffcefdf6490d9a87d876cd4ef64dfde__LightDoor.png"
+                            },
+                            {
+                              "variableId": "selectedImagePath",
+                              "value": "assets/images/_shared/2b124225eef076e228126f492e92dd3ffffcefdf6490d9a87d876cd4ef64dfde__LightDoor.png"
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentOffsetX",
+                              "value": 6
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentOffsetY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentRotationDegrees",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderAnchorX",
+                              "value": 280
+                            },
+                            {
+                              "variableId": "renderAnchorY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderIconOffsetX",
+                              "value": 6
+                            },
+                            {
+                              "variableId": "renderIconOffsetY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderPositionX",
+                              "value": 286
+                            },
+                            {
+                              "variableId": "renderPositionY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderRotationDegrees",
+                              "value": 0
+                            }
+                          ]
+                        },
+                        {
+                          "scopeNodeId": "dcc57386-6deb-4444-8d47-61f0774a0bc9",
+                          "scopeNodeKind": "GameObject",
+                          "scopeNodeName": "Supply Closet",
+                          "variableStates": [
+                            {
+                              "variableId": "destinationFromHere",
+                              "value": "Supply Closet"
+                            },
+                            {
+                              "variableId": "imageRotationDegrees",
+                              "value": 90
+                            },
+                            {
+                              "variableId": "imageScale",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "isLocked",
+                              "value": false
+                            },
+                            {
+                              "variableId": "isOpen",
+                              "value": true
+                            },
+                            {
+                              "variableId": "lookingFromHere",
+                              "value": "the east"
+                            },
+                            {
+                              "variableId": "positionX",
+                              "value": 760
+                            },
+                            {
+                              "variableId": "positionY",
+                              "value": 160
+                            },
+                            {
+                              "variableId": "authoredRenderOrder",
+                              "value": 1003
+                            },
+                            {
+                              "variableId": "spatialType",
+                              "value": "SolidObject"
+                            },
+                            {
+                              "variableId": "stackGroup",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "stackOrder",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "stackScaleStepOverride",
+                              "value": 0.1
+                            },
+                            {
+                              "variableId": "minStackScaleOverride",
+                              "value": 0.5
+                            },
+                            {
+                              "variableId": "baseImageScale",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "footprintWidthCells",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "footprintHeightCells",
+                              "value": 7
+                            },
+                            {
+                              "variableId": "footprintOrientation",
+                              "value": "E"
+                            },
+                            {
+                              "variableId": "objectHeightUnits",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "authoredBaseHeightInRoom",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "isHeightPinned",
+                              "value": false
+                            },
+                            {
+                              "variableId": "occupiedCellIds",
+                              "value": "T.E,T.F,T.G,T.H,T.I,T.J,T.K"
+                            },
+                            {
+                              "variableId": "occupancyDerivationSourceEcho",
+                              "value": "x=760;y=160;anchor=TopLeft;footprint=1x7;orientation=E;cell=40"
+                            },
+                            {
+                              "variableId": "effectiveHeightInRoom",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "effectiveRenderZOrder",
+                              "value": 1006
+                            },
+                            {
+                              "variableId": "selectedVariantFullImagePath",
+                              "value": "assets/images/_shared/9b065a01d39be948522d5666298c1f87eb2c80edfbb19450ebd5522401880f91__LightDoorOpen.png"
+                            },
+                            {
+                              "variableId": "selectedImagePath",
+                              "value": "assets/images/_shared/9b065a01d39be948522d5666298c1f87eb2c80edfbb19450ebd5522401880f91__LightDoorOpen.png"
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentOffsetX",
+                              "value": 25
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentOffsetY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentRotationDegrees",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderAnchorX",
+                              "value": 760
+                            },
+                            {
+                              "variableId": "renderAnchorY",
+                              "value": 160
+                            },
+                            {
+                              "variableId": "renderIconOffsetX",
+                              "value": 40
+                            },
+                            {
+                              "variableId": "renderIconOffsetY",
+                              "value": 25
+                            },
+                            {
+                              "variableId": "renderPositionX",
+                              "value": 800
+                            },
+                            {
+                              "variableId": "renderPositionY",
+                              "value": 185
+                            },
+                            {
+                              "variableId": "renderRotationDegrees",
+                              "value": 90
+                            }
+                          ]
+                        },
+                        {
+                          "scopeNodeId": "de2715a6-29de-4aa3-a4a7-fc470cadecc1",
+                          "scopeNodeKind": "GameObject",
+                          "scopeNodeName": "Blue Crate",
+                          "variableStates": [
+                            {
+                              "variableId": "imageRotationDegrees",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "imageScale",
+                              "value": 0.17
+                            },
+                            {
+                              "variableId": "inventoryPoints",
+                              "value": 10
+                            },
+                            {
+                              "variableId": "isActive",
+                              "value": true
+                            },
+                            {
+                              "variableId": "isHidden",
+                              "value": false
+                            },
+                            {
+                              "variableId": "isMovable",
+                              "value": true
+                            },
+                            {
+                              "variableId": "positionX",
+                              "value": 240
+                            },
+                            {
+                              "variableId": "positionY",
+                              "value": 240
+                            },
+                            {
+                              "variableId": "authoredRenderOrder",
+                              "value": 1001
+                            },
+                            {
+                              "variableId": "spatialType",
+                              "value": "SolidObject"
+                            },
+                            {
+                              "variableId": "stackGroup",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "stackOrder",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "stackScaleStepOverride",
+                              "value": 0.1
+                            },
+                            {
+                              "variableId": "minStackScaleOverride",
+                              "value": 0.5
+                            },
+                            {
+                              "variableId": "baseImageScale",
+                              "value": 0.17
+                            },
+                            {
+                              "variableId": "footprintWidthCells",
+                              "value": 2
+                            },
+                            {
+                              "variableId": "footprintHeightCells",
+                              "value": 2
+                            },
+                            {
+                              "variableId": "footprintOrientation",
+                              "value": "N"
+                            },
+                            {
+                              "variableId": "objectHeightUnits",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "authoredBaseHeightInRoom",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "isHeightPinned",
+                              "value": false
+                            },
+                            {
+                              "variableId": "occupiedCellIds",
+                              "value": "G.G,H.G,G.H,H.H"
+                            },
+                            {
+                              "variableId": "occupancyDerivationSourceEcho",
+                              "value": "x=240;y=240;anchor=TopLeft;footprint=2x2;orientation=N;cell=40"
+                            },
+                            {
+                              "variableId": "effectiveHeightInRoom",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "effectiveRenderZOrder",
+                              "value": 1002
+                            },
+                            {
+                              "variableId": "selectedVariantFullImagePath",
+                              "value": "assets/images/_shared/79ab4012207fd41a20085de8d4e3c7df45d87c8d101e76ca9551a737fa8d519d__BlueCrate.png"
+                            },
+                            {
+                              "variableId": "selectedImagePath",
+                              "value": "assets/images/_shared/79ab4012207fd41a20085de8d4e3c7df45d87c8d101e76ca9551a737fa8d519d__BlueCrate.png"
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentOffsetX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentOffsetY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentRotationDegrees",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderAnchorX",
+                              "value": 240
+                            },
+                            {
+                              "variableId": "renderAnchorY",
+                              "value": 240
+                            },
+                            {
+                              "variableId": "renderIconOffsetX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderIconOffsetY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderPositionX",
+                              "value": 240
+                            },
+                            {
+                              "variableId": "renderPositionY",
+                              "value": 240
+                            },
+                            {
+                              "variableId": "renderRotationDegrees",
+                              "value": 0
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "scopeNodeId": "6a2b490b-2f6f-4527-8294-976194437296",
+                      "parentScopeNodeId": "2339c890-ba73-6396-5ae8-14513110400d",
+                      "scopeNodeKind": "Room",
+                      "scopeNodeName": "Supply Closet",
+                      "variableStates": [
+                        {
+                          "variableId": "roomGridCellSize",
+                          "value": 40
+                        }
+                      ],
+                      "objectStates": [
+                        {
+                          "scopeNodeId": "4592818b-3fd1-4682-9aa7-a14ebca79f8e",
+                          "scopeNodeKind": "GameObject",
+                          "scopeNodeName": "Brass Key",
+                          "variableStates": [
+                            {
+                              "variableId": "imageRotationDegrees",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "imageScale",
+                              "value": 0.1
+                            },
+                            {
+                              "variableId": "inventoryPoints",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "isActive",
+                              "value": true
+                            },
+                            {
+                              "variableId": "isBent",
+                              "value": true
+                            },
+                            {
+                              "variableId": "isHidden",
+                              "value": false
+                            },
+                            {
+                              "variableId": "isMovable",
+                              "value": true
+                            },
+                            {
+                              "variableId": "positionX",
+                              "value": 600
+                            },
+                            {
+                              "variableId": "positionY",
+                              "value": 240
+                            },
+                            {
+                              "variableId": "authoredRenderOrder",
+                              "value": 1001
+                            },
+                            {
+                              "variableId": "spatialType",
+                              "value": "SolidObject"
+                            },
+                            {
+                              "variableId": "stackGroup",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "stackOrder",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "stackScaleStepOverride",
+                              "value": 0.1
+                            },
+                            {
+                              "variableId": "minStackScaleOverride",
+                              "value": 0.5
+                            },
+                            {
+                              "variableId": "baseImageScale",
+                              "value": 0.1
+                            },
+                            {
+                              "variableId": "footprintWidthCells",
+                              "value": 2
+                            },
+                            {
+                              "variableId": "footprintHeightCells",
+                              "value": 2
+                            },
+                            {
+                              "variableId": "footprintOrientation",
+                              "value": "N"
+                            },
+                            {
+                              "variableId": "objectHeightUnits",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "authoredBaseHeightInRoom",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "isHeightPinned",
+                              "value": false
+                            },
+                            {
+                              "variableId": "selectedVariantFullImagePath",
+                              "value": "assets/images/_shared/91f0065a4419e841aa7a6e144cc30fdcd7b6ee56868101ae0dfa63e2c7287d66__BentBrassKey.png"
+                            },
+                            {
+                              "variableId": "selectedImagePath",
+                              "value": "assets/images/_shared/91f0065a4419e841aa7a6e144cc30fdcd7b6ee56868101ae0dfa63e2c7287d66__BentBrassKey.png"
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentOffsetX",
+                              "value": 3
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentOffsetY",
+                              "value": -4
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentRotationDegrees",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderAnchorX",
+                              "value": 600
+                            },
+                            {
+                              "variableId": "renderAnchorY",
+                              "value": 240
+                            },
+                            {
+                              "variableId": "renderIconOffsetX",
+                              "value": 3
+                            },
+                            {
+                              "variableId": "renderIconOffsetY",
+                              "value": -4
+                            },
+                            {
+                              "variableId": "renderPositionX",
+                              "value": 603
+                            },
+                            {
+                              "variableId": "renderPositionY",
+                              "value": 236
+                            },
+                            {
+                              "variableId": "renderRotationDegrees",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "occupiedCellIds",
+                              "value": "P.G,Q.G,P.H,Q.H"
+                            },
+                            {
+                              "variableId": "occupancyDerivationSourceEcho",
+                              "value": "x=600;y=240;anchor=TopLeft;footprint=2x2;orientation=N;cell=40"
+                            },
+                            {
+                              "variableId": "effectiveHeightInRoom",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "effectiveRenderZOrder",
+                              "value": 1002
+                            }
+                          ]
+                        },
+                        {
+                          "scopeNodeId": "4e2810e7-95ab-4f6a-bfdd-7ea6144e01a3",
+                          "scopeNodeKind": "GameObject",
+                          "scopeNodeName": "Door_W",
+                          "variableStates": [
+                            {
+                              "variableId": "destinationFromHere",
+                              "value": "Atrium"
+                            },
+                            {
+                              "variableId": "imageRotationDegrees",
+                              "value": 270
+                            },
+                            {
+                              "variableId": "imageScale",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "isLocked",
+                              "value": false
+                            },
+                            {
+                              "variableId": "isOpen",
+                              "value": true
+                            },
+                            {
+                              "variableId": "lookingFromHere",
+                              "value": "the west"
+                            },
+                            {
+                              "variableId": "positionX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "positionY",
+                              "value": 160
+                            },
+                            {
+                              "variableId": "authoredRenderOrder",
+                              "value": 1004
+                            },
+                            {
+                              "variableId": "spatialType",
+                              "value": "SolidObject"
+                            },
+                            {
+                              "variableId": "stackGroup",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "stackOrder",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "stackScaleStepOverride",
+                              "value": 0.1
+                            },
+                            {
+                              "variableId": "minStackScaleOverride",
+                              "value": 0.5
+                            },
+                            {
+                              "variableId": "baseImageScale",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "footprintWidthCells",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "footprintHeightCells",
+                              "value": 7
+                            },
+                            {
+                              "variableId": "footprintOrientation",
+                              "value": "E"
+                            },
+                            {
+                              "variableId": "objectHeightUnits",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "authoredBaseHeightInRoom",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "isHeightPinned",
+                              "value": false
+                            },
+                            {
+                              "variableId": "selectedVariantFullImagePath",
+                              "value": "assets/images/_shared/9b065a01d39be948522d5666298c1f87eb2c80edfbb19450ebd5522401880f91__LightDoorOpen.png"
+                            },
+                            {
+                              "variableId": "selectedImagePath",
+                              "value": "assets/images/_shared/9b065a01d39be948522d5666298c1f87eb2c80edfbb19450ebd5522401880f91__LightDoorOpen.png"
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentOffsetX",
+                              "value": 25
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentOffsetY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentRotationDegrees",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderAnchorX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderAnchorY",
+                              "value": 160
+                            },
+                            {
+                              "variableId": "renderIconOffsetX",
+                              "value": -4.592425496802574E-15
+                            },
+                            {
+                              "variableId": "renderIconOffsetY",
+                              "value": 255
+                            },
+                            {
+                              "variableId": "renderPositionX",
+                              "value": -4.592425496802574E-15
+                            },
+                            {
+                              "variableId": "renderPositionY",
+                              "value": 415
+                            },
+                            {
+                              "variableId": "renderRotationDegrees",
+                              "value": 270
+                            },
+                            {
+                              "variableId": "occupiedCellIds",
+                              "value": "A.E,A.F,A.G,A.H,A.I,A.J,A.K"
+                            },
+                            {
+                              "variableId": "occupancyDerivationSourceEcho",
+                              "value": "x=0;y=160;anchor=TopLeft;footprint=1x7;orientation=E;cell=40"
+                            },
+                            {
+                              "variableId": "effectiveHeightInRoom",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "effectiveRenderZOrder",
+                              "value": 1004
+                            }
+                          ]
+                        },
+                        {
+                          "scopeNodeId": "98b8bd1c-3591-4138-a71e-b4fae94da9d4",
+                          "scopeNodeKind": "GameObject",
+                          "scopeNodeName": "Backpack",
+                          "variableStates": [
+                            {
+                              "variableId": "capacityPointShareDivider",
+                              "value": 4
+                            },
+                            {
+                              "variableId": "containerPoints",
+                              "value": 10
+                            },
+                            {
+                              "variableId": "containerPointsRemaining",
+                              "value": 5
+                            },
+                            {
+                              "variableId": "imageRotationDegrees",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "imageScale",
+                              "value": 0.57
+                            },
+                            {
+                              "variableId": "inventoryPoints",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "isActive",
+                              "value": true
+                            },
+                            {
+                              "variableId": "isHidden",
+                              "value": false
+                            },
+                            {
+                              "variableId": "isMovable",
+                              "value": true
+                            },
+                            {
+                              "variableId": "positionX",
+                              "value": 480
+                            },
+                            {
+                              "variableId": "positionY",
+                              "value": 360
+                            },
+                            {
+                              "variableId": "authoredRenderOrder",
+                              "value": 1002
+                            },
+                            {
+                              "variableId": "spatialType",
+                              "value": "SolidObject"
+                            },
+                            {
+                              "variableId": "stackGroup",
+                              "value": 2
+                            },
+                            {
+                              "variableId": "stackOrder",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "stackScaleStepOverride",
+                              "value": 0.2
+                            },
+                            {
+                              "variableId": "minStackScaleOverride",
+                              "value": 0.33
+                            },
+                            {
+                              "variableId": "baseImageScale",
+                              "value": 0.57
+                            },
+                            {
+                              "variableId": "footprintWidthCells",
+                              "value": 3
+                            },
+                            {
+                              "variableId": "footprintHeightCells",
+                              "value": 3
+                            },
+                            {
+                              "variableId": "footprintOrientation",
+                              "value": "N"
+                            },
+                            {
+                              "variableId": "objectHeightUnits",
+                              "value": 2
+                            },
+                            {
+                              "variableId": "authoredBaseHeightInRoom",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "isHeightPinned",
+                              "value": false
+                            },
+                            {
+                              "variableId": "selectedVariantFullImagePath",
+                              "value": "assets/images/_shared/87f084dcdc4e9ea360a6608d881e8622a059e74768e322a3eaf4115eeb70a6b9__small-brown-backpack.png"
+                            },
+                            {
+                              "variableId": "selectedImagePath",
+                              "value": "assets/images/_shared/87f084dcdc4e9ea360a6608d881e8622a059e74768e322a3eaf4115eeb70a6b9__small-brown-backpack.png"
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentOffsetX",
+                              "value": 10
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentOffsetY",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentRotationDegrees",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderAnchorX",
+                              "value": 480
+                            },
+                            {
+                              "variableId": "renderAnchorY",
+                              "value": 360
+                            },
+                            {
+                              "variableId": "renderIconOffsetX",
+                              "value": 10
+                            },
+                            {
+                              "variableId": "renderIconOffsetY",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "renderPositionX",
+                              "value": 490
+                            },
+                            {
+                              "variableId": "renderPositionY",
+                              "value": 361
+                            },
+                            {
+                              "variableId": "renderRotationDegrees",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "occupiedCellIds",
+                              "value": "M.J,N.J,O.J,M.K,N.K,O.K,M.L,N.L,O.L"
+                            },
+                            {
+                              "variableId": "occupancyDerivationSourceEcho",
+                              "value": "x=480;y=360;anchor=TopLeft;footprint=3x3;orientation=N;cell=40"
+                            },
+                            {
+                              "variableId": "effectiveHeightInRoom",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "effectiveRenderZOrder",
+                              "value": 1003
+                            }
+                          ],
+                          "objectStates": [
+                            {
+                              "scopeNodeId": "0825ab80-71bb-4aa9-9028-8c931f00ffd4",
+                              "scopeNodeKind": "GameObject",
+                              "scopeNodeName": "Crowbar",
+                              "variableStates": [
+                                {
+                                  "variableId": "imageRotationDegrees",
+                                  "value": 0
+                                },
+                                {
+                                  "variableId": "imageScale",
+                                  "value": 0.75
+                                },
+                                {
+                                  "variableId": "inventoryPoints",
+                                  "value": 5
+                                },
+                                {
+                                  "variableId": "isActive",
+                                  "value": true
+                                },
+                                {
+                                  "variableId": "isHidden",
+                                  "value": false
+                                },
+                                {
+                                  "variableId": "isMovable",
+                                  "value": true
+                                },
+                                {
+                                  "variableId": "positionX",
+                                  "value": 480
+                                },
+                                {
+                                  "variableId": "positionY",
+                                  "value": 80
+                                },
+                                {
+                                  "variableId": "authoredRenderOrder",
+                                  "value": 1003
+                                },
+                                {
+                                  "variableId": "spatialType",
+                                  "value": "SolidObject"
+                                },
+                                {
+                                  "variableId": "stackGroup",
+                                  "value": 1
+                                },
+                                {
+                                  "variableId": "stackOrder",
+                                  "value": 0
+                                },
+                                {
+                                  "variableId": "stackScaleStepOverride",
+                                  "value": 0.2
+                                },
+                                {
+                                  "variableId": "minStackScaleOverride",
+                                  "value": 0.33
+                                },
+                                {
+                                  "variableId": "baseImageScale",
+                                  "value": 0.75
+                                },
+                                {
+                                  "variableId": "footprintWidthCells",
+                                  "value": 1
+                                },
+                                {
+                                  "variableId": "footprintHeightCells",
+                                  "value": 3
+                                },
+                                {
+                                  "variableId": "footprintOrientation",
+                                  "value": "N"
+                                },
+                                {
+                                  "variableId": "objectHeightUnits",
+                                  "value": 1
+                                },
+                                {
+                                  "variableId": "authoredBaseHeightInRoom",
+                                  "value": 0
+                                },
+                                {
+                                  "variableId": "isHeightPinned",
+                                  "value": false
+                                },
+                                {
+                                  "variableId": "selectedVariantFullImagePath",
+                                  "value": "assets/images/_shared/66870102be361c9e40f31d21408c9e3c8b49dd3b8eba86123432b3ff987011e3__crowbar.png"
+                                },
+                                {
+                                  "variableId": "selectedImagePath",
+                                  "value": "assets/images/_shared/66870102be361c9e40f31d21408c9e3c8b49dd3b8eba86123432b3ff987011e3__crowbar.png"
+                                },
+                                {
+                                  "variableId": "selectedVariantImageLocalAlignmentOffsetX",
+                                  "value": -18
+                                },
+                                {
+                                  "variableId": "selectedVariantImageLocalAlignmentOffsetY",
+                                  "value": 25
+                                },
+                                {
+                                  "variableId": "selectedVariantImageLocalAlignmentRotationDegrees",
+                                  "value": 30
+                                },
+                                {
+                                  "variableId": "renderAnchorX",
+                                  "value": 480
+                                },
+                                {
+                                  "variableId": "renderAnchorY",
+                                  "value": 80
+                                },
+                                {
+                                  "variableId": "renderIconOffsetX",
+                                  "value": -18
+                                },
+                                {
+                                  "variableId": "renderIconOffsetY",
+                                  "value": 25
+                                },
+                                {
+                                  "variableId": "renderPositionX",
+                                  "value": 462
+                                },
+                                {
+                                  "variableId": "renderPositionY",
+                                  "value": 105
+                                },
+                                {
+                                  "variableId": "renderRotationDegrees",
+                                  "value": 30
+                                },
+                                {
+                                  "variableId": "occupiedCellIds",
+                                  "value": "M.C,M.D,M.E"
+                                },
+                                {
+                                  "variableId": "occupancyDerivationSourceEcho",
+                                  "value": "x=480;y=80;anchor=TopLeft;footprint=1x3;orientation=N;cell=40"
+                                },
+                                {
+                                  "variableId": "effectiveHeightInRoom",
+                                  "value": 0
+                                },
+                                {
+                                  "variableId": "effectiveRenderZOrder",
+                                  "value": 1004
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "scopeNodeId": "f631c497-5f2f-4cec-8971-8abfead1f911",
+                          "scopeNodeKind": "GameObject",
+                          "scopeNodeName": "Your Stuff",
+                          "variableStates": [
+                            {
+                              "variableId": "containerPoints",
+                              "value": 4
+                            },
+                            {
+                              "variableId": "containerPointsRemaining",
+                              "value": 4
+                            },
+                            {
+                              "variableId": "imageRotationDegrees",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "imageScale",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "isPlayer",
+                              "value": true
+                            },
+                            {
+                              "variableId": "positionX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "positionY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "authoredRenderOrder",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "spatialType",
+                              "value": "SolidObject"
+                            },
+                            {
+                              "variableId": "stackGroup",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "stackOrder",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "baseImageScale",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "footprintWidthCells",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "footprintHeightCells",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "footprintOrientation",
+                              "value": "N"
+                            },
+                            {
+                              "variableId": "objectHeightUnits",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "authoredBaseHeightInRoom",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "isHeightPinned",
+                              "value": false
+                            },
+                            {
+                              "variableId": "occupiedCellIds",
+                              "value": "A.A"
+                            },
+                            {
+                              "variableId": "occupancyDerivationSourceEcho",
+                              "value": "x=0;y=0;anchor=TopLeft;footprint=1x1;orientation=N;cell=40"
+                            },
+                            {
+                              "variableId": "effectiveHeightInRoom",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "effectiveRenderZOrder",
+                              "value": 1001
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentOffsetX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentOffsetY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "selectedVariantImageLocalAlignmentRotationDegrees",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderAnchorX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderAnchorY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderIconOffsetX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderIconOffsetY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderPositionX",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderPositionY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "renderRotationDegrees",
+                              "value": 0
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "scopeNodeId": "ad028f6a-0e77-4f8a-bc5a-ae50ffb012e0",
+                      "parentScopeNodeId": "2339c890-ba73-6396-5ae8-14513110400d",
+                      "scopeNodeKind": "Room",
+                      "scopeNodeName": "No Where",
+                      "variableStates": [
+                        {
+                          "variableId": "roomGridCellSize",
+                          "value": 40
+                        }
+                      ],
+                      "objectStates": [
+                        {
+                          "scopeNodeId": "15ff3436-167a-4746-b6da-43107870437a",
+                          "scopeNodeKind": "GameObject",
+                          "scopeNodeName": "Door_N",
+                          "variableStates": [
+                            {
+                              "variableId": "destinationFromHere",
+                              "value": "Atrium"
+                            },
+                            {
+                              "variableId": "imageRotationDegrees",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "imageScale",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "isLocked",
+                              "value": true
+                            },
+                            {
+                              "variableId": "isOpen",
+                              "value": false
+                            },
+                            {
+                              "variableId": "lookingFromHere",
+                              "value": "the north"
+                            },
+                            {
+                              "variableId": "positionX",
+                              "value": 352
+                            },
+                            {
+                              "variableId": "positionY",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "authoredRenderOrder",
+                              "value": 1001
+                            },
+                            {
+                              "variableId": "spatialType",
+                              "value": "SolidObject"
+                            },
+                            {
+                              "variableId": "stackGroup",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "stackOrder",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "baseImageScale",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "footprintWidthCells",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "footprintHeightCells",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "footprintOrientation",
+                              "value": "N"
+                            },
+                            {
+                              "variableId": "objectHeightUnits",
+                              "value": 1
+                            },
+                            {
+                              "variableId": "authoredBaseHeightInRoom",
+                              "value": 0
+                            },
+                            {
+                              "variableId": "isHeightPinned",
+                              "value": false
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "nonScopeObjectStates": [
+                    {
+                      "ownerKind": "RoomLink",
+                      "nonScopeObjectId": "0996d450-b8bf-42b0-8efa-4ed9753baed4-\u003E698a46f4-73bc-4e9e-8333-e2ed555417fc:East",
+                      "isActive": false,
+                      "variableStates": [
+                        {
+                          "variableId": "isPassable",
+                          "value": false
+                        }
+                      ]
+                    },
+                    {
+                      "ownerKind": "RoomLink",
+                      "nonScopeObjectId": "0f7b95eb-27c9-4752-90e9-c749c51dd569-\u003E698a46f4-73bc-4e9e-8333-e2ed555417fc:South",
+                      "isActive": false,
+                      "variableStates": [
+                        {
+                          "variableId": "isPassable",
+                          "value": false
+                        }
+                      ]
+                    },
+                    {
+                      "ownerKind": "RoomLink",
+                      "nonScopeObjectId": "698a46f4-73bc-4e9e-8333-e2ed555417fc-\u003E0996d450-b8bf-42b0-8efa-4ed9753baed4:West",
+                      "isActive": false,
+                      "variableStates": [
+                        {
+                          "variableId": "isPassable",
+                          "value": false
+                        }
+                      ]
+                    },
+                    {
+                      "ownerKind": "RoomLink",
+                      "nonScopeObjectId": "698a46f4-73bc-4e9e-8333-e2ed555417fc-\u003E0f7b95eb-27c9-4752-90e9-c749c51dd569:North",
+                      "isActive": false,
+                      "variableStates": [
+                        {
+                          "variableId": "isPassable",
+                          "value": false
+                        }
+                      ]
+                    },
+                    {
+                      "ownerKind": "RoomLink",
+                      "nonScopeObjectId": "698a46f4-73bc-4e9e-8333-e2ed555417fc-\u003E6a2b490b-2f6f-4527-8294-976194437296:East",
+                      "isActive": true,
+                      "variableStates": [
+                        {
+                          "variableId": "isPassable",
+                          "value": true
+                        }
+                      ]
+                    },
+                    {
+                      "ownerKind": "RoomLink",
+                      "nonScopeObjectId": "698a46f4-73bc-4e9e-8333-e2ed555417fc-\u003Ead028f6a-0e77-4f8a-bc5a-ae50ffb012e0:South",
+                      "isActive": false,
+                      "variableStates": [
+                        {
+                          "variableId": "isPassable",
+                          "value": false
+                        }
+                      ]
+                    },
+                    {
+                      "ownerKind": "RoomLink",
+                      "nonScopeObjectId": "6a2b490b-2f6f-4527-8294-976194437296-\u003E698a46f4-73bc-4e9e-8333-e2ed555417fc:West",
+                      "isActive": true,
+                      "variableStates": [
+                        {
+                          "variableId": "isPassable",
+                          "value": true
+                        }
+                      ]
+                    },
+                    {
+                      "ownerKind": "RoomLink",
+                      "nonScopeObjectId": "ad028f6a-0e77-4f8a-bc5a-ae50ffb012e0-\u003E698a46f4-73bc-4e9e-8333-e2ed555417fc:North",
+                      "isActive": false,
+                      "variableStates": [
+                        {
+                          "variableId": "isPassable",
+                          "value": false
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

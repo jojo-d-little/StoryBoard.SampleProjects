@@ -1,0 +1,151 @@
+{
+  "objectType": "Flowers",
+  "positionX": 0,
+  "positionY": 0,
+  "includeInPreview": true,
+  "linkActionsToBaseObject": false,
+  "productionName": "newObject9",
+  "nameSynonyms": [],
+  "imageVariants": [],
+  "imageRotationDegrees": 0,
+  "appearance": {
+    "spatialType": "SolidObject",
+    "isMovable": true,
+    "isMovableDefaultValue": true,
+    "footprintWidthCells": 1,
+    "footprintHeightCells": 1,
+    "footprintOrientation": "N",
+    "headingDirection": "N",
+    "objectHeightUnits": 1,
+    "isHeightPinned": false
+  },
+  "isInventoriable": true,
+  "inventoryPointsDefaultValue": 1,
+  "isContainer": false,
+  "containerPointsDefaultValue": 1,
+  "isOpenable": false,
+  "isOpenDefaultValue": false,
+  "isLockable": false,
+  "isLockedDefaultValue": false,
+  "isActivatable": true,
+  "isActiveDefaultValue": true,
+  "isHidable": true,
+  "isHiddenDefaultValue": false,
+  "description": "",
+  "isQuantifiable": true,
+  "quantity": 10,
+  "quantifiablePlacementDistributionMode": "GroupedStack",
+  "containedObjects": [],
+  "id": "876976f1-dffe-4dce-8fe5-f538fd992991",
+  "name": "Flowers",
+  "nameInGame": "Flowers",
+  "hideEmptyConfiguration": false,
+  "validationErrors": [],
+  "ignoredValidationRuleIds": [],
+  "scopeKind": "GameObject",
+  "procedureIds": [],
+  "gameProperties": [
+    {
+      "id": "ad80e4f9-a8c8-4b8f-8180-21afb17a0fdf",
+      "name": "inventoryPoints",
+      "defaultValue": "1",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "f9c0cb2e-ac6f-432e-85b2-5109c7ddf12f",
+      "name": "isActive",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "6249c3d2-ea2b-4371-a671-da22668b9311",
+      "name": "isHidden",
+      "defaultValue": "false",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "be9e84e2-59c3-4e6e-90a8-9404bb9c6cb4",
+      "name": "isQuantifiable",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "b87d1637-8dad-4ce3-bdde-5c3346c01834",
+      "name": "quantity",
+      "defaultValue": "10",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "0663b1c2-4be5-4e23-99fc-780f43b1ba08",
+      "name": "isMovable",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    }
+  ],
+  "additionalVerbs": [],
+  "additionalDirectionals": [],
+  "additionalDirectionalTraversalMappings": [],
+  "availableGameActions": [
+    {
+      "id": "dc2025d7-147d-4ade-aeea-abc24f328d2b",
+      "name": "use_flowers",
+      "payload": {
+        "$payloadType": "buildCompositeByParts",
+        "compositeTargetObjectId": "790f35ea-8959-a176-5e5a-8e806fb1cf76",
+        "compositeRecipeId": "692bbe29-1667-46a1-8574-c38b2aaf2fcd",
+        "compositeRequiredPartObjectIds": [
+          "27809491-a511-5eea-e506-5db363e5e177",
+          "27809491-a511-5eea-e506-5db363e5e177",
+          "27809491-a511-5eea-e506-5db363e5e177",
+          "15d839bd-6149-6dd4-ec6e-3323d2ede224",
+          "15d839bd-6149-6dd4-ec6e-3323d2ede224"
+        ],
+        "compositeStrictPartCountEnforcement": true,
+        "compositeMinimumRequiredPartCount": 1,
+        "compositeMatchMode": "AllRequired",
+        "compositeAmbiguityPolicy": "FailWithHint",
+        "compositePartConsumptionMode": "ContainedInComposite"
+      },
+      "actionType": "BuildCompositeByParts",
+      "noVerbLinkage": false,
+      "verbListText": "use",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "Failed to create smokeball",
+        "IncompleteRecipe": "smokeball parts are not all here",
+        "NoMatchingRecipe": "Not sure you can use it that way.",
+        "SpecifyTarget": "???",
+        "Success": "A mysterious smoke ball has appeared in the room",
+        "TargetMismatch": "Looks like you are missing some {currentAction.missingParts[0]}"
+      },
+      "childCommandForwardingMode": "None",
+      "similarChildDispatchMode": "SingleMatchingChild"
+    },
+    {
+      "id": "604748ac-fabc-49f1-8dfd-9016e43c2299",
+      "name": "look_flowers",
+      "payload": {
+        "$payloadType": "echoMessage"
+      },
+      "actionType": "EchoMessage",
+      "noVerbLinkage": false,
+      "verbListText": "look",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "",
+        "Success": "There are {self.quantity} {self.name}"
+      },
+      "childCommandForwardingMode": "None",
+      "similarChildDispatchMode": "SingleMatchingChild"
+    }
+  ],
+  "eventSubscriptions": [],
+  "timerDefinitions": [],
+  "soundEffectLibraryEntries": []
+}

@@ -1,0 +1,388 @@
+{
+  "parentCountryId": "56a02162-fb18-44e5-b206-d4f2fd88241e",
+  "roomDropBehavior": "keepDisconnected",
+  "baseObjectsIgnoredValidationRuleIds": [],
+  "baseObjects": [],
+  "gameObjects": [],
+  "adjacencyMode": "EightDirectional",
+  "startingRoomId": "698a46f4-73bc-4e9e-8333-e2ed555417fc",
+  "roomIds": [
+    "698a46f4-73bc-4e9e-8333-e2ed555417fc",
+    "6a2b490b-2f6f-4527-8294-976194437296",
+    "0f7b95eb-27c9-4752-90e9-c749c51dd569",
+    "0996d450-b8bf-42b0-8efa-4ed9753baed4",
+    "ad028f6a-0e77-4f8a-bc5a-ae50ffb012e0",
+    "beb7648a-2b9f-42a8-b4c5-9a561334c826"
+  ],
+  "roomPlacements": [
+    {
+      "roomId": "698a46f4-73bc-4e9e-8333-e2ed555417fc",
+      "x": 564,
+      "y": 164
+    },
+    {
+      "roomId": "6a2b490b-2f6f-4527-8294-976194437296",
+      "x": 744,
+      "y": 164
+    },
+    {
+      "roomId": "0f7b95eb-27c9-4752-90e9-c749c51dd569",
+      "x": 564,
+      "y": 24
+    },
+    {
+      "roomId": "0996d450-b8bf-42b0-8efa-4ed9753baed4",
+      "x": 384,
+      "y": 164
+    },
+    {
+      "roomId": "ad028f6a-0e77-4f8a-bc5a-ae50ffb012e0",
+      "x": 564,
+      "y": 304
+    },
+    {
+      "roomId": "beb7648a-2b9f-42a8-b4c5-9a561334c826",
+      "x": 744,
+      "y": 164,
+      "floorElevation": 1
+    }
+  ],
+  "traversalConnections": [
+    {
+      "traversalConnectionId": "6466c71a-d2c4-47a9-a2f6-a0d8ca9cb85e",
+      "roomAId": "0f7b95eb-27c9-4752-90e9-c749c51dd569",
+      "roomBId": "698a46f4-73bc-4e9e-8333-e2ed555417fc",
+      "baseTraversalDirectionFromA": "South",
+      "traversalAccessMode": "TwoWay",
+      "traversalStateFromA": {
+        "openStatePolicy": "IgnoreOpenableState",
+        "availableGameActions": [
+          {
+            "id": "7622a3dd-1cba-40c2-a13e-cc9bc52221c7",
+            "name": "Look",
+            "payload": {
+              "$payloadType": "echoMessage"
+            },
+            "actionType": "EchoMessage",
+            "noVerbLinkage": true,
+            "verbListText": "",
+            "direction": "",
+            "outcomeMessageMap": {
+              "Success": "There looks to be a Atrium thru the door"
+            },
+            "childCommandForwardingMode": "None",
+            "similarChildDispatchMode": "SingleMatchingChild"
+          }
+        ],
+        "gameProperties": [
+          {
+            "id": "ed1927ee-2935-4575-8099-9e4e34d69ebe",
+            "name": "isPassable",
+            "defaultValue": "false",
+            "valueRestriction": "TrueFalse",
+            "lifetime": "Singleton",
+            "sharedVariableId": "0f9b0c7e-e448-4caf-8297-fc96f13e3eb3"
+          }
+        ]
+      },
+      "traversalStateFromB": {
+        "openStatePolicy": "IgnoreOpenableState",
+        "availableGameActions": [
+          {
+            "id": "e7d63957-cff8-4578-9225-79707f75dba8",
+            "name": "Look",
+            "payload": {
+              "$payloadType": "echoMessage"
+            },
+            "actionType": "EchoMessage",
+            "noVerbLinkage": true,
+            "verbListText": "",
+            "direction": "",
+            "outcomeMessageMap": {
+              "Success": "There looks to be a Workshop thru the door"
+            },
+            "childCommandForwardingMode": "None",
+            "similarChildDispatchMode": "SingleMatchingChild"
+          }
+        ],
+        "gameProperties": [
+          {
+            "id": "386dd834-0c61-4449-8631-1ecc3606a4b8",
+            "name": "isPassable",
+            "defaultValue": "false",
+            "valueRestriction": "TrueFalse",
+            "lifetime": "Singleton",
+            "sharedVariableId": "0f9b0c7e-e448-4caf-8297-fc96f13e3eb3"
+          }
+        ]
+      },
+      "openStateBindingMode": "Together",
+      "gameProperties": []
+    },
+    {
+      "traversalConnectionId": "d65fd830-dcb1-4d0b-bbe1-9cb5b921b52d",
+      "roomAId": "698a46f4-73bc-4e9e-8333-e2ed555417fc",
+      "roomBId": "6a2b490b-2f6f-4527-8294-976194437296",
+      "baseTraversalDirectionFromA": "East",
+      "traversalAccessMode": "TwoWay",
+      "traversalStateFromA": {
+        "openStatePolicy": "IgnoreOpenableState",
+        "availableGameActions": [
+          {
+            "id": "d103fab3-0566-4bfd-927f-d655c98aec69",
+            "name": "Look",
+            "payload": {
+              "$payloadType": "echoMessage"
+            },
+            "actionType": "EchoMessage",
+            "noVerbLinkage": true,
+            "verbListText": "",
+            "direction": "",
+            "outcomeMessageMap": {
+              "Success": "There looks to be a Supply Closet thru the door"
+            },
+            "childCommandForwardingMode": "None",
+            "similarChildDispatchMode": "SingleMatchingChild"
+          }
+        ],
+        "gameProperties": [
+          {
+            "id": "bb8024b6-7a10-4ae6-ae32-de9ffc346753",
+            "name": "isPassable",
+            "defaultValue": "true",
+            "valueRestriction": "TrueFalse",
+            "lifetime": "Singleton",
+            "sharedVariableId": "1c9bd943-d243-4a28-ad7b-75db5894c21a"
+          }
+        ]
+      },
+      "traversalStateFromB": {
+        "openStatePolicy": "IgnoreOpenableState",
+        "availableGameActions": [
+          {
+            "id": "54735787-9f0e-46ee-b30f-3328841a409c",
+            "name": "Look",
+            "payload": {
+              "$payloadType": "echoMessage"
+            },
+            "actionType": "EchoMessage",
+            "noVerbLinkage": true,
+            "verbListText": "",
+            "direction": "",
+            "outcomeMessageMap": {
+              "Success": "There looks to be a Atrium thru the door"
+            },
+            "childCommandForwardingMode": "None",
+            "similarChildDispatchMode": "SingleMatchingChild"
+          }
+        ],
+        "gameProperties": [
+          {
+            "id": "158083f3-c28d-4633-953e-8202b5cbce3e",
+            "name": "isPassable",
+            "defaultValue": "true",
+            "valueRestriction": "TrueFalse",
+            "lifetime": "Singleton",
+            "sharedVariableId": "1c9bd943-d243-4a28-ad7b-75db5894c21a"
+          }
+        ]
+      },
+      "openStateBindingMode": "Together",
+      "gameProperties": []
+    },
+    {
+      "traversalConnectionId": "9956ab4e-051b-4547-9007-f1479aef46f9",
+      "roomAId": "698a46f4-73bc-4e9e-8333-e2ed555417fc",
+      "roomBId": "ad028f6a-0e77-4f8a-bc5a-ae50ffb012e0",
+      "baseTraversalDirectionFromA": "South",
+      "traversalAccessMode": "TwoWay",
+      "traversalStateFromA": {
+        "openStatePolicy": "IgnoreOpenableState",
+        "availableGameActions": [
+          {
+            "id": "0956f776-3101-4dca-a85d-dce976619cae",
+            "name": "Look",
+            "payload": {
+              "$payloadType": "echoMessage"
+            },
+            "actionType": "EchoMessage",
+            "noVerbLinkage": true,
+            "verbListText": "",
+            "direction": "",
+            "outcomeMessageMap": {
+              "Success": "There looks to be a No Where thru the door"
+            },
+            "childCommandForwardingMode": "None",
+            "similarChildDispatchMode": "SingleMatchingChild"
+          }
+        ],
+        "gameProperties": [
+          {
+            "id": "01f39003-238c-4ebe-b4d2-b7f6768ddc31",
+            "name": "isPassable",
+            "defaultValue": "false",
+            "valueRestriction": "TrueFalse",
+            "lifetime": "Singleton",
+            "sharedVariableId": "d743dc04-3262-4846-b792-a24447787cb0"
+          }
+        ]
+      },
+      "traversalStateFromB": {
+        "openStatePolicy": "IgnoreOpenableState",
+        "availableGameActions": [
+          {
+            "id": "57aee39f-9337-4c36-be75-a2fe4e4ef73f",
+            "name": "Look",
+            "payload": {
+              "$payloadType": "echoMessage"
+            },
+            "actionType": "EchoMessage",
+            "noVerbLinkage": true,
+            "verbListText": "",
+            "direction": "",
+            "outcomeMessageMap": {
+              "Success": "There looks to be a Atrium thru the door"
+            },
+            "childCommandForwardingMode": "None",
+            "similarChildDispatchMode": "SingleMatchingChild"
+          }
+        ],
+        "gameProperties": [
+          {
+            "id": "df458e72-a02c-403c-a29c-d4818c90f24a",
+            "name": "isPassable",
+            "defaultValue": "false",
+            "valueRestriction": "TrueFalse",
+            "lifetime": "Singleton",
+            "sharedVariableId": "d743dc04-3262-4846-b792-a24447787cb0"
+          }
+        ]
+      },
+      "openStateBindingMode": "Together",
+      "gameProperties": []
+    },
+    {
+      "traversalConnectionId": "6ac68db2-9882-4a1c-9642-b97e0d2346f4",
+      "roomAId": "0996d450-b8bf-42b0-8efa-4ed9753baed4",
+      "roomBId": "698a46f4-73bc-4e9e-8333-e2ed555417fc",
+      "baseTraversalDirectionFromA": "East",
+      "traversalAccessMode": "TwoWay",
+      "traversalStateFromA": {
+        "openStatePolicy": "IgnoreOpenableState",
+        "availableGameActions": [
+          {
+            "id": "655a3ae1-2a64-46f7-b66a-d78841037ab0",
+            "name": "Look",
+            "payload": {
+              "$payloadType": "echoMessage"
+            },
+            "actionType": "EchoMessage",
+            "noVerbLinkage": true,
+            "verbListText": "",
+            "direction": "",
+            "outcomeMessageMap": {
+              "Success": "There looks to be a Atrium thru the door"
+            },
+            "childCommandForwardingMode": "None",
+            "similarChildDispatchMode": "SingleMatchingChild"
+          }
+        ],
+        "gameProperties": [
+          {
+            "id": "a17e302c-4f50-485f-ba22-6eb91fae04be",
+            "name": "isPassable",
+            "defaultValue": "false",
+            "valueRestriction": "TrueFalse",
+            "lifetime": "Singleton",
+            "sharedVariableId": "a1c21979-f7d0-44d3-bf2d-1874b9235c7d"
+          }
+        ]
+      },
+      "traversalStateFromB": {
+        "openStatePolicy": "IgnoreOpenableState",
+        "availableGameActions": [
+          {
+            "id": "454626e7-f6b3-403d-9ca7-77253dd1558b",
+            "name": "Look",
+            "payload": {
+              "$payloadType": "echoMessage"
+            },
+            "actionType": "EchoMessage",
+            "noVerbLinkage": true,
+            "verbListText": "",
+            "direction": "",
+            "outcomeMessageMap": {
+              "Success": "There looks to be a Exit Hall thru the door"
+            },
+            "childCommandForwardingMode": "None",
+            "similarChildDispatchMode": "SingleMatchingChild"
+          }
+        ],
+        "gameProperties": [
+          {
+            "id": "85e43c7e-ce12-4dba-a8d2-e8c93084afe2",
+            "name": "isPassable",
+            "defaultValue": "false",
+            "valueRestriction": "TrueFalse",
+            "lifetime": "Singleton",
+            "sharedVariableId": "a1c21979-f7d0-44d3-bf2d-1874b9235c7d"
+          }
+        ]
+      },
+      "openStateBindingMode": "Together",
+      "gameProperties": []
+    },
+    {
+      "traversalConnectionId": "c5565052-42a9-4fe4-b05a-c5a02dfd1474",
+      "roomAId": "6a2b490b-2f6f-4527-8294-976194437296",
+      "roomBId": "beb7648a-2b9f-42a8-b4c5-9a561334c826",
+      "baseTraversalDirectionFromA": "Up",
+      "traversalAccessMode": "TwoWay",
+      "traversalStateFromA": {
+        "openStatePolicy": "IgnoreOpenableState",
+        "availableGameActions": [],
+        "gameProperties": [
+          {
+            "id": "08d93591-d242-498e-813e-b953cfb4a962",
+            "name": "isPassable",
+            "defaultValue": "true",
+            "valueRestriction": "TrueFalse",
+            "lifetime": "Singleton"
+          }
+        ]
+      },
+      "traversalStateFromB": {
+        "openStatePolicy": "IgnoreOpenableState",
+        "availableGameActions": [],
+        "gameProperties": [
+          {
+            "id": "a6671af0-c816-4325-997d-f9528f2e32d5",
+            "name": "isPassable",
+            "defaultValue": "true",
+            "valueRestriction": "TrueFalse",
+            "lifetime": "Singleton"
+          }
+        ]
+      },
+      "openStateBindingMode": "Together",
+      "gameProperties": []
+    }
+  ],
+  "id": "f5b97d33-4ba2-42ff-8a41-129326fd8fc6",
+  "name": "Starter Area",
+  "nameInGame": "Starter Area",
+  "hideEmptyConfiguration": false,
+  "validationErrors": [],
+  "ignoredValidationRuleIds": [],
+  "scopeKind": "Area",
+  "baseObjectIds": [],
+  "gameObjectIds": [],
+  "gameProperties": [],
+  "additionalVerbs": [],
+  "additionalDirectionals": [],
+  "additionalDirectionalTraversalMappings": [],
+  "availableGameActions": [],
+  "eventSubscriptions": [],
+  "timerDefinitions": [],
+  "soundEffectLibraryEntries": []
+}

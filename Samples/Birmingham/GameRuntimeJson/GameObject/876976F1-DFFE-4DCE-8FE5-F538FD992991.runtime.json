@@ -1,0 +1,160 @@
+{
+  "linkActionsToBaseObject": false,
+  "productionName": "newObject9",
+  "imageRotationDegrees": 0,
+  "appearance": {
+    "spatialType": "SolidObject",
+    "isMovable": true,
+    "isMovableDefaultValue": true,
+    "footprintWidthCells": 1,
+    "footprintHeightCells": 1,
+    "footprintOrientation": "North",
+    "headingDirection": "North",
+    "objectHeightUnits": 1
+  },
+  "isInventoriable": true,
+  "inventoryPointsDefaultValue": 1,
+  "isContainer": false,
+  "containerPointsDefaultValue": 1,
+  "isOpenable": false,
+  "isOpenDefaultValue": false,
+  "isLockable": false,
+  "isLockedDefaultValue": false,
+  "isActivatable": true,
+  "isActiveDefaultValue": true,
+  "isHidable": true,
+  "isHiddenDefaultValue": false,
+  "description": "",
+  "isQuantifiable": true,
+  "quantity": 10,
+  "quantifiablePlacementDistributionMode": "GroupedStack",
+  "isRuntimeMaterialized": false,
+  "Id": "876976f1-dffe-4dce-8fe5-f538fd992991",
+  "name": "Flowers",
+  "nameInGame": "Flowers",
+  "scopeKind": "GameObject",
+  "gameProperties": [
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "imageRotationDegrees",
+      "defaultValue": "0",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "imageScale",
+      "defaultValue": "1",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "inventoryPoints",
+      "defaultValue": "1",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "isActive",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "isHidden",
+      "defaultValue": "false",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "isMovable",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "isQuantifiable",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "positionX",
+      "defaultValue": "0",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "positionY",
+      "defaultValue": "0",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "quantity",
+      "defaultValue": "10",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    }
+  ],
+  "availableGameActions": [
+    {
+      "id": "604748ac-fabc-49f1-8dfd-9016e43c2299",
+      "name": "look_flowers",
+      "payload": {
+        "$payloadType": "echoMessage"
+      },
+      "actionType": "EchoMessage",
+      "noVerbLinkage": false,
+      "verbListText": "look",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "",
+        "Success": "There are {self.quantity} {self.name}"
+      },
+      "childCommandForwardingMode": "None"
+    },
+    {
+      "id": "dc2025d7-147d-4ade-aeea-abc24f328d2b",
+      "name": "use_flowers",
+      "payload": {
+        "$payloadType": "buildCompositeByParts",
+        "compositeTargetObjectId": "790f35ea-8959-a176-5e5a-8e806fb1cf76",
+        "compositeRecipeId": "692bbe29-1667-46a1-8574-c38b2aaf2fcd",
+        "compositeRequiredPartObjectIds": [
+          "27809491-a511-5eea-e506-5db363e5e177",
+          "27809491-a511-5eea-e506-5db363e5e177",
+          "27809491-a511-5eea-e506-5db363e5e177",
+          "15d839bd-6149-6dd4-ec6e-3323d2ede224",
+          "15d839bd-6149-6dd4-ec6e-3323d2ede224"
+        ],
+        "compositeStrictPartCountEnforcement": true,
+        "compositeMinimumRequiredPartCount": 1,
+        "compositeMatchMode": "AllRequired",
+        "compositeAmbiguityPolicy": "FailWithHint",
+        "compositePartConsumptionMode": "ContainedInComposite"
+      },
+      "actionType": "BuildCompositeByParts",
+      "noVerbLinkage": false,
+      "verbListText": "use",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "Failed to create smokeball",
+        "IncompleteRecipe": "smokeball parts are not all here",
+        "NoMatchingRecipe": "Not sure you can use it that way.",
+        "SpecifyTarget": "???",
+        "Success": "A mysterious smoke ball has appeared in the room",
+        "TargetMismatch": "Looks like you are missing some {currentAction.missingParts[0]}"
+      },
+      "childCommandForwardingMode": "None"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "objectType": "BlackKing",
+  "positionX": 448,
+  "positionY": 512,
+  "includeInPreview": true,
+  "linkedBaseObjectId": "48ffff13-6a05-4bfd-bbf4-20920dae302b",
+  "linkActionsToBaseObject": true,
+  "productionName": "inventoriableTemplate",
+  "imageRotationDegrees": 0,
+  "renderZOrder": 1080,
+  "authoredRenderOrder": 1080,
+  "quantity": 1,
+  "quantifiablePlacementDistributionMode": "IndividualInstances",
+  "containedObjects": [],
+  "id": "6745052c-8587-4fba-8d38-d766d973fe0d",
+  "name": "BlackKing",
+  "nameInGame": "BlackKing",
+  "hideEmptyConfiguration": false,
+  "scopeKind": "GameObject",
+  "gameProperties": [
+    {
+      "id": "fd525327-90e7-471d-8d30-6b1c577c948f",
+      "name": "inventoryPoints",
+      "defaultValue": "1",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "4992079e-e4d0-4901-ac43-8a9d56a19d78",
+      "name": "isActive",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "d1929225-a664-4dfc-b873-33e0342810f0",
+      "name": "isHidden",
+      "defaultValue": "false",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "01dc7f3e-2733-4df2-a473-a32f780a1763",
+      "name": "isQuantifiable",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "bb91194b-c074-4a6d-a39c-8426607a5b51",
+      "name": "quantity",
+      "defaultValue": "1",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "d599fe49-8e31-4ed7-81d2-393d52d04c3f",
+      "name": "isMovable",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    }
+  ],
+  "eventSubscriptions": [],
+  "timerDefinitions": [],
+  "soundEffectLibraryEntries": []
+}

@@ -1,0 +1,52 @@
+{
+  "gameObjects": [],
+  "baseObjects": [],
+  "planetIds": [
+    "9f0f42e8-4fcc-4711-9a24-8cac61e64fe2"
+  ],
+  "sharedVariables": [],
+  "objectTemplateIds": [
+    "1c13c5a0-3a74-4714-959b-b1f75189c1d4",
+    "228d0695-e98a-4f77-930e-ee2c6053e4e5"
+  ],
+  "objectTemplates": [],
+  "roomTemplateIds": [],
+  "roomTemplates": [],
+  "id": "00000000-0000-0000-0000-000000000000",
+  "name": "",
+  "nameInGame": "",
+  "hideEmptyConfiguration": false,
+  "validationErrors": [],
+  "ignoredValidationRuleIds": [],
+  "scopeKind": "Global",
+  "baseObjectIds": [],
+  "gameObjectIds": [
+    "80f01fc2-6fd5-4573-992e-6caa6565a414"
+  ],
+  "procedureIds": [],
+  "gameProperties": [],
+  "additionalVerbs": [
+    "go",
+    "look",
+    "open",
+    "close",
+    "take",
+    "drop",
+    "use",
+    "talk"
+  ],
+  "additionalDirectionals": [
+    "north",
+    "south",
+    "east",
+    "west",
+    "northeast",
+    "southeast",
+    "northwest",
+    "southwest",
+    "up",
+    "down"
+  ],
+  "additionalDirectionalTraversalMappings": [],
+  "availableGameActions": []
+}

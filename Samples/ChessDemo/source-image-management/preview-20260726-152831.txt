@@ -1,0 +1,5 @@
+Preview run at 2026-07-26 15:28:31
+Mode=ConsolidateSourceImages; References=2; Actionable=2.
+
+Global / Object Templates / BasicDoor | object:variant:Closed:full | C:\work\HobbyStuff\storyboarding\PlaceHolderImages\DarkDoor.png | Will copy -> C:\work\HobbyStuff\storyboarding\Samples\ChessDemo\project-source-images\object-templates\BasicDoor--0df7d21c2d224ef98b373eebd9b07dc0\DarkDoor.png
+Global / Object Templates / BasicDoor | object:variant:Open:full | C:\work\HobbyStuff\storyboarding\PlaceHolderImages\DarkDoorOpen.png | Will copy -> C:\work\HobbyStuff\storyboarding\Samples\ChessDemo\project-source-images\object-templates\BasicDoor--0df7d21c2d224ef98b373eebd9b07dc0\DarkDoorOpen.png

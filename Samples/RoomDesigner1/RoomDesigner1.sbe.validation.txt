@@ -1,0 +1,17 @@
+Validation report generated: 2026-07-15 06:36:34
+Project: RoomDesigner1
+ExecutionKind: WholeProject
+RootScopePath: Global
+IncludeDescendants: True
+CandidateNodeCount: 49
+ExecutedRules: 33
+SkippedRules: 0
+StoppedEarly: False
+RemainingIssueCountAtStop: 0
+StopRuleId: (none)
+RemainingRuleCountAtStop: 0
+
+SkippedRuleId	SkipReason	SkipDetail
+
+RuleId	Severity	Path	Description	Hint
+IMG-001	Warning	Global / Object Templates / BasicDoor	object image variant 'Open' (full): source image exists but exported fallback image is missing.	Run clean export to materialize current image assets.

@@ -1,0 +1,91 @@
+{
+  "gameObjects": [],
+  "baseObjects": [],
+  "phaseBooks": [],
+  "planetIds": [
+    "5f0b8a2e-3cb3-4a10-8c17-1b6cb64d1001"
+  ],
+  "phaseBookIds": [],
+  "sharedVariables": [
+    {
+      "id": "df1b02c9-11d7-484c-b1ab-0e6748605f6f",
+      "name": "Shared-df1b02c9"
+    }
+  ],
+  "objectTemplateIds": [
+    "e3be5552-ddfa-42fe-bcea-56f9760b829a",
+    "5fb5c375-d89c-4db9-8693-7b3f77bed5ed",
+    "2b1e9c29-27b1-4a38-9ab5-df33757b2614",
+    "b6d3bc1d-2f56-4d9f-9af0-8160780c6687",
+    "741c1dc9-b073-4ed9-9d69-bda3733ae79e"
+  ],
+  "objectTemplates": [],
+  "roomTemplateIds": [],
+  "roomTemplates": [],
+  "id": "00000000-0000-0000-0000-000000000000",
+  "name": "",
+  "nameInGame": "",
+  "hideEmptyConfiguration": false,
+  "validationErrors": [],
+  "ignoredValidationRuleIds": [],
+  "scopeKind": "Global",
+  "baseObjectIds": [],
+  "gameObjectIds": [
+    "cec66601-fb3e-4759-b64f-1bb717ebc214"
+  ],
+  "procedureIds": [],
+  "gameProperties": [],
+  "additionalVerbs": [
+    "go",
+    "look",
+    "open",
+    "close",
+    "take",
+    "drop",
+    "use",
+    "talk"
+  ],
+  "additionalDirectionals": [
+    "north",
+    "south",
+    "east",
+    "west",
+    "northeast",
+    "southeast",
+    "northwest",
+    "southwest",
+    "up",
+    "down",
+    "into"
+  ],
+  "additionalDirectionalTraversalMappings": [
+    {
+      "token": "down",
+      "traversalDirection": "South"
+    },
+    {
+      "token": "east",
+      "traversalDirection": "East"
+    },
+    {
+      "token": "north",
+      "traversalDirection": "North"
+    },
+    {
+      "token": "south",
+      "traversalDirection": "South"
+    },
+    {
+      "token": "up",
+      "traversalDirection": "North"
+    },
+    {
+      "token": "west",
+      "traversalDirection": "West"
+    }
+  ],
+  "availableGameActions": [],
+  "eventSubscriptions": [],
+  "timerDefinitions": [],
+  "soundEffectLibraryEntries": []
+}

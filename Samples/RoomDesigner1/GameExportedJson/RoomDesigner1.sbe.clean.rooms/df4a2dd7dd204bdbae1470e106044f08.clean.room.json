@@ -1,0 +1,222 @@
+{
+  "scopeKind": 6,
+  "schemaVersion": "1.0",
+  "id": "df4a2dd7-dd20-4bdb-ae14-70e106044f08",
+  "description": "",
+  "roomDisplayMode": "Overlay",
+  "commandPhrases": [],
+  "gameObjects": [
+    {
+      "scopeKind": 7,
+      "sourceObjectId": "60b6ced7-0ea3-4da6-b5f2-f9364e5f4afd",
+      "productionName": "Door opens South from OtherRoom to OpeningRoom.",
+      "imageVariants": [
+        {
+          "variantName": "default",
+          "imagePathSemantics": "runtimeExportRelative",
+          "fullImagePath": "assets/images/_shared/12251e687313394ea54d5dd2fbb84926262908bc8e87151e35b8371a37732fae__DarkDoor.png",
+          "imageScale": 1,
+          "isDefault": true
+        }
+      ],
+      "imageRotationDegrees": 180,
+      "isInventoriable": false,
+      "inventoryPointsDefaultValue": 1,
+      "isContainer": false,
+      "containerPointsDefaultValue": 1,
+      "isOpenable": true,
+      "isOpenDefaultValue": false,
+      "isLockable": true,
+      "isLockedDefaultValue": false,
+      "isActivatable": false,
+      "isActiveDefaultValue": false,
+      "isHidable": false,
+      "isHiddenDefaultValue": false,
+      "description": "",
+      "quantity": 1,
+      "quantifiablePlacementDistributionMode": "GroupedStack",
+      "childScopes": [],
+      "name": "Door_S",
+      "gameProperties": [
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "name": "imageRotationDegrees",
+          "defaultValue": "180",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "name": "imageScale",
+          "defaultValue": "1",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "1f5dae8e-35b7-4bf9-88c2-7112fea0ae3f",
+          "name": "isLocked",
+          "defaultValue": "false",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "3006d435-7a1c-4698-8ec7-1101e67dcb10",
+          "name": "isOpen",
+          "defaultValue": "false",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "name": "positionX",
+          "defaultValue": "276",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "name": "positionY",
+          "defaultValue": "540.9923210144043",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        }
+      ],
+      "additionalDirectionalTraversalMappings": []
+    }
+  ],
+  "images": [
+    {
+      "slot": "Default",
+      "overlayRenderOrder": 150,
+      "imagePathSemantics": "runtimeExportRelative",
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "Down",
+      "overlayRenderOrder": 0,
+      "imagePathSemantics": "runtimeExportRelative",
+      "fullImagePath": "assets/images/_shared/7bc4fd3cfc03a0636edeece94b6f865692f80c41fe62337c47ab48658273be87__DarkBrownWoodenFloor800x600.png",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "East",
+      "overlayRenderOrder": 100,
+      "imagePathSemantics": "runtimeExportRelative",
+      "overlayRotationDegrees": 180,
+      "fullImagePath": "assets/images/_shared/1334e05a4c445ce256b03ff1d2b7070dbc799fa903da418ccdb83c27b1810713__ShortBrickWall.png",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "North",
+      "overlayRenderOrder": 100,
+      "imagePathSemantics": "runtimeExportRelative",
+      "overlayRotationDegrees": 180,
+      "fullImagePath": "assets/images/_shared/84c8f14bc09348dea467172e1df774dd5ce4aadda9856f4ec558a97c1a40141f__LongBrickWall.png",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "NorthEast",
+      "overlayRenderOrder": 200,
+      "imagePathSemantics": "runtimeExportRelative",
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "NorthWest",
+      "overlayRenderOrder": 200,
+      "imagePathSemantics": "runtimeExportRelative",
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "South",
+      "overlayRenderOrder": 100,
+      "imagePathSemantics": "runtimeExportRelative",
+      "fullImagePath": "assets/images/_shared/84c8f14bc09348dea467172e1df774dd5ce4aadda9856f4ec558a97c1a40141f__LongBrickWall.png",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "SouthEast",
+      "overlayRenderOrder": 200,
+      "imagePathSemantics": "runtimeExportRelative",
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "SouthWest",
+      "overlayRenderOrder": 200,
+      "imagePathSemantics": "runtimeExportRelative",
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "Up",
+      "overlayRenderOrder": 150,
+      "imagePathSemantics": "runtimeExportRelative",
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "West",
+      "overlayRenderOrder": 100,
+      "imagePathSemantics": "runtimeExportRelative",
+      "fullImagePath": "assets/images/_shared/1334e05a4c445ce256b03ff1d2b7070dbc799fa903da418ccdb83c27b1810713__ShortBrickWall.png",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    }
+  ],
+  "childScopes": [
+    {
+      "scopeKind": 7,
+      "scopeName": "Door_S",
+      "scopeNameInGame": "Door_S",
+      "runtimeParentScopeNodeId": null,
+      "scopeTokens": [
+        "Door_S"
+      ],
+      "parentScope": null,
+      "childScopes": [],
+      "additionalVerbs": [],
+      "additionalDirectionals": [],
+      "additionalDirectionalTraversalMappings": []
+    }
+  ],
+  "name": "OtherRoom",
+  "additionalDirectionalTraversalMappings": [],
+  "availableGameActions": [
+    {
+      "id": "4362da69-b24d-43c0-b722-3c3aeca7521f",
+      "name": "go_otherroom",
+      "actionType": "NavigateToAdjacent",
+      "verbListText": "go",
+      "direction": "",
+      "outcomeMessageMap": {
+        "AmbiguousTraversal": "Multiple exits are available. Specify a direction.",
+        "DirectionRequired": "Specify a direction.",
+        "DoorClosed": "",
+        "Failure": "",
+        "Moved": "You move to the next room.",
+        "MoveFailed": "You cannot move right now.",
+        "NoExitInDirection": "You cannot go that way.",
+        "NoTraversableExit": "There is nowhere to go from here.",
+        "Success": "",
+        "TraversalAmbiguous": "",
+        "TraversalBlocked": "That way is blocked.",
+        "TraversalNotPassable": "",
+        "UnknownDestination": ""
+      },
+      "childCommandForwardingMode": "None"
+    }
+  ]
+}

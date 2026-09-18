@@ -1,0 +1,4 @@
+timestampUtc,severity,event,sourcePath,message
+"2026-08-16T16:51:27.1995740Z","Info","OpenProject","C:\work\HobbyStuff\storyboarding\Samples\ObjectPlayLevel1\ObjectPlayLevel1.sbe.json","Project load completed."
+"2026-08-16T16:51:27.1995818Z","Warning","VocabularyDefaultsInjected","C:\work\HobbyStuff\storyboarding\Samples\ObjectPlayLevel1\ObjectPlayLevel1.sbe.json","commandVerbs property was missing; default verbs were injected."
+"2026-08-16T16:51:27.1995826Z","Warning","VocabularyDefaultsInjected","C:\work\HobbyStuff\storyboarding\Samples\ObjectPlayLevel1\ObjectPlayLevel1.sbe.json","directionals property was missing; default directionals were injected."

@@ -1,0 +1,17 @@
+{
+  "adjacencyMode": "EightDirectional",
+  "startingRoomId": "f3211ed7-0612-41b9-93af-2c983b20f0c5",
+  "roomIds": [
+    "f3211ed7-0612-41b9-93af-2c983b20f0c5"
+  ],
+  "roomPlacements": [],
+  "links": [],
+  "Id": "f5b97d33-4ba2-42ff-8a41-129326fd8fc6",
+  "name": "TheGameArea",
+  "nameInGame": "TheGameArea",
+  "scopeKind": "Area",
+  "gameProperties": [],
+  "additionalVerbs": [],
+  "additionalDirectionals": [],
+  "availableGameActions": []
+}

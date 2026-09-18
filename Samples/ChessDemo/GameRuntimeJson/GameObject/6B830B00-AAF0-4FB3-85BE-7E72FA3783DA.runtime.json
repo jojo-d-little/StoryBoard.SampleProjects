@@ -1,0 +1,372 @@
+{
+  "linkActionsToBaseObject": false,
+  "productionName": "inventoriableTemplate",
+  "imageVariants": [
+    {
+      "variantName": "default",
+      "fullImagePath": "assets/images/_shared/f7b6e6e712e79f82718cb5867e0365d4d554fcb941f80113147913d18177af1a__BlackChessKnight.png",
+      "imageLocalAlignmentOffsetX": 11,
+      "imageLocalAlignmentOffsetY": -5,
+      "imageScale": 0.35,
+      "isDefault": true,
+      "imagePathSemantics": "runtimeExportRelative"
+    }
+  ],
+  "imageRotationDegrees": 0,
+  "appearance": {
+    "spatialType": "SolidObject",
+    "isMovable": true,
+    "isMovableDefaultValue": true,
+    "stackGroup": 1,
+    "footprintWidthCells": 1,
+    "footprintHeightCells": 1,
+    "footprintOrientation": "North",
+    "headingDirection": "North",
+    "objectHeightUnits": 1,
+    "stackScaleStepOverride": 0.08,
+    "minStackScaleOverride": 0.5,
+    "movementRestrictions": {
+      "multiLegMaxTotalDistanceCells": 3,
+      "firstUnstacked": {
+        "n": {
+          "maxDistance": 2,
+          "allowJumpOver": true
+        },
+        "ne": {
+          "maxDistance": 2,
+          "allowJumpOver": true
+        },
+        "e": {
+          "maxDistance": 2,
+          "allowJumpOver": true
+        },
+        "se": {
+          "maxDistance": 2,
+          "allowJumpOver": true
+        },
+        "s": {
+          "maxDistance": 2,
+          "allowJumpOver": true
+        },
+        "sw": {
+          "maxDistance": 2,
+          "allowJumpOver": true
+        },
+        "w": {
+          "maxDistance": 2,
+          "allowJumpOver": true
+        },
+        "nw": {
+          "maxDistance": 2,
+          "allowJumpOver": true
+        }
+      },
+      "firstStacked": {
+        "n": {
+          "maxDistance": 2,
+          "allowJumpOver": true
+        },
+        "ne": {
+          "maxDistance": 2,
+          "allowJumpOver": true
+        },
+        "e": {
+          "maxDistance": 2,
+          "allowJumpOver": true
+        },
+        "se": {
+          "maxDistance": 2,
+          "allowJumpOver": true
+        },
+        "s": {
+          "maxDistance": 2,
+          "allowJumpOver": true
+        },
+        "sw": {
+          "maxDistance": 2,
+          "allowJumpOver": true
+        },
+        "w": {
+          "maxDistance": 2,
+          "allowJumpOver": true
+        },
+        "nw": {
+          "maxDistance": 2,
+          "allowJumpOver": true
+        }
+      },
+      "subsequentUnstacked": {
+        "n": {
+          "maxDistance": 2,
+          "allowJumpOver": true
+        },
+        "ne": {
+          "maxDistance": 2,
+          "allowJumpOver": true
+        },
+        "e": {
+          "maxDistance": 2,
+          "allowJumpOver": true
+        },
+        "se": {
+          "maxDistance": 2,
+          "allowJumpOver": true
+        },
+        "s": {
+          "maxDistance": 2,
+          "allowJumpOver": true
+        },
+        "sw": {
+          "maxDistance": 2,
+          "allowJumpOver": true
+        },
+        "w": {
+          "maxDistance": 2,
+          "allowJumpOver": true
+        },
+        "nw": {
+          "maxDistance": 2,
+          "allowJumpOver": true
+        }
+      },
+      "subsequentStacked": {
+        "n": {
+          "maxDistance": 2,
+          "allowJumpOver": true
+        },
+        "ne": {
+          "maxDistance": 2,
+          "allowJumpOver": true
+        },
+        "e": {
+          "maxDistance": 2,
+          "allowJumpOver": true
+        },
+        "se": {
+          "maxDistance": 2,
+          "allowJumpOver": true
+        },
+        "s": {
+          "maxDistance": 2,
+          "allowJumpOver": true
+        },
+        "sw": {
+          "maxDistance": 2,
+          "allowJumpOver": true
+        },
+        "w": {
+          "maxDistance": 2,
+          "allowJumpOver": true
+        },
+        "nw": {
+          "maxDistance": 2,
+          "allowJumpOver": true
+        }
+      }
+    }
+  },
+  "isInventoriable": true,
+  "inventoryPointsDefaultValue": 1,
+  "isContainer": false,
+  "containerPointsDefaultValue": 1,
+  "isOpenable": false,
+  "isOpenDefaultValue": false,
+  "isLockable": false,
+  "isLockedDefaultValue": false,
+  "isActivatable": true,
+  "isActiveDefaultValue": true,
+  "isHidable": true,
+  "isHiddenDefaultValue": false,
+  "description": "Template with pickup/drop baseline actions.",
+  "isQuantifiable": true,
+  "quantity": 1,
+  "quantifiablePlacementDistributionMode": "IndividualInstances",
+  "isRuntimeMaterialized": false,
+  "Id": "6b830b00-aaf0-4fb3-85be-7e72fa3783da",
+  "name": "BlackKnight",
+  "nameInGame": "BlackKnight",
+  "scopeKind": "GameObject",
+  "gameProperties": [
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "imageRotationDegrees",
+      "defaultValue": "0",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "imageScale",
+      "defaultValue": "0.35",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "inventoryPoints",
+      "defaultValue": "1",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "isActive",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "isHidden",
+      "defaultValue": "false",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "isMovable",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "isQuantifiable",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "positionX",
+      "defaultValue": "0",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "positionY",
+      "defaultValue": "0",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "quantity",
+      "defaultValue": "1",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    }
+  ],
+  "availableGameActions": [
+    {
+      "id": "6f354613-7998-4864-abc3-9c7ef44b4100",
+      "name": "drop",
+      "payload": {
+        "$payloadType": "removeObjectFromContainer",
+        "targetContainerId": ""
+      },
+      "actionType": "RemoveObjectFromContainer",
+      "noVerbLinkage": false,
+      "verbListText": "drop",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "",
+        "RemoveFailed": "",
+        "ResolveSourceFailed": "",
+        "Success": ""
+      },
+      "childCommandForwardingMode": "None"
+    },
+    {
+      "id": "ceab8bb4-bc33-4c64-92aa-6323ed8f61e4",
+      "name": "get",
+      "payload": {
+        "$payloadType": "putObjectInContainer",
+        "targetContainerId": ""
+      },
+      "actionType": "PutObjectInContainer",
+      "noVerbLinkage": false,
+      "verbListText": "put, get, grab, take",
+      "verbs": [
+        "put",
+        "get",
+        "grab",
+        "take"
+      ],
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "",
+        "PutFailed": "",
+        "ResolveTargetFailed": "",
+        "Success": "The {self.name} is now in the {currentAction.targetContainerName}"
+      },
+      "childCommandForwardingMode": "None"
+    },
+    {
+      "id": "970926be-a0fa-417a-9e77-16e0a2394077",
+      "name": "get_from",
+      "payload": {
+        "$payloadType": "removeObjectFromContainer",
+        "targetContainerId": ""
+      },
+      "actionType": "RemoveObjectFromContainer",
+      "noVerbLinkage": false,
+      "verbListText": "get, grab, remove, take",
+      "verbs": [
+        "get",
+        "grab",
+        "remove",
+        "take"
+      ],
+      "direction": "from",
+      "outcomeMessageMap": {
+        "Failure": "",
+        "RemoveFailed": "",
+        "ResolveSourceFailed": "",
+        "Success": "You took the {self.name} from the {currentAction.sourceContainerName}"
+      },
+      "childCommandForwardingMode": "None"
+    },
+    {
+      "id": "f81837f8-fbb5-4878-8982-658fd8de4df3",
+      "name": "look",
+      "payload": {
+        "$payloadType": "echoMessage"
+      },
+      "actionType": "EchoMessage",
+      "noVerbLinkage": false,
+      "verbListText": "look, inspect",
+      "verbs": [
+        "look",
+        "inspect"
+      ],
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "",
+        "Success": "There are {self.name}, it looks to be about {self.nearByQuantity} of them."
+      },
+      "childCommandForwardingMode": "None"
+    },
+    {
+      "id": "9df52449-7a5a-41e2-a75c-a12afcbfd66f",
+      "name": "use",
+      "payload": {
+        "$payloadType": "echoMessage"
+      },
+      "actionType": "EchoMessage",
+      "noVerbLinkage": false,
+      "verbListText": "use",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "f",
+        "IncompleteRecipe": "",
+        "NoMatchingRecipe": "",
+        "SpecifyTarget": "",
+        "Success": "",
+        "TargetMismatch": ""
+      },
+      "childCommandForwardingMode": "None"
+    }
+  ]
+}

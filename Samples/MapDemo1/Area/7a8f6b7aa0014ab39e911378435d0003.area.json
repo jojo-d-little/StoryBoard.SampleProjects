@@ -1,0 +1,42 @@
+{
+  "parentCountryId": "7a8f6b7a-a001-4ab3-9e91-1378435d0002",
+  "roomDropBehavior": "keepDisconnected",
+  "baseObjectsIgnoredValidationRuleIds": [],
+  "baseObjects": [],
+  "gameObjects": [],
+  "adjacencyMode": "FourDirectional",
+  "roomIds": [
+    "e1e89618-11af-431d-90a2-2a29be475639",
+    "c753728e-7649-460c-9d3a-26a889e1baf6"
+  ],
+  "roomPlacements": [
+    {
+      "roomId": "e1e89618-11af-431d-90a2-2a29be475639",
+      "x": 564,
+      "y": 304
+    },
+    {
+      "roomId": "c753728e-7649-460c-9d3a-26a889e1baf6",
+      "x": 564,
+      "y": 164
+    }
+  ],
+  "traversalConnections": [],
+  "id": "7a8f6b7a-a001-4ab3-9e91-1378435d0003",
+  "name": "Freebird Farm",
+  "nameInGame": "Freebird Farm",
+  "hideEmptyConfiguration": false,
+  "validationErrors": [],
+  "ignoredValidationRuleIds": [],
+  "scopeKind": "Area",
+  "baseObjectIds": [],
+  "gameObjectIds": [],
+  "gameProperties": [],
+  "additionalVerbs": [],
+  "additionalDirectionals": [],
+  "additionalDirectionalTraversalMappings": [],
+  "availableGameActions": [],
+  "eventSubscriptions": [],
+  "timerDefinitions": [],
+  "soundEffectLibraryEntries": []
+}

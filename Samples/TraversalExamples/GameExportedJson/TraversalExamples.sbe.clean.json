@@ -1,0 +1,216 @@
+{
+  "schemaVersion": "1.0",
+  "name": "TraversalExamples",
+  "autoSaveSeconds": 60,
+  "roomDesignerGridCellSize": 40,
+  "commandVerbs": [
+    "go",
+    "look",
+    "open",
+    "close",
+    "take",
+    "drop",
+    "use",
+    "talk",
+    "investigate",
+    "put",
+    "pickup",
+    "break"
+  ],
+  "directionals": [
+    "north",
+    "south",
+    "east",
+    "west",
+    "northeast",
+    "southeast",
+    "northwest",
+    "southwest",
+    "up",
+    "down",
+    "out",
+    "into",
+    "left",
+    "right"
+  ],
+  "startingPlanetName": "New Planet",
+  "gameProperties": [],
+  "playerGameProperties": [],
+  "availableGameActions": [],
+  "gameObjects": [
+    {
+      "scopeKind": 7,
+      "sourceObjectId": "8c857700-89b0-45d5-9402-a2aba072e92d",
+      "productionName": "player",
+      "isInventoriable": true,
+      "inventoryPointsDefaultValue": 1,
+      "isContainer": false,
+      "containerPointsDefaultValue": 1,
+      "isOpenable": false,
+      "isOpenDefaultValue": false,
+      "isLockable": false,
+      "isLockedDefaultValue": false,
+      "isActivatable": false,
+      "isActiveDefaultValue": false,
+      "isHidable": false,
+      "isHiddenDefaultValue": false,
+      "description": "",
+      "quantity": 1,
+      "quantifiablePlacementDistributionMode": "GroupedStack",
+      "childScopes": [],
+      "name": "Player",
+      "gameProperties": [
+        {
+          "id": "1cf4d468-4e69-4e86-bb60-f032736dd82c",
+          "name": "inventoryPoints",
+          "defaultValue": "1",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        }
+      ],
+      "additionalDirectionalTraversalMappings": []
+    },
+    {
+      "scopeKind": 7,
+      "sourceObjectId": "90f4cd5b-849e-4596-8c9f-6d6e177f2a32",
+      "productionName": "ThePlayer",
+      "isInventoriable": false,
+      "inventoryPointsDefaultValue": 1,
+      "isContainer": true,
+      "containerPointsDefaultValue": 4,
+      "isOpenable": false,
+      "isOpenDefaultValue": false,
+      "isLockable": false,
+      "isLockedDefaultValue": false,
+      "isActivatable": false,
+      "isActiveDefaultValue": false,
+      "isHidable": false,
+      "isHiddenDefaultValue": false,
+      "description": "",
+      "quantity": 1,
+      "quantifiablePlacementDistributionMode": "GroupedStack",
+      "childScopes": [],
+      "name": "ThePlayer",
+      "gameProperties": [
+        {
+          "id": "5ee3969d-d79e-4fed-b356-817582442a0b",
+          "name": "containerPoints",
+          "defaultValue": "4",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "1bc50420-2458-4ae1-821f-edc7112ec02a",
+          "name": "containerPointsRemaining",
+          "defaultValue": "4",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "bb5554c9-6ba0-4488-a058-c676047a2353",
+          "name": "isPlayer",
+          "defaultValue": "true",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        }
+      ],
+      "additionalDirectionalTraversalMappings": []
+    }
+  ],
+  "planets": [
+    {
+      "scopeKind": 3,
+      "startingCountryName": "New Country",
+      "countries": [
+        {
+          "scopeKind": 4,
+          "startingAreaName": "New Area",
+          "areas": [
+            {
+              "scopeKind": 5,
+              "adjacencyMode": "FourDirectional",
+              "startingRoomId": "a7346ad5-6237-4f14-9b25-b14bff6d91b8",
+              "roomIds": [
+                "3810b493-495b-4cc3-842a-dcd5978d062c",
+                "9c6b0bb9-1c64-4852-884d-551508c27e09",
+                "a7346ad5-6237-4f14-9b25-b14bff6d91b8",
+                "bdbb9617-6d8f-4038-92f1-172145f34b77",
+                "c2260717-f088-4b57-97c3-30c6cdc01d5a",
+                "f184570f-744c-40b6-97ef-c657572ab274"
+              ],
+              "childScopes": [],
+              "name": "New Area",
+              "gameProperties": [],
+              "additionalVerbs": [],
+              "additionalDirectionals": [],
+              "additionalDirectionalTraversalMappings": [],
+              "availableGameActions": []
+            }
+          ],
+          "childScopes": [
+            {
+              "scopeKind": 5,
+              "scopeName": "New Area",
+              "scopeNameInGame": "New Area",
+              "roomId": null,
+              "objectId": null,
+              "scopeTokens": [
+                "New Area"
+              ],
+              "parentScope": null,
+              "childScopes": [],
+              "additionalVerbs": [],
+              "additionalDirectionals": [],
+              "additionalDirectionalTraversalMappings": []
+            }
+          ],
+          "name": "New Country",
+          "gameProperties": [],
+          "additionalVerbs": [],
+          "additionalDirectionals": [],
+          "additionalDirectionalTraversalMappings": [],
+          "availableGameActions": []
+        }
+      ],
+      "childScopes": [
+        {
+          "scopeKind": 4,
+          "scopeName": "New Country",
+          "scopeNameInGame": "New Country",
+          "roomId": null,
+          "objectId": null,
+          "scopeTokens": [
+            "New Country"
+          ],
+          "parentScope": null,
+          "childScopes": [
+            {
+              "scopeKind": 5,
+              "scopeName": "New Area",
+              "scopeNameInGame": "New Area",
+              "roomId": null,
+              "objectId": null,
+              "scopeTokens": [
+                "New Area"
+              ],
+              "parentScope": null,
+              "childScopes": [],
+              "additionalVerbs": [],
+              "additionalDirectionals": [],
+              "additionalDirectionalTraversalMappings": []
+            }
+          ],
+          "additionalVerbs": [],
+          "additionalDirectionals": [],
+          "additionalDirectionalTraversalMappings": []
+        }
+      ],
+      "name": "New Planet",
+      "gameProperties": [],
+      "additionalVerbs": [],
+      "additionalDirectionals": [],
+      "additionalDirectionalTraversalMappings": [],
+      "availableGameActions": []
+    }
+  ]
+}

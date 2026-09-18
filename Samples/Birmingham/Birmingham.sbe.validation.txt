@@ -1,0 +1,42 @@
+Validation report generated: 2026-09-01 18:24:42
+Project: Birmingham
+ExecutionKind: WholeProject
+RootScopePath: Global
+IncludeDescendants: True
+CandidateNodeCount: 88
+ExecutedRules: 56
+SkippedRules: 0
+StoppedEarly: False
+RemainingIssueCountAtStop: 0
+StopRuleId: (none)
+RemainingRuleCountAtStop: 0
+
+SkippedRuleId	SkipReason	SkipDetail
+
+RuleId	Severity	Path	Description	Hint
+PROJ-005	Warning	Project	Shared variable 'Shared-df1b02c9 (df1b02c911d7484cb1ab0e6748605f6f)' has mismatched participant initial values. Participants: Global / Earth / UK / Birmingham-Hotel / TraversalLeg:A:isPassable='true'; Global / Earth / UK / Birmingham-Hotel / TraversalLeg:B:isPassable='true'; Global / Earth / UK / Birmingham-Hotel / OpeningRoom / Objects:isOpen='false'; Global / Earth / UK / Birmingham-Hotel / OpeningHallway / Objects:isOpen='false'.	
+PROJ-016	Error	Global / Earth / UK / Birmingham-Hotel / OpeningRoom / Window	Duplicate action name 'Action' in scope. Action names must be unique within a scope for deterministic event target resolution.	
+OBJ-007	Error	Global / Earth / UK / Birmingham-Hotel / OpeningRoom / Marbles	object 'Marbles' links to 'Marbles' (0a333ad0055e475f9b6b6ea9687da8af), but that target is itself linked. Only single-level base-to-instance links are allowed.	
+OBJ-007	Error	Global / Earth / UK / Birmingham-Hotel / OpeningRoom / Marbles	object 'Marbles' links to 'Marbles' (0a333ad0055e475f9b6b6ea9687da8af), but that target is itself linked. Only single-level base-to-instance links are allowed.	
+OBJ-007	Error	Global / Earth / UK / Birmingham-Hotel / OpeningHallway / Flowers	object 'Flowers' links to 'Flowers' (38e5b539393f486aab1b6b5868391f7b), but that target is itself linked. Only single-level base-to-instance links are allowed.	
+OBJ-007	Error	Global / Earth / UK / Birmingham-Hotel / OpeningHallway / Marbles	object 'Marbles' links to 'Marbles' (0a333ad0055e475f9b6b6ea9687da8af), but that target is itself linked. Only single-level base-to-instance links are allowed.	
+OBJ-007	Error	Global / Earth / UK / Birmingham-Hotel / OpeningHallway / Marbles	object 'Marbles' links to 'Marbles' (0a333ad0055e475f9b6b6ea9687da8af), but that target is itself linked. Only single-level base-to-instance links are allowed.	
+OBJ-005	Warning	Global / Earth / UK / Birmingham-Hotel / OpeningRoom / Window	object 'Window' is included in room preview but has no configured default image path.	Assign a default image variant path or uncheck Include In Preview.
+OBJ-005	Warning	Global / Earth / UK / Birmingham-Hotel / OpeningRoom / Door	object 'Door' is included in room preview but has no configured default image path.	Assign a default image variant path or uncheck Include In Preview.
+OBJ-005	Warning	Global / Earth / UK / Birmingham-Hotel / OpeningRoom / DoorStop	object 'DoorStop' is included in room preview but has no configured default image path.	Assign a default image variant path or uncheck Include In Preview.
+OBJ-005	Warning	Global / Earth / UK / Birmingham-Hotel / OpeningRoom / Key	object 'Key' is included in room preview but has no configured default image path.	Assign a default image variant path or uncheck Include In Preview.
+OBJ-005	Warning	Global / Earth / UK / Birmingham-Hotel / OpeningRoom / NapSack	object 'NapSack' is included in room preview but has no configured default image path.	Assign a default image variant path or uncheck Include In Preview.
+OBJ-005	Warning	Global / Earth / UK / Birmingham-Hotel / OpeningRoom / Gear	object 'Gear' is included in room preview but has no configured default image path.	Assign a default image variant path or uncheck Include In Preview.
+OBJ-005	Warning	Global / Earth / UK / Birmingham-Hotel / OpeningRoom / Needle	object 'Needle' is included in room preview but has no configured default image path.	Assign a default image variant path or uncheck Include In Preview.
+OBJ-005	Warning	Global / Earth / UK / Birmingham-Hotel / OpeningRoom / Box	object 'Box' is included in room preview but has no configured default image path.	Assign a default image variant path or uncheck Include In Preview.
+OBJ-005	Warning	Global / Earth / UK / Birmingham-Hotel / OpeningRoom / MusicBox	object 'MusicBox' is included in room preview but has no configured default image path.	Assign a default image variant path or uncheck Include In Preview.
+OBJ-005	Warning	Global / Earth / UK / Birmingham-Hotel / OpeningRoom / Flowers	object 'Flowers' is included in room preview but has no configured default image path.	Assign a default image variant path or uncheck Include In Preview.
+OBJ-005	Warning	Global / Earth / UK / Birmingham-Hotel / OpeningRoom / FrogHair	object 'FrogHair' is included in room preview but has no configured default image path.	Assign a default image variant path or uncheck Include In Preview.
+OBJ-005	Warning	Global / Earth / UK / Birmingham-Hotel / OpeningRoom / SmokeBall	object 'SmokeBall' is included in room preview but has no configured default image path.	Assign a default image variant path or uncheck Include In Preview.
+OBJ-005	Warning	Global / Earth / UK / Birmingham-Hotel / OpeningRoom / Marbles	object 'Marbles' is included in room preview but has no configured default image path.	Assign a default image variant path or uncheck Include In Preview.
+OBJ-005	Warning	Global / Earth / UK / Birmingham-Hotel / OpeningRoom / Marbles	object 'Marbles' is included in room preview but has no configured default image path.	Assign a default image variant path or uncheck Include In Preview.
+OBJ-005	Warning	Global / Earth / UK / Birmingham-Hotel / OpeningRoom / Marbles	object 'Marbles' is included in room preview but has no configured default image path.	Assign a default image variant path or uncheck Include In Preview.
+OBJ-005	Warning	Global / Earth / UK / Birmingham-Hotel / OpeningHallway / Flowers	object 'Flowers' is included in room preview but has no configured default image path.	Assign a default image variant path or uncheck Include In Preview.
+OBJ-005	Warning	Global / Earth / UK / Birmingham-Hotel / OpeningHallway / Marbles	object 'Marbles' is included in room preview but has no configured default image path.	Assign a default image variant path or uncheck Include In Preview.
+OBJ-005	Warning	Global / Earth / UK / Birmingham-Hotel / OpeningHallway / Marbles	object 'Marbles' is included in room preview but has no configured default image path.	Assign a default image variant path or uncheck Include In Preview.
+OBJ-005	Warning	Global / Earth / UK / Birmingham-Hotel / OpeningHallway / DoorToOpeningRoom	object 'DoorToOpeningRoom' is included in room preview but has no configured default image path.	Assign a default image variant path or uncheck Include In Preview.

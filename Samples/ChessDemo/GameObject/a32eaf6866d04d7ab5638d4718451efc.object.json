@@ -1,0 +1,67 @@
+{
+  "objectType": "BlackCastle",
+  "positionX": 704,
+  "positionY": 512,
+  "includeInPreview": true,
+  "linkedBaseObjectId": "d21f6d16-27aa-4257-9f67-3a54a83ac1a3",
+  "linkActionsToBaseObject": true,
+  "productionName": "inventoriableTemplate",
+  "imageRotationDegrees": 0,
+  "renderZOrder": 1079,
+  "authoredRenderOrder": 1079,
+  "quantity": 1,
+  "quantifiablePlacementDistributionMode": "IndividualInstances",
+  "containedObjects": [],
+  "id": "a32eaf68-66d0-4d7a-b563-8d4718451efc",
+  "name": "BlackCastle",
+  "nameInGame": "BlackCastle",
+  "hideEmptyConfiguration": false,
+  "scopeKind": "GameObject",
+  "gameProperties": [
+    {
+      "id": "4ff031d4-00f8-4f9b-a32a-3fef7826b19e",
+      "name": "inventoryPoints",
+      "defaultValue": "1",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "07b061f8-ff42-49d6-a49c-f6a4c50e6225",
+      "name": "isActive",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "c1034c2f-0f74-4af0-b3e1-6a14abf5d3ea",
+      "name": "isHidden",
+      "defaultValue": "false",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "3e20876b-8569-407a-8942-61cfc021ed18",
+      "name": "isQuantifiable",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "81d43ce3-0a90-4a15-8a04-d927bc29aca8",
+      "name": "quantity",
+      "defaultValue": "1",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "cefeb7c7-25e7-4284-8727-de759bf59f0f",
+      "name": "isMovable",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    }
+  ],
+  "eventSubscriptions": [],
+  "timerDefinitions": [],
+  "soundEffectLibraryEntries": []
+}

@@ -1,0 +1,260 @@
+{
+  "gameObjects": [],
+  "description": "",
+  "roomImageCanvasWidth": 800,
+  "roomImageCanvasHeight": 600,
+  "roomDisplayMode": "Overlay",
+  "producerNotes": "",
+  "images": [
+    {
+      "slot": "North",
+      "overlayRenderOrder": 100,
+      "overlayOffsetX": 0,
+      "overlayOffsetY": 0,
+      "overlayRotationDegrees": 180,
+      "fullImagePath": "ASSETROOT:/PlaceHolderImages/LongBrickWall_MidDoor.png",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "NorthEast",
+      "overlayRenderOrder": 200,
+      "overlayOffsetX": 24,
+      "overlayOffsetY": -31,
+      "overlayRotationDegrees": 90,
+      "fullImagePath": "ASSETROOT:/PlaceHolderImages/StoneCorner.png",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "East",
+      "overlayRenderOrder": 100,
+      "overlayOffsetX": 0,
+      "overlayOffsetY": 0,
+      "overlayRotationDegrees": 180,
+      "fullImagePath": "ASSETROOT:/PlaceHolderImages/ShortBrickWall_MidDoor.png",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "SouthEast",
+      "overlayRenderOrder": 200,
+      "overlayOffsetX": 25,
+      "overlayOffsetY": 25,
+      "overlayRotationDegrees": 180,
+      "fullImagePath": "ASSETROOT:/PlaceHolderImages/StoneCorner.png",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "South",
+      "overlayRenderOrder": 100,
+      "overlayOffsetX": 0,
+      "overlayOffsetY": 0,
+      "overlayRotationDegrees": 0,
+      "fullImagePath": "ASSETROOT:/PlaceHolderImages/LongBrickWall_MidDoor.png",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "SouthWest",
+      "overlayRenderOrder": 200,
+      "overlayOffsetX": -25,
+      "overlayOffsetY": 25,
+      "overlayRotationDegrees": -90,
+      "fullImagePath": "ASSETROOT:/PlaceHolderImages/StoneCorner.png",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "West",
+      "overlayRenderOrder": 100,
+      "overlayOffsetX": 0,
+      "overlayOffsetY": 0,
+      "overlayRotationDegrees": 0,
+      "fullImagePath": "ASSETROOT:/PlaceHolderImages/ShortBrickWall_MidDoor.png",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "NorthWest",
+      "overlayRenderOrder": 200,
+      "overlayOffsetX": -26,
+      "overlayOffsetY": -24,
+      "overlayRotationDegrees": 0,
+      "fullImagePath": "ASSETROOT:/PlaceHolderImages/StoneCorner.png",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "Up",
+      "overlayRenderOrder": 150,
+      "overlayOffsetX": 0,
+      "overlayOffsetY": 0,
+      "overlayRotationDegrees": 0,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "Down",
+      "overlayRenderOrder": 0,
+      "overlayOffsetX": 0,
+      "overlayOffsetY": 0,
+      "overlayRotationDegrees": 0,
+      "fullImagePath": "ASSETROOT:/PlaceHolderImages/DarkBrownWoodenFloor800x600.png",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "Default",
+      "overlayRenderOrder": 150,
+      "overlayOffsetX": 0,
+      "overlayOffsetY": 0,
+      "overlayRotationDegrees": 0,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    }
+  ],
+  "id": "698a46f4-73bc-4e9e-8333-e2ed555417fc",
+  "name": "Atrium",
+  "nameInGame": "Atrium",
+  "hideEmptyConfiguration": false,
+  "validationErrors": [],
+  "ignoredValidationRuleIds": [],
+  "scopeKind": "Room",
+  "gameObjectIds": [
+    "0ed80c32-043a-4b12-a2bb-2164e55ec278",
+    "d1f9944a-6985-4cb3-a659-dc3b2253a57a",
+    "dcc57386-6deb-4444-8d47-61f0774a0bc9",
+    "5980b99e-ec8b-4a67-95fd-80ff5b66998b",
+    "7a2d6901-3ebb-42cf-b686-51509adf6134",
+    "bb53c4f2-0cee-48af-94b8-719bc40312ae",
+    "a408591b-08aa-45fc-a396-9b9477cead5e",
+    "de2715a6-29de-4aa3-a4a7-fc470cadecc1"
+  ],
+  "gameProperties": [],
+  "additionalVerbs": [
+    "pry"
+  ],
+  "additionalDirectionals": [],
+  "additionalDirectionalTraversalMappings": [],
+  "availableGameActions": [
+    {
+      "id": "5e2254a3-a575-4417-b6d0-5e873764a8e0",
+      "name": "go_direction",
+      "payload": {
+        "$payloadType": "navigateToAdjacent"
+      },
+      "actionType": "NavigateToAdjacent",
+      "noVerbLinkage": false,
+      "verbListText": "go",
+      "direction": "",
+      "outcomeMessageMap": {
+        "AmbiguousTraversal": "Multiple exits are available. Specify a direction.",
+        "DirectionRequired": "Specify a direction.",
+        "DoorClosed": "The door is closed that way",
+        "Failure": "f",
+        "Moved": "You are now in {currentAction.DestinationRoomName}",
+        "MoveFailed": "You cannot move right now.",
+        "NoExitInDirection": "You cannot go that way.",
+        "NoTraversableExit": "There is nowhere to go from here.",
+        "Success": "You move to {currentAction.DestinationRoomName}",
+        "TraversalAmbiguous": "",
+        "TraversalBlocked": "That way is blocked.",
+        "TraversalNotPassable": "You can\u0027t pass that direction",
+        "UnknownDestination": ""
+      },
+      "childCommandForwardingMode": "None",
+      "similarChildDispatchMode": "SingleMatchingChild"
+    },
+    {
+      "id": "749b49a5-0b86-4dcd-aab3-b27b3d3187be",
+      "name": "look_atrium",
+      "payload": {
+        "$payloadType": "echoMessage"
+      },
+      "actionType": "EchoMessage",
+      "noVerbLinkage": false,
+      "verbListText": "look",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "",
+        "Success": "You are in the {self.name}"
+      },
+      "childCommandForwardingMode": "ChildrenAfterParent",
+      "similarChildDispatchMode": "SingleMatchingChild"
+    },
+    {
+      "id": "8d1d7eae-9d8d-4c40-806d-eb04fb877e17",
+      "name": "open_atrium",
+      "payload": {
+        "$payloadType": "openObject"
+      },
+      "actionType": "OpenObject",
+      "noVerbLinkage": false,
+      "verbListText": "open",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "",
+        "ObjectAlreadyOpen": "Too easy, it was already open",
+        "ObjectLocked": "It seems to be locked",
+        "ObjectNotOpenable": "I do not think that opens",
+        "Success": "The {currentAction.OpenedObjectName} opens"
+      },
+      "outcomeSoundEffectsMap": {
+        "ObjectLocked": [
+          {
+            "soundEffectId": "c57f3684-dd7b-4f37-b03f-dbc3e35670a9",
+            "soundEffectKeyHint": "background.Crickets",
+            "enabled": true,
+            "lateDeliveryPolicy": "PlayIfLate"
+          }
+        ],
+        "Success": [
+          {
+            "soundEffectId": "7499a24e-e328-498f-97a3-d4a70d621ae5",
+            "soundEffectKeyHint": "door.open.1",
+            "enabled": true,
+            "lateDeliveryPolicy": "PlayIfLate"
+          }
+        ]
+      },
+      "childCommandForwardingMode": "None",
+      "similarChildDispatchMode": "SingleMatchingChild"
+    },
+    {
+      "id": "f1425d24-9299-406b-b235-70ab15867f28",
+      "name": "close_atrium",
+      "payload": {
+        "$payloadType": "closeObject"
+      },
+      "actionType": "CloseObject",
+      "noVerbLinkage": false,
+      "verbListText": "close",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "",
+        "ObjectAlreadyClosed": "It is alreaded closed silly",
+        "ObjectNotClosable": "Is that something you do?",
+        "Success": "{currentAction.ClosedObjectName} closed"
+      },
+      "outcomeSoundEffectsMap": {
+        "Success": [
+          {
+            "soundEffectId": "28e80a6b-b8bf-4ae8-ab69-8b1fa292b84c",
+            "soundEffectKeyHint": "door.close.1",
+            "enabled": true,
+            "lateDeliveryPolicy": "PlayIfLate"
+          }
+        ]
+      },
+      "childCommandForwardingMode": "None",
+      "similarChildDispatchMode": "SingleMatchingChild"
+    }
+  ],
+  "eventSubscriptions": [],
+  "timerDefinitions": [],
+  "soundEffectLibraryEntries": []
+}

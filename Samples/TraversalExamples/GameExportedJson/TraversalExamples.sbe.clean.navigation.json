@@ -1,0 +1,85 @@
+{
+  "schemaVersion": "1.0",
+  "areas": [
+    {
+      "planet": "New Planet",
+      "country": "New Country",
+      "area": "New Area",
+      "adjacencyMode": "FourDirectional",
+      "links": [
+        {
+          "fromRoomId": "3810b493-495b-4cc3-842a-dcd5978d062c",
+          "toRoomId": "a7346ad5-6237-4f14-9b25-b14bff6d91b8",
+          "direction": "West"
+        },
+        {
+          "fromRoomId": "9c6b0bb9-1c64-4852-884d-551508c27e09",
+          "toRoomId": "a7346ad5-6237-4f14-9b25-b14bff6d91b8",
+          "direction": "East"
+        },
+        {
+          "fromRoomId": "a7346ad5-6237-4f14-9b25-b14bff6d91b8",
+          "toRoomId": "3810b493-495b-4cc3-842a-dcd5978d062c",
+          "direction": "East"
+        },
+        {
+          "fromRoomId": "a7346ad5-6237-4f14-9b25-b14bff6d91b8",
+          "toRoomId": "9c6b0bb9-1c64-4852-884d-551508c27e09",
+          "direction": "West"
+        },
+        {
+          "fromRoomId": "a7346ad5-6237-4f14-9b25-b14bff6d91b8",
+          "toRoomId": "bdbb9617-6d8f-4038-92f1-172145f34b77",
+          "direction": "South"
+        },
+        {
+          "fromRoomId": "a7346ad5-6237-4f14-9b25-b14bff6d91b8",
+          "toRoomId": "f184570f-744c-40b6-97ef-c657572ab274",
+          "direction": "North"
+        },
+        {
+          "fromRoomId": "bdbb9617-6d8f-4038-92f1-172145f34b77",
+          "toRoomId": "a7346ad5-6237-4f14-9b25-b14bff6d91b8",
+          "direction": "North"
+        },
+        {
+          "fromRoomId": "f184570f-744c-40b6-97ef-c657572ab274",
+          "toRoomId": "a7346ad5-6237-4f14-9b25-b14bff6d91b8",
+          "direction": "South"
+        }
+      ],
+      "roomPlacements": [
+        {
+          "roomId": "3810b493-495b-4cc3-842a-dcd5978d062c",
+          "x": 924,
+          "y": 304
+        },
+        {
+          "roomId": "9c6b0bb9-1c64-4852-884d-551508c27e09",
+          "x": 564,
+          "y": 304
+        },
+        {
+          "roomId": "a7346ad5-6237-4f14-9b25-b14bff6d91b8",
+          "x": 744,
+          "y": 304
+        },
+        {
+          "roomId": "bdbb9617-6d8f-4038-92f1-172145f34b77",
+          "x": 744,
+          "y": 444
+        },
+        {
+          "roomId": "c2260717-f088-4b57-97c3-30c6cdc01d5a",
+          "x": 564,
+          "y": 164
+        },
+        {
+          "roomId": "f184570f-744c-40b6-97ef-c657572ab274",
+          "x": 744,
+          "y": 164
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "BaseItemTesting",
+  "formatVersion": "1.0",
+  "sourceProjectName": "BaseItemTesting",
+  "updatedUtc": "2026-08-08T21:28:37.2955598Z",
+  "hideEmptyConfiguration": false,
+  "autoSaveSeconds": 60,
+  "roomImageCanvasWidth": 800,
+  "roomImageCanvasHeight": 600,
+  "roomDesignerGridCellSize": 40,
+  "stackScaleStepDefault": 0.08,
+  "minStackScaleDefault": 0.5,
+  "simulatorReplayFilePath": "",
+  "defaultTraversalMode": "EightDirectional",
+  "projectIgnoredValidationRuleIds": [],
+  "globalIgnoredValidationRuleIds": [],
+  "objectTemplatesIgnoredValidationRuleIds": [],
+  "roomTemplatesIgnoredValidationRuleIds": [],
+  "baseObjectsIgnoredValidationRuleIds": [],
+  "startingPlanetName": "New Planet",
+  "playerCharacterObjectName": "",
+  "playerIgnoredValidationRuleIds": []
+}

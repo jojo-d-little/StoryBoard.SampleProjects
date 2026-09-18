@@ -1,0 +1,52 @@
+{
+  "planetIds": [
+    "d6031830-eead-40cc-b798-fc29253424f5"
+  ],
+  "schemaVersion": "1.0",
+  "autoSaveSeconds": 60,
+  "roomImageCanvasWidth": 800,
+  "roomImageCanvasHeight": 600,
+  "roomDesignerGridCellSize": 40,
+  "startingPlanetName": "New Planet",
+  "name": "BaseItemTesting",
+  "nameInGame": "BaseItemTesting",
+  "scopeKind": "Global",
+  "gameObjectIds": [
+    "4083277d-4e83-4be8-af70-0cf1be3a72c2",
+    "770b4b96-54fc-4193-af80-daf032f2bbd2"
+  ],
+  "gameProperties": [],
+  "additionalVerbs": [
+    "break",
+    "close",
+    "drop",
+    "get",
+    "go",
+    "grab",
+    "inspect",
+    "look",
+    "open",
+    "put",
+    "remove",
+    "take",
+    "talk",
+    "use"
+  ],
+  "additionalDirectionals": [
+    "north",
+    "south",
+    "east",
+    "west",
+    "northeast",
+    "southeast",
+    "northwest",
+    "southwest",
+    "up",
+    "down",
+    "from",
+    "into",
+    "on",
+    "under",
+    "over"
+  ]
+}

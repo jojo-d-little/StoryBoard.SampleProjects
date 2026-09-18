@@ -1,0 +1,249 @@
+{
+  "linkActionsToBaseObject": false,
+  "productionName": "inventoriableTemplate",
+  "nameSynonyms": [
+    "key"
+  ],
+  "imageVariants": [
+    {
+      "variantName": "bent",
+      "fullImagePath": "assets/images/_shared/91f0065a4419e841aa7a6e144cc30fdcd7b6ee56868101ae0dfa63e2c7287d66__BentBrassKey.png",
+      "imageLocalAlignmentOffsetX": 3,
+      "imageLocalAlignmentOffsetY": -4,
+      "imageScale": 0.1,
+      "isDefault": true,
+      "imagePathSemantics": "runtimeExportRelative"
+    },
+    {
+      "variantName": "fixed",
+      "fullImagePath": "assets/images/_shared/e0d07089ba8e0ccbbd5139bc9f76e7b10869322c0a1cb33efedcac19edecdd2b__BrassKey.png",
+      "imageLocalAlignmentOffsetX": -2,
+      "imageLocalAlignmentOffsetY": 1,
+      "imageScale": 0.1,
+      "isDefault": false,
+      "imagePathSemantics": "runtimeExportRelative"
+    }
+  ],
+  "imageRotationDegrees": 0,
+  "renderZOrder": 1001,
+  "authoredRenderOrder": 1001,
+  "imageVariantChooserScript": "IF {owner.isBent}\r\nbent\r\nELSE\r\nfixed\r\nENDIF",
+  "appearance": {
+    "spatialType": "SolidObject",
+    "isMovable": true,
+    "isMovableDefaultValue": true,
+    "stackGroup": 1,
+    "footprintWidthCells": 2,
+    "footprintHeightCells": 2,
+    "footprintOrientation": "North",
+    "headingDirection": "North",
+    "objectHeightUnits": 1,
+    "stackScaleStepOverride": 0.1,
+    "minStackScaleOverride": 0.5
+  },
+  "isInventoriable": true,
+  "inventoryPointsDefaultValue": 1,
+  "isContainer": false,
+  "containerPointsDefaultValue": 1,
+  "isOpenable": false,
+  "isOpenDefaultValue": false,
+  "isLockable": false,
+  "isLockedDefaultValue": false,
+  "isActivatable": true,
+  "isActiveDefaultValue": true,
+  "isHidable": true,
+  "isHiddenDefaultValue": false,
+  "description": "Template with pickup/drop baseline actions.",
+  "isQuantifiable": false,
+  "quantity": 1,
+  "quantifiablePlacementDistributionMode": "GroupedStack",
+  "isRuntimeMaterialized": false,
+  "Id": "4592818b-3fd1-4682-9aa7-a14ebca79f8e",
+  "name": "BrassKey",
+  "nameInGame": "Brass Key",
+  "scopeKind": "GameObject",
+  "gameProperties": [
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "imageRotationDegrees",
+      "defaultValue": "0",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "imageScale",
+      "defaultValue": "0.1",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "inventoryPoints",
+      "defaultValue": "1",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "isActive",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "6da4658b-4d2d-4ff1-9267-c07e0e39b760",
+      "name": "isBent",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "isHidden",
+      "defaultValue": "false",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "isMovable",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "positionX",
+      "defaultValue": "600",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "positionY",
+      "defaultValue": "240",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    }
+  ],
+  "additionalVerbs": [
+    "fix"
+  ],
+  "availableGameActions": [
+    {
+      "id": "6b3a25e4-e0d7-497b-888e-7c32b81eb8cf",
+      "name": "fix_and_turn",
+      "payload": {
+        "$payloadType": "linkedFlow",
+        "linkedActions": [
+          {
+            "nodeId": 1,
+            "actionId": "51b248df-4ca7-48aa-a83d-5bec573227ed",
+            "onAlwaysNodeIds": [],
+            "onSuccessNodeIds": [
+              2
+            ],
+            "onFailureNodeIds": []
+          },
+          {
+            "nodeId": 2,
+            "actionId": "d677f924-9bb0-483f-a65d-f92a1f26db12",
+            "onAlwaysNodeIds": [],
+            "onSuccessNodeIds": [],
+            "onFailureNodeIds": []
+          }
+        ]
+      },
+      "actionType": "LinkedActions",
+      "noVerbLinkage": false,
+      "verbListText": "fix",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Success": ""
+      },
+      "childCommandForwardingMode": "None"
+    },
+    {
+      "id": "51b248df-4ca7-48aa-a83d-5bec573227ed",
+      "name": "fix_brasskey",
+      "payload": {
+        "$payloadType": "invokeProcedure",
+        "procedureId": "80423a4c-1027-4247-9f32-7762dcee7ad2"
+      },
+      "actionType": "InvokeProcedure",
+      "noVerbLinkage": true,
+      "verbListText": "",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "f",
+        "MutationFailed": "mf",
+        "ParticipantRequirementsNotMet": "Do you have everything you need?",
+        "ParticipantVariableRequirementsNotMet": "Did you already do that?",
+        "PreconditionsFailed": "pf",
+        "ProcedureNotFound": "pnf",
+        "Success": "{currentAction.procedureDescription}"
+      },
+      "childCommandForwardingMode": "None"
+    },
+    {
+      "id": "91d4de68-9ad4-4143-acec-fb3a91b0446e",
+      "name": "look_ball",
+      "payload": {
+        "$payloadType": "echoMessage"
+      },
+      "actionType": "EchoMessage",
+      "noVerbLinkage": false,
+      "verbListText": "look, inspect",
+      "verbs": [
+        "look",
+        "inspect"
+      ],
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "",
+        "Success": "There is a {self.name}, it looks to be about {self.inventoryPoints} heavy"
+      },
+      "childCommandForwardingMode": "None"
+    },
+    {
+      "id": "d677f924-9bb0-483f-a65d-f92a1f26db12",
+      "name": "turn_page",
+      "actionType": "NextPhase",
+      "noVerbLinkage": true,
+      "verbListText": "",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Success": ""
+      },
+      "childCommandForwardingMode": "None"
+    }
+  ],
+  "eventSubscriptions": [
+    {
+      "id": "5f613172-2ecd-439c-b24b-437101e8a5fc",
+      "eventKey": "inventory_item_added",
+      "isEnabled": true,
+      "lane": "foreground",
+      "dispatchDisposition": "bubble",
+      "subscriptionVisibleWhenContained": true,
+      "subscriptionSourceMatchMode": "AnySource",
+      "subscriptionSecondarySourceMatchMode": "SelfOnly",
+      "actionBindings": [
+        {
+          "order": 1,
+          "isEnabled": true,
+          "condition": {
+            "quantityEvaluationMode": "AllResolvedMustPass",
+            "filters": []
+          },
+          "target": {
+            "actionName": "starttimer_kkding",
+            "onMissingAction": "DiagnosticOnly",
+            "stopChainOnFailure": true
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "parentPlanetId": "7a8f6b7a-a001-4ab3-9e91-1378435d0001",
+  "baseObjectsIgnoredValidationRuleIds": [],
+  "baseObjects": [],
+  "gameObjects": [],
+  "startingAreaName": "Freebird Farm",
+  "areaIds": [
+    "7a8f6b7a-a001-4ab3-9e91-1378435d0003"
+  ],
+  "id": "7a8f6b7a-a001-4ab3-9e91-1378435d0002",
+  "name": "USA",
+  "nameInGame": "USA",
+  "hideEmptyConfiguration": false,
+  "validationErrors": [],
+  "ignoredValidationRuleIds": [],
+  "scopeKind": "Country",
+  "baseObjectIds": [],
+  "gameObjectIds": [],
+  "gameProperties": [],
+  "additionalVerbs": [],
+  "additionalDirectionals": [],
+  "additionalDirectionalTraversalMappings": [],
+  "availableGameActions": [],
+  "eventSubscriptions": [],
+  "timerDefinitions": [],
+  "soundEffectLibraryEntries": []
+}

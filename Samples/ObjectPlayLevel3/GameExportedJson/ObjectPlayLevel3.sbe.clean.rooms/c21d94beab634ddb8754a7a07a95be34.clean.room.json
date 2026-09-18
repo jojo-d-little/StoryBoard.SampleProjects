@@ -1,0 +1,980 @@
+{
+  "scopeKind": 6,
+  "schemaVersion": "1.0",
+  "id": "c21d94be-ab63-4ddb-8754-a7a07a95be34",
+  "description": "",
+  "commandPhrases": [],
+  "gameObjects": [
+    {
+      "scopeKind": 7,
+      "sourceObjectId": "8d7207b8-6c7b-4c37-98fa-e696d7caca9a",
+      "productionName": "inventoriableTemplate",
+      "isInventoriable": true,
+      "inventoryPointsDefaultValue": 1,
+      "isContainer": false,
+      "containerPointsDefaultValue": 1,
+      "isOpenable": false,
+      "isOpenDefaultValue": false,
+      "isLockable": false,
+      "isLockedDefaultValue": false,
+      "isActivatable": true,
+      "isActiveDefaultValue": true,
+      "isHidable": true,
+      "isHiddenDefaultValue": false,
+      "description": "Template with pickup/drop baseline actions.",
+      "isQuantifiable": true,
+      "quantity": 10,
+      "quantifiablePlacementDistributionMode": "GroupedStack",
+      "childScopes": [],
+      "name": "Coins",
+      "gameProperties": [
+        {
+          "id": "d6d8e28e-c07c-4a27-8de7-c24a82cd0d13",
+          "name": "inventoryPoints",
+          "defaultValue": "1",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "ece02b44-f536-4516-8020-939e121af95f",
+          "name": "isActive",
+          "defaultValue": "true",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "6a713dac-2196-498a-9606-9b0e2b9c0cd8",
+          "name": "isHidden",
+          "defaultValue": "false",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "e4fdb294-e730-46d9-937b-69944b7764a7",
+          "name": "isQuantifiable",
+          "defaultValue": "true",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "82c80339-7653-44bd-b0d8-4f47c6b26655",
+          "name": "quantity",
+          "defaultValue": "10",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        }
+      ],
+      "additionalDirectionalTraversalMappings": [],
+      "availableGameActions": [
+        {
+          "id": "b328c02e-0265-40ce-a17e-deafe3a15c8b",
+          "name": "drop",
+          "actionType": "RemoveObjectFromContainer",
+          "verbListText": "drop",
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "RemoveFailed": "",
+            "ResolveSourceFailed": "",
+            "Success": ""
+          },
+          "childCommandForwardingMode": "None"
+        },
+        {
+          "id": "dcd1815f-e154-49d0-b5ec-45cb142cf19c",
+          "name": "get_ball",
+          "actionType": "PutObjectInContainer",
+          "verbListText": "put, get, grab, take",
+          "verbs": [
+            "put",
+            "get",
+            "grab",
+            "take"
+          ],
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "PutFailed": "",
+            "ResolveTargetFailed": "",
+            "Success": "The {self.name} is now in the {currentAction.targetContainerName}"
+          },
+          "targetContainerId": "",
+          "childCommandForwardingMode": "None"
+        },
+        {
+          "id": "515d9434-4965-45e0-9860-ad378cb0b320",
+          "name": "get_ball_from",
+          "actionType": "RemoveObjectFromContainer",
+          "verbListText": "get, grab, remove, take",
+          "verbs": [
+            "get",
+            "grab",
+            "remove",
+            "take"
+          ],
+          "direction": "from",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "RemoveFailed": "",
+            "ResolveSourceFailed": "",
+            "Success": "You took the {self.name} from the {currentAction.sourceContainerName}"
+          },
+          "childCommandForwardingMode": "None"
+        },
+        {
+          "id": "fabbb38b-d12b-489b-9dcb-872d533fe45c",
+          "name": "look_ball",
+          "actionType": "EchoMessage",
+          "verbListText": "look, inspect",
+          "verbs": [
+            "look",
+            "inspect"
+          ],
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "Success": "There is {self.name}, it looks to be about {self.nearByQuantity} of them."
+          },
+          "childCommandForwardingMode": "None"
+        },
+        {
+          "id": "5c239398-8128-42e0-bf6e-d6c36e715f72",
+          "name": "use_ball",
+          "actionType": "BuildCompositeByParts",
+          "verbListText": "use",
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "f",
+            "IncompleteRecipe": "",
+            "NoMatchingRecipe": "",
+            "SpecifyTarget": "",
+            "Success": "You turned some {currentAction.providedParts[0]} and some {currentAction.providedParts[1]} into a {currentAction.targetContainerName}",
+            "TargetMismatch": ""
+          },
+          "compositeTargetObjectId": "d938108b-36fb-4b06-866d-708188f85f58",
+          "compositeRecipeId": "7b22633b-7496-48a1-9ffa-1adebffb4c47",
+          "compositeRequiredPartObjectIds": [
+            "8d7207b8-6c7b-4c37-98fa-e696d7caca9a",
+            "8d7207b8-6c7b-4c37-98fa-e696d7caca9a",
+            "dc4a594f-d6a5-405f-96d5-2af3bdab5c33"
+          ],
+          "compositeStrictPartCountEnforcement": false,
+          "childCommandForwardingMode": "None"
+        }
+      ]
+    },
+    {
+      "scopeKind": 7,
+      "sourceObjectId": "d938108b-36fb-4b06-866d-708188f85f58",
+      "productionName": "",
+      "nameInGame": "Dinner Date",
+      "isInventoriable": true,
+      "inventoryPointsDefaultValue": 1,
+      "isContainer": false,
+      "containerPointsDefaultValue": 1,
+      "isOpenable": false,
+      "isOpenDefaultValue": false,
+      "isLockable": false,
+      "isLockedDefaultValue": false,
+      "isActivatable": true,
+      "isActiveDefaultValue": false,
+      "isHidable": true,
+      "isHiddenDefaultValue": true,
+      "description": "Template with pickup/drop baseline actions.",
+      "isQuantifiable": true,
+      "quantity": 1,
+      "quantifiablePlacementDistributionMode": "GroupedStack",
+      "compositeRecipe": {
+        "recipeId": "7b22633b-7496-48a1-9ffa-1adebffb4c47",
+        "targetObjectId": "00000000-0000-0000-0000-000000000000",
+        "requiredParts": [
+          {
+            "partObjectId": "8d7207b8-6c7b-4c37-98fa-e696d7caca9a",
+            "requiredQuantity": 2
+          },
+          {
+            "partObjectId": "dc4a594f-d6a5-405f-96d5-2af3bdab5c33",
+            "requiredQuantity": 1
+          }
+        ],
+        "isReversible": true,
+        "partRequirementMode": "AllRequired",
+        "buildSuccessMessage": "s",
+        "buildFailureMessage": "f",
+        "breakSuccessMessage": "bs",
+        "breakFailureMessage": "bf"
+      },
+      "childScopes": [],
+      "name": "Date",
+      "gameProperties": [
+        {
+          "id": "58802eff-7ed0-4a7c-995d-51d3551d5c4d",
+          "name": "inventoryPoints",
+          "defaultValue": "1",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "1a2a3a4f-6f59-47b5-9a66-8c939872a743",
+          "name": "isActive",
+          "defaultValue": "false",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "c4fefb66-c94b-42a4-b8c9-511cbbcf7d2d",
+          "name": "isHidden",
+          "defaultValue": "true",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "bf3e2312-af4a-4d83-a682-a60584e409d7",
+          "name": "isQuantifiable",
+          "defaultValue": "true",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "47f0f1ef-10c2-4887-9565-139ff4cc651f",
+          "name": "quantity",
+          "defaultValue": "1",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        }
+      ],
+      "additionalDirectionalTraversalMappings": [],
+      "availableGameActions": [
+        {
+          "id": "77bf2477-1aa5-45de-8a90-2c4a1d15a620",
+          "name": "break",
+          "actionType": "BreakCompositeItem",
+          "verbListText": "break",
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "f",
+            "MutationFailed": "mf",
+            "ResolveTargetFailed": "rtf",
+            "RestoreUnavailable": "ru",
+            "Success": "The {self.name} seemed to vanish",
+            "TargetStateInvalid": "tsi"
+          },
+          "childCommandForwardingMode": "None"
+        },
+        {
+          "id": "1cb32e12-f0f0-4b45-8d02-e5c098ae562b",
+          "name": "drop",
+          "actionType": "RemoveObjectFromContainer",
+          "verbListText": "drop",
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "RemoveFailed": "",
+            "ResolveSourceFailed": "",
+            "Success": ""
+          },
+          "childCommandForwardingMode": "None"
+        },
+        {
+          "id": "70962c1c-3e62-4b27-845c-413a403d35fc",
+          "name": "get",
+          "actionType": "PutObjectInContainer",
+          "verbListText": "put, get, grab, take",
+          "verbs": [
+            "put",
+            "get",
+            "grab",
+            "take"
+          ],
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "PutFailed": "",
+            "ResolveTargetFailed": "",
+            "Success": "The {self.name} is now in the {currentAction.targetContainerName}"
+          },
+          "targetContainerId": "",
+          "childCommandForwardingMode": "None"
+        },
+        {
+          "id": "9e246d1e-ac3c-4dee-9bf7-40242334c3ca",
+          "name": "get_from",
+          "actionType": "RemoveObjectFromContainer",
+          "verbListText": "get, grab, remove, take",
+          "verbs": [
+            "get",
+            "grab",
+            "remove",
+            "take"
+          ],
+          "direction": "from",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "RemoveFailed": "",
+            "ResolveSourceFailed": "",
+            "Success": "You took the {self.name} from the {currentAction.sourceContainerName}"
+          },
+          "childCommandForwardingMode": "None"
+        },
+        {
+          "id": "f0659ef1-1c91-49a5-9b6b-0b2a0b9737ba",
+          "name": "look",
+          "actionType": "EchoMessage",
+          "verbListText": "look, inspect",
+          "verbs": [
+            "look",
+            "inspect"
+          ],
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "Success": "There is a {self.name}, it looks to be about {self.inventoryPoints} heavy"
+          },
+          "childCommandForwardingMode": "None"
+        },
+        {
+          "id": "d4f68ae2-c089-40d5-b812-48b67ac08c25",
+          "name": "use",
+          "actionType": "EchoMessage",
+          "verbListText": "use",
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "Success": "You used the {self.name}, but for what exactly?"
+          },
+          "childCommandForwardingMode": "None"
+        }
+      ]
+    },
+    {
+      "scopeKind": 7,
+      "sourceObjectId": "dc4a594f-d6a5-405f-96d5-2af3bdab5c33",
+      "productionName": "inventoriableTemplate",
+      "isInventoriable": true,
+      "inventoryPointsDefaultValue": 1,
+      "isContainer": false,
+      "containerPointsDefaultValue": 1,
+      "isOpenable": false,
+      "isOpenDefaultValue": false,
+      "isLockable": false,
+      "isLockedDefaultValue": false,
+      "isActivatable": true,
+      "isActiveDefaultValue": true,
+      "isHidable": true,
+      "isHiddenDefaultValue": false,
+      "description": "Template with pickup/drop baseline actions.",
+      "isQuantifiable": true,
+      "quantity": 1,
+      "quantifiablePlacementDistributionMode": "IndividualInstances",
+      "childScopes": [],
+      "name": "Flowers",
+      "gameProperties": [
+        {
+          "id": "058b52d9-075a-4b99-b951-ec353bf5a827",
+          "name": "inventoryPoints",
+          "defaultValue": "1",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "5e70cd19-a72d-4b7c-bd7d-79609c20e217",
+          "name": "isActive",
+          "defaultValue": "true",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "eeb82613-51bd-4cc2-9717-09f01c40b7ff",
+          "name": "isHidden",
+          "defaultValue": "false",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "653ca5bb-6955-4bf6-a7d4-703013352463",
+          "name": "isQuantifiable",
+          "defaultValue": "true",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "257adc24-9add-42b6-9b6d-aeebb3d5a4f0",
+          "name": "quantity",
+          "defaultValue": "1",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        }
+      ],
+      "additionalDirectionalTraversalMappings": [],
+      "availableGameActions": [
+        {
+          "id": "578e422d-81c7-45ea-a258-2ce31b66ba83",
+          "name": "drop",
+          "actionType": "RemoveObjectFromContainer",
+          "verbListText": "drop",
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "RemoveFailed": "",
+            "ResolveSourceFailed": "",
+            "Success": ""
+          },
+          "childCommandForwardingMode": "None"
+        },
+        {
+          "id": "0962b391-1ea0-4a1c-9dd5-b6dec3a02388",
+          "name": "get_ball",
+          "actionType": "PutObjectInContainer",
+          "verbListText": "put, get, grab, take",
+          "verbs": [
+            "put",
+            "get",
+            "grab",
+            "take"
+          ],
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "PutFailed": "",
+            "ResolveTargetFailed": "",
+            "Success": "The {self.name} is now in the {currentAction.targetContainerName}"
+          },
+          "targetContainerId": "",
+          "childCommandForwardingMode": "None"
+        },
+        {
+          "id": "61b9507b-c165-4ae8-ad5b-7696a94cb528",
+          "name": "get_ball_from",
+          "actionType": "RemoveObjectFromContainer",
+          "verbListText": "get, grab, remove, take",
+          "verbs": [
+            "get",
+            "grab",
+            "remove",
+            "take"
+          ],
+          "direction": "from",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "RemoveFailed": "",
+            "ResolveSourceFailed": "",
+            "Success": "You took the {self.name} from the {currentAction.sourceContainerName}"
+          },
+          "childCommandForwardingMode": "None"
+        },
+        {
+          "id": "dd404d91-d272-4f9c-b2b1-d07d8ba165c5",
+          "name": "look_ball",
+          "actionType": "EchoMessage",
+          "verbListText": "look, inspect",
+          "verbs": [
+            "look",
+            "inspect"
+          ],
+          "direction": "",
+          "outcomeMessageMap": {
+            "Failure": "",
+            "Success": "There are {self.name} here and there, maybe {self.nearByQuantity}"
+          },
+          "childCommandForwardingMode": "None"
+        }
+      ]
+    },
+    {
+      "scopeKind": 7,
+      "sourceObjectId": "89b85921-6953-4caf-9696-082df48de556",
+      "linkedBaseObjectId": "dc4a594f-d6a5-405f-96d5-2af3bdab5c33",
+      "linkActionsToBaseObject": true,
+      "productionName": "inventoriableTemplate",
+      "isInventoriable": true,
+      "inventoryPointsDefaultValue": 1,
+      "isContainer": false,
+      "containerPointsDefaultValue": 1,
+      "isOpenable": false,
+      "isOpenDefaultValue": false,
+      "isLockable": false,
+      "isLockedDefaultValue": false,
+      "isActivatable": true,
+      "isActiveDefaultValue": true,
+      "isHidable": true,
+      "isHiddenDefaultValue": false,
+      "description": "Template with pickup/drop baseline actions.",
+      "isQuantifiable": true,
+      "quantity": 1,
+      "quantifiablePlacementDistributionMode": "IndividualInstances",
+      "childScopes": [],
+      "name": "Flowers",
+      "gameProperties": [
+        {
+          "id": "faf06657-cc37-44d7-9eb5-5266e4a7643a",
+          "name": "inventoryPoints",
+          "defaultValue": "1",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "e6e43da7-5277-4d95-b1a5-20d3309fac82",
+          "name": "isActive",
+          "defaultValue": "true",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "7c3c3771-a33d-434f-b11f-5f9eabd1558c",
+          "name": "isHidden",
+          "defaultValue": "false",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "fa9464a2-2f6d-43a7-909b-303b970e763a",
+          "name": "isQuantifiable",
+          "defaultValue": "true",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "a1675f41-75ad-4a8c-b1c4-066a64bbe589",
+          "name": "quantity",
+          "defaultValue": "1",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        }
+      ],
+      "additionalDirectionalTraversalMappings": []
+    },
+    {
+      "scopeKind": 7,
+      "sourceObjectId": "8d129415-a802-4533-921e-ae6c8f25509b",
+      "linkedBaseObjectId": "dc4a594f-d6a5-405f-96d5-2af3bdab5c33",
+      "linkActionsToBaseObject": true,
+      "productionName": "inventoriableTemplate",
+      "isInventoriable": true,
+      "inventoryPointsDefaultValue": 1,
+      "isContainer": false,
+      "containerPointsDefaultValue": 1,
+      "isOpenable": false,
+      "isOpenDefaultValue": false,
+      "isLockable": false,
+      "isLockedDefaultValue": false,
+      "isActivatable": true,
+      "isActiveDefaultValue": true,
+      "isHidable": true,
+      "isHiddenDefaultValue": false,
+      "description": "Template with pickup/drop baseline actions.",
+      "isQuantifiable": true,
+      "quantity": 1,
+      "quantifiablePlacementDistributionMode": "IndividualInstances",
+      "childScopes": [],
+      "name": "Flowers",
+      "gameProperties": [
+        {
+          "id": "d7bc082f-ab96-420f-9142-1225186def39",
+          "name": "inventoryPoints",
+          "defaultValue": "1",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "14f938d7-d4f8-4113-8b33-85d1ac6781a2",
+          "name": "isActive",
+          "defaultValue": "true",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "54388540-301e-4bc0-bfcb-26ba0f6e2f07",
+          "name": "isHidden",
+          "defaultValue": "false",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "56482036-6135-4ddf-94c3-e6cc1beabdd0",
+          "name": "isQuantifiable",
+          "defaultValue": "true",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "775c5186-b5ad-4f63-b476-b778c686bae3",
+          "name": "quantity",
+          "defaultValue": "1",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        }
+      ],
+      "additionalDirectionalTraversalMappings": []
+    },
+    {
+      "scopeKind": 7,
+      "sourceObjectId": "f1f2e53a-23aa-4d4e-ad8f-a26f9bd0aded",
+      "linkedBaseObjectId": "dc4a594f-d6a5-405f-96d5-2af3bdab5c33",
+      "linkActionsToBaseObject": true,
+      "productionName": "inventoriableTemplate",
+      "isInventoriable": true,
+      "inventoryPointsDefaultValue": 1,
+      "isContainer": false,
+      "containerPointsDefaultValue": 1,
+      "isOpenable": false,
+      "isOpenDefaultValue": false,
+      "isLockable": false,
+      "isLockedDefaultValue": false,
+      "isActivatable": true,
+      "isActiveDefaultValue": true,
+      "isHidable": true,
+      "isHiddenDefaultValue": false,
+      "description": "Template with pickup/drop baseline actions.",
+      "isQuantifiable": true,
+      "quantity": 1,
+      "quantifiablePlacementDistributionMode": "IndividualInstances",
+      "childScopes": [],
+      "name": "Flowers",
+      "gameProperties": [
+        {
+          "id": "87c0a86e-3351-417e-9e52-4129b782652e",
+          "name": "inventoryPoints",
+          "defaultValue": "1",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "f6d4049a-28f4-47d8-81d5-cbe4cd726a55",
+          "name": "isActive",
+          "defaultValue": "true",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "dd108af3-780f-4b45-924d-c02b1066dad4",
+          "name": "isHidden",
+          "defaultValue": "false",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "9770fc54-2122-4be1-9e42-7230bc7dd4c5",
+          "name": "isQuantifiable",
+          "defaultValue": "true",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "f8330c88-3084-4386-ba80-e2a2e340e64d",
+          "name": "quantity",
+          "defaultValue": "1",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        }
+      ],
+      "additionalDirectionalTraversalMappings": []
+    },
+    {
+      "scopeKind": 7,
+      "sourceObjectId": "2b335bcb-be26-48c8-9f44-196303e782ff",
+      "linkedBaseObjectId": "dc4a594f-d6a5-405f-96d5-2af3bdab5c33",
+      "linkActionsToBaseObject": true,
+      "productionName": "inventoriableTemplate",
+      "isInventoriable": true,
+      "inventoryPointsDefaultValue": 1,
+      "isContainer": false,
+      "containerPointsDefaultValue": 1,
+      "isOpenable": false,
+      "isOpenDefaultValue": false,
+      "isLockable": false,
+      "isLockedDefaultValue": false,
+      "isActivatable": true,
+      "isActiveDefaultValue": true,
+      "isHidable": true,
+      "isHiddenDefaultValue": false,
+      "description": "Template with pickup/drop baseline actions.",
+      "isQuantifiable": true,
+      "quantity": 1,
+      "quantifiablePlacementDistributionMode": "IndividualInstances",
+      "childScopes": [],
+      "name": "Flowers",
+      "gameProperties": [
+        {
+          "id": "ffc98cbd-131d-4ba1-80db-460f09029858",
+          "name": "inventoryPoints",
+          "defaultValue": "1",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "79e2eda5-7063-4313-9c6c-b84ff618fa59",
+          "name": "isActive",
+          "defaultValue": "true",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "46a4ad51-0748-4168-b3ee-35c6a1d32bc0",
+          "name": "isHidden",
+          "defaultValue": "false",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "43c4d800-c89f-4a3c-aefb-d582a8a667e7",
+          "name": "isQuantifiable",
+          "defaultValue": "true",
+          "valueRestriction": "TrueFalse",
+          "lifetime": "Singleton"
+        },
+        {
+          "id": "96717a04-dd45-4a01-9503-6b9ccdb19844",
+          "name": "quantity",
+          "defaultValue": "1",
+          "valueRestriction": "Numeric",
+          "lifetime": "Singleton"
+        }
+      ],
+      "additionalDirectionalTraversalMappings": []
+    }
+  ],
+  "images": [
+    {
+      "slot": "Default",
+      "overlayRenderOrder": 150,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "Down",
+      "overlayRenderOrder": 0,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "East",
+      "overlayRenderOrder": 100,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "North",
+      "overlayRenderOrder": 100,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "NorthEast",
+      "overlayRenderOrder": 200,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "NorthWest",
+      "overlayRenderOrder": 200,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "South",
+      "overlayRenderOrder": 100,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "SouthEast",
+      "overlayRenderOrder": 200,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "SouthWest",
+      "overlayRenderOrder": 200,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "Up",
+      "overlayRenderOrder": 150,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    },
+    {
+      "slot": "West",
+      "overlayRenderOrder": 100,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": ""
+    }
+  ],
+  "childScopes": [
+    {
+      "scopeKind": 7,
+      "scopeName": "Coins",
+      "scopeNameInGame": "Coins",
+      "runtimeParentScopeNodeId": null,
+      "scopeTokens": [
+        "Coins"
+      ],
+      "parentScope": null,
+      "childScopes": [],
+      "additionalVerbs": [],
+      "additionalDirectionals": [],
+      "additionalDirectionalTraversalMappings": []
+    },
+    {
+      "scopeKind": 7,
+      "scopeName": "Date",
+      "scopeNameInGame": "Dinner Date",
+      "runtimeParentScopeNodeId": null,
+      "scopeTokens": [
+        "Date",
+        "Dinner Date"
+      ],
+      "parentScope": null,
+      "childScopes": [],
+      "additionalVerbs": [],
+      "additionalDirectionals": [],
+      "additionalDirectionalTraversalMappings": []
+    },
+    {
+      "scopeKind": 7,
+      "scopeName": "Flowers",
+      "scopeNameInGame": "Flowers",
+      "runtimeParentScopeNodeId": null,
+      "scopeTokens": [
+        "Flowers"
+      ],
+      "parentScope": null,
+      "childScopes": [],
+      "additionalVerbs": [],
+      "additionalDirectionals": [],
+      "additionalDirectionalTraversalMappings": []
+    },
+    {
+      "scopeKind": 7,
+      "scopeName": "Flowers",
+      "scopeNameInGame": "Flowers",
+      "runtimeParentScopeNodeId": null,
+      "scopeTokens": [
+        "Flowers"
+      ],
+      "parentScope": null,
+      "childScopes": [],
+      "additionalVerbs": [],
+      "additionalDirectionals": [],
+      "additionalDirectionalTraversalMappings": []
+    },
+    {
+      "scopeKind": 7,
+      "scopeName": "Flowers",
+      "scopeNameInGame": "Flowers",
+      "runtimeParentScopeNodeId": null,
+      "scopeTokens": [
+        "Flowers"
+      ],
+      "parentScope": null,
+      "childScopes": [],
+      "additionalVerbs": [],
+      "additionalDirectionals": [],
+      "additionalDirectionalTraversalMappings": []
+    },
+    {
+      "scopeKind": 7,
+      "scopeName": "Flowers",
+      "scopeNameInGame": "Flowers",
+      "runtimeParentScopeNodeId": null,
+      "scopeTokens": [
+        "Flowers"
+      ],
+      "parentScope": null,
+      "childScopes": [],
+      "additionalVerbs": [],
+      "additionalDirectionals": [],
+      "additionalDirectionalTraversalMappings": []
+    },
+    {
+      "scopeKind": 7,
+      "scopeName": "Flowers",
+      "scopeNameInGame": "Flowers",
+      "runtimeParentScopeNodeId": null,
+      "scopeTokens": [
+        "Flowers"
+      ],
+      "parentScope": null,
+      "childScopes": [],
+      "additionalVerbs": [],
+      "additionalDirectionals": [],
+      "additionalDirectionalTraversalMappings": []
+    }
+  ],
+  "name": "PlayRoom",
+  "additionalDirectionalTraversalMappings": [],
+  "availableGameActions": [
+    {
+      "id": "c7ad21fd-3788-4494-9358-5b225695e816",
+      "name": "go_playroom",
+      "actionType": "MaterializeObjectCopy",
+      "verbListText": "go",
+      "direction": "",
+      "outcomeMessageMap": {
+        "CurrentRoomUnavailable": "cru",
+        "Failure": "f",
+        "MaterializationFailed": "mf",
+        "SourceNotFound": "snf",
+        "Success": "A rock"
+      },
+      "materializeSourceObjectId": "d2ef0ecf-7189-4166-ab94-c566453005f0",
+      "childCommandForwardingMode": "None"
+    },
+    {
+      "id": "aecc8459-50ef-4cff-9b38-bdf27cf981e1",
+      "name": "inspect_playroom",
+      "actionType": "MaterializeObjectCopy",
+      "verbListText": "inspect",
+      "direction": "",
+      "outcomeMessageMap": {
+        "CurrentRoomUnavailable": "cru",
+        "Failure": "f",
+        "MaterializationFailed": "mf",
+        "SourceNotFound": "snf",
+        "Success": "More coins?"
+      },
+      "materializeSourceObjectId": "8d7207b8-6c7b-4c37-98fa-e696d7caca9a",
+      "childCommandForwardingMode": "None"
+    },
+    {
+      "id": "fae764e1-0015-4a44-a4aa-dbbed6aef05d",
+      "name": "look_new_room",
+      "actionType": "EchoMessage",
+      "verbListText": "look",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "",
+        "Success": "A room full of many things to play with."
+      },
+      "childCommandForwardingMode": "ChildrenAfterParent"
+    },
+    {
+      "id": "f5d62ead-dda2-482c-ac25-15c63d409796",
+      "name": "talk_playroom",
+      "actionType": "MaterializeObjectCopy",
+      "verbListText": "talk",
+      "direction": "",
+      "outcomeMessageMap": {
+        "CurrentRoomUnavailable": "cru",
+        "Failure": "f",
+        "MaterializationFailed": "mf",
+        "SourceNotFound": "snf",
+        "Success": "More flowers?"
+      },
+      "materializeSourceObjectId": "dc4a594f-d6a5-405f-96d5-2af3bdab5c33",
+      "childCommandForwardingMode": "None"
+    }
+  ]
+}

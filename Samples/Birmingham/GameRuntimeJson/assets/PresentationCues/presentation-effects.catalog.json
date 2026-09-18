@@ -1,0 +1,188 @@
+{
+  "schemaVersion": "1.0",
+  "effects": [
+    {
+      "category": "Movement",
+      "effectKey": "movement.speed.quantum",
+      "displayName": "Quantum",
+      "movementHint": "Quantum",
+      "movementInterpolation": {
+        "frameCount": 1,
+        "secondsPerFrame": 0.0
+      }
+    },
+    {
+      "category": "Movement",
+      "effectKey": "movement.speed.slow",
+      "displayName": "Slow",
+      "movementHint": "Slow",
+      "movementInterpolation": {
+        "frameCount": 10,
+        "secondsPerFrame": 0.25
+      }
+    },
+    {
+      "category": "Movement",
+      "effectKey": "movement.speed.medium",
+      "displayName": "Medium",
+      "movementHint": "Medium",
+      "movementInterpolation": {
+        "frameCount": 10,
+        "secondsPerFrame": 0.15
+      }
+    },
+    {
+      "category": "Movement",
+      "effectKey": "movement.speed.fast",
+      "displayName": "Fast",
+      "movementHint": "Fast",
+      "movementInterpolation": {
+        "frameCount": 12,
+        "secondsPerFrame": 0.10
+      }
+    },
+    {
+      "category": "RoomTransition",
+      "effectKey": "room.transition.slide.directional.slow",
+      "displayName": "Room Transition Slide - Directional (Slow)",
+      "roomTransitionPresentation": {
+        "mode": "DirectionalSlide"
+      },
+      "movementHint": "Slow",
+      "movementInterpolation": {
+        "frameCount": 28,
+        "secondsPerFrame": 0.06
+      }
+    },
+    {
+      "category": "RoomTransition",
+      "effectKey": "room.transition.slide.directional.medium",
+      "displayName": "Room Transition Slide - Directional (Medium)",
+      "roomTransitionPresentation": {
+        "mode": "DirectionalSlide"
+      },
+      "movementHint": "Medium",
+      "movementInterpolation": {
+        "frameCount": 14,
+        "secondsPerFrame": 0.06
+      }
+    },
+    {
+      "category": "RoomTransition",
+      "effectKey": "room.transition.fade.cross.medium",
+      "displayName": "Room Transition Fade - Crossfade (Medium)",
+      "roomTransitionPresentation": {
+        "mode": "CrossFade"
+      },
+      "movementHint": "Medium",
+      "movementInterpolation": {
+        "frameCount": 14,
+        "secondsPerFrame": 0.06
+      }
+    },
+    {
+      "category": "Appearance",
+      "effectKey": "appearance.selection.outline.cyan",
+      "displayName": "Selection Outline - Cyan",
+      "appearanceOutlineStyle": {
+        "outlineColorHex": "#22D3EE",
+        "outlineThickness": 2,
+        "pulseMs": 350
+      }
+    },
+    {
+      "category": "Appearance",
+      "effectKey": "appearance.selection.outline.amber",
+      "displayName": "Selection Outline - Amber",
+      "appearanceOutlineStyle": {
+        "outlineColorHex": "#F59E0B",
+        "outlineThickness": 2,
+        "pulseMs": 350
+      }
+    },
+    {
+      "category": "Appearance",
+      "effectKey": "appearance.selection.outline.green",
+      "displayName": "Selection Outline - Green",
+      "appearanceOutlineStyle": {
+        "outlineColorHex": "#22C55E",
+        "outlineThickness": 2,
+        "pulseMs": 350
+      }
+    },
+    {
+      "category": "Appearance",
+      "effectKey": "appearance.selection.outline.danger",
+      "displayName": "Selection Outline - Danger",
+      "appearanceOutlineStyle": {
+        "outlineColorHex": "#EF4444",
+        "outlineThickness": 2,
+        "pulseMs": 350
+      }
+    },
+    {
+      "category": "Text",
+      "effectKey": "text.hudoverlay.fadein.auto.2500",
+      "displayName": "Text HUD Overlay Fade In (5s)",
+      "textPresentation": {
+        "where": "HudOverlay",
+        "how": "FadeIn",
+        "durationMs": 5000
+      }
+    },{
+      "category": "Text",
+      "effectKey": "text.hudoverlay.fadein.manual.dismiss",
+      "displayName": "Text HUD Overlay Fade In (No Duration)",
+      "textPresentation": {
+        "where": "HudOverlay",
+        "how": "FadeIn"
+      }
+    },
+    {
+      "category": "Text",
+      "effectKey": "text.hudoverlay.toast.auto.1500",
+      "displayName": "Text HUD Overlay Toast (1.5s)",
+      "textPresentation": {
+        "where": "HudOverlay",
+        "how": "Toast",
+        "durationMs": 1500
+      }
+    },
+    {
+      "category": "Text",
+      "effectKey": "text.hudoverlay.autoscroll.manualdismiss",
+      "displayName": "Text HUD Overlay Auto Scroll (Manual Dismiss)",
+      "textPresentation": {
+        "where": "HudOverlay",
+        "how": "AutoScroll",
+        "durationMs": 0
+      }
+    },
+    {
+      "category": "Text",
+      "effectKey": "text.hudoverlay.manualscroll.manualdismiss",
+      "displayName": "Text HUD Overlay Manual Scroll (Manual Dismiss)",
+      "textPresentation": {
+        "where": "HudOverlay",
+        "how": "ManualScroll",
+        "durationMs": 0
+      }
+    },
+    {
+      "category": "Text",
+      "effectKey": "text.narrativedialog.archive",
+      "displayName": "Text Narrative Dialog Archive Entry",
+      "textPresentation": {
+        "where": "NarrativeDialog"
+      }
+    },
+    {
+      "category": "Text",
+      "effectKey": "text.echo.message",
+      "displayName": "Text Echo Message",
+      "textPresentation": {
+        "where": "Echo"
+      }
+    }
+  ]
+}

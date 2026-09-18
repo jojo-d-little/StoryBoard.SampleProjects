@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <IsPackable>true</IsPackable>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+
+    <PackageId>StoryBoard.SourceAssets</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>StoryBoard</Authors>
+    <Description>Source images and sounds used by StoryBoard sample projects for testing.</Description>
+    <PackageTags>storyboard;source-assets;testing;assets</PackageTags>
+    <PackageReadmeFile>README.SourceAssets.md</PackageReadmeFile>
+
+    <PackageOutputPath>$(MSBuildThisFileDirectory)artifacts</PackageOutputPath>
+    <NoWarn>$(NoWarn);NU5128</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="SourceAssets\**\*"
+          Pack="true"
+          PackagePath="contentFiles\any\any\SourceAssets\%(RecursiveDir)%(Filename)%(Extension)"
+          PackageCopyToOutput="true"
+          PackageFlatten="false" />
+    <None Include="README.SourceAssets.md"
+          Pack="true"
+          PackagePath="README.SourceAssets.md" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,23 @@
+{
+  "phaseKey": "book-1",
+  "phaseTier": "Book",
+  "displayName": "How To...",
+  "title": "How to fix a key and other activities",
+  "titlePresentationCueEffectKey": "text.hudoverlay.titlesplash.manualdismiss",
+  "prologue": "You are on a tutorial journey to fix, use, and leave",
+  "prologuePresentationCueEffectKey": "text.hudoverlay.titlesplash.manualdismiss",
+  "narrative": "Our hero finds himself a dazed, unsure of how he found himself in this unusual place. he\u0027s unsure if he should explore or escape.",
+  "narrativePresentationCueEffectKey": "text.hudoverlay.autoscroll.manualdismiss",
+  "childPhaseIds": [
+    "67c8efd2-65d9-47bb-9b3c-2a9a6ef0c52a",
+    "255f5a34-96fd-48b5-b617-3adfb542c561",
+    "17910b21-bf36-4475-9dfc-95ccd6088a4f"
+  ],
+  "phaseAmbientSoundEffectId": "c57f3684-dd7b-4f37-b03f-dbc3e35670a9",
+  "phaseAmbientTimerKey": "timer.amb.sound.background",
+  "phaseAmbienceMode": "Overlay",
+  "Id": "43d2c4e0-c4d1-4cc2-8969-9ea32f476a0f",
+  "name": "How To...",
+  "nameInGame": "How To...",
+  "scopeKind": "Book"
+}

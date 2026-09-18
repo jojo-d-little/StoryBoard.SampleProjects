@@ -1,0 +1,213 @@
+{
+  "linkActionsToBaseObject": false,
+  "productionName": "Door opens North from Atrium to Workshop.",
+  "nameSynonyms": [
+    "door",
+    "workshop"
+  ],
+  "imageVariants": [
+    {
+      "variantName": "Closed",
+      "fullImagePath": "assets/images/_shared/40e594f6012b5047629c3070aa3312adb36e42d9cfac87126b644cf1f1a6753d__LightDoor.png",
+      "imageLocalAlignmentOffsetX": 6,
+      "imageScale": 1,
+      "isDefault": true,
+      "imagePathSemantics": "runtimeExportRelative"
+    },
+    {
+      "variantName": "Open",
+      "fullImagePath": "assets/images/_shared/003ec19aecb997f39c85fc3796c89ca8d01768923d9d1c0d34ab97efdfa7824b__LightDoorOpen.png",
+      "imageLocalAlignmentOffsetX": 6,
+      "imageScale": 1,
+      "isDefault": false,
+      "imagePathSemantics": "runtimeExportRelative"
+    }
+  ],
+  "imageRotationDegrees": 0,
+  "renderZOrder": 1007,
+  "authoredRenderOrder": 1004,
+  "imageVariantChooserScript": "IF {owner.isOpen}\r\n\u0022Open\u0022\r\nELSE\r\n\u0022Closed\u0022\r\nENDIF",
+  "appearance": {
+    "spatialType": "SolidObject",
+    "isMovableDefaultValue": true,
+    "footprintWidthCells": 6,
+    "footprintHeightCells": 1,
+    "footprintOrientation": "North",
+    "headingDirection": "North",
+    "objectHeightUnits": 1,
+    "stackScaleStepOverride": 0.1,
+    "minStackScaleOverride": 0.5
+  },
+  "isInventoriable": false,
+  "inventoryPointsDefaultValue": 1,
+  "isContainer": false,
+  "containerPointsDefaultValue": 1,
+  "isOpenable": true,
+  "isOpenDefaultValue": false,
+  "isLockable": true,
+  "isLockedDefaultValue": true,
+  "isActivatable": false,
+  "isActiveDefaultValue": false,
+  "isHidable": false,
+  "isHiddenDefaultValue": false,
+  "description": "",
+  "isQuantifiable": false,
+  "quantity": 1,
+  "quantifiablePlacementDistributionMode": "GroupedStack",
+  "lockOperationRequirements": {
+    "unlockKeyRequirements": [
+      {
+        "objectId": "0825ab80-71bb-4aa9-9028-8c931f00ffd4",
+        "matchKind": "ObjectId",
+        "matchValue": "0825ab80-71bb-4aa9-9028-8c931f00ffd4",
+        "satisfactionMode": "PossessionRequired",
+        "consumptionPolicy": "None",
+        "variableRequirements": [],
+        "requiredObjectId": "0825ab80-71bb-4aa9-9028-8c931f00ffd4",
+        "requiredQuantity": 1
+      }
+    ],
+    "requireKeyForLockOperation": false,
+    "useUnlockKeysForLockOperation": true
+  },
+  "isRuntimeMaterialized": false,
+  "Id": "d1f9944a-6985-4cb3-a659-dc3b2253a57a",
+  "name": "Door_N",
+  "nameInGame": "Workshop Door",
+  "scopeKind": "GameObject",
+  "gameProperties": [
+    {
+      "id": "d5d2e92a-85a2-4f8b-9084-0478d614d0fc",
+      "name": "destinationFromHere",
+      "defaultValue": "Workshop",
+      "valueRestriction": "Unrestricted",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "imageRotationDegrees",
+      "defaultValue": "0",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "imageScale",
+      "defaultValue": "1",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "isLocked",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "isOpen",
+      "defaultValue": "false",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton",
+      "sharedVariableId": "0f9b0c7e-e448-4caf-8297-fc96f13e3eb3"
+    },
+    {
+      "id": "825b79c7-154b-46e1-911c-55a8bfc1b95b",
+      "name": "lookingFromHere",
+      "defaultValue": "the north",
+      "valueRestriction": "Unrestricted",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "positionX",
+      "defaultValue": "280",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "positionY",
+      "defaultValue": "0",
+      "valueRestriction": "Numeric",
+      "lifetime": "Singleton"
+    }
+  ],
+  "availableGameActions": [
+    {
+      "id": "42543edd-17fa-4ec3-aacf-069458b6b2a4",
+      "name": "look_door_n",
+      "payload": {
+        "$payloadType": "echoMessage"
+      },
+      "actionType": "EchoMessage",
+      "noVerbLinkage": false,
+      "verbListText": "look",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "",
+        "Success": "The door to the {self.destinationFromHere} is to {self.lookingFromHere} \r\nIF {self.isOpen}\r\nit is open.\r\nELSE\r\nit is closed.\r\nENDIF"
+      },
+      "childCommandForwardingMode": "None"
+    },
+    {
+      "id": "7d8122b8-ab5f-4b30-b2e2-9d9312177249",
+      "name": "open_door_n",
+      "payload": {
+        "$payloadType": "openObject"
+      },
+      "actionType": "OpenObject",
+      "noVerbLinkage": false,
+      "verbListText": "open",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "f",
+        "ObjectAlreadyOpen": "Its open",
+        "ObjectLocked": "It seems stuck, perhaps if you had something to pry it with.",
+        "ObjectNotOpenable": "ono",
+        "Success": "The workshop door opens"
+      },
+      "outcomeSoundEffectsMap": {
+        "ObjectLocked": [
+          {
+            "soundEffectId": "c57f3684-dd7b-4f37-b03f-dbc3e35670a9",
+            "soundEffectKeyHint": "background.Crickets",
+            "enabled": true,
+            "lateDeliveryPolicy": "PlayIfLate"
+          }
+        ],
+        "Success": [
+          {
+            "soundEffectId": "7499a24e-e328-498f-97a3-d4a70d621ae5",
+            "soundEffectKeyHint": "door.open.1",
+            "enabled": true,
+            "lateDeliveryPolicy": "PlayIfLate"
+          }
+        ]
+      },
+      "childCommandForwardingMode": "None"
+    },
+    {
+      "id": "aed93607-4bc7-458d-8f21-b25e0fd0ecd3",
+      "name": "pry_door_n",
+      "payload": {
+        "$payloadType": "unlockObject"
+      },
+      "actionType": "UnlockObject",
+      "noVerbLinkage": false,
+      "verbListText": "pry",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "",
+        "MissingRequiredKeys": "Pry it with what? Perhaps you need to hunt for a tool.",
+        "NoUnlockRequirementsDefined": "nurd",
+        "ObjectAlreadyUnlocked": "I think it is free already",
+        "ObjectNotLockable": "onl",
+        "Success": "That seemed to loosen it",
+        "WrongKey": "Not with that"
+      },
+      "childCommandForwardingMode": "None"
+    }
+  ]
+}

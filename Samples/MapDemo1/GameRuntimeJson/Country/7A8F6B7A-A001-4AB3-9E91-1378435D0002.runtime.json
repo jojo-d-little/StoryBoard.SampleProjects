@@ -1,0 +1,14 @@
+{
+  "startingAreaName": "Freebird Farm",
+  "areaIds": [
+    "7a8f6b7a-a001-4ab3-9e91-1378435d0003"
+  ],
+  "Id": "7a8f6b7a-a001-4ab3-9e91-1378435d0002",
+  "name": "USA",
+  "nameInGame": "USA",
+  "scopeKind": "Country",
+  "gameProperties": [],
+  "additionalVerbs": [],
+  "additionalDirectionals": [],
+  "availableGameActions": []
+}

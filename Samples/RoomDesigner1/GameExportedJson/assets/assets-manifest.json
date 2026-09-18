@@ -1,0 +1,102 @@
+{
+  "schemaVersion": "1.0",
+  "images": [
+    {
+      "hash": "12251e687313394ea54d5dd2fbb84926262908bc8e87151e35b8371a37732fae",
+      "imagePathSemantics": "runtimeExportRelative",
+      "exportedPath": "assets/images/_shared/12251e687313394ea54d5dd2fbb84926262908bc8e87151e35b8371a37732fae__DarkDoor.png",
+      "sourcePaths": [
+        "ASSETROOT:/PlaceHolderImages/DarkDoor.png"
+      ],
+      "references": [
+        "object:35451864485a4f5bad23c91ce432fe1f:variant:default:full",
+        "object:60b6ced70ea34da6b5f2f9364e5f4afd:variant:default:full"
+      ]
+    },
+    {
+      "hash": "1334e05a4c445ce256b03ff1d2b7070dbc799fa903da418ccdb83c27b1810713",
+      "imagePathSemantics": "runtimeExportRelative",
+      "exportedPath": "assets/images/_shared/1334e05a4c445ce256b03ff1d2b7070dbc799fa903da418ccdb83c27b1810713__ShortBrickWall.png",
+      "sourcePaths": [
+        "ASSETROOT:/PlaceHolderImages/ShortBrickWall.png"
+      ],
+      "references": [
+        "room:d43dc3ad884f4ec1bc33b95af7f03554:slot:East:full",
+        "room:d43dc3ad884f4ec1bc33b95af7f03554:slot:West:full",
+        "room:df4a2dd7dd204bdbae1470e106044f08:slot:East:full",
+        "room:df4a2dd7dd204bdbae1470e106044f08:slot:West:full"
+      ]
+    },
+    {
+      "hash": "6d7acf52b5c475a41c4dc6b61b3501d38cb124c2ddbb711d90c1e3d00b1e10a3",
+      "imagePathSemantics": "runtimeExportRelative",
+      "exportedPath": "assets/images/_shared/6d7acf52b5c475a41c4dc6b61b3501d38cb124c2ddbb711d90c1e3d00b1e10a3__cartoon-knife.png",
+      "sourcePaths": [
+        "ASSETROOT:/PlaceHolderImages/cartoon-knife.png"
+      ],
+      "references": [
+        "object:2c82b97f6dc14e6883d1011b5617da79:variant:default:full"
+      ]
+    },
+    {
+      "hash": "7bc4fd3cfc03a0636edeece94b6f865692f80c41fe62337c47ab48658273be87",
+      "imagePathSemantics": "runtimeExportRelative",
+      "exportedPath": "assets/images/_shared/7bc4fd3cfc03a0636edeece94b6f865692f80c41fe62337c47ab48658273be87__DarkBrownWoodenFloor800x600.png",
+      "sourcePaths": [
+        "ASSETROOT:/PlaceHolderImages/DarkBrownWoodenFloor800x600.png"
+      ],
+      "references": [
+        "room:d43dc3ad884f4ec1bc33b95af7f03554:slot:Down:full",
+        "room:df4a2dd7dd204bdbae1470e106044f08:slot:Down:full"
+      ]
+    },
+    {
+      "hash": "84c8f14bc09348dea467172e1df774dd5ce4aadda9856f4ec558a97c1a40141f",
+      "imagePathSemantics": "runtimeExportRelative",
+      "exportedPath": "assets/images/_shared/84c8f14bc09348dea467172e1df774dd5ce4aadda9856f4ec558a97c1a40141f__LongBrickWall.png",
+      "sourcePaths": [
+        "ASSETROOT:/PlaceHolderImages/LongBrickWall.png"
+      ],
+      "references": [
+        "room:d43dc3ad884f4ec1bc33b95af7f03554:slot:North:full",
+        "room:d43dc3ad884f4ec1bc33b95af7f03554:slot:South:full",
+        "room:df4a2dd7dd204bdbae1470e106044f08:slot:North:full",
+        "room:df4a2dd7dd204bdbae1470e106044f08:slot:South:full"
+      ]
+    },
+    {
+      "hash": "acf2d278f321668a549e2e69e180c2fce4fe9046a900b6eb2143a27be239032a",
+      "imagePathSemantics": "runtimeExportRelative",
+      "exportedPath": "assets/images/_shared/acf2d278f321668a549e2e69e180c2fce4fe9046a900b6eb2143a27be239032a__wholewatermelon.png",
+      "sourcePaths": [
+        "ASSETROOT:/PlaceHolderImages/wholewatermelon.png"
+      ],
+      "references": [
+        "object:246b2547b69143c9bfbe6bf4694b8ac3:variant:Whole:full"
+      ]
+    },
+    {
+      "hash": "b77aabbcb2b84b397874b555769d080bd6e62ed43c6d83ea0e3343760101c555",
+      "imagePathSemantics": "runtimeExportRelative",
+      "exportedPath": "assets/images/_shared/b77aabbcb2b84b397874b555769d080bd6e62ed43c6d83ea0e3343760101c555__watermelon.png",
+      "sourcePaths": [
+        "ASSETROOT:/PlaceHolderImages/watermelon.png"
+      ],
+      "references": [
+        "object:246b2547b69143c9bfbe6bf4694b8ac3:variant:Cut:full"
+      ]
+    },
+    {
+      "hash": "e05df3b77ff137f86635e243fd90d1194d6e6e5e173f22b67d26fa7cfaca12b0",
+      "imagePathSemantics": "runtimeExportRelative",
+      "exportedPath": "assets/images/_shared/e05df3b77ff137f86635e243fd90d1194d6e6e5e173f22b67d26fa7cfaca12b0__CoinBag.png",
+      "sourcePaths": [
+        "ASSETROOT:/PlaceHolderImages/CoinBag.png"
+      ],
+      "references": [
+        "object:c2ec344a634843b9be7004383d982ec1:variant:default:full"
+      ]
+    }
+  ],
+  "unresolvedSources": []
+}

@@ -1,0 +1,351 @@
+{
+  "planetIds": [
+    "25b8e27c-3d40-4a91-a710-c9f4f70f6d01"
+  ],
+  "schemaVersion": "1.0",
+  "gameDisplayName": "Chessboard Demo",
+  "gameSummary": "This is a demonstration game focused on how to control and limit individual game piece movements.  It is not nor is it intended to be a complete chess game. It\u0027s largely focused on showing that we can define and control movements of pieces limitations of what\u0027s allowed. it does not yet have any support for pieces capturing other pieces that will likely be a future enhancement.",
+  "gamePreviewImages": [
+    "assets/images/previewImages/354b13941dff55d444d3b933456309776136eb2e2c9dd9b8ad05b2db7a0b8c9c__TheBoard.png"
+  ],
+  "autoSaveSeconds": 60,
+  "roomImageCanvasWidth": 1024,
+  "roomImageCanvasHeight": 768,
+  "roomDesignerGridCellSize": 64,
+  "startingPlanetName": "Starter Planet",
+  "name": "ChessDemo",
+  "nameInGame": "ChessDemo",
+  "scopeKind": "Global",
+  "baseObjectIds": [
+    "08bef920-0d9f-4734-9c50-c51a657d93f6",
+    "2ca8c057-710c-40fb-a1fa-487f4b1933d7",
+    "303e39b9-f0c6-498d-a991-86acc1101987",
+    "48ffff13-6a05-4bfd-bbf4-20920dae302b",
+    "6b830b00-aaf0-4fb3-85be-7e72fa3783da",
+    "6dcea7c9-cc8b-44b5-9cda-3552ff31394c",
+    "9a4a7d4c-f8a4-4ae2-8db8-0ce40e215ffb",
+    "b6027e59-20af-435f-9a69-e61a0e185deb",
+    "c1b2bb15-0aaa-4f7b-b454-c2e0965abcef",
+    "cd0a11bf-fa81-4133-ac41-1ad5f07a722c",
+    "d21f6d16-27aa-4257-9f67-3a54a83ac1a3",
+    "d81ca4f2-fb93-42b0-9bd1-a34b89428d87",
+    "deaba097-f121-492c-a0eb-b161d2331bbb",
+    "f767ca41-aacf-4fbb-9c01-15485a2c3c72"
+  ],
+  "gameObjectIds": [
+    "f631c497-5f2f-4cec-8971-8abfead1f911"
+  ],
+  "gameProperties": [],
+  "additionalVerbs": [
+    "clearall",
+    "clearlast",
+    "close",
+    "drop",
+    "face",
+    "get",
+    "go",
+    "grab",
+    "inspect",
+    "look",
+    "move",
+    "open",
+    "pointclicked",
+    "put",
+    "remove",
+    "rotate",
+    "select",
+    "stack",
+    "submitwaypoints",
+    "take",
+    "talk",
+    "use"
+  ],
+  "additionalDirectionals": [
+    "north",
+    "south",
+    "east",
+    "west",
+    "northeast",
+    "southeast",
+    "northwest",
+    "southwest",
+    "up",
+    "down"
+  ],
+  "additionalDirectionalTraversalMappings": [
+    {
+      "token": "east",
+      "traversalDirection": "East"
+    },
+    {
+      "token": "left",
+      "traversalDirection": "West"
+    },
+    {
+      "token": "north",
+      "traversalDirection": "North"
+    },
+    {
+      "token": "right",
+      "traversalDirection": "East"
+    },
+    {
+      "token": "south",
+      "traversalDirection": "South"
+    },
+    {
+      "token": "west",
+      "traversalDirection": "West"
+    }
+  ],
+  "availableGameActions": [
+    {
+      "id": "99e5beae-ed5b-4251-b079-3d6c014fc3cb",
+      "name": "clear_all_selectedobjects",
+      "payload": {
+        "$payloadType": "clearRoomObjectSelections",
+        "clearScope": "All"
+      },
+      "actionType": "ClearRoomObjectSelections",
+      "noVerbLinkage": false,
+      "verbListText": "clearall",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Cleared": "Active objects cleared.",
+        "NoActiveSelections": "There was nothing to clear",
+        "Success": ""
+      },
+      "childCommandForwardingMode": "None"
+    },
+    {
+      "id": "9a8537b4-d03f-47a2-8044-a6ed649d599b",
+      "name": "clear_last_selectedobject",
+      "payload": {
+        "$payloadType": "clearRoomObjectSelections",
+        "clearScope": "LastSelected"
+      },
+      "actionType": "ClearRoomObjectSelections",
+      "noVerbLinkage": false,
+      "verbListText": "clearlast",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Success": ""
+      },
+      "childCommandForwardingMode": "None"
+    },
+    {
+      "id": "a2abc9f5-b16a-44be-a557-60517a4dcfa5",
+      "name": "drop_global_game_objects",
+      "payload": {
+        "$payloadType": "removeObjectFromContainer",
+        "targetContainerId": ""
+      },
+      "actionType": "RemoveObjectFromContainer",
+      "noVerbLinkage": false,
+      "verbListText": "drop",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "f",
+        "RemoveFailed": "That didn\u0027t turn out well.",
+        "ResolveSourceFailed": "Remove it from where?",
+        "Success": "The {currentAction.removedObjectName} is now in the {currentAction.objectsNewLocationName}"
+      },
+      "childCommandForwardingMode": "None"
+    },
+    {
+      "id": "0edaae23-0c75-4cca-ac25-a83332910a7e",
+      "name": "face_global_game_objects",
+      "payload": {
+        "$payloadType": "rotateRoomObjectOnGrid",
+        "mode": "Face",
+        "turnDegrees": 90,
+        "facingDirectionToken": "N",
+        "visualTransitionHint": "Medium"
+      },
+      "actionType": "RotateRoomObjectOnGrid",
+      "noVerbLinkage": false,
+      "verbListText": "face",
+      "direction": "",
+      "outcomeMessageMap": {
+        "BlockedByCollision": "bbc",
+        "InvalidConfiguration": "ic",
+        "InvalidFacing": "Which direction?",
+        "InvalidRotationStep": "Can\u0027t rotate that way",
+        "MissingOrientationData": "mod",
+        "NoResolvedTarget": "Rotate what?",
+        "OutOfBoundsAfterRotation": "oob",
+        "Rotated": "You are now facing that direction",
+        "RuntimeMovableDisabled": "Not right now",
+        "Success": "",
+        "TargetNotMovable": "That does not rotate"
+      },
+      "childCommandForwardingMode": "None"
+    },
+    {
+      "id": "94730f1e-4f7a-460c-a275-72d2caabab05",
+      "name": "move_global_game_objects",
+      "payload": {
+        "$payloadType": "moveRoomObjectOnGrid",
+        "directionToken": "",
+        "distanceInCells": 1,
+        "allowPartialMove": true,
+        "allowJumpOver": true,
+        "visualTransitionHint": "Medium",
+        "travelVisualizationMode": "LegByLeg"
+      },
+      "actionType": "MoveRoomObjectOnGrid",
+      "noVerbLinkage": false,
+      "verbListText": "move",
+      "direction": "",
+      "outcomeMessageMap": {
+        "BlockedByCollision": "Blocked",
+        "InvalidConfiguration": "IC",
+        "InvalidDirection": "Which Way?",
+        "InvalidDistance": "How far?",
+        "MovedFullDistance": "You moved it",
+        "MovedPartialDistance": "You moved it a little",
+        "NoResolvedTarget": "NRT",
+        "OutOfBounds": "OOB",
+        "PartialSupportNotAllowed": "You don\u0027t sit there very well.",
+        "RuntimeMovableDisabled": "RMD",
+        "Success": "success?",
+        "TargetNotMovable": "TNM"
+      },
+      "childCommandForwardingMode": "None"
+    },
+    {
+      "id": "d4009e42-188e-4eea-ac22-d299f2261e62",
+      "name": "point_clicked",
+      "payload": {
+        "$payloadType": "selectRoomObjectByPoint",
+        "selectionCueEffectKey": "appearance.selection.silhouette.cyan"
+      },
+      "actionType": "SelectRoomObjectByPoint",
+      "noVerbLinkage": false,
+      "verbListText": "pointclicked",
+      "direction": "",
+      "outcomeMessageMap": {
+        "ActiveObjectSet": "",
+        "InvalidConfiguration": "",
+        "NoResolvedTarget": "",
+        "PassiveTargetNotSelectable": "",
+        "Success": "",
+        "TargetNotInCurrentRoom": ""
+      },
+      "childCommandForwardingMode": "None"
+    },
+    {
+      "id": "f268e275-98ab-4bcf-856a-1c8476ad8050",
+      "name": "point_to_move",
+      "payload": {
+        "$payloadType": "moveRoomObjectByPoints",
+        "targetResolutionIntent": "PrimarySelection",
+        "allowPartialMove": true,
+        "allowJumpOver": true,
+        "visualTransitionHint": "Medium",
+        "travelVisualizationMode": "LegByLeg"
+      },
+      "actionType": "MoveRoomObjectByPoints",
+      "noVerbLinkage": false,
+      "verbListText": "submitwaypoints",
+      "direction": "",
+      "outcomeMessageMap": {
+        "BlockedByCollision": "",
+        "FailedBeforeAnyLegMoved": "",
+        "InvalidConfiguration": "",
+        "InvalidDirection": "",
+        "InvalidDistance": "",
+        "MovedAllLegs": "",
+        "MovedFullDistance": "",
+        "MovedPartialDistance": "",
+        "MovedPartialLegs": "",
+        "NoResolvedTarget": "",
+        "ObjectMovementRestriction": "",
+        "OutOfBounds": "",
+        "PartialSupportNotAllowed": "",
+        "RuntimeMovableDisabled": "",
+        "Success": "",
+        "TargetNotMovable": ""
+      },
+      "childCommandForwardingMode": "None"
+    },
+    {
+      "id": "887ca48e-e72d-47d2-998c-85177de391c1",
+      "name": "rotate_global_game_objects",
+      "payload": {
+        "$payloadType": "rotateRoomObjectOnGrid",
+        "mode": "Turn",
+        "turnDegrees": 90,
+        "facingDirectionToken": "",
+        "visualTransitionHint": "Medium"
+      },
+      "actionType": "RotateRoomObjectOnGrid",
+      "noVerbLinkage": false,
+      "verbListText": "rotate",
+      "direction": "",
+      "outcomeMessageMap": {
+        "BlockedByCollision": "bbc",
+        "InvalidConfiguration": "ic",
+        "InvalidFacing": "Rotate which way?",
+        "InvalidRotationStep": "irs",
+        "MissingOrientationData": "mod",
+        "NoResolvedTarget": "nrt",
+        "OutOfBoundsAfterRotation": "oobr",
+        "Rotated": "You rotated it",
+        "RuntimeMovableDisabled": "That will not rotate right now",
+        "Success": "",
+        "TargetNotMovable": "tnm"
+      },
+      "childCommandForwardingMode": "None"
+    },
+    {
+      "id": "d9db4cb2-c7ad-4b63-87ff-423cfad8a6a9",
+      "name": "select_global_game_objects",
+      "payload": {
+        "$payloadType": "setActiveRoomObject",
+        "selectionCueEffectKey": ""
+      },
+      "actionType": "SetActiveRoomObject",
+      "noVerbLinkage": false,
+      "verbListText": "select",
+      "direction": "",
+      "outcomeMessageMap": {
+        "ActiveObjectSet": "The {currentAction.selectedObjectName} is nto set as active",
+        "InvalidConfiguration": "ic",
+        "NoResolvedTarget": "nrt",
+        "Success": "success",
+        "TargetNotInCurrentRoom": "tnicr"
+      },
+      "childCommandForwardingMode": "None"
+    },
+    {
+      "id": "8b27f7cc-52c3-464a-bf62-b4b2e72d1915",
+      "name": "stack_global_game_objects",
+      "payload": {
+        "$payloadType": "stackRoomObjectOnAnother",
+        "visualTransitionHint": "Medium"
+      },
+      "actionType": "StackRoomObjectOnAnother",
+      "noVerbLinkage": false,
+      "verbListText": "stack",
+      "direction": "",
+      "outcomeMessageMap": {
+        "AmbiguousSubject": "ambig",
+        "AmbiguousTarget": "ambigT",
+        "BlockedByCollision": "bbc",
+        "DerivedVectorInvalid": "dvi",
+        "InvalidConfiguration": "ic",
+        "NoResolvedSubject": "NRS",
+        "NoResolvedTarget": "nrt",
+        "OutOfBounds": "oob",
+        "RuntimeMovableDisabled": "Can\u0027t seem to move it",
+        "Stacked": "Stacked it",
+        "Success": "",
+        "TargetNotMovable": "TNM",
+        "TargetNotStackable": "TNS",
+        "TargetTooSmall": "It does not fit."
+      },
+      "childCommandForwardingMode": "None"
+    }
+  ]
+}

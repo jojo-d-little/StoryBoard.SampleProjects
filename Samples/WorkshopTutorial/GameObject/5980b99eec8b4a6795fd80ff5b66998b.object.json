@@ -1,0 +1,140 @@
+{
+  "objectType": "Door_S",
+  "positionX": 280,
+  "positionY": 560,
+  "includeInPreview": true,
+  "linkActionsToBaseObject": false,
+  "productionName": "Door opens South from Atrium to No Where.",
+  "nameSynonyms": [],
+  "imageVariants": [
+    {
+      "variantName": "Closed",
+      "fullImagePath": "ASSETROOT:/PlaceHolderImages/LightDoor.png",
+      "imageLocalAlignmentRotationDegrees": 0,
+      "imageLocalAlignmentOffsetX": 6,
+      "imageLocalAlignmentOffsetY": 0,
+      "imageScale": 1,
+      "isDefault": true
+    },
+    {
+      "variantName": "Open",
+      "fullImagePath": "ASSETROOT:/PlaceHolderImages/LightDoorOpen.png",
+      "imageLocalAlignmentRotationDegrees": 0,
+      "imageLocalAlignmentOffsetX": 6,
+      "imageLocalAlignmentOffsetY": 0,
+      "imageScale": 1,
+      "isDefault": false
+    }
+  ],
+  "imageRotationDegrees": 180,
+  "renderZOrder": 1005,
+  "authoredRenderOrder": 1002,
+  "imageVariantChooserScript": "IF {owner.isOpen}\r\n\u0022Open\u0022\r\nELSE\r\n\u0022Closed\u0022\r\nENDIF",
+  "appearance": {
+    "spatialType": "SolidObject",
+    "isMovableDefaultValue": true,
+    "footprintWidthCells": 6,
+    "footprintHeightCells": 1,
+    "footprintOrientation": "N",
+    "headingDirection": "N",
+    "objectHeightUnits": 1,
+    "isHeightPinned": false
+  },
+  "isInventoriable": false,
+  "inventoryPointsDefaultValue": 1,
+  "isContainer": false,
+  "containerPointsDefaultValue": 1,
+  "isOpenable": true,
+  "isOpenDefaultValue": false,
+  "isLockable": true,
+  "isLockedDefaultValue": true,
+  "isActivatable": false,
+  "isActiveDefaultValue": false,
+  "isHidable": false,
+  "isHiddenDefaultValue": false,
+  "description": "",
+  "isQuantifiable": false,
+  "quantity": 1,
+  "quantifiablePlacementDistributionMode": "GroupedStack",
+  "lockOperationRequirements": {
+    "unlockKeyRequirements": [
+      {
+        "matchKind": "ObjectId",
+        "matchValue": "4592818b-3fd1-4682-9aa7-a14ebca79f8e",
+        "satisfactionMode": "PossessionRequired",
+        "consumptionPolicy": "None",
+        "variableRequirements": [],
+        "requiredObjectId": "4592818b-3fd1-4682-9aa7-a14ebca79f8e",
+        "requiredQuantity": 1
+      }
+    ],
+    "requireKeyForLockOperation": false,
+    "useUnlockKeysForLockOperation": true,
+    "lockKeyRequirements": []
+  },
+  "containedObjects": [],
+  "id": "5980b99e-ec8b-4a67-95fd-80ff5b66998b",
+  "name": "Door_S",
+  "nameInGame": "Door_S",
+  "hideEmptyConfiguration": false,
+  "validationErrors": [],
+  "ignoredValidationRuleIds": [],
+  "scopeKind": "GameObject",
+  "procedureIds": [],
+  "gameProperties": [
+    {
+      "id": "22338b0b-95ce-4b42-a000-575019c07144",
+      "name": "isOpen",
+      "defaultValue": "false",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton",
+      "sharedVariableId": "d743dc04-3262-4846-b792-a24447787cb0"
+    },
+    {
+      "id": "ae10ff65-2f7c-45f3-ad62-acd8f3de2df2",
+      "name": "isLocked",
+      "defaultValue": "true",
+      "valueRestriction": "TrueFalse",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "6e97ca12-5516-4049-afd6-1911246af1dd",
+      "name": "lookingFromHere",
+      "defaultValue": "the south",
+      "valueRestriction": "Unrestricted",
+      "lifetime": "Singleton"
+    },
+    {
+      "id": "28c8cfa5-b8d5-48e2-99a7-0b4765c304a5",
+      "name": "destinationFromHere",
+      "defaultValue": "No Where",
+      "valueRestriction": "Unrestricted",
+      "lifetime": "Singleton"
+    }
+  ],
+  "additionalVerbs": [],
+  "additionalDirectionals": [],
+  "additionalDirectionalTraversalMappings": [],
+  "availableGameActions": [
+    {
+      "id": "b00c3884-e4f3-4b7a-8b1f-c83ed599957a",
+      "name": "look_door_s",
+      "payload": {
+        "$payloadType": "echoMessage"
+      },
+      "actionType": "EchoMessage",
+      "noVerbLinkage": false,
+      "verbListText": "look",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "",
+        "Success": "There is a door to {self.lookingFromHere}, it is not clear where it leads."
+      },
+      "childCommandForwardingMode": "None",
+      "similarChildDispatchMode": "SingleMatchingChild"
+    }
+  ],
+  "eventSubscriptions": [],
+  "timerDefinitions": [],
+  "soundEffectLibraryEntries": []
+}

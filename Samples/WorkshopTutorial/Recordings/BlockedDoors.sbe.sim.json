@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "1.0",
+  "projectName": "",
+  "createdAtUtc": "2026-09-07T15:10:32.8054792Z",
+  "steps": [
+    {
+      "sequence": 1,
+      "enteredAtUtc": "2026-08-08T01:02:33.5144379\u002B00:00",
+      "deltaMsFromPrevious": 0,
+      "commandText": "go north",
+      "requestCommandCorrelationId": 3,
+      "requestRawCommandText": "go north",
+      "requestClarificationAnswers": [],
+      "outputLines": [
+        "You can\u0027t pass that direction"
+      ],
+      "diagnostics": [],
+      "moveLegTelemetry": [],
+      "success": false
+    },
+    {
+      "sequence": 2,
+      "enteredAtUtc": "2026-08-08T01:02:37.0272946\u002B00:00",
+      "deltaMsFromPrevious": 3512,
+      "commandText": "go west",
+      "requestCommandCorrelationId": 4,
+      "requestRawCommandText": "go west",
+      "requestClarificationAnswers": [],
+      "outputLines": [
+        "You can\u0027t pass that direction"
+      ],
+      "diagnostics": [],
+      "moveLegTelemetry": [],
+      "success": false
+    },
+    {
+      "sequence": 3,
+      "enteredAtUtc": "2026-08-08T01:02:39.7210584\u002B00:00",
+      "deltaMsFromPrevious": 2693,
+      "commandText": "go south",
+      "requestCommandCorrelationId": 5,
+      "requestRawCommandText": "go south",
+      "requestClarificationAnswers": [],
+      "outputLines": [
+        "You can\u0027t pass that direction"
+      ],
+      "diagnostics": [],
+      "moveLegTelemetry": [],
+      "success": false
+    },
+    {
+      "sequence": 4,
+      "enteredAtUtc": "2026-08-08T01:02:45.422519\u002B00:00",
+      "deltaMsFromPrevious": 5701,
+      "commandText": "go east",
+      "requestCommandCorrelationId": 6,
+      "requestRawCommandText": "go east",
+      "requestClarificationAnswers": [],
+      "outputLines": [
+        "You are now in Supply Closet"
+      ],
+      "diagnostics": [],
+      "moveLegTelemetry": [],
+      "success": true
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "startingAreaName": "New Area",
+  "areaIds": [
+    "02f4f452-0197-436b-baee-fff9a3c00d8b"
+  ],
+  "Id": "833ba96d-0ea6-4e59-a041-edb859906f82",
+  "name": "New Country",
+  "nameInGame": "New Country",
+  "scopeKind": "Country",
+  "baseObjectIds": [
+    "48fcd2fc-10b9-41bb-a297-c1f9cbccfcc2"
+  ],
+  "gameProperties": [],
+  "additionalVerbs": [],
+  "additionalDirectionals": [],
+  "availableGameActions": []
+}

@@ -1,0 +1,114 @@
+{
+  "schemaVersion": "1.0",
+  "createdAtUtc": "2026-07-19T17:41:13.9433648+00:00",
+  "steps": [
+    {
+      "sequence": 1,
+      "enteredAtUtc": "2026-07-19T17:39:41.1472024+00:00",
+      "deltaMsFromPrevious": 0,
+      "commandText": "go east",
+      "outputLines": [
+        "You move to the next room."
+      ],
+      "diagnostics": [],
+      "success": true
+    },
+    {
+      "sequence": 2,
+      "enteredAtUtc": "2026-07-19T17:39:50.4551073+00:00",
+      "deltaMsFromPrevious": 9307,
+      "commandText": "put crowbar into backpack",
+      "outputLines": [
+        "The Crowbar is now in Backpack"
+      ],
+      "diagnostics": [
+        "Resolved two-object frame \u0027put [direct] into [indirect]\u0027 (primary=Crowbar, secondary=Backpack).",
+        "Resolved command objects: primary=Crowbar; secondary=[Backpack].",
+        "PutObjectInContainer resolved target container from command secondary object \u0027Backpack\u0027 as \u0027room:Backpack\u0027.",
+        "PutObjectInContainer capacity: totalCapacity=10, totalUsedPoints=0, totalRemainingCapacity=10, totalInventoryPointsNeeded=5.",
+        "PutObjectInContainer formula: remaining = totalCapacity - totalUsedPoints = 10 - 0 = 10; requires remaining \u003E= totalInventoryPointsNeeded (5)."
+      ],
+      "success": true
+    },
+    {
+      "sequence": 3,
+      "enteredAtUtc": "2026-07-19T17:39:55.2816159+00:00",
+      "deltaMsFromPrevious": 4826,
+      "commandText": "get brass key",
+      "outputLines": [
+        "The BrassKey is now in Your Stuff"
+      ],
+      "diagnostics": [
+        "Resolved command objects: primary=BrassKey; secondary=[(none)].",
+        "PutObjectInContainer defaulted target container to invocation-context active player container \u0027room:Player\u0027.",
+        "PutObjectInContainer capacity: totalCapacity=4, totalUsedPoints=0, totalRemainingCapacity=4, totalInventoryPointsNeeded=1.",
+        "PutObjectInContainer formula: remaining = totalCapacity - totalUsedPoints = 4 - 0 = 4; requires remaining \u003E= totalInventoryPointsNeeded (1)."
+      ],
+      "success": true
+    },
+    {
+      "sequence": 4,
+      "enteredAtUtc": "2026-07-19T17:40:06.0547821+00:00",
+      "deltaMsFromPrevious": 10773,
+      "commandText": "get backpack",
+      "outputLines": [
+        "The Backpack is now in Your Stuff"
+      ],
+      "diagnostics": [
+        "Resolved command objects: primary=Backpack; secondary=[(none)].",
+        "PutObjectInContainer defaulted target container to invocation-context active player container \u0027room:Player\u0027.",
+        "PutObjectInContainer capacity: totalCapacity=4, totalUsedPoints=1, totalRemainingCapacity=3, totalInventoryPointsNeeded=3.",
+        "PutObjectInContainer formula: remaining = totalCapacity - totalUsedPoints = 4 - 1 = 3; requires remaining \u003E= totalInventoryPointsNeeded (3)."
+      ],
+      "success": true
+    },
+    {
+      "sequence": 5,
+      "enteredAtUtc": "2026-07-19T17:40:10.1046599+00:00",
+      "deltaMsFromPrevious": 4049,
+      "commandText": "go west",
+      "outputLines": [
+        "You left the Supply Closet and enter the Atrium"
+      ],
+      "diagnostics": [],
+      "success": true
+    },
+    {
+      "sequence": 6,
+      "enteredAtUtc": "2026-07-19T17:40:16.2515943+00:00",
+      "deltaMsFromPrevious": 6146,
+      "commandText": "pry workshop door",
+      "outputLines": [
+        "That seemed to loosen it"
+      ],
+      "diagnostics": [
+        "Resolved command objects: primary=Door_N; secondary=[(none)]."
+      ],
+      "success": true
+    },
+    {
+      "sequence": 7,
+      "enteredAtUtc": "2026-07-19T17:40:20.7893447+00:00",
+      "deltaMsFromPrevious": 4537,
+      "commandText": "open workshop door",
+      "outputLines": [
+        "The workshop door opens"
+      ],
+      "diagnostics": [
+        "Resolved command objects: primary=Door_N; secondary=[(none)]."
+      ],
+      "success": true
+    },
+    {
+      "sequence": 8,
+      "enteredAtUtc": "2026-07-19T17:40:23.5453569+00:00",
+      "deltaMsFromPrevious": 2756,
+      "commandText": "go north",
+      "outputLines": [
+        "You move to the next room."
+      ],
+      "diagnostics": [],
+      "success": true
+    }
+  ]
+}

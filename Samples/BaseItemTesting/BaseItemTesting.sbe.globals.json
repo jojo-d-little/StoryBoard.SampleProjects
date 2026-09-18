@@ -1,0 +1,67 @@
+{
+  "gameObjects": [],
+  "baseObjects": [],
+  "planetIds": [
+    "d6031830-eead-40cc-b798-fc29253424f5"
+  ],
+  "sharedVariables": [],
+  "objectTemplateIds": [
+    "1fcb1324-53e9-43f6-904c-6f44c751a455",
+    "dd48f406-cc31-48a2-8453-6c7cf359e993",
+    "6e72a34d-ffc7-4a8b-a2cf-14896db3b24c"
+  ],
+  "objectTemplates": [],
+  "roomTemplateIds": [
+    "808279ef-2b7e-4b73-a941-3a5640cff982"
+  ],
+  "roomTemplates": [],
+  "id": "00000000-0000-0000-0000-000000000000",
+  "name": "",
+  "nameInGame": "",
+  "hideEmptyConfiguration": false,
+  "validationErrors": [],
+  "ignoredValidationRuleIds": [],
+  "scopeKind": "Global",
+  "baseObjectIds": [],
+  "gameObjectIds": [
+    "4083277d-4e83-4be8-af70-0cf1be3a72c2",
+    "770b4b96-54fc-4193-af80-daf032f2bbd2"
+  ],
+  "procedureIds": [],
+  "gameProperties": [],
+  "additionalVerbs": [
+    "go",
+    "look",
+    "open",
+    "close",
+    "take",
+    "drop",
+    "use",
+    "talk",
+    "put",
+    "grab",
+    "get",
+    "inspect",
+    "remove",
+    "break"
+  ],
+  "additionalDirectionals": [
+    "north",
+    "south",
+    "east",
+    "west",
+    "northeast",
+    "southeast",
+    "northwest",
+    "southwest",
+    "up",
+    "down",
+    "from",
+    "into",
+    "on",
+    "under",
+    "over"
+  ],
+  "additionalDirectionalTraversalMappings": [],
+  "availableGameActions": []
+}

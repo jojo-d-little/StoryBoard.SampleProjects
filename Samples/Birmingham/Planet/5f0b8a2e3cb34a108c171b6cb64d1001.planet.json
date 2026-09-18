@@ -1,0 +1,46 @@
+{
+  "baseObjectsIgnoredValidationRuleIds": [],
+  "baseObjects": [],
+  "gameObjects": [],
+  "startingCountryName": "UK",
+  "countryIds": [
+    "5f0b8a2e-3cb3-4a10-8c17-1b6cb64d1002"
+  ],
+  "id": "5f0b8a2e-3cb3-4a10-8c17-1b6cb64d1001",
+  "name": "Earth",
+  "nameInGame": "Earth",
+  "hideEmptyConfiguration": false,
+  "validationErrors": [],
+  "ignoredValidationRuleIds": [],
+  "scopeKind": "Planet",
+  "baseObjectIds": [
+    "94e71f6c-e0d1-48e1-a3c5-234e06bb9138"
+  ],
+  "gameObjectIds": [],
+  "gameProperties": [],
+  "additionalVerbs": [],
+  "additionalDirectionals": [],
+  "additionalDirectionalTraversalMappings": [],
+  "availableGameActions": [
+    {
+      "id": "8914549f-c808-495d-abe0-04acb9830827",
+      "name": "WhatOnEarth",
+      "payload": {
+        "$payloadType": "echoMessage"
+      },
+      "actionType": "EchoMessage",
+      "noVerbLinkage": false,
+      "verbListText": "*",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "",
+        "Success": "What on Earth are you doing here?"
+      },
+      "childCommandForwardingMode": "None",
+      "similarChildDispatchMode": "SingleMatchingChild"
+    }
+  ],
+  "eventSubscriptions": [],
+  "timerDefinitions": [],
+  "soundEffectLibraryEntries": []
+}

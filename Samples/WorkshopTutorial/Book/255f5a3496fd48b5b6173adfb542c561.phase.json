@@ -1,0 +1,31 @@
+{
+  "phases": [],
+  "phaseKey": "chapter-2",
+  "phaseTier": "Chapter",
+  "displayName": "Chapter Two",
+  "title": "What a wonderful workshop",
+  "titlePresentationCueEffectKey": "text.hudoverlay.autoscroll.manualdismiss",
+  "prologue": "Learning to work with tools seems helpful",
+  "parentPhaseId": "43d2c4e0-c4d1-4cc2-8969-9ea32f476a0f",
+  "childPhaseIds": [
+    "e758de89-cfd9-427b-b308-676c94702345",
+    "93cde732-cc33-42e0-9903-e613529275f9"
+  ],
+  "phaseAmbientSoundEffectId": "4fc1dfe4-27ba-47ee-b7dc-b318a62542b2",
+  "phaseAmbienceMode": "Overlay",
+  "id": "255f5a34-96fd-48b5-b617-3adfb542c561",
+  "name": "",
+  "nameInGame": "",
+  "hideEmptyConfiguration": false,
+  "validationErrors": [],
+  "ignoredValidationRuleIds": [],
+  "scopeKind": "Chapter",
+  "gameProperties": [],
+  "additionalVerbs": [],
+  "additionalDirectionals": [],
+  "additionalDirectionalTraversalMappings": [],
+  "availableGameActions": [],
+  "eventSubscriptions": [],
+  "timerDefinitions": [],
+  "soundEffectLibraryEntries": []
+}

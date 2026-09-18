@@ -1,0 +1,119 @@
+{
+  "schemaVersion": "1.0",
+  "projectName": "ObjectPlayLevel1",
+  "createdAtUtc": "2026-09-07T15:10:25.1932910Z",
+  "steps": [
+    {
+      "sequence": 1,
+      "enteredAtUtc": "2026-07-07T02:59:21.2999236\u002B00:00",
+      "deltaMsFromPrevious": 0,
+      "commandText": "look",
+      "requestCommandCorrelationId": null,
+      "requestRawCommandText": "",
+      "requestClarificationAnswers": [],
+      "outputLines": [
+        "We are in a playroom",
+        "There is a Ball, it looks to be about 1 heavy",
+        "There is a Pouch it looks like it can hold 3 points"
+      ],
+      "diagnostics": [],
+      "moveLegTelemetry": [],
+      "success": true
+    },
+    {
+      "sequence": 2,
+      "enteredAtUtc": "2026-07-07T02:59:24.9716161\u002B00:00",
+      "deltaMsFromPrevious": 3671,
+      "commandText": "get ball",
+      "requestCommandCorrelationId": null,
+      "requestRawCommandText": "",
+      "requestClarificationAnswers": [],
+      "outputLines": [
+        "The Ball is now in the Todd\u0027s Pocket"
+      ],
+      "diagnostics": [
+        "Resolved command objects: primary=Ball; secondary=[(none)].",
+        "PutObjectInContainer defaulted target container to invocation-context active player container \u0027room:PlayerX\u0027.",
+        "PutObjectInContainer capacity: totalCapacity=4, totalUsedPoints=0, totalRemainingCapacity=4, totalInventoryPointsNeeded=1.",
+        "PutObjectInContainer formula: remaining = totalCapacity - totalUsedPoints = 4 - 0 = 4; requires remaining \u003E= totalInventoryPointsNeeded (1)."
+      ],
+      "moveLegTelemetry": [],
+      "success": true
+    },
+    {
+      "sequence": 3,
+      "enteredAtUtc": "2026-07-07T02:59:29.7552913\u002B00:00",
+      "deltaMsFromPrevious": 4783,
+      "commandText": "drop ball",
+      "requestCommandCorrelationId": null,
+      "requestRawCommandText": "",
+      "requestClarificationAnswers": [],
+      "outputLines": [
+        "Dropped the Ball"
+      ],
+      "diagnostics": [
+        "Resolved command objects: primary=Ball; secondary=[(none)].",
+        "RemoveObjectFromContainer inferred source container from runtime scope tree as \u0027room:PlayerX\u0027.",
+        "RemoveObjectFromContainer capacity: totalCapacity=4, totalUsedPoints=1, totalRemainingCapacity=3, totalInventoryPointsNeeded=1, internalPlayerTransfer=true.",
+        "RemoveObjectFromContainer capacity gate bypassed: source container is already within player inventory."
+      ],
+      "moveLegTelemetry": [],
+      "success": true
+    },
+    {
+      "sequence": 4,
+      "enteredAtUtc": "2026-07-07T02:59:41.2372037\u002B00:00",
+      "deltaMsFromPrevious": 11481,
+      "commandText": "put ball in pouch",
+      "requestCommandCorrelationId": null,
+      "requestRawCommandText": "",
+      "requestClarificationAnswers": [],
+      "outputLines": [
+        "The Ball is now in the Pouch"
+      ],
+      "diagnostics": [
+        "Resolved command objects: primary=Ball; secondary=[Pouch].",
+        "PutObjectInContainer resolved target container from command secondary object \u0027Pouch\u0027 as \u0027room:Pouch\u0027.",
+        "PutObjectInContainer capacity: totalCapacity=3, totalUsedPoints=0, totalRemainingCapacity=3, totalInventoryPointsNeeded=1.",
+        "PutObjectInContainer formula: remaining = totalCapacity - totalUsedPoints = 3 - 0 = 3; requires remaining \u003E= totalInventoryPointsNeeded (1)."
+      ],
+      "moveLegTelemetry": [],
+      "success": true
+    },
+    {
+      "sequence": 5,
+      "enteredAtUtc": "2026-07-07T02:59:49.39824\u002B00:00",
+      "deltaMsFromPrevious": 8161,
+      "commandText": "get pouch",
+      "requestCommandCorrelationId": null,
+      "requestRawCommandText": "",
+      "requestClarificationAnswers": [],
+      "outputLines": [
+        "Picked up."
+      ],
+      "diagnostics": [
+        "Resolved command objects: primary=Pouch; secondary=[(none)].",
+        "PutObjectInContainer defaulted target container to invocation-context active player container \u0027room:PlayerX\u0027.",
+        "PutObjectInContainer capacity: totalCapacity=4, totalUsedPoints=0, totalRemainingCapacity=4, totalInventoryPointsNeeded=2.",
+        "PutObjectInContainer formula: remaining = totalCapacity - totalUsedPoints = 4 - 0 = 4; requires remaining \u003E= totalInventoryPointsNeeded (2)."
+      ],
+      "moveLegTelemetry": [],
+      "success": true
+    },
+    {
+      "sequence": 6,
+      "enteredAtUtc": "2026-07-07T02:59:52.8229751\u002B00:00",
+      "deltaMsFromPrevious": 3424,
+      "commandText": "look",
+      "requestCommandCorrelationId": null,
+      "requestRawCommandText": "",
+      "requestClarificationAnswers": [],
+      "outputLines": [
+        "We are in a playroom"
+      ],
+      "diagnostics": [],
+      "moveLegTelemetry": [],
+      "success": true
+    }
+  ]
+}

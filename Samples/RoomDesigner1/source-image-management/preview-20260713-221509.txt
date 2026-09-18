@@ -1,0 +1,24 @@
+Preview run at 2026-07-13 22:15:09
+Mode=RepairMissingSources; References=21; Actionable=0.
+
+Global / Room Templates / SampleRoom | room:North:full | C:\work\HobbyStuff\storyboarding\PlaceHolderImages\LongBrickWall.png | Source available
+Global / Room Templates / SampleRoom | room:East:full | C:\work\HobbyStuff\storyboarding\PlaceHolderImages\ShortBrickWall.png | Source available
+Global / Room Templates / SampleRoom | room:South:full | C:\work\HobbyStuff\storyboarding\PlaceHolderImages\LongBrickWall.png | Source available
+Global / Room Templates / SampleRoom | room:West:full | C:\work\HobbyStuff\storyboarding\PlaceHolderImages\ShortBrickWall.png | Source available
+Global / Room Templates / SampleRoom | room:Down:full | C:\work\HobbyStuff\storyboarding\PlaceHolderImages\DarkBrownWoodenFloor800x600.png | Source available
+Global / New Planet / New Country / New Area / OpeningRoom | room:North:full | C:\work\HobbyStuff\storyboarding\PlaceHolderImages\LongBrickWall.png | Source available
+Global / New Planet / New Country / New Area / OpeningRoom | room:East:full | C:\work\HobbyStuff\storyboarding\PlaceHolderImages\ShortBrickWall.png | Source available
+Global / New Planet / New Country / New Area / OpeningRoom | room:South:full | C:\work\HobbyStuff\storyboarding\PlaceHolderImages\LongBrickWall.png | Source available
+Global / New Planet / New Country / New Area / OpeningRoom | room:West:full | C:\work\HobbyStuff\storyboarding\PlaceHolderImages\ShortBrickWall.png | Source available
+Global / New Planet / New Country / New Area / OpeningRoom | room:Down:full | C:\work\HobbyStuff\storyboarding\PlaceHolderImages\DarkBrownWoodenFloor800x600.png | Source available
+Global / New Planet / New Country / New Area / OpeningRoom / Watermelon | object:variant:Whole:full | C:\work\HobbyStuff\storyboarding\PlaceHolderImages\wholewatermelon.png | Source available
+Global / New Planet / New Country / New Area / OpeningRoom / Watermelon | object:variant:Cut:full | C:\work\HobbyStuff\storyboarding\PlaceHolderImages\watermelon.png | Source available
+Global / New Planet / New Country / New Area / OpeningRoom / CoinBag | object:variant:default:full | C:\work\HobbyStuff\storyboarding\PlaceHolderImages\CoinBag.png | Source available
+Global / New Planet / New Country / New Area / OpeningRoom / Door_N | object:variant:default:full | C:\work\HobbyStuff\storyboarding\PlaceHolderImages\DarkDoor.png | Source available
+Global / New Planet / New Country / New Area / OpeningRoom / Knife | object:variant:default:full | C:\work\HobbyStuff\storyboarding\PlaceHolderImages\cartoon-knife.png | Source available
+Global / New Planet / New Country / New Area / OtherRoom | room:North:full | C:\work\HobbyStuff\storyboarding\PlaceHolderImages\LongBrickWall.png | Source available
+Global / New Planet / New Country / New Area / OtherRoom | room:East:full | C:\work\HobbyStuff\storyboarding\PlaceHolderImages\ShortBrickWall.png | Source available
+Global / New Planet / New Country / New Area / OtherRoom | room:South:full | C:\work\HobbyStuff\storyboarding\PlaceHolderImages\LongBrickWall.png | Source available
+Global / New Planet / New Country / New Area / OtherRoom | room:West:full | C:\work\HobbyStuff\storyboarding\PlaceHolderImages\ShortBrickWall.png | Source available
+Global / New Planet / New Country / New Area / OtherRoom | room:Down:full | C:\work\HobbyStuff\storyboarding\PlaceHolderImages\DarkBrownWoodenFloor800x600.png | Source available
+Global / New Planet / New Country / New Area / OtherRoom / Door_S | object:variant:default:full | C:\work\HobbyStuff\storyboarding\PlaceHolderImages\DarkDoor.png | Source available

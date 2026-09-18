@@ -1,0 +1,37 @@
+{
+  "planetIds": [
+    "7a8f6b7a-a001-4ab3-9e91-1378435d0001"
+  ],
+  "schemaVersion": "1.0",
+  "autoSaveSeconds": 60,
+  "roomImageCanvasWidth": 800,
+  "roomImageCanvasHeight": 600,
+  "roomDesignerGridCellSize": 40,
+  "startingPlanetName": "Earth",
+  "name": "MapDemo1",
+  "nameInGame": "MapDemo1",
+  "scopeKind": "Global",
+  "gameProperties": [],
+  "additionalVerbs": [
+    "close",
+    "drop",
+    "go",
+    "look",
+    "open",
+    "take",
+    "talk",
+    "use"
+  ],
+  "additionalDirectionals": [
+    "north",
+    "south",
+    "east",
+    "west",
+    "northeast",
+    "southeast",
+    "northwest",
+    "southwest",
+    "up",
+    "down"
+  ]
+}

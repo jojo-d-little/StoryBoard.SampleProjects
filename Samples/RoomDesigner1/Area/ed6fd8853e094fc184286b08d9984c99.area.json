@@ -1,0 +1,114 @@
+{
+  "parentCountryId": "52f06775-04b9-4933-bed8-d33073ed9f91",
+  "roomDropBehavior": "autoBasicTraversals",
+  "baseObjectsIgnoredValidationRuleIds": [],
+  "baseObjects": [],
+  "gameObjects": [],
+  "adjacencyMode": "EightDirectional",
+  "startingRoomId": "d43dc3ad-884f-4ec1-bc33-b95af7f03554",
+  "roomIds": [
+    "d43dc3ad-884f-4ec1-bc33-b95af7f03554",
+    "df4a2dd7-dd20-4bdb-ae14-70e106044f08"
+  ],
+  "roomPlacements": [
+    {
+      "roomId": "d43dc3ad-884f-4ec1-bc33-b95af7f03554",
+      "x": 384,
+      "y": 304
+    },
+    {
+      "roomId": "df4a2dd7-dd20-4bdb-ae14-70e106044f08",
+      "x": 384,
+      "y": 164
+    }
+  ],
+  "traversalConnections": [
+    {
+      "traversalConnectionId": "f8b4d056-1537-4d6a-9bad-5116b1e46713",
+      "roomAId": "d43dc3ad-884f-4ec1-bc33-b95af7f03554",
+      "roomBId": "df4a2dd7-dd20-4bdb-ae14-70e106044f08",
+      "baseTraversalDirectionFromA": "North",
+      "traversalAccessMode": "TwoWay",
+      "traversalStateFromA": {
+        "openStatePolicy": "IgnoreOpenableState",
+        "availableGameActions": [
+          {
+            "id": "54587fa1-ea48-4ef3-97ca-2b0a4bdaf499",
+            "name": "Look",
+            "payload": {
+              "$payloadType": "echoMessage"
+            },
+            "actionType": "EchoMessage",
+            "noVerbLinkage": true,
+            "verbListText": "",
+            "direction": "",
+            "outcomeMessageMap": {
+              "Success": "There looks to be a OtherRoom thru the door"
+            },
+            "childCommandForwardingMode": "None",
+            "similarChildDispatchMode": "SingleMatchingChild"
+          }
+        ],
+        "gameProperties": [
+          {
+            "id": "5c7ad372-877d-4730-9385-dee15dec5c0a",
+            "name": "isPassable",
+            "defaultValue": "false",
+            "valueRestriction": "TrueFalse",
+            "lifetime": "Singleton",
+            "sharedVariableId": "9b4e1806-3ade-4801-91e0-7149ceb3bd86"
+          }
+        ]
+      },
+      "traversalStateFromB": {
+        "openStatePolicy": "IgnoreOpenableState",
+        "availableGameActions": [
+          {
+            "id": "7fcdd480-4285-4b76-bc39-9f487a7c2e85",
+            "name": "Look",
+            "payload": {
+              "$payloadType": "echoMessage"
+            },
+            "actionType": "EchoMessage",
+            "noVerbLinkage": true,
+            "verbListText": "",
+            "direction": "",
+            "outcomeMessageMap": {
+              "Success": "There looks to be a OpeningRoom thru the door"
+            },
+            "childCommandForwardingMode": "None",
+            "similarChildDispatchMode": "SingleMatchingChild"
+          }
+        ],
+        "gameProperties": [
+          {
+            "id": "d74639c7-635e-4392-9ffe-0379d9a1ee25",
+            "name": "isPassable",
+            "defaultValue": "false",
+            "valueRestriction": "TrueFalse",
+            "lifetime": "Singleton",
+            "sharedVariableId": "9b4e1806-3ade-4801-91e0-7149ceb3bd86"
+          }
+        ]
+      },
+      "openStateBindingMode": "Together",
+      "gameProperties": []
+    }
+  ],
+  "id": "ed6fd885-3e09-4fc1-8428-6b08d9984c99",
+  "name": "New Area",
+  "nameInGame": "New Area",
+  "hideEmptyConfiguration": false,
+  "validationErrors": [],
+  "ignoredValidationRuleIds": [],
+  "scopeKind": "Area",
+  "baseObjectIds": [
+    "d2ef0ecf-7189-4166-ab94-c566453005f0"
+  ],
+  "gameObjectIds": [],
+  "gameProperties": [],
+  "additionalVerbs": [],
+  "additionalDirectionals": [],
+  "additionalDirectionalTraversalMappings": [],
+  "availableGameActions": []
+}

@@ -1,0 +1,15 @@
+{
+  "phaseKey": "page-1",
+  "phaseTier": "Page",
+  "displayName": "Page One",
+  "narrative": "Now to figure out where they are and what they might to do get out of here.",
+  "narrativePresentationCueEffectKey": "text.hudoverlay.fadein.auto.6000",
+  "parentPhaseId": "67c8efd2-65d9-47bb-9b3c-2a9a6ef0c52a",
+  "childPhaseIds": [],
+  "phaseAmbientSoundEffectId": "bc6df49b-eb64-4fd0-b0bc-992b441e765e",
+  "phaseAmbientTimerKey": "timer.sound.hammer",
+  "Id": "452ba0b1-3880-4bed-abf6-9020da8f44ff",
+  "name": "Page One",
+  "nameInGame": "Page One",
+  "scopeKind": "Page"
+}

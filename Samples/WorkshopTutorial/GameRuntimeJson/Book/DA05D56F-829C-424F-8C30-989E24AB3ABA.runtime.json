@@ -1,0 +1,15 @@
+{
+  "phaseKey": "page-2",
+  "phaseTier": "Page",
+  "displayName": "Page Two",
+  "title": "This key seems bent",
+  "titlePresentationCueEffectKey": "text.hudoverlay.fadein.auto.6000",
+  "prologue": "With some new tools and a bent key you seek a next move",
+  "prologuePresentationCueEffectKey": "text.hudoverlay.fadein.auto.6000",
+  "parentPhaseId": "67c8efd2-65d9-47bb-9b3c-2a9a6ef0c52a",
+  "childPhaseIds": [],
+  "Id": "da05d56f-829c-424f-8c30-989e24ab3aba",
+  "name": "Page Two",
+  "nameInGame": "Page Two",
+  "scopeKind": "Page"
+}

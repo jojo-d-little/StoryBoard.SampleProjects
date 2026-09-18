@@ -1,0 +1,14 @@
+{
+  "startingCountryName": "USA",
+  "countryIds": [
+    "7a8f6b7a-a001-4ab3-9e91-1378435d0002"
+  ],
+  "Id": "7a8f6b7a-a001-4ab3-9e91-1378435d0001",
+  "name": "Earth",
+  "nameInGame": "Earth",
+  "scopeKind": "Planet",
+  "gameProperties": [],
+  "additionalVerbs": [],
+  "additionalDirectionals": [],
+  "availableGameActions": []
+}

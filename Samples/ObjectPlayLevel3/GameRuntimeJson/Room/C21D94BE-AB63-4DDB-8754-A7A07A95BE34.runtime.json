@@ -1,0 +1,241 @@
+{
+  "description": "",
+  "roomDisplayMode": "Independent",
+  "images": [
+    {
+      "slot": "Default",
+      "overlayRenderOrder": 150,
+      "overlayOffsetX": 0,
+      "overlayOffsetY": 0,
+      "overlayRotationDegrees": 0,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": "",
+      "imagePathSemantics": "runtimeExportRelative"
+    },
+    {
+      "slot": "Down",
+      "overlayRenderOrder": 0,
+      "overlayOffsetX": 0,
+      "overlayOffsetY": 0,
+      "overlayRotationDegrees": 0,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": "",
+      "imagePathSemantics": "runtimeExportRelative"
+    },
+    {
+      "slot": "East",
+      "overlayRenderOrder": 100,
+      "overlayOffsetX": 0,
+      "overlayOffsetY": 0,
+      "overlayRotationDegrees": 0,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": "",
+      "imagePathSemantics": "runtimeExportRelative"
+    },
+    {
+      "slot": "North",
+      "overlayRenderOrder": 100,
+      "overlayOffsetX": 0,
+      "overlayOffsetY": 0,
+      "overlayRotationDegrees": 0,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": "",
+      "imagePathSemantics": "runtimeExportRelative"
+    },
+    {
+      "slot": "NorthEast",
+      "overlayRenderOrder": 200,
+      "overlayOffsetX": 0,
+      "overlayOffsetY": 0,
+      "overlayRotationDegrees": 0,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": "",
+      "imagePathSemantics": "runtimeExportRelative"
+    },
+    {
+      "slot": "NorthWest",
+      "overlayRenderOrder": 200,
+      "overlayOffsetX": 0,
+      "overlayOffsetY": 0,
+      "overlayRotationDegrees": 0,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": "",
+      "imagePathSemantics": "runtimeExportRelative"
+    },
+    {
+      "slot": "South",
+      "overlayRenderOrder": 100,
+      "overlayOffsetX": 0,
+      "overlayOffsetY": 0,
+      "overlayRotationDegrees": 0,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": "",
+      "imagePathSemantics": "runtimeExportRelative"
+    },
+    {
+      "slot": "SouthEast",
+      "overlayRenderOrder": 200,
+      "overlayOffsetX": 0,
+      "overlayOffsetY": 0,
+      "overlayRotationDegrees": 0,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": "",
+      "imagePathSemantics": "runtimeExportRelative"
+    },
+    {
+      "slot": "SouthWest",
+      "overlayRenderOrder": 200,
+      "overlayOffsetX": 0,
+      "overlayOffsetY": 0,
+      "overlayRotationDegrees": 0,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": "",
+      "imagePathSemantics": "runtimeExportRelative"
+    },
+    {
+      "slot": "Up",
+      "overlayRenderOrder": 150,
+      "overlayOffsetX": 0,
+      "overlayOffsetY": 0,
+      "overlayRotationDegrees": 0,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": "",
+      "imagePathSemantics": "runtimeExportRelative"
+    },
+    {
+      "slot": "West",
+      "overlayRenderOrder": 100,
+      "overlayOffsetX": 0,
+      "overlayOffsetY": 0,
+      "overlayRotationDegrees": 0,
+      "fullImagePath": "",
+      "grayMapImagePath": "",
+      "normalMapImagePath": "",
+      "imagePathSemantics": "runtimeExportRelative"
+    }
+  ],
+  "Id": "c21d94be-ab63-4ddb-8754-a7a07a95be34",
+  "name": "PlayRoom",
+  "nameInGame": "PlayRoom",
+  "scopeKind": "Room",
+  "gameObjectIds": [
+    "2b335bcb-be26-48c8-9f44-196303e782ff",
+    "89b85921-6953-4caf-9696-082df48de556",
+    "8d129415-a802-4533-921e-ae6c8f25509b",
+    "8d7207b8-6c7b-4c37-98fa-e696d7caca9a",
+    "d938108b-36fb-4b06-866d-708188f85f58",
+    "dc4a594f-d6a5-405f-96d5-2af3bdab5c33",
+    "f1f2e53a-23aa-4d4e-ad8f-a26f9bd0aded"
+  ],
+  "additionalVerbs": [
+    "more"
+  ],
+  "availableGameActions": [
+    {
+      "id": "c7ad21fd-3788-4494-9358-5b225695e816",
+      "name": "go_playroom",
+      "payload": {
+        "$payloadType": "materializeObjectCopy",
+        "materializeSourceObjectId": "d2ef0ecf-7189-4166-ab94-c566453005f0"
+      },
+      "actionType": "MaterializeObjectCopy",
+      "noVerbLinkage": false,
+      "verbListText": "go",
+      "direction": "",
+      "outcomeMessageMap": {
+        "CurrentRoomUnavailable": "cru",
+        "Failure": "f",
+        "MaterializationFailed": "mf",
+        "SourceNotFound": "snf",
+        "Success": "A rock"
+      },
+      "childCommandForwardingMode": "None"
+    },
+    {
+      "id": "aecc8459-50ef-4cff-9b38-bdf27cf981e1",
+      "name": "inspect_playroom",
+      "payload": {
+        "$payloadType": "materializeObjectCopy",
+        "materializeSourceObjectId": "8d7207b8-6c7b-4c37-98fa-e696d7caca9a"
+      },
+      "actionType": "MaterializeObjectCopy",
+      "noVerbLinkage": false,
+      "verbListText": "inspect",
+      "direction": "",
+      "outcomeMessageMap": {
+        "CurrentRoomUnavailable": "cru",
+        "Failure": "f",
+        "MaterializationFailed": "mf",
+        "SourceNotFound": "snf",
+        "Success": "More coins?"
+      },
+      "childCommandForwardingMode": "None"
+    },
+    {
+      "id": "fae764e1-0015-4a44-a4aa-dbbed6aef05d",
+      "name": "look_new_room",
+      "payload": {
+        "$payloadType": "echoMessage"
+      },
+      "actionType": "EchoMessage",
+      "noVerbLinkage": false,
+      "verbListText": "look",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "",
+        "Success": "A room full of many things to play with."
+      },
+      "childCommandForwardingMode": "ChildrenAfterParent"
+    },
+    {
+      "id": "3ab2ea0a-9b85-4564-8a2c-9b82329b7ba9",
+      "name": "more_playroom",
+      "payload": {
+        "$payloadType": "materializeObjectCopy",
+        "materializeSourceObjectId": "dc4a594f-d6a5-405f-96d5-2af3bdab5c33"
+      },
+      "actionType": "MaterializeObjectCopy",
+      "noVerbLinkage": false,
+      "verbListText": "more",
+      "direction": "",
+      "outcomeMessageMap": {
+        "CurrentRoomUnavailable": "cru",
+        "Failure": "f",
+        "MaterializationFailed": "mf",
+        "SourceNotFound": "snf",
+        "Success": "You made another {self.name}"
+      },
+      "childCommandForwardingMode": "None"
+    },
+    {
+      "id": "f5d62ead-dda2-482c-ac25-15c63d409796",
+      "name": "talk_playroom",
+      "payload": {
+        "$payloadType": "materializeObjectCopy",
+        "materializeSourceObjectId": "dc4a594f-d6a5-405f-96d5-2af3bdab5c33"
+      },
+      "actionType": "MaterializeObjectCopy",
+      "noVerbLinkage": false,
+      "verbListText": "talk",
+      "direction": "",
+      "outcomeMessageMap": {
+        "CurrentRoomUnavailable": "cru",
+        "Failure": "f",
+        "MaterializationFailed": "mf",
+        "SourceNotFound": "snf",
+        "Success": "More flowers?"
+      },
+      "childCommandForwardingMode": "None"
+    }
+  ]
+}

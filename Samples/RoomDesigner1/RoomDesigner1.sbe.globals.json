@@ -1,0 +1,81 @@
+{
+  "gameObjects": [],
+  "baseObjects": [],
+  "planetIds": [
+    "f9ceecf9-2a81-4bd1-87e8-301022726c88"
+  ],
+  "sharedVariables": [
+    {
+      "id": "9b4e1806-3ade-4801-91e0-7149ceb3bd86",
+      "name": "Shared-9b4e1806"
+    }
+  ],
+  "objectTemplateIds": [
+    "bfca9810-b57d-4b5b-aee7-175abaedc283",
+    "3be2aa0b-b2c8-4f9a-9900-ab5d10886e2b",
+    "5bcf3c22-07ec-4aed-8a9d-987b5b37d5e4"
+  ],
+  "objectTemplates": [],
+  "roomTemplateIds": [
+    "cb24b852-4a02-4f16-b642-056156a663cc"
+  ],
+  "roomTemplates": [],
+  "id": "00000000-0000-0000-0000-000000000000",
+  "name": "",
+  "nameInGame": "",
+  "hideEmptyConfiguration": false,
+  "validationErrors": [],
+  "ignoredValidationRuleIds": [],
+  "scopeKind": "Global",
+  "baseObjectIds": [],
+  "gameObjectIds": [
+    "4e044054-0a64-4b53-9475-22f2d0d9193b"
+  ],
+  "procedureIds": [],
+  "gameProperties": [],
+  "additionalVerbs": [
+    "go",
+    "look",
+    "open",
+    "close",
+    "take",
+    "drop",
+    "use",
+    "talk",
+    "put",
+    "grab",
+    "get",
+    "inspect",
+    "remove",
+    "break",
+    "walk"
+  ],
+  "additionalDirectionals": [
+    "north",
+    "south",
+    "east",
+    "west",
+    "northeast",
+    "southeast",
+    "northwest",
+    "southwest",
+    "up",
+    "down",
+    "from",
+    "into",
+    "on",
+    "under",
+    "over"
+  ],
+  "additionalDirectionalTraversalMappings": [
+    {
+      "token": "north",
+      "traversalDirection": "North"
+    },
+    {
+      "token": "south",
+      "traversalDirection": "South"
+    }
+  ],
+  "availableGameActions": []
+}

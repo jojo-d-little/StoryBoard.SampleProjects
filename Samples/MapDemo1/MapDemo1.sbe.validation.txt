@@ -1,0 +1,41 @@
+Validation report generated: 2026-09-16 13:36:09
+Project: MapDemo1
+ExecutionKind: WholeProject
+RootScopePath: Global
+IncludeDescendants: True
+CandidateNodeCount: 9
+ExecutedRules: 34
+SkippedRules: 24
+StoppedEarly: False
+RemainingIssueCountAtStop: 0
+StopRuleId: (none)
+RemainingRuleCountAtStop: 0
+
+SkippedRuleId	SkipReason	SkipDetail
+TRV-005	UnsupportedScopeType	No candidate nodes matched this rule's supported scope kinds for the current run scope.
+OBJ-003	UnsupportedScopeType	No candidate nodes matched this rule's supported scope kinds for the current run scope.
+OBJ-004	UnsupportedScopeType	No candidate nodes matched this rule's supported scope kinds for the current run scope.
+OBJ-007	UnsupportedScopeType	No candidate nodes matched this rule's supported scope kinds for the current run scope.
+OBJ-005	UnsupportedScopeType	No candidate nodes matched this rule's supported scope kinds for the current run scope.
+OBJ-006	UnsupportedScopeType	No candidate nodes matched this rule's supported scope kinds for the current run scope.
+ACT-001	UnsupportedScopeType	No candidate nodes matched this rule's supported scope kinds for the current run scope.
+ACT-002	UnsupportedScopeType	No candidate nodes matched this rule's supported scope kinds for the current run scope.
+ACT-003	UnsupportedScopeType	No candidate nodes matched this rule's supported scope kinds for the current run scope.
+ACT-004	UnsupportedScopeType	No candidate nodes matched this rule's supported scope kinds for the current run scope.
+ACT-005	UnsupportedScopeType	No candidate nodes matched this rule's supported scope kinds for the current run scope.
+ACT-006	UnsupportedScopeType	No candidate nodes matched this rule's supported scope kinds for the current run scope.
+ACT-007	UnsupportedScopeType	No candidate nodes matched this rule's supported scope kinds for the current run scope.
+ACT-008	UnsupportedScopeType	No candidate nodes matched this rule's supported scope kinds for the current run scope.
+ACT-009	UnsupportedScopeType	No candidate nodes matched this rule's supported scope kinds for the current run scope.
+ACT-010	UnsupportedScopeType	No candidate nodes matched this rule's supported scope kinds for the current run scope.
+ACT-011	UnsupportedScopeType	No candidate nodes matched this rule's supported scope kinds for the current run scope.
+ACT-012	UnsupportedScopeType	No candidate nodes matched this rule's supported scope kinds for the current run scope.
+ACT-013	UnsupportedScopeType	No candidate nodes matched this rule's supported scope kinds for the current run scope.
+ACT-014	UnsupportedScopeType	No candidate nodes matched this rule's supported scope kinds for the current run scope.
+ACT-015	UnsupportedScopeType	No candidate nodes matched this rule's supported scope kinds for the current run scope.
+SCR-001	UnsupportedScopeType	No candidate nodes matched this rule's supported scope kinds for the current run scope.
+SCR-002	UnsupportedScopeType	No candidate nodes matched this rule's supported scope kinds for the current run scope.
+SCR-003	UnsupportedScopeType	No candidate nodes matched this rule's supported scope kinds for the current run scope.
+
+RuleId	Severity	Path	Description	Hint
+PROJ-004	Error	Project	No game object is marked as player. Exactly one object variable 'isPlayer' must default to true.	

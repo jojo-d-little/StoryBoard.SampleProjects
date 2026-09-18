@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0",
+  "areas": [
+    {
+      "planet": "New Planet",
+      "country": "New Country",
+      "area": "New Area",
+      "adjacencyMode": "EightDirectional",
+      "links": [],
+      "roomPlacements": [
+        {
+          "roomId": "9b598406-1f54-44e1-a058-befc9e88f732",
+          "x": 384,
+          "y": 164
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "adjacencyMode": "EightDirectional",
+  "startingRoomId": "cf9420d8-98da-4ae5-8184-24ceee6c1f9e",
+  "roomIds": [
+    "cf9420d8-98da-4ae5-8184-24ceee6c1f9e"
+  ],
+  "roomPlacements": [
+    {
+      "roomId": "cf9420d8-98da-4ae5-8184-24ceee6c1f9e",
+      "x": 204,
+      "y": 164
+    }
+  ],
+  "links": [],
+  "Id": "f2121f60-56d3-47e0-81ce-09d6b7da4b6e",
+  "name": "New Area",
+  "nameInGame": "New Area",
+  "scopeKind": "Area",
+  "gameProperties": [],
+  "additionalVerbs": [],
+  "additionalDirectionals": [],
+  "availableGameActions": []
+}

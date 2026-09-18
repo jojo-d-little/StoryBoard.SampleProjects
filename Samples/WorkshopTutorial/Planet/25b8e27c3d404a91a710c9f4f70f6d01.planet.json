@@ -1,0 +1,122 @@
+{
+  "baseObjectsIgnoredValidationRuleIds": [],
+  "baseObjects": [],
+  "gameObjects": [],
+  "startingCountryName": "Starter Country",
+  "countryIds": [
+    "56a02162-fb18-44e5-b206-d4f2fd88241e"
+  ],
+  "id": "25b8e27c-3d40-4a91-a710-c9f4f70f6d01",
+  "name": "Starter Planet",
+  "nameInGame": "Starter Planet",
+  "hideEmptyConfiguration": false,
+  "validationErrors": [],
+  "ignoredValidationRuleIds": [],
+  "scopeKind": "Planet",
+  "baseObjectIds": [],
+  "gameObjectIds": [],
+  "gameProperties": [],
+  "additionalVerbs": [],
+  "additionalDirectionals": [],
+  "additionalDirectionalTraversalMappings": [],
+  "availableGameActions": [
+    {
+      "id": "590da3bc-997d-4a4c-911d-b850d1c7315e",
+      "name": "go_starter_planet",
+      "payload": {
+        "$payloadType": "navigateToAdjacent"
+      },
+      "actionType": "NavigateToAdjacent",
+      "noVerbLinkage": false,
+      "verbListText": "go",
+      "direction": "",
+      "outcomeMessageMap": {
+        "DirectionRequired": "Which way?",
+        "DoorClosed": "The door seems to be closed",
+        "Failure": "",
+        "Moved": "You left the {currentAction.PriorRoomName} and enter the {currentAction.DestinationRoomName}",
+        "MoveFailed": "I think I stubbed my toe",
+        "Success": "You left the {currentAction.PriorRoomName} and enter the {currentAction.DestinationRoomName}",
+        "TraversalAmbiguous": "Which way?",
+        "TraversalNotPassable": "Not passable",
+        "UnknownDestination": "Where?"
+      },
+      "childCommandForwardingMode": "None",
+      "similarChildDispatchMode": "SingleMatchingChild"
+    },
+    {
+      "id": "f94f60a0-301c-41da-b98e-853207dacf5e",
+      "name": "unlock_starter_planet",
+      "payload": {
+        "$payloadType": "unlockObject"
+      },
+      "actionType": "UnlockObject",
+      "noVerbLinkage": false,
+      "verbListText": "unlock",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "f",
+        "MissingRequiredKeys": "You do not have what it takes.",
+        "NoUnlockRequirementsDefined": "No Unlockable Requirements Defined",
+        "ObjectAlreadyUnlocked": "I think it was already?",
+        "ObjectNotLockable": "Do you really do that?",
+        "Success": "You unlocked the {currentAction.UnlockedObjectName}",
+        "WrongKey": "Not with that you don\u0027t"
+      },
+      "childCommandForwardingMode": "None",
+      "similarChildDispatchMode": "SingleMatchingChild"
+    },
+    {
+      "id": "a6563cec-9999-4817-9fff-05dc95408b1c",
+      "name": "lock_starter_planet",
+      "payload": {
+        "$payloadType": "lockObject"
+      },
+      "actionType": "LockObject",
+      "noVerbLinkage": false,
+      "verbListText": "lock",
+      "direction": "",
+      "outcomeMessageMap": {
+        "Failure": "f",
+        "MissingRequiredKeys": "You do not have what it takes.",
+        "NoLockRequirementsDefined": "No Lock Requirements Defined",
+        "ObjectAlreadyLocked": "One step ahead of you, it already is",
+        "ObjectNotLockable": "Not really something that you do",
+        "Success": "Locked that {currentAction.LockedObjectName} right up",
+        "WrongKey": "Not with that."
+      },
+      "childCommandForwardingMode": "None",
+      "similarChildDispatchMode": "SingleMatchingChild"
+    },
+    {
+      "id": "7831cadb-bd6d-4cbe-8af2-217e0362400e",
+      "name": "get_starter_planet",
+      "payload": {
+        "$payloadType": "putObjectInContainer",
+        "targetContainerId": ""
+      },
+      "actionType": "PutObjectInContainer",
+      "noVerbLinkage": false,
+      "verbListText": "get, grab, put, take",
+      "verbs": [
+        "get",
+        "grab",
+        "put",
+        "take"
+      ],
+      "direction": "",
+      "outcomeMessageMap": {
+        "CapacityExceeded": "You don\u0027t have room for that, perhaps you need some help.",
+        "Failure": "The is a PutObjectInContainer Failure",
+        "PutFailed": "That\u0027s pretty heavy, you might need something to help carry that. ",
+        "ResolveTargetFailed": "Where do you want to put it?",
+        "Success": "The {currentAction.primaryitem} is now in {currentAction.targetContainerName}"
+      },
+      "childCommandForwardingMode": "None",
+      "similarChildDispatchMode": "SingleMatchingChild"
+    }
+  ],
+  "eventSubscriptions": [],
+  "timerDefinitions": [],
+  "soundEffectLibraryEntries": []
+}

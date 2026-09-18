@@ -1,0 +1,19 @@
+Validation report generated: 2026-09-14 11:13:01
+Project: ObjectPlayLevel2
+ExecutionKind: WholeProject
+RootScopePath: Global
+IncludeDescendants: True
+CandidateNodeCount: 42
+ExecutedRules: 59
+SkippedRules: 0
+StoppedEarly: False
+RemainingIssueCountAtStop: 0
+StopRuleId: (none)
+RemainingRuleCountAtStop: 0
+
+SkippedRuleId	SkipReason	SkipDetail
+
+RuleId	Severity	Path	Description	Hint
+OBJ-005	Warning	Global / New Planet / New Country / New Area / New Room / Froghair	object 'Froghair' is included in room preview but has no configured default image path.	Assign a default image variant path or uncheck Include In Preview.
+OBJ-005	Warning	Global / New Planet / New Country / New Area / New Room / TeaLeaves	object 'TeaLeaves' is included in room preview but has no configured default image path.	Assign a default image variant path or uncheck Include In Preview.
+OBJ-005	Warning	Global / New Planet / New Country / New Area / New Room / SmokeBall	object 'SmokeBall' is included in room preview but has no configured default image path.	Assign a default image variant path or uncheck Include In Preview.
