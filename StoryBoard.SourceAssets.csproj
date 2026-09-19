@@ -7,7 +7,7 @@
     <GenerateDocumentationFile>false</GenerateDocumentationFile>
 
     <PackageId>StoryBoard.SourceAssets</PackageId>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <Authors>StoryBoard</Authors>
     <Description>Source images and sounds used by StoryBoard sample projects for testing.</Description>
     <PackageTags>storyboard;source-assets;testing;assets</PackageTags>
