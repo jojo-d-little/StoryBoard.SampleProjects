@@ -112,7 +112,7 @@
       "overlayOffsetX": 0,
       "overlayOffsetY": 0,
       "overlayRotationDegrees": 0,
-      "fullImagePath": "ASSETROOT:/PlaceHolderImages/GrassLightGreen-1024-768.png",
+      "fullImagePath": "%STORYBOARD_ASSET_SOURCE_ROOT%/PlaceHolderImages/GrassLightGreen-1024-768.png",
       "grayMapImagePath": "",
       "normalMapImagePath": ""
     }

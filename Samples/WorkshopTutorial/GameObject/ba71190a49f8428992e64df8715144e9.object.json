@@ -9,7 +9,7 @@
   "imageVariants": [
     {
       "variantName": "default",
-      "fullImagePath": "ASSETROOT:/PlaceHolderImages/WorkBenchTop.jpg",
+      "fullImagePath": "%STORYBOARD_ASSET_SOURCE_ROOT%/PlaceHolderImages/WorkBenchTop.jpg",
       "imageLocalAlignmentRotationDegrees": 0,
       "imageLocalAlignmentOffsetX": 0,
       "imageLocalAlignmentOffsetY": 0,

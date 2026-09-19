@@ -11,7 +11,7 @@
   "imageVariants": [
     {
       "variantName": "bent",
-      "fullImagePath": "ASSETROOT:/PlaceHolderImages/BentBrassKey.png",
+      "fullImagePath": "%STORYBOARD_ASSET_SOURCE_ROOT%/PlaceHolderImages/BentBrassKey.png",
       "imageLocalAlignmentRotationDegrees": 0,
       "imageLocalAlignmentOffsetX": 3,
       "imageLocalAlignmentOffsetY": -4,
@@ -20,7 +20,7 @@
     },
     {
       "variantName": "fixed",
-      "fullImagePath": "ASSETROOT:/PlaceHolderImages/BrassKey.png",
+      "fullImagePath": "%STORYBOARD_ASSET_SOURCE_ROOT%/PlaceHolderImages/BrassKey.png",
       "imageLocalAlignmentRotationDegrees": 0,
       "imageLocalAlignmentOffsetX": -2,
       "imageLocalAlignmentOffsetY": 1,

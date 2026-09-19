@@ -9,7 +9,7 @@
   "imageVariants": [
     {
       "variantName": "default",
-      "fullImagePath": "ASSETROOT:/PlaceHolderImages/crowbar.png",
+      "fullImagePath": "%STORYBOARD_ASSET_SOURCE_ROOT%/PlaceHolderImages/crowbar.png",
       "imageLocalAlignmentRotationDegrees": 30,
       "imageLocalAlignmentOffsetX": -18,
       "imageLocalAlignmentOffsetY": 25,

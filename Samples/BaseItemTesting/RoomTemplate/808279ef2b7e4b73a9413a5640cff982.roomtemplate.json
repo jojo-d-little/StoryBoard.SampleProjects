@@ -10,7 +10,7 @@
       "overlayOffsetX": 0,
       "overlayOffsetY": 0,
       "overlayRotationDegrees": 0,
-      "fullImagePath": "ASSETROOT:/PlaceHolderImages/CobbleStoneFloor800x600.png",
+      "fullImagePath": "%STORYBOARD_ASSET_SOURCE_ROOT%/PlaceHolderImages/CobbleStoneFloor800x600.png",
       "grayMapImagePath": "",
       "normalMapImagePath": ""
     },
@@ -20,7 +20,7 @@
       "overlayOffsetX": 0,
       "overlayOffsetY": 0,
       "overlayRotationDegrees": 180,
-      "fullImagePath": "ASSETROOT:/PlaceHolderImages/LongBrickWall.png",
+      "fullImagePath": "%STORYBOARD_ASSET_SOURCE_ROOT%/PlaceHolderImages/LongBrickWall.png",
       "grayMapImagePath": "",
       "normalMapImagePath": ""
     },
@@ -40,7 +40,7 @@
       "overlayOffsetX": 0,
       "overlayOffsetY": 0,
       "overlayRotationDegrees": 180,
-      "fullImagePath": "ASSETROOT:/PlaceHolderImages/ShortBrickWall.png",
+      "fullImagePath": "%STORYBOARD_ASSET_SOURCE_ROOT%/PlaceHolderImages/ShortBrickWall.png",
       "grayMapImagePath": "",
       "normalMapImagePath": ""
     },
@@ -60,7 +60,7 @@
       "overlayOffsetX": 0,
       "overlayOffsetY": 0,
       "overlayRotationDegrees": 0,
-      "fullImagePath": "ASSETROOT:/PlaceHolderImages/LongBrickWall.png",
+      "fullImagePath": "%STORYBOARD_ASSET_SOURCE_ROOT%/PlaceHolderImages/LongBrickWall.png",
       "grayMapImagePath": "",
       "normalMapImagePath": ""
     },
@@ -80,7 +80,7 @@
       "overlayOffsetX": 0,
       "overlayOffsetY": 0,
       "overlayRotationDegrees": 0,
-      "fullImagePath": "ASSETROOT:/PlaceHolderImages/ShortBrickWall.png",
+      "fullImagePath": "%STORYBOARD_ASSET_SOURCE_ROOT%/PlaceHolderImages/ShortBrickWall.png",
       "grayMapImagePath": "",
       "normalMapImagePath": ""
     },

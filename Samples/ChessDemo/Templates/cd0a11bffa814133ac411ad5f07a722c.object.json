@@ -9,7 +9,7 @@
   "imageVariants": [
     {
       "variantName": "default",
-      "fullImagePath": "ASSETROOT:/PlaceHolderImages/WhiteChessKing.png",
+      "fullImagePath": "%STORYBOARD_ASSET_SOURCE_ROOT%/PlaceHolderImages/WhiteChessKing.png",
       "imageLocalAlignmentRotationDegrees": 0,
       "imageLocalAlignmentOffsetX": 15,
       "imageLocalAlignmentOffsetY": -13,
