@@ -1,7 +1,9 @@
 name: Publish StoryBoard.SourceAssets
 
 on:
-  workflow_dispatch:
+  push:
+    tags:
+      - 'sourceassets-v*'
 
 permissions:
   contents: read
@@ -30,6 +32,12 @@ jobs:
         run: |
           current_version=$(sed -n 's:.*<Version>\([^<]*\)</Version>.*:\1:p' StoryBoard.SourceAssets.csproj)
           previous_version=$(git show HEAD^:StoryBoard.SourceAssets.csproj | sed -n 's:.*<Version>\([^<]*\)</Version>.*:\1:p')
+          tag_version="${GITHUB_REF_NAME#sourceassets-v}"
+
+          if [ "$tag_version" != "$current_version" ]; then
+            echo "Release tag sourceassets-v$tag_version does not match package version $current_version."
+            exit 1
+          fi
 
           if [ -z "$current_version" ] || [ -z "$previous_version" ]; then
             echo "Could not read current and previous package versions."
