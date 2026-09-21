@@ -9,9 +9,7 @@
   "schemaVersion": "1.0",
   "gameDisplayName": "The Workshop Tutorial",
   "gameSummary": "This is a small demonstration game intended to show off specific features that are available in the game engine. You can move some boxes around. You can stack them on each other. You can collect some items repair a key and open a door. just a basic little demo",
-  "gamePreviewImages": [
-    "assets/images/previewImages/1afc8b05d91c31e1723954bd3d4d8833beab427bd099d0776b1287bffd955acc__Atrium.png"
-  ],
+  "gamePreviewImages": [],
   "autoSaveSeconds": 60,
   "roomImageCanvasWidth": 800,
   "roomImageCanvasHeight": 600,

@@ -1,10 +1,10 @@
 {
   "uiState": {
-    "planetName": "",
-    "countryName": "",
-    "areaName": "",
+    "planetName": "Starter Planet",
+    "countryName": "Starter Country",
+    "areaName": "Starter Area",
     "selectedWorkspaceTabIndex": 0,
-    "lastSelectedNodePath": "project:global/settings:global",
+    "lastSelectedNodePath": "project:global/planet:25b8e27c3d404a91a710c9f4f70f6d01/country:56a02162fb1844e5b206d4f2fd88241e/area:f5b97d334ba242ff8a41129326fd8fc6/room:698a46f473bc4e9e8333e2ed555417fc/room-objects:698a46f473bc4e9e8333e2ed555417fc/object:BlueCrate#7/settings:object",
     "lastTreeValidationActionId": "validate-whole-project",
     "lastTreeValidationCompletionMode": "FullReport"
   }

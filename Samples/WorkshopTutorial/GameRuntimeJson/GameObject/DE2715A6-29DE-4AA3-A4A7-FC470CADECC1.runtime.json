@@ -251,12 +251,6 @@
       "subscriptionSecondarySourceMatchMode": "AnySource",
       "actionBindings": [
         {
-          "inputArgumentMappings": [
-            {
-              "inputEventPaylloadArgKey": "estimatedMoveDurationMs",
-              "outputActionPayloadArgKey": "sound.play.maxPlayDurationMs"
-            }
-          ],
           "order": 1,
           "isEnabled": true,
           "condition": {
@@ -267,15 +261,15 @@
             "actionName": "short_move_drag",
             "onMissingAction": "DiagnosticOnly",
             "stopChainOnFailure": true
-          }
-        },
-        {
+          },
           "inputArgumentMappings": [
             {
               "inputEventPaylloadArgKey": "estimatedMoveDurationMs",
-              "outputActionPayloadArgKey": "sound.play.startDelayMs"
+              "outputActionPayloadArgKey": "sound.play.maxPlayDurationMs"
             }
-          ],
+          ]
+        },
+        {
           "order": 2,
           "isEnabled": true,
           "condition": {
@@ -286,7 +280,13 @@
             "actionName": "play_hammer_sound",
             "onMissingAction": "DiagnosticOnly",
             "stopChainOnFailure": true
-          }
+          },
+          "inputArgumentMappings": [
+            {
+              "inputEventPaylloadArgKey": "estimatedMoveDurationMs",
+              "outputActionPayloadArgKey": "sound.play.startDelayMs"
+            }
+          ]
         }
       ]
     }

@@ -8,7 +8,7 @@
       "imagePathSemantics": "runtimeExportRelative",
       "exportedPath": "assets/images/_shared/003ec19aecb997f39c85fc3796c89ca8d01768923d9d1c0d34ab97efdfa7824b__LightDoorOpen.png",
       "sourcePaths": [
-        "ASSETROOT:/PlaceHolderImages/LightDoorOpen.png"
+        "%STORYBOARD_ASSET_SOURCE_ROOT%/PlaceHolderImages/LightDoorOpen.png"
       ],
       "references": [
         "object:15ff3436167a4746b6da43107870437a:variant:Open:full",
@@ -28,7 +28,7 @@
       "imagePathSemantics": "runtimeExportRelative",
       "exportedPath": "assets/images/_shared/098f06e0eab0ba865149b06bfec512b138185b5d9b93fb91963eb661791e4f65__WhiteCrate.png",
       "sourcePaths": [
-        "ASSETROOT:/PlaceHolderImages/WhiteCrate.png"
+        "%STORYBOARD_ASSET_SOURCE_ROOT%/PlaceHolderImages/WhiteCrate.png"
       ],
       "references": [
         "object:0ed80c32043a4b12a2bb2164e55ec278:variant:default:full"
@@ -41,7 +41,7 @@
       "imagePathSemantics": "runtimeExportRelative",
       "exportedPath": "assets/images/_shared/12251e687313394ea54d5dd2fbb84926262908bc8e87151e35b8371a37732fae__DarkDoor.png",
       "sourcePaths": [
-        "ASSETROOT:/PlaceHolderImages/DarkDoor.png"
+        "%STORYBOARD_ASSET_SOURCE_ROOT%/PlaceHolderImages/DarkDoor.png"
       ],
       "references": [
         "templateObject:45f9ed67c9424faabc52f43c1265db6e:variant:Closed:full",
@@ -55,7 +55,7 @@
       "imagePathSemantics": "runtimeExportRelative",
       "exportedPath": "assets/images/_shared/13081c4ddf93fde19db53205ff0207f58fc019418f856bdb38b926bba3537545__RockHammer.png",
       "sourcePaths": [
-        "ASSETROOT:/PlaceHolderImages/RockHammer.png"
+        "%STORYBOARD_ASSET_SOURCE_ROOT%/PlaceHolderImages/RockHammer.png"
       ],
       "references": [
         "object:0e0566715c01433c81445b9d3a998d2f:variant:default:full"
@@ -68,25 +68,12 @@
       "imagePathSemantics": "runtimeExportRelative",
       "exportedPath": "assets/images/_shared/15ccfc984d399fe51fc95f1a2e510aec6958362ef59e5b5dd1459d023db0b8ca__ShortBrickWall_MidDoor.png",
       "sourcePaths": [
-        "ASSETROOT:/PlaceHolderImages/ShortBrickWall_MidDoor.png"
+        "%STORYBOARD_ASSET_SOURCE_ROOT%/PlaceHolderImages/ShortBrickWall_MidDoor.png"
       ],
       "references": [
         "room:698a46f473bc4e9e8333e2ed555417fc:slot:East:full",
         "room:698a46f473bc4e9e8333e2ed555417fc:slot:West:full",
         "room:6a2b490b2f6f45278294976194437296:slot:West:full"
-      ]
-    },
-    {
-      "hash": "1afc8b05d91c31e1723954bd3d4d8833beab427bd099d0776b1287bffd955acc",
-      "sha256": "1afc8b05d91c31e1723954bd3d4d8833beab427bd099d0776b1287bffd955acc",
-      "sizeBytes": 645070,
-      "imagePathSemantics": "runtimeExportRelative",
-      "exportedPath": "assets/images/previewImages/1afc8b05d91c31e1723954bd3d4d8833beab427bd099d0776b1287bffd955acc__Atrium.png",
-      "sourcePaths": [
-        "C:\\work\\GIT\\Storyboard\\docs\\graphic-artist-how-tos\\RoomImages\\assets\\final\\Atrium.png"
-      ],
-      "references": [
-        "project:previewImage:0"
       ]
     },
     {
@@ -96,7 +83,7 @@
       "imagePathSemantics": "runtimeExportRelative",
       "exportedPath": "assets/images/_shared/1ce4407d951db45db3f2095fccc259019f55d9abcb630bdf4ed64083ac64799c__anvil.png",
       "sourcePaths": [
-        "ASSETROOT:/PlaceHolderImages/anvil.png"
+        "%STORYBOARD_ASSET_SOURCE_ROOT%/PlaceHolderImages/anvil.png"
       ],
       "references": [
         "object:8e99a6aae3c84e93a7558543e0b25aab:variant:default:full"
@@ -109,7 +96,7 @@
       "imagePathSemantics": "runtimeExportRelative",
       "exportedPath": "assets/images/_shared/40e594f6012b5047629c3070aa3312adb36e42d9cfac87126b644cf1f1a6753d__LightDoor.png",
       "sourcePaths": [
-        "ASSETROOT:/PlaceHolderImages/LightDoor.png"
+        "%STORYBOARD_ASSET_SOURCE_ROOT%/PlaceHolderImages/LightDoor.png"
       ],
       "references": [
         "object:15ff3436167a4746b6da43107870437a:variant:Closed:full",
@@ -129,7 +116,7 @@
       "imagePathSemantics": "runtimeExportRelative",
       "exportedPath": "assets/images/_shared/48efa867aea816e63b8d1eff03361bf61c215f53ff1abf19eca39a0f3fd2ba06__WorkBenchTop.jpg",
       "sourcePaths": [
-        "ASSETROOT:/PlaceHolderImages/WorkBenchTop.jpg"
+        "%STORYBOARD_ASSET_SOURCE_ROOT%/PlaceHolderImages/WorkBenchTop.jpg"
       ],
       "references": [
         "object:ba71190a49f8428992e64df8715144e9:variant:default:full"
@@ -142,7 +129,7 @@
       "imagePathSemantics": "runtimeExportRelative",
       "exportedPath": "assets/images/_shared/4e270ecb7923cec3b33f821eeb317fd1c693f9413884c6672d87c126188a6d6a__Floor_Hole.png",
       "sourcePaths": [
-        "ASSETROOT:/PlaceHolderImages/Floor_Hole.png"
+        "%STORYBOARD_ASSET_SOURCE_ROOT%/PlaceHolderImages/Floor_Hole.png"
       ],
       "references": [
         "room:beb7648a2b9f42a8b4c59a561334c826:slot:Down:full"
@@ -155,7 +142,7 @@
       "imagePathSemantics": "runtimeExportRelative",
       "exportedPath": "assets/images/_shared/4f9c38d990b59e74cc9f31bbd9d0a442d8dfb2162c5fab29600bfd49de99cc3e__DarkDoorOpen.png",
       "sourcePaths": [
-        "ASSETROOT:/PlaceHolderImages/DarkDoorOpen.png"
+        "%STORYBOARD_ASSET_SOURCE_ROOT%/PlaceHolderImages/DarkDoorOpen.png"
       ],
       "references": [
         "templateObject:45f9ed67c9424faabc52f43c1265db6e:variant:Open:full",
@@ -169,7 +156,7 @@
       "imagePathSemantics": "runtimeExportRelative",
       "exportedPath": "assets/images/_shared/65301ec3f7e79a20b431e06d0c548b5a2f3c5aac78d92deeef4fe81cda604746__RedCrate.png",
       "sourcePaths": [
-        "ASSETROOT:/PlaceHolderImages/RedCrate.png"
+        "%STORYBOARD_ASSET_SOURCE_ROOT%/PlaceHolderImages/RedCrate.png"
       ],
       "references": [
         "object:bb53c4f20cee48af94b8719bc40312ae:variant:default:full"
@@ -182,7 +169,7 @@
       "imagePathSemantics": "runtimeExportRelative",
       "exportedPath": "assets/images/_shared/66870102be361c9e40f31d21408c9e3c8b49dd3b8eba86123432b3ff987011e3__crowbar.png",
       "sourcePaths": [
-        "ASSETROOT:/PlaceHolderImages/crowbar.png"
+        "%STORYBOARD_ASSET_SOURCE_ROOT%/PlaceHolderImages/crowbar.png"
       ],
       "references": [
         "object:0825ab8071bb4aa990288c931f00ffd4:variant:default:full"
@@ -195,7 +182,7 @@
       "imagePathSemantics": "runtimeExportRelative",
       "exportedPath": "assets/images/_shared/7084e498381348715044686a6e3ee7cfe99c4cacc0baf1ae8cb1f982c1eec627__LongBrickWall_MidDoor.png",
       "sourcePaths": [
-        "ASSETROOT:/PlaceHolderImages/LongBrickWall_MidDoor.png"
+        "%STORYBOARD_ASSET_SOURCE_ROOT%/PlaceHolderImages/LongBrickWall_MidDoor.png"
       ],
       "references": [
         "room:0f7b95eb27c9475290e9c749c51dd569:slot:South:full",
@@ -210,7 +197,7 @@
       "imagePathSemantics": "runtimeExportRelative",
       "exportedPath": "assets/images/_shared/79ab4012207fd41a20085de8d4e3c7df45d87c8d101e76ca9551a737fa8d519d__BlueCrate.png",
       "sourcePaths": [
-        "ASSETROOT:/PlaceHolderImages/BlueCrate.png"
+        "%STORYBOARD_ASSET_SOURCE_ROOT%/PlaceHolderImages/BlueCrate.png"
       ],
       "references": [
         "object:de2715a629de4aa3a4a7fc470cadecc1:variant:default:full"
@@ -223,7 +210,7 @@
       "imagePathSemantics": "runtimeExportRelative",
       "exportedPath": "assets/images/_shared/7ae7e8867d92162a6d3dfb8bc7de9a9bd2ae6d255eab1db7ee29cd807bd54621__ShortBrickWall.png",
       "sourcePaths": [
-        "ASSETROOT:/PlaceHolderImages/ShortBrickWall.png"
+        "%STORYBOARD_ASSET_SOURCE_ROOT%/PlaceHolderImages/ShortBrickWall.png"
       ],
       "references": [
         "room:0996d450b8bf42b08efa4ed9753baed4:slot:East:full",
@@ -246,7 +233,7 @@
       "imagePathSemantics": "runtimeExportRelative",
       "exportedPath": "assets/images/_shared/7bc4fd3cfc03a0636edeece94b6f865692f80c41fe62337c47ab48658273be87__DarkBrownWoodenFloor800x600.png",
       "sourcePaths": [
-        "ASSETROOT:/PlaceHolderImages/DarkBrownWoodenFloor800x600.png"
+        "%STORYBOARD_ASSET_SOURCE_ROOT%/PlaceHolderImages/DarkBrownWoodenFloor800x600.png"
       ],
       "references": [
         "room:0996d450b8bf42b08efa4ed9753baed4:slot:Down:full",
@@ -264,7 +251,7 @@
       "imagePathSemantics": "runtimeExportRelative",
       "exportedPath": "assets/images/_shared/7fb1b2943f7278d71a33a193ceb53d6470de689890bb52cf631e9ddc97571ad0__StoneCorner.png",
       "sourcePaths": [
-        "ASSETROOT:/PlaceHolderImages/StoneCorner.png"
+        "%STORYBOARD_ASSET_SOURCE_ROOT%/PlaceHolderImages/StoneCorner.png"
       ],
       "references": [
         "room:698a46f473bc4e9e8333e2ed555417fc:slot:NorthEast:full",
@@ -280,7 +267,7 @@
       "imagePathSemantics": "runtimeExportRelative",
       "exportedPath": "assets/images/_shared/84c8f14bc09348dea467172e1df774dd5ce4aadda9856f4ec558a97c1a40141f__LongBrickWall.png",
       "sourcePaths": [
-        "ASSETROOT:/PlaceHolderImages/LongBrickWall.png"
+        "%STORYBOARD_ASSET_SOURCE_ROOT%/PlaceHolderImages/LongBrickWall.png"
       ],
       "references": [
         "room:0996d450b8bf42b08efa4ed9753baed4:slot:North:full",
@@ -303,7 +290,7 @@
       "imagePathSemantics": "runtimeExportRelative",
       "exportedPath": "assets/images/_shared/87f084dcdc4e9ea360a6608d881e8622a059e74768e322a3eaf4115eeb70a6b9__small-brown-backpack.png",
       "sourcePaths": [
-        "ASSETROOT:/PlaceHolderImages/small-brown-backpack.png"
+        "%STORYBOARD_ASSET_SOURCE_ROOT%/PlaceHolderImages/small-brown-backpack.png"
       ],
       "references": [
         "object:98b8bd1c35914138a71eb4fae94da9d4:variant:default:full"
@@ -316,7 +303,7 @@
       "imagePathSemantics": "runtimeExportRelative",
       "exportedPath": "assets/images/_shared/91f0065a4419e841aa7a6e144cc30fdcd7b6ee56868101ae0dfa63e2c7287d66__BentBrassKey.png",
       "sourcePaths": [
-        "ASSETROOT:/PlaceHolderImages/BentBrassKey.png"
+        "%STORYBOARD_ASSET_SOURCE_ROOT%/PlaceHolderImages/BentBrassKey.png"
       ],
       "references": [
         "object:4592818b3fd146829aa7a14ebca79f8e:variant:bent:full"
@@ -329,7 +316,7 @@
       "imagePathSemantics": "runtimeExportRelative",
       "exportedPath": "assets/images/_shared/b4a70f05a6e0161a2524d684fe1a4ec3fc231cf8d1702f4a81fb69f275751621__GreenCrate.png",
       "sourcePaths": [
-        "ASSETROOT:/PlaceHolderImages/GreenCrate.png"
+        "%STORYBOARD_ASSET_SOURCE_ROOT%/PlaceHolderImages/GreenCrate.png"
       ],
       "references": [
         "object:a408591b08aa45fca3969b9477cead5e:variant:default:full"
@@ -342,7 +329,7 @@
       "imagePathSemantics": "runtimeExportRelative",
       "exportedPath": "assets/images/_shared/e0d07089ba8e0ccbbd5139bc9f76e7b10869322c0a1cb33efedcac19edecdd2b__BrassKey.png",
       "sourcePaths": [
-        "ASSETROOT:/PlaceHolderImages/BrassKey.png"
+        "%STORYBOARD_ASSET_SOURCE_ROOT%/PlaceHolderImages/BrassKey.png"
       ],
       "references": [
         "object:4592818b3fd146829aa7a14ebca79f8e:variant:fixed:full"
@@ -357,7 +344,7 @@
       "assetRefSemantics": "runtimeExportRelative",
       "exportedPath": "assets/sounds/_shared/02e45ceca217e5f97e1d344fa8d064329e179c779bca64c217f8620b88b16d16__CABINET DOOR OPEN.wav",
       "sourcePaths": [
-        "ASSETROOT:/PlaceHolderSounds/CABINET DOOR OPEN.wav"
+        "%STORYBOARD_ASSET_SOURCE_ROOT%/PlaceHolderSounds/CABINET DOOR OPEN.wav"
       ],
       "references": [
         "project:global:sound:7499a24e-e328-498f-97a3-d4a70d621ae5"
@@ -370,7 +357,7 @@
       "assetRefSemantics": "runtimeExportRelative",
       "exportedPath": "assets/sounds/_shared/38d5edbdb126db3ab544d881dd40bbc855ec7cacbc706dfd522e12a08387281c__aturax_particletexture_recording_24-192kHz.wav",
       "sourcePaths": [
-        "ASSETROOT:/PlaceHolderSounds/aturax_particletexture_recording_24-192kHz.wav"
+        "%STORYBOARD_ASSET_SOURCE_ROOT%/PlaceHolderSounds/aturax_particletexture_recording_24-192kHz.wav"
       ],
       "references": [
         "project:global:sound:4fc1dfe4-27ba-47ee-b7dc-b318a62542b2"
@@ -383,7 +370,7 @@
       "assetRefSemantics": "runtimeExportRelative",
       "exportedPath": "assets/sounds/_shared/7ad321df229cce509e909dad502f1dac9b1bf5c51b5b8a3fe1f653adab9609a6__DRAG_Medium.wav",
       "sourcePaths": [
-        "ASSETROOT:/PlaceHolderSounds/DRAG_Medium.wav"
+        "%STORYBOARD_ASSET_SOURCE_ROOT%/PlaceHolderSounds/DRAG_Medium.wav"
       ],
       "references": [
         "project:global:sound:016fefb6-0912-4d23-928f-89c4871288aa"
@@ -396,7 +383,7 @@
       "assetRefSemantics": "runtimeExportRelative",
       "exportedPath": "assets/sounds/_shared/aa1b92f6e51d94ff632db5a49492d5b09889f27ef0865f479362d819dcbf4439__DRAG_Long.wav",
       "sourcePaths": [
-        "ASSETROOT:/PlaceHolderSounds/DRAG_Long.wav"
+        "%STORYBOARD_ASSET_SOURCE_ROOT%/PlaceHolderSounds/DRAG_Long.wav"
       ],
       "references": [
         "project:global:sound:895eb610-233f-4799-9dfd-f8ffc2235e20"
@@ -409,7 +396,7 @@
       "assetRefSemantics": "runtimeExportRelative",
       "exportedPath": "assets/sounds/_shared/b36e7f936d9109f465cb090ee27aa92f017124b6ec5b32e8270a0c531da26fe4__FF_TM_hammer_nail_standard_heavy_single.wav",
       "sourcePaths": [
-        "ASSETROOT:/PlaceHolderSounds/FF_TM_hammer_nail_standard_heavy_single.wav"
+        "%STORYBOARD_ASSET_SOURCE_ROOT%/PlaceHolderSounds/FF_TM_hammer_nail_standard_heavy_single.wav"
       ],
       "references": [
         "project:global:sound:bc6df49b-eb64-4fd0-b0bc-992b441e765e"
@@ -422,7 +409,7 @@
       "assetRefSemantics": "runtimeExportRelative",
       "exportedPath": "assets/sounds/_shared/cef1fbdabb1d5aae57c62e7fb056bf1022e399a26f901a5ec632ddd67b4c604d__CABINET DOOR CLOSE.wav",
       "sourcePaths": [
-        "ASSETROOT:/PlaceHolderSounds/CABINET DOOR CLOSE.wav"
+        "%STORYBOARD_ASSET_SOURCE_ROOT%/PlaceHolderSounds/CABINET DOOR CLOSE.wav"
       ],
       "references": [
         "project:global:sound:28e80a6b-b8bf-4ae8-ab69-8b1fa292b84c"
@@ -435,7 +422,7 @@
       "assetRefSemantics": "runtimeExportRelative",
       "exportedPath": "assets/sounds/_shared/cf12c00c7eb96fba9c646e4c86c11c7dca9c9d4313f4eefc2872c6c8c2d249eb__crickets_chirp_fast_D#.wav",
       "sourcePaths": [
-        "ASSETROOT:/PlaceHolderSounds/crickets_chirp_fast_D#.wav"
+        "%STORYBOARD_ASSET_SOURCE_ROOT%/PlaceHolderSounds/crickets_chirp_fast_D#.wav"
       ],
       "references": [
         "project:global:sound:c57f3684-dd7b-4f37-b03f-dbc3e35670a9"
@@ -448,7 +435,7 @@
       "assetRefSemantics": "runtimeExportRelative",
       "exportedPath": "assets/sounds/_shared/e876a56ba56eb78c61c543c3d2c1b46919fbeb45b4fcda7312ebb88c38c4152f__JS-haunted house 2 creaks-groans clip.wav",
       "sourcePaths": [
-        "ASSETROOT:/PlaceHolderSounds/JS-haunted house 2 creaks-groans clip.wav"
+        "%STORYBOARD_ASSET_SOURCE_ROOT%/PlaceHolderSounds/JS-haunted house 2 creaks-groans clip.wav"
       ],
       "references": [
         "project:global:sound:96b705b8-9a31-421d-bc98-2055fe62e7e4"
@@ -461,7 +448,7 @@
       "assetRefSemantics": "runtimeExportRelative",
       "exportedPath": "assets/sounds/_shared/eb629edb732ae0edf11ffe5a32adc6dc04b19ebf0c04361fc4f34ccee4b3d91c__DRAG_Short.wav",
       "sourcePaths": [
-        "ASSETROOT:/PlaceHolderSounds/DRAG_Short.wav"
+        "%STORYBOARD_ASSET_SOURCE_ROOT%/PlaceHolderSounds/DRAG_Short.wav"
       ],
       "references": [
         "project:global:sound:c3355709-4e91-40bd-a08a-8db858878ac9"
@@ -474,12 +461,14 @@
       "assetRefSemantics": "runtimeExportRelative",
       "exportedPath": "assets/sounds/_shared/facde6a1cbc750b9cce15a89716b66329acd1dd742dff5946411610a98c27f91__FIGHT BELL.wav",
       "sourcePaths": [
-        "ASSETROOT:/PlaceHolderSounds/FIGHT BELL.wav"
+        "%STORYBOARD_ASSET_SOURCE_ROOT%/PlaceHolderSounds/FIGHT BELL.wav"
       ],
       "references": [
         "project:global:sound:711c34fb-1f62-497a-8f30-7ff767b1fec2"
       ]
     }
   ],
-  "unresolvedSources": []
+  "unresolvedSources": [
+    "C:\\work\\GIT\\Storyboard\\docs\\graphic-artist-how-tos\\RoomImages\\assets\\final\\Atrium.png"
+  ]
 }
