@@ -31,12 +31,17 @@
     "isMovableDefaultValue": true,
     "footprintWidthCells": 1,
     "footprintHeightCells": 7,
+    "footprintCornerStyle": "sharp",
     "footprintOrientation": "East",
     "headingDirection": "North",
     "objectHeightUnits": 1,
     "stackScaleStepOverride": 0.1,
     "minStackScaleOverride": 0.5
   },
+  "lightOcclusion": {
+    "strength": 1
+  },
+  "isPointLightEnabledDefaultValue": true,
   "isInventoriable": false,
   "inventoryPointsDefaultValue": 1,
   "isContainer": false,
@@ -54,6 +59,7 @@
   "quantity": 1,
   "quantifiablePlacementDistributionMode": "GroupedStack",
   "isRuntimeMaterialized": false,
+  "isPointLightEnabled": true,
   "Id": "dcc57386-6deb-4444-8d47-61f0774a0bc9",
   "name": "Door_E",
   "nameInGame": "Supply Closet",

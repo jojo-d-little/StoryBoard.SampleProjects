@@ -23,12 +23,17 @@
     "stackGroup": 1,
     "footprintWidthCells": 2,
     "footprintHeightCells": 2,
+    "footprintCornerStyle": "rounded",
     "footprintOrientation": "North",
     "headingDirection": "North",
     "objectHeightUnits": 1,
     "stackScaleStepOverride": 0.1,
     "minStackScaleOverride": 0.5
   },
+  "lightOcclusion": {
+    "strength": 1
+  },
+  "isPointLightEnabledDefaultValue": true,
   "isInventoriable": true,
   "inventoryPointsDefaultValue": 1,
   "isContainer": false,
@@ -46,6 +51,7 @@
   "quantity": 1,
   "quantifiablePlacementDistributionMode": "GroupedStack",
   "isRuntimeMaterialized": false,
+  "isPointLightEnabled": true,
   "Id": "bb53c4f2-0cee-48af-94b8-719bc40312ae",
   "name": "RedCrate",
   "nameInGame": "Red Crate",

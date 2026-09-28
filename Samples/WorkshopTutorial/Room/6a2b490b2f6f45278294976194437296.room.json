@@ -3,6 +3,10 @@
   "description": "",
   "roomImageCanvasWidth": 800,
   "roomImageCanvasHeight": 600,
+  "ambientLighting": {
+    "ambient": 0.7,
+    "ambientColor": "#FFFFFF"
+  },
   "roomDisplayMode": "Overlay",
   "producerNotes": "",
   "images": [

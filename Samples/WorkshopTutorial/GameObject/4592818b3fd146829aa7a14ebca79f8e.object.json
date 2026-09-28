@@ -39,6 +39,7 @@
     "stackGroup": 1,
     "footprintWidthCells": 2,
     "footprintHeightCells": 2,
+    "footprintCornerStyle": "sharp",
     "footprintOrientation": "N",
     "headingDirection": "N",
     "objectHeightUnits": 1,
@@ -46,6 +47,23 @@
     "stackScaleStepOverride": 0.1,
     "minStackScaleOverride": 0.5
   },
+  "pointLight": {
+    "offsetXPx": 51,
+    "offsetYPx": 40,
+    "radiusPx": 399,
+    "motionMode": "flicker",
+    "color": "#F2D411",
+    "outerColor": "#FAEA80",
+    "gradientExponent": 4.01,
+    "intensityScale": 1.01,
+    "flickerAmount": 0.72,
+    "flickerHz": 14.33,
+    "flickerStyle": "flame"
+  },
+  "lightOcclusion": {
+    "strength": 0
+  },
+  "isPointLightEnabledDefaultValue": true,
   "isInventoriable": true,
   "inventoryPointsDefaultValue": 1,
   "isContainer": false,

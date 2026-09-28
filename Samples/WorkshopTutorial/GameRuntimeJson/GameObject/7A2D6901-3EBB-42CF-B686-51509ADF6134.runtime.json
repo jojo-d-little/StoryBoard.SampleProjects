@@ -32,12 +32,17 @@
     "isMovableDefaultValue": true,
     "footprintWidthCells": 1,
     "footprintHeightCells": 7,
+    "footprintCornerStyle": "sharp",
     "footprintOrientation": "East",
     "headingDirection": "North",
     "objectHeightUnits": 1,
     "stackScaleStepOverride": 0.1,
     "minStackScaleOverride": 0.5
   },
+  "lightOcclusion": {
+    "strength": 1
+  },
+  "isPointLightEnabledDefaultValue": true,
   "isInventoriable": false,
   "inventoryPointsDefaultValue": 1,
   "isContainer": false,
@@ -71,6 +76,7 @@
     "useUnlockKeysForLockOperation": true
   },
   "isRuntimeMaterialized": false,
+  "isPointLightEnabled": true,
   "Id": "7a2d6901-3ebb-42cf-b686-51509adf6134",
   "name": "Door_W",
   "nameInGame": "Exit Hall Door",

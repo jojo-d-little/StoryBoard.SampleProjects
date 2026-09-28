@@ -1,6 +1,6 @@
 {
-  "objectType": "WhiteCrate",
-  "positionX": 120,
+  "objectType": "RoomLight",
+  "positionX": 400,
   "positionY": 280,
   "includeInPreview": true,
   "linkActionsToBaseObject": false,
@@ -9,33 +9,37 @@
   "imageVariants": [
     {
       "variantName": "default",
-      "fullImagePath": "%STORYBOARD_ASSET_SOURCE_ROOT%/PlaceHolderImages/WhiteCrate.png",
+      "fullImagePath": "",
       "imageLocalAlignmentRotationDegrees": 0,
       "imageLocalAlignmentOffsetX": 0,
       "imageLocalAlignmentOffsetY": 0,
-      "imageScale": 0.17,
+      "imageScale": 1,
       "isDefault": true
     }
   ],
   "imageRotationDegrees": 0,
-  "renderZOrder": 1008,
+  "renderZOrder": 1009,
   "appearance": {
-    "spatialType": "SolidObject",
-    "isMovable": true,
+    "spatialType": "PassiveObject",
     "isMovableDefaultValue": true,
-    "stackGroup": 1,
-    "footprintWidthCells": 2,
-    "footprintHeightCells": 2,
-    "footprintCornerStyle": "rounded",
+    "footprintWidthCells": 1,
+    "footprintHeightCells": 1,
+    "footprintCornerStyle": "sharp",
     "footprintOrientation": "N",
     "headingDirection": "N",
     "objectHeightUnits": 1,
+    "heightInRoom": 3,
     "isHeightPinned": false,
     "stackScaleStepOverride": 0.1,
     "minStackScaleOverride": 0.5
   },
-  "lightOcclusion": {
-    "strength": 1
+  "pointLight": {
+    "offsetXPx": 20,
+    "offsetYPx": 22,
+    "radiusPx": 800,
+    "motionMode": "static",
+    "color": "#F7F798",
+    "outerColor": "#F5F5D5"
   },
   "isPointLightEnabledDefaultValue": true,
   "isInventoriable": false,
@@ -55,23 +59,15 @@
   "quantity": 1,
   "quantifiablePlacementDistributionMode": "GroupedStack",
   "containedObjects": [],
-  "id": "0ed80c32-043a-4b12-a2bb-2164e55ec278",
-  "name": "WhiteCrate",
-  "nameInGame": "White Crate",
+  "id": "8758a5ed-b717-4239-9ffc-e1973279feea",
+  "name": "RoomLight",
+  "nameInGame": "RoomLight",
   "hideEmptyConfiguration": false,
   "validationErrors": [],
   "ignoredValidationRuleIds": [],
   "scopeKind": "GameObject",
   "procedureIds": [],
-  "gameProperties": [
-    {
-      "id": "1b410508-3434-4fe9-b56e-44fb580fdd9e",
-      "name": "isMovable",
-      "defaultValue": "true",
-      "valueRestriction": "TrueFalse",
-      "lifetime": "Singleton"
-    }
-  ],
+  "gameProperties": [],
   "additionalVerbs": [],
   "additionalDirectionals": [],
   "additionalDirectionalTraversalMappings": [],

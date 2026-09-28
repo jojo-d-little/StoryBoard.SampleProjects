@@ -20,6 +20,20 @@
   "imageRotationDegrees": 0,
   "renderZOrder": 1001,
   "authoredRenderOrder": 1001,
+  "appearance": {
+    "spatialType": "SolidObject",
+    "isMovableDefaultValue": true,
+    "footprintWidthCells": 1,
+    "footprintHeightCells": 1,
+    "footprintCornerStyle": "rounded",
+    "footprintOrientation": "North",
+    "headingDirection": "North",
+    "objectHeightUnits": 1
+  },
+  "lightOcclusion": {
+    "strength": 1
+  },
+  "isPointLightEnabledDefaultValue": true,
   "isInventoriable": false,
   "inventoryPointsDefaultValue": 1,
   "isContainer": false,
@@ -37,6 +51,7 @@
   "quantity": 1,
   "quantifiablePlacementDistributionMode": "GroupedStack",
   "isRuntimeMaterialized": false,
+  "isPointLightEnabled": true,
   "Id": "15ff3436-167a-4746-b6da-43107870437a",
   "name": "Door_N",
   "nameInGame": "Door_N",

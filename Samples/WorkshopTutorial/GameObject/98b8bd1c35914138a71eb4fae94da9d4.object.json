@@ -11,8 +11,8 @@
       "variantName": "default",
       "fullImagePath": "%STORYBOARD_ASSET_SOURCE_ROOT%/PlaceHolderImages/small-brown-backpack.png",
       "imageLocalAlignmentRotationDegrees": 0,
-      "imageLocalAlignmentOffsetX": 10,
-      "imageLocalAlignmentOffsetY": 1,
+      "imageLocalAlignmentOffsetX": -11,
+      "imageLocalAlignmentOffsetY": -21,
       "imageScale": 0.57,
       "isDefault": true
     }
@@ -25,8 +25,9 @@
     "isMovable": true,
     "isMovableDefaultValue": true,
     "stackGroup": 2,
-    "footprintWidthCells": 3,
-    "footprintHeightCells": 3,
+    "footprintWidthCells": 2,
+    "footprintHeightCells": 2,
+    "footprintCornerStyle": "rounded",
     "footprintOrientation": "N",
     "headingDirection": "N",
     "objectHeightUnits": 2,
@@ -34,6 +35,10 @@
     "stackScaleStepOverride": 0.2,
     "minStackScaleOverride": 0.33
   },
+  "lightOcclusion": {
+    "strength": 1
+  },
+  "isPointLightEnabledDefaultValue": true,
   "isInventoriable": true,
   "inventoryPointsDefaultValue": 1,
   "isContainer": true,

@@ -4,11 +4,10 @@
   "imageVariants": [
     {
       "variantName": "default",
-      "fullImagePath": "assets/images/_shared/66870102be361c9e40f31d21408c9e3c8b49dd3b8eba86123432b3ff987011e3__crowbar.png",
-      "imageLocalAlignmentRotationDegrees": 30,
-      "imageLocalAlignmentOffsetX": -18,
-      "imageLocalAlignmentOffsetY": 25,
-      "imageScale": 0.75,
+      "fullImagePath": "assets/images/_shared/6ac326d5bd0e27a816a58de281035f652ef3d3ebfa08d46014294d523cd28deb__crowbar.png",
+      "imageLocalAlignmentOffsetX": 3,
+      "imageLocalAlignmentOffsetY": -1,
+      "imageScale": 0.73,
       "isDefault": true,
       "imagePathSemantics": "runtimeExportRelative"
     }
@@ -23,12 +22,17 @@
     "stackGroup": 1,
     "footprintWidthCells": 1,
     "footprintHeightCells": 3,
+    "footprintCornerStyle": "rounded",
     "footprintOrientation": "North",
     "headingDirection": "North",
     "objectHeightUnits": 1,
     "stackScaleStepOverride": 0.2,
     "minStackScaleOverride": 0.33
   },
+  "lightOcclusion": {
+    "strength": 1
+  },
+  "isPointLightEnabledDefaultValue": true,
   "isInventoriable": true,
   "inventoryPointsDefaultValue": 5,
   "isContainer": false,
@@ -46,6 +50,7 @@
   "quantity": 1,
   "quantifiablePlacementDistributionMode": "GroupedStack",
   "isRuntimeMaterialized": false,
+  "isPointLightEnabled": true,
   "Id": "0825ab80-71bb-4aa9-9028-8c931f00ffd4",
   "name": "Crowbar",
   "nameInGame": "Crowbar",
@@ -61,7 +66,7 @@
     {
       "id": "00000000-0000-0000-0000-000000000000",
       "name": "imageScale",
-      "defaultValue": "0.75",
+      "defaultValue": "0.73",
       "valueRestriction": "Numeric",
       "lifetime": "Singleton"
     },

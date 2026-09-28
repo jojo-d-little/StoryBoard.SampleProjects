@@ -4,8 +4,73 @@
     "countryName": "Starter Country",
     "areaName": "Starter Area",
     "selectedWorkspaceTabIndex": 0,
-    "lastSelectedNodePath": "project:global/planet:25b8e27c3d404a91a710c9f4f70f6d01/country:56a02162fb1844e5b206d4f2fd88241e/area:f5b97d334ba242ff8a41129326fd8fc6/room:698a46f473bc4e9e8333e2ed555417fc/room-objects:698a46f473bc4e9e8333e2ed555417fc/object:BlueCrate#7/settings:object",
+    "lastSelectedNodePath": "project:global/planet:25b8e27c3d404a91a710c9f4f70f6d01/country:56a02162fb1844e5b206d4f2fd88241e/area:f5b97d334ba242ff8a41129326fd8fc6/room:698a46f473bc4e9e8333e2ed555417fc/room-objects:698a46f473bc4e9e8333e2ed555417fc/object:8758a5edb71742399ffce1973279feea/settings:object",
     "lastTreeValidationActionId": "validate-whole-project",
-    "lastTreeValidationCompletionMode": "FullReport"
+    "lastTreeValidationCompletionMode": "FullReport",
+    "quickAccessRecentSectionRatio": 0.17164455987385213,
+    "recentHierarchyNodes": [
+      {
+        "nodePath": "project:global/planet:25b8e27c3d404a91a710c9f4f70f6d01/country:56a02162fb1844e5b206d4f2fd88241e/area:f5b97d334ba242ff8a41129326fd8fc6/room:698a46f473bc4e9e8333e2ed555417fc/room-objects:698a46f473bc4e9e8333e2ed555417fc/object:8758a5edb71742399ffce1973279feea/settings:object",
+        "displayName": "Game Object Settings",
+        "nodeTypeLabel": "Game Object Settings"
+      },
+      {
+        "nodePath": "project:global/planet:25b8e27c3d404a91a710c9f4f70f6d01/country:56a02162fb1844e5b206d4f2fd88241e/area:f5b97d334ba242ff8a41129326fd8fc6/room:698a46f473bc4e9e8333e2ed555417fc/room-objects:698a46f473bc4e9e8333e2ed555417fc/object:8758a5edb71742399ffce1973279feea",
+        "displayName": "RoomLight",
+        "nodeTypeLabel": "Game Object"
+      },
+      {
+        "nodePath": "project:global/planet:25b8e27c3d404a91a710c9f4f70f6d01/country:56a02162fb1844e5b206d4f2fd88241e/area:f5b97d334ba242ff8a41129326fd8fc6/room:698a46f473bc4e9e8333e2ed555417fc/room-objects:698a46f473bc4e9e8333e2ed555417fc",
+        "displayName": "Game Objects",
+        "nodeTypeLabel": "Game Objects"
+      },
+      {
+        "nodePath": "project:global/planet:25b8e27c3d404a91a710c9f4f70f6d01/country:56a02162fb1844e5b206d4f2fd88241e/area:f5b97d334ba242ff8a41129326fd8fc6/room:698a46f473bc4e9e8333e2ed555417fc/room-objects:698a46f473bc4e9e8333e2ed555417fc/object:0ed80c32043a4b12a2bb2164e55ec278/settings:object",
+        "displayName": "Game Object Settings",
+        "nodeTypeLabel": "Game Object Settings"
+      },
+      {
+        "nodePath": "project:global/planet:25b8e27c3d404a91a710c9f4f70f6d01/country:56a02162fb1844e5b206d4f2fd88241e/area:f5b97d334ba242ff8a41129326fd8fc6/room:698a46f473bc4e9e8333e2ed555417fc/room-objects:698a46f473bc4e9e8333e2ed555417fc/object:de2715a629de4aa3a4a7fc470cadecc1/settings:object",
+        "displayName": "Game Object Settings",
+        "nodeTypeLabel": "Game Object Settings"
+      },
+      {
+        "nodePath": "project:global/planet:25b8e27c3d404a91a710c9f4f70f6d01/country:56a02162fb1844e5b206d4f2fd88241e/area:f5b97d334ba242ff8a41129326fd8fc6/room:698a46f473bc4e9e8333e2ed555417fc/room-objects:698a46f473bc4e9e8333e2ed555417fc/object:a408591b08aa45fca3969b9477cead5e",
+        "displayName": "GreenCrate",
+        "nodeTypeLabel": "Game Object"
+      },
+      {
+        "nodePath": "project:global/planet:25b8e27c3d404a91a710c9f4f70f6d01/country:56a02162fb1844e5b206d4f2fd88241e/area:f5b97d334ba242ff8a41129326fd8fc6/room:698a46f473bc4e9e8333e2ed555417fc/room-objects:698a46f473bc4e9e8333e2ed555417fc/object:a408591b08aa45fca3969b9477cead5e/settings:object",
+        "displayName": "Game Object Settings",
+        "nodeTypeLabel": "Game Object Settings"
+      },
+      {
+        "nodePath": "project:global/planet:25b8e27c3d404a91a710c9f4f70f6d01/country:56a02162fb1844e5b206d4f2fd88241e/area:f5b97d334ba242ff8a41129326fd8fc6/room:698a46f473bc4e9e8333e2ed555417fc/room-objects:698a46f473bc4e9e8333e2ed555417fc/object:bb53c4f20cee48af94b8719bc40312ae",
+        "displayName": "RedCrate",
+        "nodeTypeLabel": "Game Object"
+      },
+      {
+        "nodePath": "project:global/planet:25b8e27c3d404a91a710c9f4f70f6d01/country:56a02162fb1844e5b206d4f2fd88241e/area:f5b97d334ba242ff8a41129326fd8fc6/room:698a46f473bc4e9e8333e2ed555417fc/room-objects:698a46f473bc4e9e8333e2ed555417fc/object:bb53c4f20cee48af94b8719bc40312ae/settings:object",
+        "displayName": "Game Object Settings",
+        "nodeTypeLabel": "Game Object Settings"
+      },
+      {
+        "nodePath": "project:global/planet:25b8e27c3d404a91a710c9f4f70f6d01/country:56a02162fb1844e5b206d4f2fd88241e/area:f5b97d334ba242ff8a41129326fd8fc6/room:698a46f473bc4e9e8333e2ed555417fc",
+        "displayName": "Atrium",
+        "nodeTypeLabel": "Room"
+      }
+    ],
+    "hierarchyBookmarks": [
+      {
+        "nodePath": "project:global/planet:25b8e27c3d404a91a710c9f4f70f6d01/country:56a02162fb1844e5b206d4f2fd88241e/area:f5b97d334ba242ff8a41129326fd8fc6/room:698a46f473bc4e9e8333e2ed555417fc",
+        "displayName": "Atrium",
+        "nodeTypeLabel": "Room"
+      },
+      {
+        "nodePath": "project:global/phases:books/phase:43d2c4e0c4d14cc289699ea32f476a0f/phase:17910b21bf3644759dfc95ccd6088a4f/phase:ab7d111946544d9ba2902f750fe9e3cb",
+        "displayName": "Page Five",
+        "nodeTypeLabel": "Page"
+      }
+    ]
   }
 }

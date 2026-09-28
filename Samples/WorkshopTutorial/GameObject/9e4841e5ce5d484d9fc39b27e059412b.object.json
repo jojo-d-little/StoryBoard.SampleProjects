@@ -35,11 +35,16 @@
     "isMovableDefaultValue": true,
     "footprintWidthCells": 6,
     "footprintHeightCells": 1,
+    "footprintCornerStyle": "sharp",
     "footprintOrientation": "N",
     "headingDirection": "N",
     "objectHeightUnits": 1,
     "isHeightPinned": false
   },
+  "lightOcclusion": {
+    "strength": 1
+  },
+  "isPointLightEnabledDefaultValue": true,
   "isInventoriable": false,
   "inventoryPointsDefaultValue": 1,
   "isContainer": false,

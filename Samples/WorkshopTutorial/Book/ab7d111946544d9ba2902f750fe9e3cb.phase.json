@@ -7,6 +7,11 @@
   "prologue": "Looking for the right place to use our new key",
   "parentPhaseId": "17910b21-bf36-4475-9dfc-95ccd6088a4f",
   "childPhaseIds": [],
+  "phaseAmbientOverlay": {
+    "ambientScale": 0.8,
+    "color": "#B4D7E7",
+    "colorMode": "Override"
+  },
   "id": "ab7d1119-4654-4d9b-a290-2f750fe9e3cb",
   "name": "",
   "nameInGame": "",

@@ -30,6 +30,7 @@
     "stackGroup": 1,
     "footprintWidthCells": 2,
     "footprintHeightCells": 2,
+    "footprintCornerStyle": "rounded",
     "footprintOrientation": "N",
     "headingDirection": "N",
     "objectHeightUnits": 1,
@@ -37,6 +38,10 @@
     "stackScaleStepOverride": 0.1,
     "minStackScaleOverride": 0.5
   },
+  "lightOcclusion": {
+    "strength": 1
+  },
+  "isPointLightEnabledDefaultValue": true,
   "isInventoriable": true,
   "inventoryPointsDefaultValue": 10,
   "isContainer": false,

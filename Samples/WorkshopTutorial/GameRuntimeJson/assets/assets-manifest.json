@@ -163,11 +163,11 @@
       ]
     },
     {
-      "hash": "66870102be361c9e40f31d21408c9e3c8b49dd3b8eba86123432b3ff987011e3",
-      "sha256": "66870102be361c9e40f31d21408c9e3c8b49dd3b8eba86123432b3ff987011e3",
-      "sizeBytes": 7209,
+      "hash": "6ac326d5bd0e27a816a58de281035f652ef3d3ebfa08d46014294d523cd28deb",
+      "sha256": "6ac326d5bd0e27a816a58de281035f652ef3d3ebfa08d46014294d523cd28deb",
+      "sizeBytes": 6656,
       "imagePathSemantics": "runtimeExportRelative",
-      "exportedPath": "assets/images/_shared/66870102be361c9e40f31d21408c9e3c8b49dd3b8eba86123432b3ff987011e3__crowbar.png",
+      "exportedPath": "assets/images/_shared/6ac326d5bd0e27a816a58de281035f652ef3d3ebfa08d46014294d523cd28deb__crowbar.png",
       "sourcePaths": [
         "%STORYBOARD_ASSET_SOURCE_ROOT%/PlaceHolderImages/crowbar.png"
       ],

@@ -28,10 +28,15 @@
     "isMovableDefaultValue": true,
     "footprintWidthCells": 6,
     "footprintHeightCells": 1,
+    "footprintCornerStyle": "sharp",
     "footprintOrientation": "North",
     "headingDirection": "North",
     "objectHeightUnits": 1
   },
+  "lightOcclusion": {
+    "strength": 1
+  },
+  "isPointLightEnabledDefaultValue": true,
   "isInventoriable": false,
   "inventoryPointsDefaultValue": 1,
   "isContainer": false,
@@ -65,6 +70,7 @@
     "useUnlockKeysForLockOperation": true
   },
   "isRuntimeMaterialized": false,
+  "isPointLightEnabled": true,
   "Id": "5980b99e-ec8b-4a67-95fd-80ff5b66998b",
   "name": "Door_S",
   "nameInGame": "Door_S",

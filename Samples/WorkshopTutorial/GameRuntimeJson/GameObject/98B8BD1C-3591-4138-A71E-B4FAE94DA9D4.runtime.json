@@ -5,8 +5,8 @@
     {
       "variantName": "default",
       "fullImagePath": "assets/images/_shared/87f084dcdc4e9ea360a6608d881e8622a059e74768e322a3eaf4115eeb70a6b9__small-brown-backpack.png",
-      "imageLocalAlignmentOffsetX": 10,
-      "imageLocalAlignmentOffsetY": 1,
+      "imageLocalAlignmentOffsetX": -11,
+      "imageLocalAlignmentOffsetY": -21,
       "imageScale": 0.57,
       "isDefault": true,
       "imagePathSemantics": "runtimeExportRelative"
@@ -20,14 +20,19 @@
     "isMovable": true,
     "isMovableDefaultValue": true,
     "stackGroup": 2,
-    "footprintWidthCells": 3,
-    "footprintHeightCells": 3,
+    "footprintWidthCells": 2,
+    "footprintHeightCells": 2,
+    "footprintCornerStyle": "rounded",
     "footprintOrientation": "North",
     "headingDirection": "North",
     "objectHeightUnits": 2,
     "stackScaleStepOverride": 0.2,
     "minStackScaleOverride": 0.33
   },
+  "lightOcclusion": {
+    "strength": 1
+  },
+  "isPointLightEnabledDefaultValue": true,
   "isInventoriable": true,
   "inventoryPointsDefaultValue": 1,
   "isContainer": true,
@@ -45,6 +50,7 @@
   "quantity": 1,
   "quantifiablePlacementDistributionMode": "GroupedStack",
   "isRuntimeMaterialized": false,
+  "isPointLightEnabled": true,
   "Id": "98b8bd1c-3591-4138-a71e-b4fae94da9d4",
   "name": "Backpack",
   "nameInGame": "Backpack",

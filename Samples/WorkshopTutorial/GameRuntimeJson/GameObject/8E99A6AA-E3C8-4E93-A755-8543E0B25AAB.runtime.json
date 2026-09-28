@@ -20,10 +20,15 @@
     "stackGroup": 2,
     "footprintWidthCells": 3,
     "footprintHeightCells": 2,
+    "footprintCornerStyle": "sharp",
     "footprintOrientation": "North",
     "headingDirection": "North",
     "objectHeightUnits": 1
   },
+  "lightOcclusion": {
+    "strength": 1
+  },
+  "isPointLightEnabledDefaultValue": true,
   "isInventoriable": false,
   "inventoryPointsDefaultValue": 1,
   "isContainer": false,
@@ -41,6 +46,7 @@
   "quantity": 1,
   "quantifiablePlacementDistributionMode": "GroupedStack",
   "isRuntimeMaterialized": false,
+  "isPointLightEnabled": true,
   "Id": "8e99a6aa-e3c8-4e93-a755-8543e0b25aab",
   "name": "Anvil",
   "nameInGame": "Anvil",

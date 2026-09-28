@@ -10,10 +10,10 @@
     {
       "variantName": "default",
       "fullImagePath": "%STORYBOARD_ASSET_SOURCE_ROOT%/PlaceHolderImages/crowbar.png",
-      "imageLocalAlignmentRotationDegrees": 30,
-      "imageLocalAlignmentOffsetX": -18,
-      "imageLocalAlignmentOffsetY": 25,
-      "imageScale": 0.75,
+      "imageLocalAlignmentRotationDegrees": 0,
+      "imageLocalAlignmentOffsetX": 3,
+      "imageLocalAlignmentOffsetY": -1,
+      "imageScale": 0.73,
       "isDefault": true
     }
   ],
@@ -27,6 +27,7 @@
     "stackGroup": 1,
     "footprintWidthCells": 1,
     "footprintHeightCells": 3,
+    "footprintCornerStyle": "rounded",
     "footprintOrientation": "N",
     "headingDirection": "N",
     "objectHeightUnits": 1,
@@ -34,6 +35,10 @@
     "stackScaleStepOverride": 0.2,
     "minStackScaleOverride": 0.33
   },
+  "lightOcclusion": {
+    "strength": 1
+  },
+  "isPointLightEnabledDefaultValue": true,
   "isInventoriable": true,
   "inventoryPointsDefaultValue": 5,
   "isContainer": false,

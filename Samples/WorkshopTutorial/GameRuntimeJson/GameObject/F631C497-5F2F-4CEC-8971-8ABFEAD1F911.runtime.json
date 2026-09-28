@@ -11,6 +11,20 @@
     }
   ],
   "imageRotationDegrees": 0,
+  "appearance": {
+    "spatialType": "SolidObject",
+    "isMovableDefaultValue": true,
+    "footprintWidthCells": 1,
+    "footprintHeightCells": 1,
+    "footprintCornerStyle": "rounded",
+    "footprintOrientation": "North",
+    "headingDirection": "North",
+    "objectHeightUnits": 1
+  },
+  "lightOcclusion": {
+    "strength": 1
+  },
+  "isPointLightEnabledDefaultValue": true,
   "isInventoriable": false,
   "inventoryPointsDefaultValue": 1,
   "isContainer": true,
@@ -28,6 +42,7 @@
   "quantity": 1,
   "quantifiablePlacementDistributionMode": "GroupedStack",
   "isRuntimeMaterialized": false,
+  "isPointLightEnabled": true,
   "Id": "f631c497-5f2f-4cec-8971-8abfead1f911",
   "name": "Player",
   "nameInGame": "Your Stuff",

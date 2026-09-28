@@ -19,10 +19,15 @@
     "stackGroup": 1,
     "footprintWidthCells": 6,
     "footprintHeightCells": 4,
+    "footprintCornerStyle": "sharp",
     "footprintOrientation": "North",
     "headingDirection": "North",
     "objectHeightUnits": 1
   },
+  "lightOcclusion": {
+    "strength": 1
+  },
+  "isPointLightEnabledDefaultValue": true,
   "isInventoriable": false,
   "inventoryPointsDefaultValue": 1,
   "isContainer": false,
@@ -40,6 +45,7 @@
   "quantity": 1,
   "quantifiablePlacementDistributionMode": "GroupedStack",
   "isRuntimeMaterialized": false,
+  "isPointLightEnabled": true,
   "Id": "ba71190a-49f8-4289-92e6-4df8715144e9",
   "name": "Workbench",
   "nameInGame": "Workbench",

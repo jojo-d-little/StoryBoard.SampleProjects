@@ -2,6 +2,10 @@
   "description": "",
   "roomImageCanvasWidth": 800,
   "roomImageCanvasHeight": 600,
+  "ambientLighting": {
+    "ambient": 0.7,
+    "ambientColor": "#F7EDCB"
+  },
   "roomDisplayMode": "Overlay",
   "images": [
     {
@@ -134,6 +138,7 @@
     "0ed80c32-043a-4b12-a2bb-2164e55ec278",
     "5980b99e-ec8b-4a67-95fd-80ff5b66998b",
     "7a2d6901-3ebb-42cf-b686-51509adf6134",
+    "8758a5ed-b717-4239-9ffc-e1973279feea",
     "a408591b-08aa-45fc-a396-9b9477cead5e",
     "bb53c4f2-0cee-48af-94b8-719bc40312ae",
     "d1f9944a-6985-4cb3-a659-dc3b2253a57a",

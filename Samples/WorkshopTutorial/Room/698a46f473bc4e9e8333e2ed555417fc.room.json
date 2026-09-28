@@ -3,6 +3,10 @@
   "description": "",
   "roomImageCanvasWidth": 800,
   "roomImageCanvasHeight": 600,
+  "ambientLighting": {
+    "ambient": 0.7,
+    "ambientColor": "#F7EDCB"
+  },
   "roomDisplayMode": "Overlay",
   "producerNotes": "",
   "images": [
@@ -125,6 +129,7 @@
   "ignoredValidationRuleIds": [],
   "scopeKind": "Room",
   "gameObjectIds": [
+    "8758a5ed-b717-4239-9ffc-e1973279feea",
     "0ed80c32-043a-4b12-a2bb-2164e55ec278",
     "d1f9944a-6985-4cb3-a659-dc3b2253a57a",
     "dcc57386-6deb-4444-8d47-61f0774a0bc9",

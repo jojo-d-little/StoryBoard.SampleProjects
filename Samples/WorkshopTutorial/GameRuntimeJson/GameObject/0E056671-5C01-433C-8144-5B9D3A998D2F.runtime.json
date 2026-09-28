@@ -20,10 +20,15 @@
     "stackGroup": 2,
     "footprintWidthCells": 2,
     "footprintHeightCells": 2,
+    "footprintCornerStyle": "sharp",
     "footprintOrientation": "North",
     "headingDirection": "North",
     "objectHeightUnits": 1
   },
+  "lightOcclusion": {
+    "strength": 1
+  },
+  "isPointLightEnabledDefaultValue": true,
   "isInventoriable": true,
   "inventoryPointsDefaultValue": 1,
   "isContainer": false,
@@ -41,6 +46,7 @@
   "quantity": 1,
   "quantifiablePlacementDistributionMode": "GroupedStack",
   "isRuntimeMaterialized": false,
+  "isPointLightEnabled": true,
   "Id": "0e056671-5c01-433c-8144-5b9d3a998d2f",
   "name": "Hammer",
   "nameInGame": "Hammer",

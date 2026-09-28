@@ -24,12 +24,17 @@
     "stackGroup": 1,
     "footprintWidthCells": 2,
     "footprintHeightCells": 2,
+    "footprintCornerStyle": "rounded",
     "footprintOrientation": "North",
     "headingDirection": "North",
     "objectHeightUnits": 1,
     "stackScaleStepOverride": 0.1,
     "minStackScaleOverride": 0.5
   },
+  "lightOcclusion": {
+    "strength": 1
+  },
+  "isPointLightEnabledDefaultValue": true,
   "isInventoriable": true,
   "inventoryPointsDefaultValue": 10,
   "isContainer": false,
@@ -47,6 +52,7 @@
   "quantity": 1,
   "quantifiablePlacementDistributionMode": "GroupedStack",
   "isRuntimeMaterialized": false,
+  "isPointLightEnabled": true,
   "Id": "a408591b-08aa-45fc-a396-9b9477cead5e",
   "name": "GreenCrate",
   "nameInGame": "Green Crate",
