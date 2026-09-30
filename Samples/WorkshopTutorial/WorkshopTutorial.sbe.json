@@ -27,6 +27,10 @@
     "flickerHz": 10,
     "flickerStyle": "flame"
   },
+  "defaultRoomAmbientLighting": {
+    "ambient": 0.8,
+    "ambientColor": "#FFFFFF"
+  },
   "stackScaleStepDefault": 0.1,
   "minStackScaleDefault": 0.5,
   "simulatorReplayFilePath": "",

@@ -38,6 +38,7 @@
     "offsetYPx": 22,
     "radiusPx": 800,
     "motionMode": "static",
+    "useInstancePhaseShifting": false,
     "color": "#F7F798",
     "outerColor": "#F5F5D5"
   },

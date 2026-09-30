@@ -47,6 +47,7 @@
     "offsetYPx": 40,
     "radiusPx": 399,
     "motionMode": "flicker",
+    "useInstancePhaseShifting": false,
     "color": "#F2D411",
     "outerColor": "#FAEA80",
     "gradientExponent": 4.01,
