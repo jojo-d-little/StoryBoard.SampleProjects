@@ -1,11 +1,1 @@
-{
-  "uiState": {
-    "planetName": "",
-    "countryName": "",
-    "areaName": "",
-    "selectedWorkspaceTabIndex": 0,
-    "lastSelectedNodePath": "project:global/scoped-directionals:Global",
-    "lastTreeValidationActionId": "validate-whole-project",
-    "lastTreeValidationCompletionMode": "FullReport"
-  }
-}
+{"uiState":{"planetName":"Earth","countryName":"UK","areaName":"Birmingham-Hotel","selectedWorkspaceTabIndex":0,"lastSelectedNodePath":"project:global/planet:5f0b8a2e3cb34a108c171b6cb64d1001/country:5f0b8a2e3cb34a108c171b6cb64d1002/area:5f0b8a2e3cb34a108c171b6cb64d1003/room:0fc05c99f4fe4304b650f232b9eca7c5/group:constructs","lastTreeValidationActionId":"validate-whole-project","lastTreeValidationCompletionMode":"FullReport","quickAccessRecentSectionRatio":0.5,"recentHierarchyNodes":[{"nodePath":"project:global/planet:5f0b8a2e3cb34a108c171b6cb64d1001/country:5f0b8a2e3cb34a108c171b6cb64d1002/area:5f0b8a2e3cb34a108c171b6cb64d1003/room:0fc05c99f4fe4304b650f232b9eca7c5/group:constructs","displayName":"Constructs","nodeTypeLabel":"Constructs"},{"nodePath":"project:global/planet:5f0b8a2e3cb34a108c171b6cb64d1001/country:5f0b8a2e3cb34a108c171b6cb64d1002/area:5f0b8a2e3cb34a108c171b6cb64d1003/room:0fc05c99f4fe4304b650f232b9eca7c5","displayName":"OpeningRoom","nodeTypeLabel":"Room"}],"hierarchyBookmarks":[]}}

@@ -1,5 +1,15 @@
 {
   "schemaVersion": "1.0",
+  "categories": [
+    { "category": "Movement", "objectCueEligible": true },
+    { "category": "Appearance", "objectCueEligible": true },
+    { "category": "Disappearance", "objectCueEligible": true },
+    { "category": "Text", "objectCueEligible": false },
+    { "category": "RoomTransition", "objectCueEligible": false },
+    { "category": "StyledPointEffect", "objectCueEligible": true },
+    { "category": "Custom", "objectCueEligible": true },
+    { "category": "Lighting", "objectCueEligible": true }
+  ],
   "effects": [
     {
       "category": "Movement",
@@ -81,12 +91,25 @@
       }
     },
     {
+      "category": "RoomTransition",
+      "effectKey": "room.transition.fade.blackoutswap.medium",
+      "displayName": "Room Transition Fade - Blackout Swap (Medium)",
+      "roomTransitionPresentation": {
+        "mode": "BlackoutSwapFade"
+      },
+      "movementHint": "Medium",
+      "movementInterpolation": {
+        "frameCount": 14,
+        "secondsPerFrame": 0.1
+      }
+    },
+    {
       "category": "Appearance",
       "effectKey": "appearance.selection.outline.cyan",
       "displayName": "Selection Outline - Cyan",
       "appearanceOutlineStyle": {
         "outlineColorHex": "#22D3EE",
-        "outlineThickness": 2,
+        "outlineThickness": 5,
         "pulseMs": 350
       }
     },
@@ -121,67 +144,469 @@
       }
     },
     {
-      "category": "Text",
-      "effectKey": "text.hudoverlay.fadein.auto.2500",
-      "displayName": "Text HUD Overlay Fade In (5s)",
-      "textPresentation": {
-        "where": "HudOverlay",
-        "how": "FadeIn",
-        "durationMs": 5000
+      "category": "Appearance",
+      "effectKey": "shake.slowgrind",
+      "displayName": "Object Shake - Slow Grind",
+      "shakeStyle": {
+        "horizontalDisplacementPx": 5,
+        "verticalDisplacementPx": 3,
+        "speedHz": 0.5
+      }
+    },
+    {
+      "category": "Appearance",
+      "effectKey": "shake.small.quick",
+      "displayName": "Object Shake - Small and Quick",
+      "shakeStyle": {
+        "horizontalDisplacementPx": 3,
+        "verticalDisplacementPx": 2,
+        "speedHz": 14
+      }
+    },
+    {
+      "category": "Appearance",
+      "effectKey": "shake.large.slow",
+      "displayName": "Object Shake - Large and Slow",
+      "shakeStyle": {
+        "horizontalDisplacementPx": 20,
+        "verticalDisplacementPx": 14,
+        "speedHz": 3.5
       }
     },{
-      "category": "Text",
-      "effectKey": "text.hudoverlay.fadein.manual.dismiss",
-      "displayName": "Text HUD Overlay Fade In (No Duration)",
-      "textPresentation": {
-        "where": "HudOverlay",
-        "how": "FadeIn"
+      "category": "Appearance",
+      "effectKey": "shake.large.fast",
+      "displayName": "Object Shake - Large and Fast",
+      "shakeStyle": {
+        "horizontalDisplacementPx": 20,
+        "verticalDisplacementPx": 14,
+        "speedHz": 14
+      }
+    },
+    {
+      "category": "Appearance",
+      "effectKey": "scale.grow.medium",
+      "displayName": "Object Scale Up - Medium",
+      "scaleStyle": {
+        "targetScaleMultiplier": 1.5,
+        "transitionDurationMs": 300
+      }
+    },
+    {
+      "category": "Appearance",
+      "effectKey": "scale.grow.large",
+      "displayName": "Object Scale Up - Large",
+      "scaleStyle": {
+        "targetScaleMultiplier": 2.5,
+        "transitionDurationMs": 600
+      }
+    },
+    {
+      "category": "Appearance",
+      "effectKey": "scale.shrink.medium",
+      "displayName": "Object Scale Down - Medium",
+      "scaleStyle": {
+        "targetScaleMultiplier": 0.5,
+        "transitionDurationMs": 300
+      }
+    },
+    {
+      "category": "Appearance",
+      "effectKey": "scale.shrink.slow.deep",
+      "displayName": "Object Scale Down - Slow and Deep",
+      "scaleStyle": {
+        "targetScaleMultiplier": 0.5,
+        "transitionDurationMs": 5000
+      }
+    },
+    {
+      "category": "Appearance",
+      "effectKey": "scale.grow.slow.deep",
+      "displayName": "Object Scale Up - Slow and Deep",
+      "scaleStyle": {
+        "targetScaleMultiplier": 1.5,
+        "transitionDurationMs": 5000
+      }
+    },
+    {
+      "category": "Appearance",
+      "effectKey": "appearance.selection.silhouette.cyan",
+      "displayName": "Silhouette Pulse - Cyan",
+      "fallbackEffectKey": "appearance.selection.outline.cyan",
+      "appearanceSilhouetteStyle": {
+        "sourceToSilhouette": {
+          "imageToSilhouetteMask": {
+            "policy": "binary",
+            "cutoff": 0.5
+          }
+        },
+        "animation": {
+          "pulseMs": 2000
+        },
+       "passes": [
+        {
+          "name": "core",
+          "blendMode": "normal",
+          "colorStops": ["#4cf5c8","#34ebd8"],
+          "scaleStops": [1.05],
+          "alphaStops": [0.95]
+        },
+        {
+          "name": "halo",
+          "blendMode": "neon",
+          "colorStops": ["#34ebd8", "#4cf5c8"],
+          "scaleStops": [1.08, 1.12],
+          "alphaStops": [0.25, 0.55]
+        }
+       ]
+      }
+    },
+    {
+      "category": "Appearance",
+      "effectKey": "appearance.selection.silhouette.amber",
+      "displayName": "Silhouette - Amber",
+      "fallbackEffectKey": "appearance.selection.outline.amber",
+      "appearanceSilhouetteStyle": {
+        "sourceToSilhouette": {
+          "imageToSilhouetteMask": {
+            "policy": "soft",
+            "cutoff": 0
+          }
+        },
+        "animation": {
+          "pulseMs": 350
+        },
+        "passes": [
+          {
+            "name": "main",
+            "blendMode": "normal",
+            "colorStops": [
+              "#F59E0B"
+            ],
+            "scaleStops": [
+              1.1
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "category": "StyledPointEffect",
+      "effectKey": "waypoint.point.place.pulse.medium",
+      "displayName": "Waypoint Point Placement Pulse (Medium)",
+      "styledPointEffect": {
+        "coreLayers": [
+          {
+            "name": "outer-core",
+            "blendMode": "normal",
+            "colorStops": ["#22D3EE", "#A5F3FC", "#22D3EE"],
+            "alphaStops": [0.3, 0.18, 0.3],
+            "radiusStops": [10, 15, 10],
+            "radiusScale": 1
+          },
+          {
+            "name": "inner-core",
+            "blendMode": "normal",
+            "colorStops": ["#22D3EE", "#A5F3FC", "#22D3EE"],
+            "alphaStops": [0.95, 0.55, 0.95],
+            "radiusStops": [10, 15, 10],
+            "radiusScale": 0.55
+          }
+        ],
+        "orbitLayer": {
+          "enabled": true,
+          "style": "spinner",
+          "blendMode": "normal",
+          "spinner": {
+            "colorStops": ["#22D3EE", "#A5F3FC", "#22D3EE"],
+            "alphaStops": [0.75, 0.4, 0.75],
+            "densityStops": [5, 9, 5],
+            "radiusScaleBase": 1.35,
+            "radiusScaleStep": 0.2,
+            "radiusScaleBands": 3,
+            "sparkRadiusScale": 0.09,
+            "angularSpeedScale": 1,
+            "baseRadiusScale": 1,
+            "alphaScale": 1
+          }
+        },
+        "pulseMs": 900,
+        "lifecycle": {
+          "clearPolicy": "timebased",
+          "lifetimeMs": 10000,
+          "cooldownMs": 1200
+        }
+      }
+    },
+    {
+      "category": "StyledPointEffect",
+      "effectKey": "waypoint.point.place.rings.medium",
+      "displayName": "Waypoint Point Placement Rings (Medium)",
+      "styledPointEffect": {
+        "coreLayers": [
+          {
+            "name": "outer-core",
+            "blendMode": "normal",
+            "colorStops": ["#22D3EE", "#CFFAFE", "#22D3EE"],
+            "alphaStops": [0.34, 0.2, 0.34],
+            "radiusStops": [3, 5, 3],
+            "radiusScale": 1
+          },
+          {
+            "name": "inner-core",
+            "blendMode": "normal",
+            "colorStops": ["#22D3EE", "#E0F2FE", "#22D3EE"],
+            "alphaStops": [0.92, 0.6, 0.92],
+            "radiusStops": [2, 4, 2],
+            "radiusScale": 1
+          }
+        ],
+        "orbitLayer": {
+          "enabled": true,
+          "style": "ring-pulse",
+          "blendMode": "add",
+          "ringPulse": {
+            "colorStops": ["#22D3EE", "#A5F3FC", "#ECFEFF"],
+            "alphaStops": [0.9, 0.45, 0.08],
+            "ringCount": 3,
+            "ringSpacingScale": 0.1,
+            "radialGrowthStops": [0.7, 1.2, 1.8],
+            "ringThicknessPx": 3,
+            "phaseOffsetStep": 0.2,
+            "baseRadiusScale": 1,
+            "alphaScale": 0.8
+          }
+        },
+        "pulseMs": 1000,
+        "lifecycle": {
+          "clearPolicy": "timebased",
+          "lifetimeMs": 10000,
+          "cooldownMs": 1200
+        }
+      }
+    },
+    {
+      "category": "StyledPointEffect",
+      "effectKey": "appearance.point.rings.medium",
+      "displayName": "Appearance Point Rings Medium",
+      "styledPointEffect": {
+        "coreLayers": [
+          {
+            "name": "outer-core",
+            "blendMode": "normal",
+            "colorStops": ["#22D3EE", "#CFFAFE", "#22D3EE"],
+            "alphaStops": [0.34, 0.2, 0.34],
+            "radiusStops": [3, 5, 3],
+            "radiusScale": 1
+          },
+          {
+            "name": "inner-core",
+            "blendMode": "normal",
+            "colorStops": ["#22D3EE", "#E0F2FE", "#22D3EE"],
+            "alphaStops": [0.92, 0.6, 0.92],
+            "radiusStops": [2, 4, 2],
+            "radiusScale": 1
+          }
+        ],
+        "orbitLayer": {
+          "enabled": true,
+          "style": "ring-pulse",
+          "blendMode": "add",
+          "ringPulse": {
+            "colorStops": ["#22D3EE", "#A5F3FC", "#ECFEFF"],
+            "alphaStops": [0.9, 0.45, 0.08],
+            "ringCount": 3,
+            "ringSpacingScale": 0.1,
+            "radialGrowthStops": [0.7, 1.2, 1.8],
+            "ringThicknessPx": 3,
+            "phaseOffsetStep": 0.2,
+            "baseRadiusScale": 1,
+            "alphaScale": 0.8
+          }
+        },
+        "pulseMs": 1000,
+        "lifecycle": {
+          "clearPolicy": "manual-removal"
+        }
+      }
+    },
+    {
+      "category": "StyledPointEffect",
+      "effectKey": "appearance.point.pulse.medium",
+      "displayName": "Appearance Point Pulse Medium",
+      "styledPointEffect": {
+        "coreLayers": [
+          {
+            "name": "outer-core",
+            "blendMode": "normal",
+            "colorStops": ["#22D3EE", "#A5F3FC", "#22D3EE"],
+            "alphaStops": [0.3, 0.18, 0.3],
+            "radiusStops": [10, 15, 10],
+            "radiusScale": 1
+          },
+          {
+            "name": "inner-core",
+            "blendMode": "normal",
+            "colorStops": ["#22D3EE", "#A5F3FC", "#22D3EE"],
+            "alphaStops": [0.95, 0.55, 0.95],
+            "radiusStops": [10, 15, 10],
+            "radiusScale": 0.55
+          }
+        ],
+        "orbitLayer": {
+          "enabled": true,
+          "style": "spinner",
+          "blendMode": "normal",
+          "spinner": {
+            "colorStops": ["#22D3EE", "#A5F3FC", "#22D3EE"],
+            "alphaStops": [0.75, 0.4, 0.75],
+            "densityStops": [5, 9, 5],
+            "radiusScaleBase": 1.35,
+            "radiusScaleStep": 0.2,
+            "radiusScaleBands": 3,
+            "sparkRadiusScale": 0.09,
+            "angularSpeedScale": 1,
+            "baseRadiusScale": 1,
+            "alphaScale": 1
+          }
+        },
+        "pulseMs": 900,
+        "lifecycle": {
+          "clearPolicy": "manual-removal"
+        }
       }
     },
     {
       "category": "Text",
-      "effectKey": "text.hudoverlay.toast.auto.1500",
-      "displayName": "Text HUD Overlay Toast (1.5s)",
+      "effectKey": "text.hudoverlay.fadein.auto.6000",
+      "displayName": "HUD Fade In (6s)",
       "textPresentation": {
-        "where": "HudOverlay",
-        "how": "Toast",
-        "durationMs": 1500
+        "where": "HudEdgeCard",
+        "how": "FadeIn",
+        "dismissMode": "Auto",
+        "displayDurationMs": 6000,
+        "motionInMs": 2000,
+        "motionOutMs": 2000
+      }
+    },
+    {
+      "category": "Text",
+      "effectKey": "text.hudoverlay.fadein.manual.dismiss",
+      "displayName": "HUD Fade In (Manual Dismiss)",
+      "textPresentation": {
+        "where": "HudEdgeCard",
+        "how": "FadeIn",
+        "dismissMode": "Manual"
+      }
+    },
+    {
+      "category": "Text",
+      "effectKey": "text.hudoverlay.titlesplash.manualdismiss",
+      "displayName": "HUD Fullscreen Title Splash",
+      "textPresentation": {
+        "where": "HudFullscreen",
+        "how": "Appear",
+        "dismissMode": "Auto",
+        "displayDurationMs": 6000,
+        "panelOpacity": 0.5,
+        "panelBorderThicknessPx": 0,
+        "titleFontSizePx": 24,
+        "bodyFontSizePx": 18,
+        "backdropOpacity": 1
       }
     },
     {
       "category": "Text",
       "effectKey": "text.hudoverlay.autoscroll.manualdismiss",
-      "displayName": "Text HUD Overlay Auto Scroll (Manual Dismiss)",
+      "displayName": "HUD Fullscreen Auto Scroll (Manual Dismiss)",
       "textPresentation": {
-        "where": "HudOverlay",
+        "where": "HudFullscreen",
         "how": "AutoScroll",
-        "durationMs": 0
+        "dismissMode": "Manual",
+        "displayDurationMs": 0,
+        "panelOpacity": 0.5,
+        "panelBorderThicknessPx": 1,
+        "titleFontSizePx": 24,
+        "bodyFontSizePx": 18,
+        "scrollSpeedPxPerSec": 25
       }
     },
+
     {
       "category": "Text",
       "effectKey": "text.hudoverlay.manualscroll.manualdismiss",
-      "displayName": "Text HUD Overlay Manual Scroll (Manual Dismiss)",
+      "displayName": "HUD Fullscreen Manual Scroll (Manual Dismiss)",
       "textPresentation": {
-        "where": "HudOverlay",
+        "where": "HudFullscreen",
         "how": "ManualScroll",
-        "durationMs": 0
+        "dismissMode": "Manual",
+        "displayDurationMs": 0,
+        "panelOpacity": 0.5,
+        "panelBorderThicknessPx": 1,
+        "titleFontSizePx": 24,
+        "bodyFontSizePx": 18
       }
     },
     {
-      "category": "Text",
-      "effectKey": "text.narrativedialog.archive",
-      "displayName": "Text Narrative Dialog Archive Entry",
-      "textPresentation": {
-        "where": "NarrativeDialog"
+      "category": "Appearance",
+      "effectKey": "appearance.overlay.lightning",
+      "displayName": "Lightning Pane Flash",
+      "appearanceColorOverlayTimelineStyle": {
+        "maskPolicy": "binaryThreshold",
+        "alphaThreshold": 0.5,
+        "blendMode": "add",
+        "timeline": {
+          "frames": [
+            { "atMs": 0, "color": "#D9F2FF", "strength": 0.0 },
+            { "atMs": 55, "color": "#f3f166", "strength": 0.95 },
+            { "atMs": 110, "color": "#05a1f0", "strength": 0.16 },
+            { "atMs": 165, "color": "#00ccff", "strength": 0.82 },
+            { "atMs": 260, "color": "#12a1e9", "strength": 0.08 },
+            { "atMs": 350, "color": "#FFFFFF", "strength": 0.82 },
+            { "atMs": 510, "color": "#0c95f0", "strength": 0.72 },
+            { "atMs": 680, "color": "#08dbf7", "strength": 0.45 },
+            { "atMs": 900, "color": "#19a4ee", "strength": 0.0 },
+            { "atMs": 1000, "color": "#D9F2FF", "strength": 0.0 },
+            { "atMs": 1055, "color": "#05a1f0", "strength": 0.16 },
+            { "atMs": 1110, "color": "#f3f166", "strength": 0.95 },
+            { "atMs": 1165, "color": "#00ccff", "strength": 0.72 },
+            { "atMs": 1260, "color": "#12a1e9", "strength": 0.08 },
+            { "atMs": 1350, "color": "#FFFFFF", "strength": 0.82 },
+            { "atMs": 1510, "color": "#0c95f0", "strength": 0.12 },
+            { "atMs": 1680, "color": "#08dbf7", "strength": 0.45 },
+            { "atMs": 1900, "color": "#19a4ee", "strength": 0.0 },
+            { "atMs": 2000, "color": "#D9F2FF", "strength": 0.0 }
+          ]
+        }
       }
     },
     {
-      "category": "Text",
-      "effectKey": "text.echo.message",
-      "displayName": "Text Echo Message",
-      "textPresentation": {
-        "where": "Echo"
+      "category": "Lighting",
+      "effectKey": "lighting.point-light.lightning.timeline",
+      "displayName": "Lightning Point Light Flicker",
+      "pointLightTimelineStyle": {
+        "timeline": {
+          "frames": [
+            { "atMs": 0, "enabled": true, "intensity": 0.5, "color": "#7dd5f8", "radius": 220 },
+            { "atMs": 55, "enabled": true, "intensity": 0.15, "color": "#D9F2FF", "radius": 220 },
+            { "atMs": 105, "enabled": false, "intensity": 0.0 },
+            { "atMs": 145, "enabled": true, "intensity": 1.1, "color": "#69ddf1", "radius": 250 },
+            { "atMs": 245, "enabled": true, "intensity": 0.25 },
+            { "atMs": 340, "enabled": true, "intensity": 0.9, "color": "#628fa7", "radius": 240 },
+            { "atMs": 500, "enabled": true, "intensity": 0.4 },
+            { "atMs": 675, "enabled": true, "intensity": 1.0 },
+            { "atMs": 900, "enabled": true, "intensity": 1.2 },
+            { "atMs": 1000, "enabled": true, "intensity": 0.5, "color": "#7dd5f8", "radius": 220 },
+            { "atMs": 1055, "enabled": false, "intensity": 0.0 },
+            { "atMs": 1105, "enabled": true, "intensity": 0.15, "color": "#D9F2FF", "radius": 220 },
+            { "atMs": 1145, "enabled": true, "intensity": 1.1, "color": "#69ddf1", "radius": 250 },
+            { "atMs": 1245, "enabled": true, "intensity": 0.25 },
+            { "atMs": 1340, "enabled": true, "intensity": 0.9, "color": "#628fa7", "radius": 240 },
+            { "atMs": 1500, "enabled": true, "intensity": 1.2 },
+            { "atMs": 1700, "enabled": true, "intensity": 0.4 },
+            { "atMs": 1900, "enabled": true, "intensity": 1.0 },
+            { "atMs": 2000, "enabled": true, "intensity": 0.5, "color": "#7dd5f8", "radius": 220 }
+          ]
+        }
       }
     }
   ]

@@ -1,4 +1,2 @@
 timestampUtc,severity,event,sourcePath,message
-"2026-09-01T22:23:33.9781892Z","Info","OpenProject","C:\work\HobbyStuff\storyboarding\Samples\Birmingham\Birmingham.sbe.json","Project load completed."
-"2026-09-01T22:23:33.9782700Z","Warning","VocabularyDefaultsInjected","C:\work\HobbyStuff\storyboarding\Samples\Birmingham\Birmingham.sbe.json","commandVerbs property was missing; default verbs were injected."
-"2026-09-01T22:23:33.9782718Z","Warning","VocabularyDefaultsInjected","C:\work\HobbyStuff\storyboarding\Samples\Birmingham\Birmingham.sbe.json","directionals property was missing; default directionals were injected."
+"2026-10-15T17:27:36.4105135Z","Info","OpenProject","C:\work\GIT\StoryBoard.SampleProjects\Samples\Birmingham\Birmingham.sbe.json","Project load completed."

@@ -1,10 +1,10 @@
-Validation report generated: 2026-09-01 18:24:42
+Validation report generated: 2026-10-15 13:28:09
 Project: Birmingham
 ExecutionKind: WholeProject
 RootScopePath: Global
 IncludeDescendants: True
 CandidateNodeCount: 88
-ExecutedRules: 56
+ExecutedRules: 71
 SkippedRules: 0
 StoppedEarly: False
 RemainingIssueCountAtStop: 0
