@@ -1,10 +1,10 @@
-Validation report generated: 2026-08-16 12:51:27
+Validation report generated: 2026-10-15 15:07:16
 Project: ObjectPlayLevel1
 ExecutionKind: WholeProject
 RootScopePath: Global
 IncludeDescendants: True
 CandidateNodeCount: 26
-ExecutedRules: 52
+ExecutedRules: 71
 SkippedRules: 0
 StoppedEarly: False
 RemainingIssueCountAtStop: 0

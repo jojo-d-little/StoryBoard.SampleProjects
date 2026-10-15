@@ -1,10 +1,10 @@
-Validation report generated: 2026-07-10 19:00:02
+Validation report generated: 2026-10-15 15:08:15
 Project: TraversalExamples
 ExecutionKind: WholeProject
 RootScopePath: Global
 IncludeDescendants: True
-CandidateNodeCount: 105
-ExecutedRules: 27
+CandidateNodeCount: 104
+ExecutedRules: 71
 SkippedRules: 0
 StoppedEarly: False
 RemainingIssueCountAtStop: 0
@@ -14,5 +14,31 @@ RemainingRuleCountAtStop: 0
 SkippedRuleId	SkipReason	SkipDetail
 
 RuleId	Severity	Path	Description	Hint
+TRV-SPAWN-001	Error	Global / New Planet / New Country / New Area / Room/CentralRoom[a7346ad562374f149b25b14bff6d91b8] / TraversalConnection[bd230f326116466e8fe599d1bcccf29b]	room is missing a spawn point for incoming traversal 'bd230f32-6116-466e-8fe5-99d1bcccf29b'.	Add a spawn point associated with this traversal connection.
+TRV-SPAWN-001	Error	Global / New Planet / New Country / New Area / Room/CentralRoom[a7346ad562374f149b25b14bff6d91b8] / TraversalConnection[8ce3960fc0454ee28c612857a1f4e113]	room is missing a spawn point for incoming traversal '8ce3960f-c045-4ee2-8c61-2857a1f4e113'.	Add a spawn point associated with this traversal connection.
+TRV-SPAWN-001	Error	Global / New Planet / New Country / New Area / Room/CentralRoom[a7346ad562374f149b25b14bff6d91b8] / TraversalConnection[ff794f0a76174ff1805457393a92dc46]	room is missing a spawn point for incoming traversal 'ff794f0a-7617-4ff1-8054-57393a92dc46'.	Add a spawn point associated with this traversal connection.
+TRV-SPAWN-001	Error	Global / New Planet / New Country / New Area / Room/CentralRoom[a7346ad562374f149b25b14bff6d91b8] / TraversalConnection[fe810f96153a42aab1c85f552e5236e9]	room is missing a spawn point for incoming traversal 'fe810f96-153a-42aa-b1c8-5f552e5236e9'.	Add a spawn point associated with this traversal connection.
+TRV-SPAWN-001	Error	Global / New Planet / New Country / New Area / Room/New Room 2[3810b493495b4cc3842adcd5978d062c] / TraversalConnection[8ce3960fc0454ee28c612857a1f4e113]	room is missing a spawn point for incoming traversal '8ce3960f-c045-4ee2-8c61-2857a1f4e113'.	Add a spawn point associated with this traversal connection.
+TRV-SPAWN-001	Error	Global / New Planet / New Country / New Area / Room/New Room 3[9c6b0bb91c644852884d551508c27e09] / TraversalConnection[fe810f96153a42aab1c85f552e5236e9]	room is missing a spawn point for incoming traversal 'fe810f96-153a-42aa-b1c8-5f552e5236e9'.	Add a spawn point associated with this traversal connection.
+TRV-SPAWN-001	Error	Global / New Planet / New Country / New Area / Room/New Room 4[bdbb96176d8f403892f1172145f34b77] / TraversalConnection[ff794f0a76174ff1805457393a92dc46]	room is missing a spawn point for incoming traversal 'ff794f0a-7617-4ff1-8054-57393a92dc46'.	Add a spawn point associated with this traversal connection.
+TRV-SPAWN-001	Error	Global / New Planet / New Country / New Area / Room/New Room 5[f184570f744c40b697efc657572ab274] / TraversalConnection[bd230f326116466e8fe599d1bcccf29b]	room is missing a spawn point for incoming traversal 'bd230f32-6116-466e-8fe5-99d1bcccf29b'.	Add a spawn point associated with this traversal connection.
 TRV-005	Warning	Global / Templates / StandardLockableDoor	openable door convention: door isOpen is not linked to anything via shared variable.	Link this door's isOpen to a shared variable used by traversal isPassable.
+OBJ-005	Warning	Global / New Planet / New Country / New Area / CentralRoom / Door_N	object 'Door_N' is included in room preview but has no configured default image path.	Assign a default image variant path or uncheck Include In Preview.
+OBJ-005	Warning	Global / New Planet / New Country / New Area / CentralRoom / Door_E	object 'Door_E' is included in room preview but has no configured default image path.	Assign a default image variant path or uncheck Include In Preview.
+OBJ-005	Warning	Global / New Planet / New Country / New Area / CentralRoom / Door_S	object 'Door_S' is included in room preview but has no configured default image path.	Assign a default image variant path or uncheck Include In Preview.
+OBJ-005	Warning	Global / New Planet / New Country / New Area / CentralRoom / Door_W	object 'Door_W' is included in room preview but has no configured default image path.	Assign a default image variant path or uncheck Include In Preview.
+OBJ-005	Warning	Global / New Planet / New Country / New Area / CentralRoom / Door_NW	object 'Door_NW' is included in room preview but has no configured default image path.	Assign a default image variant path or uncheck Include In Preview.
+OBJ-005	Warning	Global / New Planet / New Country / New Area / CentralRoom / Door_N_2	object 'Door_N_2' is included in room preview but has no configured default image path.	Assign a default image variant path or uncheck Include In Preview.
+OBJ-005	Warning	Global / New Planet / New Country / New Area / CentralRoom / Door_E_2	object 'Door_E_2' is included in room preview but has no configured default image path.	Assign a default image variant path or uncheck Include In Preview.
+OBJ-005	Warning	Global / New Planet / New Country / New Area / CentralRoom / Door_S_2	object 'Door_S_2' is included in room preview but has no configured default image path.	Assign a default image variant path or uncheck Include In Preview.
+OBJ-005	Warning	Global / New Planet / New Country / New Area / CentralRoom / Door_W_2	object 'Door_W_2' is included in room preview but has no configured default image path.	Assign a default image variant path or uncheck Include In Preview.
+OBJ-005	Warning	Global / New Planet / New Country / New Area / New Room 2 / Door_W	object 'Door_W' is included in room preview but has no configured default image path.	Assign a default image variant path or uncheck Include In Preview.
+OBJ-005	Warning	Global / New Planet / New Country / New Area / New Room 2 / Door_W_2	object 'Door_W_2' is included in room preview but has no configured default image path.	Assign a default image variant path or uncheck Include In Preview.
+OBJ-005	Warning	Global / New Planet / New Country / New Area / New Room 3 / Door_E	object 'Door_E' is included in room preview but has no configured default image path.	Assign a default image variant path or uncheck Include In Preview.
+OBJ-005	Warning	Global / New Planet / New Country / New Area / New Room 3 / Door_E_2	object 'Door_E_2' is included in room preview but has no configured default image path.	Assign a default image variant path or uncheck Include In Preview.
+OBJ-005	Warning	Global / New Planet / New Country / New Area / New Room 4 / Door_N	object 'Door_N' is included in room preview but has no configured default image path.	Assign a default image variant path or uncheck Include In Preview.
+OBJ-005	Warning	Global / New Planet / New Country / New Area / New Room 4 / Door_N_2	object 'Door_N_2' is included in room preview but has no configured default image path.	Assign a default image variant path or uncheck Include In Preview.
+OBJ-005	Warning	Global / New Planet / New Country / New Area / New Room 5 / Door_S	object 'Door_S' is included in room preview but has no configured default image path.	Assign a default image variant path or uncheck Include In Preview.
+OBJ-005	Warning	Global / New Planet / New Country / New Area / New Room 5 / Door_S_2	object 'Door_S_2' is included in room preview but has no configured default image path.	Assign a default image variant path or uncheck Include In Preview.
+OBJ-005	Warning	Global / New Planet / New Country / New Area / New Room 6 / Door_SE	object 'Door_SE' is included in room preview but has no configured default image path.	Assign a default image variant path or uncheck Include In Preview.
 SCR-003	Error	Global / New Planet / New Country / New Area / CentralRoom / Action:close_centralroom	Action 'close_centralroom' OutcomeMessageMap[Success]: Line 1: IF block is missing ENDIF.	
