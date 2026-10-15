@@ -1,0 +1,174 @@
+# SoundTests walkthrough draft
+# Start in Center. Format: exact command text | pause after command in ms
+
+# Rain source selection: same sound from two emitters; source should switch as listener moves
+sound_r2_n_on | 1200
+sound_r2_w_on | 1200
+face north | 400
+go west | 900
+go west | 1500
+face west | 800
+go east | 900
+go east | 1200
+go north | 900
+go north | 1500
+sound_r2_w_off | 300
+
+
+# In-room distance and pan: R2 N is 1200x800; rain emitter at (600,400)
+# Entered from the south at y=680; approach to y=440
+walk north | 300
+walk north | 300
+walk north | 300
+walk north | 300
+walk north | 300
+walk north | 500
+
+# Move away, then approach again
+walk south | 300
+walk south | 300
+walk south | 300
+walk south | 300
+walk south | 300
+walk south | 500
+walk north | 300
+walk north | 300
+walk north | 300
+walk north | 300
+walk north | 300
+walk north | 500
+
+# Shift sideways and turn to test left/right pan
+walk east | 300
+walk east | 300
+walk east | 300
+walk east | 300
+walk east | 500
+face north | 500
+face south | 500
+walk west | 300
+walk west | 300
+walk west | 300
+walk west | 300
+walk west | 300
+walk west | 300
+walk west | 300
+walk west | 300
+walk west | 300
+walk west | 500
+face north | 500
+face south | 500
+
+# Return near the emitter and stop the sound
+walk east | 300
+walk east | 300
+walk east | 300
+walk east | 300
+walk east | 500
+walk south | 300
+walk south | 300
+walk south | 300
+walk south | 300
+walk south | 300
+walk south | 500
+sound_r2_n_off | 300
+
+# Crowd sound: Center-to-source line crosses the open cell at (2,2)
+go south | 900
+go south | 900
+sound_r2_x1_y1_on | 1500
+face west | 800
+face east | 800
+go north | 900
+go north | 900
+go west | 900
+go west | 1500
+sound_r2_x1_y1_off | 300
+go east | 900
+go east | 900
+go south | 900
+go south | 1200
+
+# Outdoor rain into the indoor center: attenuation and pan change along the route
+sound_r3_x0_y0_on | 1500
+face north | 800
+face west | 800
+go north | 900
+go north | 900
+go north | 1200
+go west | 900
+go west | 900
+go west | 1500
+sound_r3_x0_y0_off | 300
+go east | 900
+go east | 900
+go east | 1200
+
+# Distant thunder: low dampening susceptibility across the north-south route
+sound_r3_n_on | 1500
+go south | 900
+go south | 900
+go south | 1500
+sound_r3_n_off | 300
+
+# Electrical arc: active out of room, inactive in its own room; check pan while approaching
+go north | 900
+go north | 900
+go north | 1200
+sound_r3_x5_y0_on | 1500
+face north | 800
+face east | 800
+face south | 800
+go east | 1200
+go east | 1500
+go west | 1200
+sound_r3_x5_y0_off | 300
+
+# Cave drip: compare adjacent outdoor room with emitter room
+go east | 900
+sound_r3_x6_y0_on | 1500
+go east | 1500
+go west | 1200
+sound_r3_x6_y0_off | 300
+
+# Ghost whisper: active in its room only, with high dampening susceptibility
+go south | 900
+go south | 900
+go south | 1200
+sound_r2_e_on | 1500
+go east | 1200
+go west | 900
+sound_r2_e_off | 300
+go west | 900
+go west | 1200
+
+# Hammer: in-room one-shot and replay after turning the emitter off
+sound_center_on | 1500
+sound_center_off | 300
+sound_center_on | 1500
+sound_center_off | 300
+
+# Metal cart one-shot in an outdoor room
+go west | 900
+go west | 900
+go west | 1200
+sound_r3_w_on | 1500
+sound_r3_w_off | 300
+
+# Metal door slam one-shot at the north-west edge
+go north | 900
+go north | 1200
+sound_r3_x0_y1_on | 1500
+sound_r3_x0_y1_off | 300
+go south | 900
+go south | 1200
+
+# Crickets repeat and pan check in an indoor room
+go east | 900
+go east | 900
+sound_r1_w_on | 23000
+face north | 800
+face east | 800
+face south | 800
+sound_r1_w_off | 300
+go east | 1200

@@ -1,10 +1,10 @@
-Validation report generated: 2026-09-27 19:39:13
+Validation report generated: 2026-10-15 11:04:19
 Project: WorkshopTutorial
 ExecutionKind: WholeProject
 RootScopePath: Global
 IncludeDescendants: True
-CandidateNodeCount: 106
-ExecutedRules: 60
+CandidateNodeCount: 111
+ExecutedRules: 71
 SkippedRules: 0
 StoppedEarly: False
 RemainingIssueCountAtStop: 0
@@ -14,4 +14,13 @@ RemainingRuleCountAtStop: 0
 SkippedRuleId	SkipReason	SkipDetail
 
 RuleId	Severity	Path	Description	Hint
-OBJ-005	Warning	Global / Starter Planet / Starter Country / Starter Area / Atrium / RoomLight	object 'RoomLight' is included in room preview but has no configured default image path.	Assign a default image variant path or uncheck Include In Preview.
+TRV-SPAWN-001	Error	Global / Starter Planet / Starter Country / Starter Area / Room/Atrium[698a46f473bc4e9e8333e2ed555417fc] / TraversalConnection[6466c71ad2c447a9a2f6a0d8ca9cb85e]	room is missing a spawn point for incoming traversal '6466c71a-d2c4-47a9-a2f6-a0d8ca9cb85e'.	Add a spawn point associated with this traversal connection.
+TRV-SPAWN-001	Error	Global / Starter Planet / Starter Country / Starter Area / Room/Atrium[698a46f473bc4e9e8333e2ed555417fc] / TraversalConnection[d65fd830dcb14d0bbbe19cb5b921b52d]	room is missing a spawn point for incoming traversal 'd65fd830-dcb1-4d0b-bbe1-9cb5b921b52d'.	Add a spawn point associated with this traversal connection.
+TRV-SPAWN-001	Error	Global / Starter Planet / Starter Country / Starter Area / Room/Atrium[698a46f473bc4e9e8333e2ed555417fc] / TraversalConnection[9956ab4e051b45479007f1479aef46f9]	room is missing a spawn point for incoming traversal '9956ab4e-051b-4547-9007-f1479aef46f9'.	Add a spawn point associated with this traversal connection.
+TRV-SPAWN-001	Error	Global / Starter Planet / Starter Country / Starter Area / Room/Atrium[698a46f473bc4e9e8333e2ed555417fc] / TraversalConnection[6ac68db298824a1c9642b97e0d2346f4]	room is missing a spawn point for incoming traversal '6ac68db2-9882-4a1c-9642-b97e0d2346f4'.	Add a spawn point associated with this traversal connection.
+TRV-SPAWN-001	Error	Global / Starter Planet / Starter Country / Starter Area / Room/Supply Closet[6a2b490b2f6f45278294976194437296] / TraversalConnection[d65fd830dcb14d0bbbe19cb5b921b52d]	room is missing a spawn point for incoming traversal 'd65fd830-dcb1-4d0b-bbe1-9cb5b921b52d'.	Add a spawn point associated with this traversal connection.
+TRV-SPAWN-001	Error	Global / Starter Planet / Starter Country / Starter Area / Room/Supply Closet[6a2b490b2f6f45278294976194437296] / TraversalConnection[c556505242a94fe4b05ac5a02dfd1474]	room is missing a spawn point for incoming traversal 'c5565052-42a9-4fe4-b05a-c5a02dfd1474'.	Add a spawn point associated with this traversal connection.
+TRV-SPAWN-001	Error	Global / Starter Planet / Starter Country / Starter Area / Room/Workshop[0f7b95eb27c9475290e9c749c51dd569] / TraversalConnection[6466c71ad2c447a9a2f6a0d8ca9cb85e]	room is missing a spawn point for incoming traversal '6466c71a-d2c4-47a9-a2f6-a0d8ca9cb85e'.	Add a spawn point associated with this traversal connection.
+TRV-SPAWN-001	Error	Global / Starter Planet / Starter Country / Starter Area / Room/Exit Hall[0996d450b8bf42b08efa4ed9753baed4] / TraversalConnection[6ac68db298824a1c9642b97e0d2346f4]	room is missing a spawn point for incoming traversal '6ac68db2-9882-4a1c-9642-b97e0d2346f4'.	Add a spawn point associated with this traversal connection.
+TRV-SPAWN-001	Error	Global / Starter Planet / Starter Country / Starter Area / Room/No Where[ad028f6a0e774f8abc5aae50ffb012e0] / TraversalConnection[9956ab4e051b45479007f1479aef46f9]	room is missing a spawn point for incoming traversal '9956ab4e-051b-4547-9007-f1479aef46f9'.	Add a spawn point associated with this traversal connection.
+TRV-SPAWN-001	Error	Global / Starter Planet / Starter Country / Starter Area / Room/UpStairs[beb7648a2b9f42a8b4c59a561334c826] / TraversalConnection[c556505242a94fe4b05ac5a02dfd1474]	room is missing a spawn point for incoming traversal 'c5565052-42a9-4fe4-b05a-c5a02dfd1474'.	Add a spawn point associated with this traversal connection.

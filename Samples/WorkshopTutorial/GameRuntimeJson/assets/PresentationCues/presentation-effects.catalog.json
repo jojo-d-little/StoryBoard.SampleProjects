@@ -1,5 +1,15 @@
 {
   "schemaVersion": "1.0",
+  "categories": [
+    { "category": "Movement", "objectCueEligible": true },
+    { "category": "Appearance", "objectCueEligible": true },
+    { "category": "Disappearance", "objectCueEligible": true },
+    { "category": "Text", "objectCueEligible": false },
+    { "category": "RoomTransition", "objectCueEligible": false },
+    { "category": "StyledPointEffect", "objectCueEligible": true },
+    { "category": "Custom", "objectCueEligible": true },
+    { "category": "Lighting", "objectCueEligible": true }
+  ],
   "effects": [
     {
       "category": "Movement",
@@ -131,6 +141,90 @@
         "outlineColorHex": "#EF4444",
         "outlineThickness": 2,
         "pulseMs": 350
+      }
+    },
+    {
+      "category": "Appearance",
+      "effectKey": "shake.slowgrind",
+      "displayName": "Object Shake - Slow Grind",
+      "shakeStyle": {
+        "horizontalDisplacementPx": 5,
+        "verticalDisplacementPx": 3,
+        "speedHz": 0.5
+      }
+    },
+    {
+      "category": "Appearance",
+      "effectKey": "shake.small.quick",
+      "displayName": "Object Shake - Small and Quick",
+      "shakeStyle": {
+        "horizontalDisplacementPx": 3,
+        "verticalDisplacementPx": 2,
+        "speedHz": 14
+      }
+    },
+    {
+      "category": "Appearance",
+      "effectKey": "shake.large.slow",
+      "displayName": "Object Shake - Large and Slow",
+      "shakeStyle": {
+        "horizontalDisplacementPx": 20,
+        "verticalDisplacementPx": 14,
+        "speedHz": 3.5
+      }
+    },{
+      "category": "Appearance",
+      "effectKey": "shake.large.fast",
+      "displayName": "Object Shake - Large and Fast",
+      "shakeStyle": {
+        "horizontalDisplacementPx": 20,
+        "verticalDisplacementPx": 14,
+        "speedHz": 14
+      }
+    },
+    {
+      "category": "Appearance",
+      "effectKey": "scale.grow.medium",
+      "displayName": "Object Scale Up - Medium",
+      "scaleStyle": {
+        "targetScaleMultiplier": 1.5,
+        "transitionDurationMs": 300
+      }
+    },
+    {
+      "category": "Appearance",
+      "effectKey": "scale.grow.large",
+      "displayName": "Object Scale Up - Large",
+      "scaleStyle": {
+        "targetScaleMultiplier": 2.5,
+        "transitionDurationMs": 600
+      }
+    },
+    {
+      "category": "Appearance",
+      "effectKey": "scale.shrink.medium",
+      "displayName": "Object Scale Down - Medium",
+      "scaleStyle": {
+        "targetScaleMultiplier": 0.5,
+        "transitionDurationMs": 300
+      }
+    },
+    {
+      "category": "Appearance",
+      "effectKey": "scale.shrink.slow.deep",
+      "displayName": "Object Scale Down - Slow and Deep",
+      "scaleStyle": {
+        "targetScaleMultiplier": 0.5,
+        "transitionDurationMs": 5000
+      }
+    },
+    {
+      "category": "Appearance",
+      "effectKey": "scale.grow.slow.deep",
+      "displayName": "Object Scale Up - Slow and Deep",
+      "scaleStyle": {
+        "targetScaleMultiplier": 1.5,
+        "transitionDurationMs": 5000
       }
     },
     {
@@ -291,6 +385,97 @@
       }
     },
     {
+      "category": "StyledPointEffect",
+      "effectKey": "appearance.point.rings.medium",
+      "displayName": "Appearance Point Rings Medium",
+      "styledPointEffect": {
+        "coreLayers": [
+          {
+            "name": "outer-core",
+            "blendMode": "normal",
+            "colorStops": ["#22D3EE", "#CFFAFE", "#22D3EE"],
+            "alphaStops": [0.34, 0.2, 0.34],
+            "radiusStops": [3, 5, 3],
+            "radiusScale": 1
+          },
+          {
+            "name": "inner-core",
+            "blendMode": "normal",
+            "colorStops": ["#22D3EE", "#E0F2FE", "#22D3EE"],
+            "alphaStops": [0.92, 0.6, 0.92],
+            "radiusStops": [2, 4, 2],
+            "radiusScale": 1
+          }
+        ],
+        "orbitLayer": {
+          "enabled": true,
+          "style": "ring-pulse",
+          "blendMode": "add",
+          "ringPulse": {
+            "colorStops": ["#22D3EE", "#A5F3FC", "#ECFEFF"],
+            "alphaStops": [0.9, 0.45, 0.08],
+            "ringCount": 3,
+            "ringSpacingScale": 0.1,
+            "radialGrowthStops": [0.7, 1.2, 1.8],
+            "ringThicknessPx": 3,
+            "phaseOffsetStep": 0.2,
+            "baseRadiusScale": 1,
+            "alphaScale": 0.8
+          }
+        },
+        "pulseMs": 1000,
+        "lifecycle": {
+          "clearPolicy": "manual-removal"
+        }
+      }
+    },
+    {
+      "category": "StyledPointEffect",
+      "effectKey": "appearance.point.pulse.medium",
+      "displayName": "Appearance Point Pulse Medium",
+      "styledPointEffect": {
+        "coreLayers": [
+          {
+            "name": "outer-core",
+            "blendMode": "normal",
+            "colorStops": ["#22D3EE", "#A5F3FC", "#22D3EE"],
+            "alphaStops": [0.3, 0.18, 0.3],
+            "radiusStops": [10, 15, 10],
+            "radiusScale": 1
+          },
+          {
+            "name": "inner-core",
+            "blendMode": "normal",
+            "colorStops": ["#22D3EE", "#A5F3FC", "#22D3EE"],
+            "alphaStops": [0.95, 0.55, 0.95],
+            "radiusStops": [10, 15, 10],
+            "radiusScale": 0.55
+          }
+        ],
+        "orbitLayer": {
+          "enabled": true,
+          "style": "spinner",
+          "blendMode": "normal",
+          "spinner": {
+            "colorStops": ["#22D3EE", "#A5F3FC", "#22D3EE"],
+            "alphaStops": [0.75, 0.4, 0.75],
+            "densityStops": [5, 9, 5],
+            "radiusScaleBase": 1.35,
+            "radiusScaleStep": 0.2,
+            "radiusScaleBands": 3,
+            "sparkRadiusScale": 0.09,
+            "angularSpeedScale": 1,
+            "baseRadiusScale": 1,
+            "alphaScale": 1
+          }
+        },
+        "pulseMs": 900,
+        "lifecycle": {
+          "clearPolicy": "manual-removal"
+        }
+      }
+    },
+    {
       "category": "Text",
       "effectKey": "text.hudoverlay.fadein.auto.6000",
       "displayName": "HUD Fade In (6s)",
@@ -359,6 +544,69 @@
         "panelBorderThicknessPx": 1,
         "titleFontSizePx": 24,
         "bodyFontSizePx": 18
+      }
+    },
+    {
+      "category": "Appearance",
+      "effectKey": "appearance.overlay.lightning",
+      "displayName": "Lightning Pane Flash",
+      "appearanceColorOverlayTimelineStyle": {
+        "maskPolicy": "binaryThreshold",
+        "alphaThreshold": 0.5,
+        "blendMode": "add",
+        "timeline": {
+          "frames": [
+            { "atMs": 0, "color": "#D9F2FF", "strength": 0.0 },
+            { "atMs": 55, "color": "#f3f166", "strength": 0.95 },
+            { "atMs": 110, "color": "#05a1f0", "strength": 0.16 },
+            { "atMs": 165, "color": "#00ccff", "strength": 0.82 },
+            { "atMs": 260, "color": "#12a1e9", "strength": 0.08 },
+            { "atMs": 350, "color": "#FFFFFF", "strength": 0.82 },
+            { "atMs": 510, "color": "#0c95f0", "strength": 0.72 },
+            { "atMs": 680, "color": "#08dbf7", "strength": 0.45 },
+            { "atMs": 900, "color": "#19a4ee", "strength": 0.0 },
+            { "atMs": 1000, "color": "#D9F2FF", "strength": 0.0 },
+            { "atMs": 1055, "color": "#05a1f0", "strength": 0.16 },
+            { "atMs": 1110, "color": "#f3f166", "strength": 0.95 },
+            { "atMs": 1165, "color": "#00ccff", "strength": 0.72 },
+            { "atMs": 1260, "color": "#12a1e9", "strength": 0.08 },
+            { "atMs": 1350, "color": "#FFFFFF", "strength": 0.82 },
+            { "atMs": 1510, "color": "#0c95f0", "strength": 0.12 },
+            { "atMs": 1680, "color": "#08dbf7", "strength": 0.45 },
+            { "atMs": 1900, "color": "#19a4ee", "strength": 0.0 },
+            { "atMs": 2000, "color": "#D9F2FF", "strength": 0.0 }
+          ]
+        }
+      }
+    },
+    {
+      "category": "Lighting",
+      "effectKey": "lighting.point-light.lightning.timeline",
+      "displayName": "Lightning Point Light Flicker",
+      "pointLightTimelineStyle": {
+        "timeline": {
+          "frames": [
+            { "atMs": 0, "enabled": true, "intensity": 0.5, "color": "#7dd5f8", "radius": 220 },
+            { "atMs": 55, "enabled": true, "intensity": 0.15, "color": "#D9F2FF", "radius": 220 },
+            { "atMs": 105, "enabled": false, "intensity": 0.0 },
+            { "atMs": 145, "enabled": true, "intensity": 1.1, "color": "#69ddf1", "radius": 250 },
+            { "atMs": 245, "enabled": true, "intensity": 0.25 },
+            { "atMs": 340, "enabled": true, "intensity": 0.9, "color": "#628fa7", "radius": 240 },
+            { "atMs": 500, "enabled": true, "intensity": 0.4 },
+            { "atMs": 675, "enabled": true, "intensity": 1.0 },
+            { "atMs": 900, "enabled": true, "intensity": 1.2 },
+            { "atMs": 1000, "enabled": true, "intensity": 0.5, "color": "#7dd5f8", "radius": 220 },
+            { "atMs": 1055, "enabled": false, "intensity": 0.0 },
+            { "atMs": 1105, "enabled": true, "intensity": 0.15, "color": "#D9F2FF", "radius": 220 },
+            { "atMs": 1145, "enabled": true, "intensity": 1.1, "color": "#69ddf1", "radius": 250 },
+            { "atMs": 1245, "enabled": true, "intensity": 0.25 },
+            { "atMs": 1340, "enabled": true, "intensity": 0.9, "color": "#628fa7", "radius": 240 },
+            { "atMs": 1500, "enabled": true, "intensity": 1.2 },
+            { "atMs": 1700, "enabled": true, "intensity": 0.4 },
+            { "atMs": 1900, "enabled": true, "intensity": 1.0 },
+            { "atMs": 2000, "enabled": true, "intensity": 0.5, "color": "#7dd5f8", "radius": 220 }
+          ]
+        }
       }
     }
   ]

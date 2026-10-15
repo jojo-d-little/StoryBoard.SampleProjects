@@ -1,0 +1,17 @@
+Validation report generated: 2026-10-15 10:04:28
+Project: SoundTests
+ExecutionKind: WholeProject
+RootScopePath: Global
+IncludeDescendants: True
+CandidateNodeCount: 143
+ExecutedRules: 72
+SkippedRules: 0
+StoppedEarly: False
+RemainingIssueCountAtStop: 0
+StopRuleId: (none)
+RemainingRuleCountAtStop: 0
+
+SkippedRuleId	SkipReason	SkipDetail
+
+RuleId	Severity	Path	Description	Hint
+LIGHT-001	Error	Global / Sound Test Planet / Sound Test Country / Sound Test Area / Center / Emitter_Center / LightOcclusion	light occlusion requires a solid object with a positive height and footprint.	Use a solid object with positive height/footprint values, or remove the light occlusion override.
