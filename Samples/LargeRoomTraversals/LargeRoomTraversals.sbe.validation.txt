@@ -1,0 +1,18 @@
+Validation report generated: 2026-10-16 18:19:30
+Project: LargeRoomTraversals
+ExecutionKind: WholeProject
+RootScopePath: Global
+IncludeDescendants: True
+CandidateNodeCount: 40
+ExecutedRules: 74
+SkippedRules: 0
+StoppedEarly: False
+RemainingIssueCountAtStop: 0
+StopRuleId: (none)
+RemainingRuleCountAtStop: 0
+
+SkippedRuleId	SkipReason	SkipDetail
+
+RuleId	Severity	Path	Description	Hint
+TRV-007	Warning	Global / New Planet / New Country / New Area / Room/TripleWide	room 'TripleWide' has multiple traversal targets for direction South: AreWeThereYet, DoubleWide. A bare direction needs a destination choice.	Use destination-qualified navigation to choose among these exits. Give destinations distinct names so players can identify them.
+TRV-007	Warning	Global / New Planet / New Country / New Area / Room/TheBigOne	room 'TheBigOne' has multiple traversal targets for direction West: DoubleWide, TripleWide. A bare direction needs a destination choice.	Use destination-qualified navigation to choose among these exits. Give destinations distinct names so players can identify them.
