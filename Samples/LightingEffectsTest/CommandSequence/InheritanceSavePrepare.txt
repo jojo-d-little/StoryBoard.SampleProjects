@@ -1,0 +1,14 @@
+# NEW game in Seasonal Shelter. Stop after this script and use the real Portal Save UI.
+phase_spring_night | 13000
+weather_none | 1000
+go north | 6500
+parts_hide | 1000
+inherit_show | 2500
+inherit_east | 6500
+inherit_south | 6500
+inherit_scale | 7500
+inherit_shake | 3500
+inherit_local_on | 2000
+inherit_highlight | 2500
+inherit_status | 5000
+# SAVE NOW. Parent anchor=(280,240); movement is settled. Do not invent a save command.

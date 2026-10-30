@@ -1,0 +1,3 @@
+# Packaged-default companion — updated 2026-10-26
+
+Runtime entry: GameRuntimeJson/LightingEffectsTest.sbr.runtime.json. Load as a separate fresh game through the existing Host runtime loading/registration path. It is a runtime export, not a second Designer source. The current FullWalkThru.txt passes 432 commands against it; image choices are cleared and other authoring data matches. Use ScopeAtmosphereImages.txt and BATCH_C_OBSERVATIONS.md for exact custom/default comparison and real Portal cache controls. No Host registration was changed. Lifecycle/persistence/visual acceptance remains open as in the main sample.

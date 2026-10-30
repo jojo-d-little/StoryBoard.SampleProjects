@@ -1,0 +1,14 @@
+# Run ONLY AFTER actual restore succeeds. Expected starting room: Lifecycle & Restore.
+# Observe BEFORE changing anything: beacon at footprint (560,240), size 2 and paired light;
+# smoke hidden; local fog enabled; Winter Evening, Snow, Heavy, southeast wind speed 100.
+weather_status | 13000
+go west | 13000
+# Wind & Clouds: cloud_2 enabled. Other layers retain their pre-save state.
+go west | 13000
+# Image & Object Effects: oval leaves enabled, custom art still resolves.
+go west | 3000
+go south | 13000
+# Stains: splatter footprint (240,240), patch hidden, spray inactive, streak unchanged.
+# No duplicate marks, no expectation of restoring random particle positions exactly.
+go north | 6500
+# End: Seasonal Shelter. Saved authoritative state remains; no reset is implied.

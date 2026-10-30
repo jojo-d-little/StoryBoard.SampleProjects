@@ -1,0 +1,137 @@
+# Batch C: custom art first use/revisit, environmental scope, atmospheric isolation/combination.
+# Start a NEW game in Seasonal Shelter. Exact command | observation pause milliseconds.
+# See BATCH_C_OBSERVATIONS.md for the companion packaged-default run and cache/discovery notes.
+phase_spring_day | 13000
+weather_none | 500
+sky_clear | 500
+intensity_moderate | 500
+wind_east | 500
+wind_speed_breeze | 13000
+scope_all_off | 500
+
+# IMAGE STATION FIRST: east from shelter; do this before visiting other candle/leaf fixtures.
+# Normal export: custom oval leaf + custom candle flame-tip; other candle slots stay packaged.
+# PackagedDefaults export: exactly the same recipes, values and route; no image overrides.
+go east | 13000
+image_candle_show | 13000
+image_leaves_on | 13000
+image_leaves_off | 13000
+image_candle_hide | 13000
+image_candle_show | 13000
+# Leave and revisit. Reuse loaded art without missing textures or changed instance tuning.
+go west | 6500
+go east | 13000
+image_leaves_on | 13000
+image_leaves_off | 13000
+go west | 6500
+
+# SCOPE: north through Composition (transit), west Grass (transit), north Environmental Scope.
+# Hold Spring Day / Clear / None / Moderate / east wind 40 throughout the scope comparisons.
+go north | 3000
+go west | 3000
+go north | 6500
+# OUTDOOR: outdoor ash + Both fog; indoor blue motes do not produce.
+scope_applicability_on | 13000
+go east | 13000
+# Fog & Motes is INDOOR: indoor blue motes + Both fog; outdoor ash does not produce.
+go west | 13000
+scope_applicability_off | 13000
+# Same name, complete replacement: Country gold fog replaces Global purple cloud.
+scope_country_on | 13000
+scope_country_off | 13000
+# Area motes replace Country fog, without inheriting fog controls.
+scope_area_on | 13000
+scope_area_off | 13000
+# Room replaces Area: outdoor station shows small green organic motes.
+scope_room_on | 13000
+go east | 13000
+# Indoor neighbor has no same-name replacement: Area drifting motes with size 2.
+go west | 13000
+scope_room_off | 13000
+# Explicit disabled room replacement suppresses otherwise enabled Area orange fog.
+scope_disabled_on | 13000
+go east | 13000
+# Here the Area orange fog appears, because there is no local disabled replacement.
+go west | 13000
+scope_disabled_off | 13000
+scope_all_off | 500
+
+# FOG/MOTES: east. Probe switches are off; inspect each local instance before combining.
+go east | 6500
+atmosphere_all_off | 13000
+fog_1_on | 13000
+fog_1_off | 13000
+fog_2_on | 13000
+fog_2_off | 13000
+motes_on | 13000
+motes_off | 13000
+organic_motes_on | 13000
+organic_motes_off | 13000
+atmosphere_all_on | 13000
+wind_south | 13000
+atmosphere_all_off | 13000
+wind_east | 500
+
+# LEAVES: north. Spring/Clear suppresses additional shared seasonal atmosphere.
+go north | 6500
+leaves_all_off | 13000
+leaves_oak_on | 13000
+leaves_oak_off | 13000
+leaves_maple_on | 13000
+leaves_maple_off | 13000
+leaves_oval_on | 13000
+leaves_oval_off | 13000
+leaves_mixed_on | 13000
+leaves_mixed_off | 13000
+leaves_all_on | 13000
+wind_speed_gale | 13000
+wind_calm | 13000
+leaves_all_off | 13000
+wind_east | 500
+wind_speed_breeze | 500
+
+# ASH/CINDERS: east through Storm (transit), east to Ash & Cinders.
+go east | 3000
+go east | 6500
+embers_all_off | 13000
+ash_on | 13000
+ash_off | 13000
+cinders_on | 13000
+cinders_off | 13000
+embers_all_on | 13000
+wind_south | 13000
+embers_all_off | 13000
+wind_east | 500
+wind_speed_breeze | 500
+
+# CLOUDS: south through Magic & Toxic and Fire Lab (transit), south to Wind & Clouds.
+go south | 3000
+go south | 3000
+go south | 6500
+clouds_all_off | 13000
+cloud_1_on | 13000
+cloud_1_off | 13000
+cloud_2_on | 13000
+cloud_2_off | 13000
+cloud_3_on | 13000
+cloud_3_off | 13000
+cloud_4_on | 13000
+cloud_4_off | 13000
+# Four independent instances: speed multipliers .5/.85/1.3/2 and offsets -30/-10/+15/+40.
+clouds_all_on | 13000
+wind_speed_gale | 13000
+wind_south | 13000
+wind_calm | 13000
+wind_east | 500
+wind_speed_breeze | 13000
+clouds_all_off | 13000
+
+# Late revisit: west to image station, then west to shelter.
+go west | 6500
+image_candle_show | 13000
+image_leaves_on | 13000
+image_leaves_off | 13000
+go west | 6500
+weather_status | 1000
+# End: Seasonal Shelter; Spring Day, Clear, no precipitation, Moderate, east wind 40.
+# Scope probes and all local atmosphere switches are off. STOP before lifecycle items 12-15.

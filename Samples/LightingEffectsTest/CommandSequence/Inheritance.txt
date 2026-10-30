@@ -1,0 +1,55 @@
+# Focused category inheritance walkthrough. Start a NEW game in Seasonal Shelter.
+# Exact command | observation pause in milliseconds. See INHERITANCE_COVERAGE.md.
+phase_spring_night | 13000
+weather_none | 1000
+sky_clear | 1000
+go north | 6500
+# LARGE CATEGORY INHERITANCE: isolate from the original small composition.
+parts_hide | 1500
+inherit_show | 2500
+inherit_help | 6000
+# White snaps; red/green/blue animate. Fixed control does not move.
+inherit_east | 6500
+inherit_south | 6500
+inherit_west | 6500
+inherit_north | 6500
+# Five-second 1.5x growth: only red/green inherit. Observe own light/emitter sources.
+inherit_scale | 7500
+inherit_scale_off | 6500
+# Large slow shake: only red inherits. Others remain steady.
+inherit_shake | 5000
+inherit_shake_off | 2500
+# Explicit cyan parent outline, then a separate danger outline on blue.
+inherit_highlight | 3500
+inherit_local_on | 3500
+inherit_highlight_off | 3500
+# Blue local outline survives parent removal; red inherited outline is gone.
+inherit_highlight | 3500
+inherit_local_off | 3500
+# Parent-derived cyan remains on blue after its independent danger outline is removed.
+inherit_highlight_off | 2000
+# ColorOverlay is a two-second flash; look immediately at parent/red/blue only.
+inherit_color | 3500
+inherit_color_off | 1000
+inherit_color | 3500
+inherit_color_off | 1000
+# Combined activation, moving pivot, and room revisit without clearing parent cues.
+inherit_scale | 7500
+inherit_shake | 3500
+inherit_highlight | 2500
+inherit_local_on | 2500
+inherit_east | 6500
+inherit_west | 6500
+go south | 4000
+go north | 6500
+inherit_status | 4000
+inherit_clear | 6500
+# All derived parent cues disappear; blue's independent outline survives.
+inherit_local_off | 2000
+inherit_scale | 7500
+inherit_scale_off | 6500
+inherit_hide | 2500
+parts_show | 2500
+# Original small composition is restored at its original anchor.
+
+go south | 4000

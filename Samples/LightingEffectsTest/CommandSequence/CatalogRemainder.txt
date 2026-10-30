@@ -1,0 +1,45 @@
+# Focused catalog remainder, starting/ending Seasonal Shelter. command | pause ms.
+phase_spring_day | 13000
+weather_none | 500
+sky_clear | 500
+wind_east | 500
+wind_speed_breeze | 13000
+# North Composition, north Fog & Motes, east Impacts & Debris.
+go north | 3000
+go north | 3000
+go east | 13000
+# Pipe steam and drip are continuous. The other markers use burst-only recipes.
+survey_pipe_steam_hide | 13000
+survey_leaking_drip_hide | 13000
+survey_pipe_steam_show | 13000
+survey_pipe_steam_hide | 13000
+survey_leaking_drip_show | 13000
+survey_pipe_steam_show | 13000
+# East Magic & Toxic; isolate three distinct appearances, then combine them.
+go east | 13000
+survey_insect_orbit_hide | 13000
+survey_magic_aura_hide | 13000
+survey_toxic_cloud_hide | 13000
+survey_insect_orbit_show | 13000
+survey_insect_orbit_hide | 13000
+survey_magic_aura_show | 13000
+survey_magic_aura_hide | 13000
+survey_toxic_cloud_show | 13000
+survey_insect_orbit_show | 13000
+survey_magic_aura_show | 13000
+# East Fire Outside: paired/unpaired torch and torch smoke; daylight then night.
+go east | 13000
+phase_spring_night | 13000
+wind_south | 13000
+wind_calm | 13000
+phase_spring_day | 13000
+# West Magic, south Fire Lab: candle smoke and other flame examples in daylight/night.
+go west | 3000
+go south | 13000
+phase_spring_night | 13000
+phase_spring_day | 13000
+# West Tuning, west Composition, south Shelter.
+go west | 3000
+go west | 3000
+go south | 6500
+# End Seasonal Shelter. Burst-only families have their own deliberate trigger route.

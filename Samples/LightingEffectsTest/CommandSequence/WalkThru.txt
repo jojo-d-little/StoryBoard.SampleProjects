@@ -1,0 +1,126 @@
+# Batch A: shared seasonal weather over three fixed backdrops.
+# Start a NEW game in Seasonal Shelter. Four-direction navigation only.
+# Format: exact command | observation pause in milliseconds.
+# Changing phase establishes authored weather; selecting the current phase preserves overrides.
+# The explicit baseline reapplies every dimension.
+
+# Explicit Spring Dawn baseline; observe indoor filtering before moving outdoors.
+phase_start | 13000
+sky_cloudy | 500
+weather_rain | 500
+intensity_moderate | 500
+wind_east | 500
+wind_speed_breeze | 13000
+weather_status | 1000
+go west | 13000
+# Pavement: compare falling drops and landing ripples.
+go north | 13000
+# Grass: same phase and weather, different surface.
+
+# SPRING at Day. Rain and puffy clouds; no snow/hail/leaves/fog.
+season_spring | 13000
+weather_status | 1000
+# Hold phase/weather constant across all three surfaces.
+go south | 9000
+# Pavement.
+weather_status | 500
+go south | 9000
+# Snow-covered grass stays snowy even in summer.
+weather_status | 500
+go north | 2500
+go east | 6500
+# Shelter: outdoor weather disappears; reported state stays unchanged.
+weather_status | 500
+go west | 2500
+go north | 4000
+# Grass: next season changes here without a room transition.
+
+# SUMMER at Day. Rain and puffy clouds; warmer ambient light.
+season_summer | 13000
+weather_status | 1000
+# Hold phase/weather constant across all three surfaces.
+go south | 9000
+# Pavement.
+weather_status | 500
+go south | 9000
+# Snow-covered grass stays snowy even in summer.
+weather_status | 500
+go north | 2500
+go east | 6500
+# Shelter: outdoor weather disappears; reported state stays unchanged.
+weather_status | 500
+go west | 2500
+go north | 4000
+# Grass: next season changes here without a room transition.
+
+# FALL at Day. Light rain, mixed falling leaves and fog.
+season_fall | 13000
+weather_status | 1000
+# Hold phase/weather constant across all three surfaces.
+go south | 9000
+# Pavement.
+weather_status | 500
+go south | 9000
+# Snow-covered grass stays snowy even in summer.
+weather_status | 500
+go north | 2500
+go east | 6500
+# Shelter: outdoor weather disappears; reported state stays unchanged.
+weather_status | 500
+go west | 2500
+go north | 4000
+# Grass: next season changes here without a room transition.
+
+# WINTER at Day. Snow and broad grey overcast; no rain/hail/leaves/fog.
+season_winter | 13000
+weather_status | 1000
+# Hold phase/weather constant across all three surfaces.
+go south | 9000
+# Pavement.
+weather_status | 500
+go south | 9000
+# Snow-covered grass stays snowy even in summer.
+weather_status | 500
+go north | 2500
+go east | 6500
+# Shelter: outdoor weather disappears; reported state stays unchanged.
+weather_status | 500
+go west | 2500
+go north | 4000
+# Grass: next season changes here without a room transition.
+
+# Independent controls; remain in Spring Day on grass.
+season_spring | 13000
+weather_rain | 500
+intensity_light | 13000
+intensity_moderate | 13000
+intensity_heavy | 13000
+intensity_catastrophic | 13000
+# Zero wind speed must not stop catastrophic rain. Repeating calm should succeed.
+wind_calm | 13000
+wind_calm | 1000
+weather_status | 500
+wind_east | 500
+wind_speed_gale | 13000
+wind_south | 13000
+# Manual overrides must survive room entry.
+go south | 9000
+weather_status | 1000
+go north | 3000
+# Change precipitation independently; direction remains valid while speed is zero.
+wind_speed_still | 13000
+weather_hail | 13000
+weather_snow | 13000
+weather_none | 13000
+# Full baseline, including when Spring Day is already selected.
+season_spring | 500
+sky_cloudy | 500
+weather_rain | 500
+intensity_moderate | 500
+wind_east | 500
+wind_speed_breeze | 13000
+go south | 3000
+go east | 6500
+weather_status | 1000
+# End: Seasonal Shelter; Spring Day, Cloudy, Rain, Moderate, east wind 40.
+# STOP for producer review. Later items are not part of this route.

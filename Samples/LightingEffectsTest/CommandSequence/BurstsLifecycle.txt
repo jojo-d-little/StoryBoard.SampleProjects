@@ -1,0 +1,151 @@
+# Start a NEW game in Seasonal Shelter. See BATCH_D_OBSERVATIONS.md and BURST_QUANTITY_COVERAGE.md.
+# Indoor stations isolate effects from shared seasonal weather. command | pause milliseconds.
+phase_spring_day | 13000
+weather_none | 500
+sky_clear | 500
+wind_east | 500
+wind_speed_breeze | 13000
+# East through Image, Clouds, Lifecycle; north through Rain and Fire Outside to Bursts.
+go east | 3000
+go east | 3000
+go east | 3000
+go north | 3000
+go north | 3000
+go north | 6500
+# Four recipe families. No continuous emission is expected from their stationary markers.
+burst_sparks_a | 4000
+burst_sparks_b | 4000
+burst_water | 4000
+burst_debris | 4000
+burst_dust | 4000
+# Quantity comparisons: same marker and recipe; particle counts change, not source size or lifetime.
+# sparks_a: half / normal / double / successful zero.
+burst_sparks_a_half | 5000
+burst_sparks_a_normal | 5000
+burst_sparks_a_double | 5000
+burst_sparks_a_zero | 5000
+# water: half / normal / double / successful zero.
+burst_water_half | 5000
+burst_water_normal | 5000
+burst_water_double | 5000
+burst_water_zero | 5000
+# debris: half / normal / double / successful zero.
+burst_debris_half | 5000
+burst_debris_normal | 5000
+burst_debris_double | 5000
+burst_debris_zero | 5000
+# dust: half / normal / double / successful zero.
+burst_dust_half | 5000
+burst_dust_normal | 5000
+burst_dust_double | 5000
+burst_dust_zero | 5000
+# A real positive event may round to zero particles. This differs from zero multiplier/no event.
+burst_sparks_a_tiny | 4000
+# Ordinary numeric binding: source changes affect later invocations, not existing particles.
+burst_quantity_half | 500
+burst_sparks_a_bound | 5000
+burst_water_bound | 5000
+burst_quantity_double | 500
+burst_sparks_a_bound | 5000
+burst_water_bound | 5000
+burst_quantity_zero | 500
+burst_sparks_a_bound | 4000
+# Two invocations with mutation in one command prove queued event snapshots at the Host boundary.
+burst_snapshot_pair | 7000
+# Normal computed numeric property: Boolean decision outputs half or double, without arithmetic.
+burst_boost_off | 500
+burst_sparks_a_computed | 5000
+burst_boost_on | 500
+burst_sparks_a_computed | 5000
+burst_boost_off | 500
+burst_quantity_normal | 500
+# Leave to Fire Outside, then return. No old bursts replay; explicitly request a fresh occurrence.
+burst_sparks_a | 500
+go south | 4000
+go north | 6000
+burst_sparks_a | 5000
+
+# Rapid repeats must produce separate occurrences; do not coalesce them into one activation.
+burst_sparks_a | 100
+burst_sparks_a | 100
+burst_sparks_a | 4000
+burst_pair | 4000
+burst_all | 6000
+# Closed two-cell square. Sparks B stays fixed as a comparison.
+burst_source_east | 6000
+burst_sparks_a | 4000
+burst_source_south | 6000
+burst_sparks_a | 4000
+burst_source_west | 6000
+burst_sparks_a | 4000
+burst_source_north | 6000
+burst_sparks_a | 4000
+# South through Fire Outside and Rain to Lifecycle & Restore.
+go south | 3000
+go south | 3000
+go south | 13000
+# Object hide/deactivate stop production; observe the remaining natural-lifetime particles.
+life_smoke_hide | 18000
+life_smoke_show | 18000
+life_smoke_disable | 18000
+life_smoke_enable | 18000
+# Environment Enabled is separate from object state. Fog cleanup is a visual observation.
+life_fog_on | 13000
+life_fog_off | 18000
+life_fog_on | 13000
+life_fog_off | 18000
+restore_beacon_hide | 13000
+restore_beacon_show | 13000
+restore_beacon_disable | 13000
+restore_beacon_enable | 13000
+# Smoke removal comparison: same recipe tuning, only catalog removal policy differs.
+# Hide the nearby paired light and disable fog; stop wind for a clear comparison.
+restore_beacon_hide | 1000
+life_fog_off | 13000
+wind_calm | 13000
+removal_all_on | 8000
+# All sources stay visible: natural decay versus 2000 ms fade versus immediate removal.
+removal_all_off | 18000
+removal_all_on | 8000
+# Compare source removal/hiding through the same recipe policies.
+removal_all_hide | 18000
+removal_all_show | 8000
+# Re-enable halfway through the fade. Existing alpha should not jump or duplicate.
+removal_fade_off | 1000
+removal_fade_on | 8000
+# Repeat cancellation through hiding/showing the source object.
+removal_fade_hide | 1000
+removal_fade_show | 8000
+# Immediate source can restart; natural source can restart while residual smoke remains.
+removal_immediate_off | 1000
+removal_immediate_on | 8000
+removal_natural_off | 1000
+removal_natural_on | 8000
+# End in a normal visible/active state; restore the beacon and the original breeze baseline.
+removal_all_on | 4000
+restore_beacon_show | 4000
+wind_speed_breeze | 13000
+
+# West through Clouds and Image to Shelter; south to Stains.
+go west | 3000
+go west | 3000
+go west | 3000
+go south | 13000
+# Persistent object-bound marks: movement must not create an unintended trail or duplicates.
+stain_splatter_east | 6000
+stain_splatter_south | 6000
+stain_splatter_west | 6000
+stain_splatter_north | 6000
+stain_splatter_hide | 13000
+stain_splatter_show | 13000
+stain_splatter_disable | 13000
+stain_splatter_enable | 13000
+stain_patch_hide | 13000
+stain_patch_show | 13000
+stain_streak_disable | 13000
+stain_streak_enable | 13000
+stain_spray_disable | 13000
+stain_spray_enable | 13000
+go north | 6500
+weather_status | 1000
+# End: Seasonal Shelter. Genuine save/restore is a separate explicit checkpoint.

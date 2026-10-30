@@ -1,0 +1,71 @@
+# Focused quantity/room revisit run. Start a NEW game in Seasonal Shelter.
+# See BURST_QUANTITY_COVERAGE.md.
+# Indoor stations isolate effects from shared seasonal weather. command | pause milliseconds.
+phase_spring_day | 13000
+weather_none | 500
+sky_clear | 500
+wind_east | 500
+wind_speed_breeze | 13000
+# East through Image, Clouds, Lifecycle; north through Rain and Fire Outside to Bursts.
+go east | 3000
+go east | 3000
+go east | 3000
+go north | 3000
+go north | 3000
+go north | 6500
+# First compare the unchanged omitted-multiplier defaults and fixed Sparks B marker.
+burst_all | 6000
+# Quantity comparisons: same marker and recipe; particle counts change, not source size or lifetime.
+# sparks_a: half / normal / double / successful zero.
+burst_sparks_a_half | 5000
+burst_sparks_a_normal | 5000
+burst_sparks_a_double | 5000
+burst_sparks_a_zero | 5000
+# water: half / normal / double / successful zero.
+burst_water_half | 5000
+burst_water_normal | 5000
+burst_water_double | 5000
+burst_water_zero | 5000
+# debris: half / normal / double / successful zero.
+burst_debris_half | 5000
+burst_debris_normal | 5000
+burst_debris_double | 5000
+burst_debris_zero | 5000
+# dust: half / normal / double / successful zero.
+burst_dust_half | 5000
+burst_dust_normal | 5000
+burst_dust_double | 5000
+burst_dust_zero | 5000
+# A real positive event may round to zero particles. This differs from zero multiplier/no event.
+burst_sparks_a_tiny | 4000
+# Ordinary numeric binding: source changes affect later invocations, not existing particles.
+burst_quantity_half | 500
+burst_sparks_a_bound | 5000
+burst_water_bound | 5000
+burst_quantity_double | 500
+burst_sparks_a_bound | 5000
+burst_water_bound | 5000
+burst_quantity_zero | 500
+burst_sparks_a_bound | 4000
+# Two invocations with mutation in one command prove queued event snapshots at the Host boundary.
+burst_snapshot_pair | 7000
+# Normal computed numeric property: Boolean decision outputs half or double, without arithmetic.
+burst_boost_off | 500
+burst_sparks_a_computed | 5000
+burst_boost_on | 500
+burst_sparks_a_computed | 5000
+burst_boost_off | 500
+burst_quantity_normal | 500
+# Leave to Fire Outside, then return. No old bursts replay; explicitly request a fresh occurrence.
+burst_sparks_a | 500
+go south | 4000
+go north | 6000
+burst_sparks_a | 5000
+# Return to Seasonal Shelter; only standard four-direction navigation.
+go south | 3000
+go south | 3000
+go south | 3000
+go west | 3000
+go west | 3000
+go west | 6500
+weather_status | 1000

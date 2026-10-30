@@ -1,0 +1,147 @@
+# Batch B: structural parts, binding controls, moving fire, lighting, and composed transitions.
+# Start a NEW game in Seasonal Shelter, or use the untouched end state of WalkThru.txt.
+# Exact command | observation pause in milliseconds. See BATCH_B_OBSERVATIONS.md.
+# Each movement command targets its fixture explicitly; selecting objects is unnecessary.
+phase_spring_night | 13000
+weather_none | 500
+sky_clear | 500
+wind_east | 500
+wind_speed_breeze | 13000
+
+# 6 STRUCTURAL PARTS: north from shelter. Brown parent (240,280).
+# Green sprite/light/smoke and sparks follow; blue sprite/light/aura at (520,400) stays fixed.
+go north | 13000
+parts_east | 13000
+parts_north | 13000
+parts_west | 13000
+parts_south | 13000
+# Parent and every moving part should now be back at their original anchors.
+
+# Category inheritance comparison; the focused Inheritance.txt covers the full matrix.
+parts_hide | 1000
+inherit_show | 2500
+inherit_help | 5000
+inherit_east | 6500
+inherit_west | 6500
+inherit_scale | 7500
+inherit_scale_off | 6500
+inherit_shake | 4500
+inherit_shake_off | 1500
+inherit_highlight | 2500
+inherit_local_on | 2500
+inherit_highlight_off | 2500
+inherit_local_off | 1500
+inherit_color | 3500
+inherit_color_off | 1000
+inherit_hide | 1500
+parts_show | 1500
+
+# 8 TUNING & BINDINGS: east. Five lanes share particle.campfire.
+# Defaults / literal blue / ordinary / shared / computed, left to right.
+go east | 5000
+phase_spring_day | 13000
+# Optional phase-bound fire at bottom left: size 1.8, lifetime 0.55; optional motes disabled.
+# Ordinary size only; return to neutral after each comparison.
+tune_size_large | 13000
+tune_size_normal | 13000
+tune_size_small | 13000
+tune_size_normal | 13000
+tune_rate_high | 13000
+tune_rate_normal | 13000
+tune_rate_low | 13000
+tune_rate_normal | 13000
+tune_life_short | 13000
+tune_life_normal | 13000
+tune_life_long | 13000
+tune_life_normal | 13000
+tune_radius_wide | 13000
+tune_radius_zero | 13000
+# Radius zero is legitimate: collapsed spawn region, not a missing binding.
+tune_radius_normal | 13000
+tune_rate_zero | 13000
+# Zero emission stops new particles; allow existing particles to finish.
+tune_rate_normal | 13000
+tune_size_zero | 13000
+# Size zero follows the family contract: omit tuning and retain recipe size.
+tune_size_normal | 13000
+# Change only one color at a time. The other color must retain its previous target.
+tune_primary_blue | 13000
+tune_primary_yellow | 13000
+tune_secondary_violet | 13000
+tune_secondary_orange | 13000
+# Write shared size from the room, then from the effect object; both participants agree.
+shared_peer_large | 13000
+shared_object_small | 13000
+shared_peer_normal | 13000
+# Computed lane: one bool drives numeric rate/lifetime and string colors.
+computed_boost_on | 13000
+computed_boost_off | 13000
+# Missing anchor property: authored sources exist only on Spring Day, not Spring Night.
+phase_spring_night | 13000
+# Optional fire size becomes literal 0.75, matching its neighbor. Lifetime tuning is absent.
+# Optional motes now use Enabled=true fallback. Rain remains off from bound false.
+phase_spring_day | 13000
+# Optional fire returns to its bound values, motes to bound false.
+# Same recipe rain: change rate, then lifetime, then size separately.
+tuning_rain_on | 13000
+tuning_rain_rate_high | 13000
+tuning_rain_life_short | 13000
+tuning_rain_size_large | 13000
+tuning_rain_size_normal | 13000
+tuning_rain_life_normal | 13000
+tuning_rain_rate_normal | 13000
+tuning_rain_off | 13000
+# Enabled=false must stay false even though this environmental definition defaults true.
+
+# 5 MOVING FIRE: east. Stationary unlit comparison at left; paired fire/smoke/light at right.
+go east | 5000
+phase_spring_night | 13000
+wind_east | 500
+wind_speed_breeze | 500
+fire_size_small | 500
+fire_rate_low | 500
+fire_life_long | 500
+fire_core_yellow | 500
+fire_edge_yellow | 13000
+# Closed route: (560,160) -> (640,160) -> (640,320) -> (560,320) -> (560,160).
+# Flame, smoke emitter, crate sprite, and swaying/flickering light follow throughout travel.
+# Left comparison remains fixed. Existing smoke particles may trail/decay naturally.
+fire_east | 13000
+fire_south | 13000
+fire_west | 13000
+fire_north | 13000
+# Grow and recolor in place; both fire fixtures share the authored phase controls.
+fire_size_large | 13000
+fire_rate_high | 13000
+fire_life_short | 13000
+fire_core_orange | 13000
+fire_edge_orange | 13000
+wind_south | 13000
+wind_calm | 13000
+# Smoke becomes calm, fire keeps emitting. Restore wind for later visits.
+wind_east | 500
+wind_speed_breeze | 13000
+
+# 7 LIGHTING: south through Wind & Clouds (transit), south to Phase & Light.
+go south | 3000
+go south | 13000
+# Four lamps left to right: static, sway, flicker, combined. Inspect their blue-column shadows.
+phase_spring_day | 13000
+phase_spring_night | 13000
+# Interrupt the 10-second transition after 2 seconds; retarget smoothly from current appearance.
+phase_spring_day | 2000
+phase_spring_night | 13000
+
+# VISUAL PIPELINE: west. Pre-light smoke/motes, point light/shadows, post-light torch/fog.
+go west | 13000
+phase_spring_day | 13000
+phase_spring_night | 13000
+# Watch both complete composed scenes in outgoing/incoming room-transition images.
+go east | 9000
+go west | 13000
+# Return via Image & Object Effects (transit) to shelter; do not claim custom-art coverage here.
+go north | 3000
+go west | 6500
+phase_spring_day | 13000
+weather_status | 1000
+# End: Seasonal Shelter, Spring Day. STOP for Batch B Portal review before items 9-15.

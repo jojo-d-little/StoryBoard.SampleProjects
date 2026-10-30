@@ -1,0 +1,93 @@
+# Fast effects regression. Start a NEW game in Seasonal Shelter; start recording BEFORE this file.
+# Format: command | pause after command (ms). All navigation uses four directions.
+# Authored pauses total 45 seconds; target total 45-90 seconds including command/poll overhead.
+# Portal adds command/delta-wait time. Use 100-250 ms Dev Tools polling for predictable capture.
+# Keep the existing long scripts for visual review, stress and genuine save/restore.
+
+# 01 PHASE/WEATHER: indoor baseline, outdoor rain/wind, then snow/overcast and fall leaves/fog.
+phase_spring_day | 100
+weather_rain | 100
+intensity_heavy | 100
+wind_speed_windy | 100
+wind_south | 100
+go west | 1200
+phase_winter_night | 100
+phase_fall_evening | 100
+go north | 1200
+
+# 02 SCOPE: room winner and disabled replacement outdoors; indoor neighbor applies its own winners.
+go north | 1200
+scope_room_on | 100
+scope_disabled_on | 100
+scope_applicability_on | 100
+go east | 1200
+
+# 03 CHILD CUES: every category, independent activation, opt-outs, movement and own light/emitter sources.
+go south | 1200
+parts_hide | 100
+inherit_show | 100
+inherit_scale | 100
+inherit_shake | 100
+inherit_highlight | 100
+inherit_color | 100
+inherit_local_on | 100
+inherit_east | 5200
+inherit_highlight_off | 100
+inherit_clear | 100
+inherit_local_off | 100
+
+# 04 TUNING: defaults/literals in entry snapshot; valid zero, independent color, shared/computed and fallback.
+go east | 1200
+tune_rate_zero | 100
+tune_primary_blue | 100
+shared_peer_large | 100
+computed_boost_on | 100
+phase_spring_day | 100
+phase_spring_night | 100
+
+# 05 MOVING FIRE: paired sprite/fire/smoke/light versus stationary comparison.
+go east | 1200
+fire_east | 5200
+go east | 1200
+weather_rain | 100
+intensity_light | 100
+intensity_heavy | 100
+
+# 06 BURSTS: half/double/zero, sampled pair, multiple sources and a moved source.
+go north | 1200
+go north | 1200
+burst_sparks_a_half | 100
+burst_sparks_a_double | 100
+burst_sparks_a_zero | 100
+burst_snapshot_pair | 100
+burst_pair | 100
+burst_source_east | 5200
+burst_water | 100
+burst_sparks_a | 100
+
+# 07 REMOVAL: depart bursts; three recipe removal policies, re-enable fade source and environment Enabled.
+go south | 1200
+go south | 1200
+go south | 1200
+removal_all_off | 100
+removal_fade_on | 100
+life_fog_on | 100
+
+# 08 ATMOSPHERE/ART: multiple cloud instances, wind retuning, partial custom images and packaged companions.
+go west | 1200
+clouds_all_on | 100
+wind_south | 100
+wind_speed_windy | 100
+go west | 1200
+image_leaves_on | 100
+image_candle_show | 100
+
+# 09 PIPELINE/STAINS: pre/post-light room, persistent mark disable/re-enable; finish back in Shelter.
+go south | 1200
+go west | 1200
+stain_splatter_disable | 100
+stain_splatter_enable | 100
+go north | 1200
+# Final drain/output checkpoint; confirm no departed-room bursts replay here.
+weather_status | 3200
+# STOP recording after the final output/delta arrives. No save UI break in this fast test.

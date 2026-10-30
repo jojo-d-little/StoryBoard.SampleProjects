@@ -1,0 +1,25 @@
+# Run ONLY AFTER successfully capturing SaveRestoreSetup state in the same game session.
+# Start in Lifecycle & Restore. This deliberately changes the saved values and location.
+restore_beacon_west | 6000
+restore_beacon_north | 6000
+restore_size_small | 13000
+life_smoke_show | 13000
+life_fog_off | 13000
+phase_summer_day | 13000
+weather_none | 500
+intensity_light | 500
+wind_calm | 13000
+go west | 6500
+cloud_2_off | 13000
+go west | 6500
+image_leaves_off | 13000
+go west | 3000
+go south | 6500
+stain_splatter_north | 6000
+stain_splatter_west | 6000
+stain_patch_show | 13000
+stain_spray_enable | 13000
+go north | 6500
+weather_status | 1000
+# STOP PLAYBACK. Restore the captured save; do not start a new game.
+# Reattach/refresh the Portal baseline if required by its current persistence support.

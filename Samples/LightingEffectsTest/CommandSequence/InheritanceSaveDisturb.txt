@@ -1,0 +1,9 @@
+# Run AFTER a real save from InheritanceSavePrepare.txt, before restoring that save.
+inherit_clear | 6500
+inherit_local_off | 1500
+inherit_north | 6500
+inherit_west | 6500
+inherit_hide | 1500
+parts_show | 1500
+go south | 4000
+# RESTORE the saved game now through the Portal UI. Then run InheritanceAfterRestore.txt.

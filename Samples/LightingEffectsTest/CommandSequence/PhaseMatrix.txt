@@ -1,0 +1,55 @@
+# Extended Batch A: all 16 season/time combinations in the SAME outdoor room.
+# Start in Seasonal Shelter, either a fresh game or after WalkThru.txt.
+# nextphase stops at book boundaries; it does not wrap.
+phase_start | 13000
+go west | 13000
+weather_status | 1000
+# spring day
+nextphase | 13000
+weather_status | 1000
+# spring evening
+nextphase | 13000
+weather_status | 1000
+# spring night
+nextphase | 13000
+weather_status | 1000
+# summer dawn
+nextphase | 13000
+weather_status | 1000
+# summer day
+nextphase | 13000
+weather_status | 1000
+# summer evening
+nextphase | 13000
+weather_status | 1000
+# summer night
+nextphase | 13000
+weather_status | 1000
+# fall dawn
+nextphase | 13000
+weather_status | 1000
+# fall day
+nextphase | 13000
+weather_status | 1000
+# fall evening
+nextphase | 13000
+weather_status | 1000
+# fall night
+nextphase | 13000
+weather_status | 1000
+# winter dawn
+nextphase | 13000
+weather_status | 1000
+# winter day
+nextphase | 13000
+weather_status | 1000
+# winter evening
+nextphase | 13000
+weather_status | 1000
+# winter night
+nextphase | 13000
+weather_status | 1000
+# Return to Spring Dawn and shelter.
+phase_start | 13000
+go east | 6500
+weather_status | 1000

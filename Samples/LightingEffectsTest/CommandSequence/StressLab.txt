@@ -1,0 +1,193 @@
+# NEW game in Seasonal Shelter. Dedicated item 09 stress run; keep separate from FullWalkThru.txt.
+# Uses only four-direction navigation. See STRESS_LAB_COVERAGE.md for checkpoints and measurement limits.
+phase_spring_day | 13000
+weather_none | 500
+sky_clear | 500
+wind_east | 500
+wind_speed_windy | 13000
+go east | 2500
+go east | 2500
+go east | 2500
+go east | 5000
+stress_help | 1000
+# Cold quiet checkpoint: inherited effects are explicitly disabled in Stress Lab.
+stress_quiet | 30000
+stress_checkpoint | 3000
+# Low packaged-art load: rain, one cloud, one campfire/smoke/light group.
+stress_low | 25000
+stress_checkpoint | 3000
+stress_burst | 3000
+# CYCLE 1/4: same heavy load; candle tip and oval leaves exercise the existing custom art in the primary export.
+stress_high | 25000
+stress_checkpoint | 1000
+# Twelve explicit waves at 250 ms authored spacing; no background timer.
+stress_burst | 250
+stress_burst | 250
+stress_burst | 250
+stress_burst | 250
+stress_burst | 250
+stress_burst | 250
+stress_burst | 250
+stress_burst | 250
+stress_burst | 250
+stress_burst | 250
+stress_burst | 250
+stress_burst | 250
+# Post-wave steady high checkpoint; no new trigger during the hold.
+stress_checkpoint | 15000
+wind_south | 13000
+stress_hide | 5000
+stress_show | 15000
+# Change ambient light while the high load remains active.
+phase_spring_night | 13000
+stress_checkpoint | 1000
+# Leave while HIGH is still active, then return: check transition cleanup/reconstruction under load.
+go west | 3000
+go east | 8000
+stress_checkpoint | 1000
+# Stop production, hide paired lights and drain finite-lived residuals. No debris has been triggered in these cycles.
+stress_quiet | 30000
+stress_checkpoint | 3000
+# Leave the Stress Lab, then revisit quiet. Check disposal and no burst replay.
+go west | 3000
+go east | 6000
+stress_checkpoint | 3000
+phase_spring_day | 13000
+wind_east | 13000
+# CYCLE 2/4: same heavy load; candle tip and oval leaves exercise the existing custom art in the primary export.
+stress_high | 25000
+stress_checkpoint | 1000
+# Twelve explicit waves at 250 ms authored spacing; no background timer.
+stress_burst | 250
+stress_burst | 250
+stress_burst | 250
+stress_burst | 250
+stress_burst | 250
+stress_burst | 250
+stress_burst | 250
+stress_burst | 250
+stress_burst | 250
+stress_burst | 250
+stress_burst | 250
+stress_burst | 250
+# Post-wave steady high checkpoint; no new trigger during the hold.
+stress_checkpoint | 15000
+wind_south | 13000
+stress_hide | 5000
+stress_show | 15000
+# Change ambient light while the high load remains active.
+phase_spring_night | 13000
+stress_checkpoint | 1000
+# Leave while HIGH is still active, then return: check transition cleanup/reconstruction under load.
+go west | 3000
+go east | 8000
+stress_checkpoint | 1000
+# Stop production, hide paired lights and drain finite-lived residuals. No debris has been triggered in these cycles.
+stress_quiet | 30000
+stress_checkpoint | 3000
+# Leave the Stress Lab, then revisit quiet. Check disposal and no burst replay.
+go west | 3000
+go east | 6000
+stress_checkpoint | 3000
+phase_spring_day | 13000
+wind_east | 13000
+# CYCLE 3/4: same heavy load; candle tip and oval leaves exercise the existing custom art in the primary export.
+stress_high | 25000
+stress_checkpoint | 1000
+# Twelve explicit waves at 250 ms authored spacing; no background timer.
+stress_burst | 250
+stress_burst | 250
+stress_burst | 250
+stress_burst | 250
+stress_burst | 250
+stress_burst | 250
+stress_burst | 250
+stress_burst | 250
+stress_burst | 250
+stress_burst | 250
+stress_burst | 250
+stress_burst | 250
+# Post-wave steady high checkpoint; no new trigger during the hold.
+stress_checkpoint | 15000
+wind_south | 13000
+stress_hide | 5000
+stress_show | 15000
+# Change ambient light while the high load remains active.
+phase_spring_night | 13000
+stress_checkpoint | 1000
+# Leave while HIGH is still active, then return: check transition cleanup/reconstruction under load.
+go west | 3000
+go east | 8000
+stress_checkpoint | 1000
+# Stop production, hide paired lights and drain finite-lived residuals. No debris has been triggered in these cycles.
+stress_quiet | 30000
+stress_checkpoint | 3000
+# Leave the Stress Lab, then revisit quiet. Check disposal and no burst replay.
+go west | 3000
+go east | 6000
+stress_checkpoint | 3000
+phase_spring_day | 13000
+wind_east | 13000
+# CYCLE 4/4: same heavy load; candle tip and oval leaves exercise the existing custom art in the primary export.
+stress_high | 25000
+stress_checkpoint | 1000
+# Twelve explicit waves at 250 ms authored spacing; no background timer.
+stress_burst | 250
+stress_burst | 250
+stress_burst | 250
+stress_burst | 250
+stress_burst | 250
+stress_burst | 250
+stress_burst | 250
+stress_burst | 250
+stress_burst | 250
+stress_burst | 250
+stress_burst | 250
+stress_burst | 250
+# Post-wave steady high checkpoint; no new trigger during the hold.
+stress_checkpoint | 15000
+wind_south | 13000
+stress_hide | 5000
+stress_show | 15000
+# Change ambient light while the high load remains active.
+phase_spring_night | 13000
+stress_checkpoint | 1000
+# Leave while HIGH is still active, then return: check transition cleanup/reconstruction under load.
+go west | 3000
+go east | 8000
+stress_checkpoint | 1000
+# Stop production, hide paired lights and drain finite-lived residuals. No debris has been triggered in these cycles.
+stress_quiet | 30000
+stress_checkpoint | 3000
+# Leave the Stress Lab, then revisit quiet. Check disposal and no burst replay.
+go west | 3000
+go east | 6000
+stress_checkpoint | 3000
+phase_spring_day | 13000
+wind_east | 13000
+# Separate deliberate long-lived debris case. Do not compare its in-room particle count to a zero-drain target.
+stress_high | 25000
+stress_debris | 1000
+stress_debris | 1000
+stress_debris | 1000
+stress_debris | 1000
+stress_checkpoint | 3000
+stress_quiet | 30000
+# Rubble may remain: recipe lifetime is 86400 seconds, not a leak assertion.
+stress_checkpoint | 3000
+go west | 3000
+go east | 6000
+# After departure/revisit, settled debris and old bursts must not replay.
+stress_checkpoint | 5000
+# Verify a fresh low load and fresh burst still work after cleanup.
+stress_low | 25000
+stress_burst | 3000
+stress_quiet | 30000
+stress_checkpoint | 3000
+go west | 2500
+go west | 2500
+go west | 2500
+go west | 2500
+phase_spring_day | 13000
+wind_speed_breeze | 13000
+weather_status | 1000

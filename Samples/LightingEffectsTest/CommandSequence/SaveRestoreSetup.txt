@@ -1,0 +1,26 @@
+# Start in Seasonal Shelter, NEW game or after the complete walkthrough.
+# This file ONLY prepares a nondefault state. It does not save the game.
+go south | 6500
+stain_splatter_east | 6000
+stain_splatter_south | 6000
+stain_patch_hide | 13000
+stain_spray_disable | 13000
+go north | 3000
+go east | 6500
+image_leaves_on | 13000
+go east | 6500
+cloud_2_on | 13000
+go east | 6500
+phase_winter_evening | 13000
+weather_snow | 500
+intensity_heavy | 500
+wind_southeast | 500
+wind_speed_windy | 13000
+restore_beacon_east | 6000
+restore_beacon_south | 6000
+restore_size_large | 13000
+life_smoke_hide | 13000
+life_fog_on | 13000
+weather_status | 1000
+# STOP PLAYBACK. Capture a real save using the Host/Portal persistence operation.
+# See SAVE_RESTORE_CHECKPOINT.md. Do not continue to Disturb until capture succeeds.

@@ -1,0 +1,15 @@
+go east | 500
+put crowbar into backpack | 500
+get backpack | 500
+get key | 500
+go west | 500
+pry workshop door | 500
+open workshop door | 500
+go north | 500
+drop key | 500
+fix key | 500
+get key | 500
+go south | 500
+unlock exit hall door | 500
+open exit hall door | 500
+go west  | 500

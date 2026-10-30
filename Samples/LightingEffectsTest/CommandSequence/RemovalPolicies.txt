@@ -1,0 +1,41 @@
+# Start a NEW game in Seasonal Shelter. See REMOVAL_POLICY_COVERAGE.md.
+# command | observation pause milliseconds. Standard four directions only.
+phase_spring_day | 13000
+weather_none | 500
+sky_clear | 500
+wind_east | 500
+go east | 3000
+go east | 3000
+go east | 6500
+# Smoke removal comparison: same recipe tuning, only catalog removal policy differs.
+# Hide the nearby paired light and disable fog; stop wind for a clear comparison.
+restore_beacon_hide | 1000
+life_fog_off | 13000
+wind_calm | 13000
+removal_all_on | 8000
+# All sources stay visible: natural decay versus 2000 ms fade versus immediate removal.
+removal_all_off | 18000
+removal_all_on | 8000
+# Compare source removal/hiding through the same recipe policies.
+removal_all_hide | 18000
+removal_all_show | 8000
+# Re-enable halfway through the fade. Existing alpha should not jump or duplicate.
+removal_fade_off | 1000
+removal_fade_on | 8000
+# Repeat cancellation through hiding/showing the source object.
+removal_fade_hide | 1000
+removal_fade_show | 8000
+# Immediate source can restart; natural source can restart while residual smoke remains.
+removal_immediate_off | 1000
+removal_immediate_on | 8000
+removal_natural_off | 1000
+removal_natural_on | 8000
+# End in a normal visible/active state; restore the beacon and the original breeze baseline.
+removal_all_on | 4000
+restore_beacon_show | 4000
+wind_speed_breeze | 13000
+# Return to Seasonal Shelter.
+go west | 3000
+go west | 3000
+go west | 6500
+weather_status | 1000
