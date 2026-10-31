@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata minClientVersion="3.3">
+    <id>StoryBoard.SampleProjects</id>
+    <version>$PackageVersion$</version>
+    <authors>StoryBoard</authors>
+    <readme>README.SampleProjects.md</readme>
+    <description>Sample StoryBoard projects and source assets for testing.</description>
+    <tags>storyboard sample testing assets</tags>
+    <repository type="git" url="https://github.com/jojo-d-little/StoryBoard.SampleProjects.git" />
+    <dependencies>
+      <group targetFramework="net8.0" />
+    </dependencies>
+    <contentFiles>
+      <files include="any/any/Samples/**/*" buildAction="None" copyToOutput="true" flatten="false" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="Samples\**\*" target="contentFiles\any\any\Samples" />
+    <file src="README.SampleProjects.md" target="README.SampleProjects.md" />
+  </files>
+</package>

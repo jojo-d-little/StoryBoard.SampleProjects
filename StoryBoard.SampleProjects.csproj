@@ -9,6 +9,8 @@
 
     <PackageId>StoryBoard.SampleProjects</PackageId>
     <Version>1.0.7</Version>
+    <NuspecFile>StoryBoard.SampleProjects.nuspec</NuspecFile>
+    <NuspecProperties>PackageVersion=$(PackageVersion)</NuspecProperties>
     <Authors>StoryBoard</Authors>
     <Description>Sample StoryBoard projects and source assets for testing.</Description>
     <PackageTags>storyboard;sample;testing;assets</PackageTags>
@@ -17,16 +19,5 @@
     <PackageOutputPath>$(MSBuildThisFileDirectory)artifacts</PackageOutputPath>
     <NoWarn>$(NoWarn);NU5128</NoWarn>
   </PropertyGroup>
-
-  <ItemGroup>
-    <None Include="Samples\**\*"
-          Pack="true"
-          PackagePath="contentFiles\any\any\Samples\%(RecursiveDir)%(Filename)%(Extension)"
-          PackageCopyToOutput="true"
-          PackageFlatten="false" />
-    <None Include="README.SampleProjects.md"
-          Pack="true"
-          PackagePath="README.SampleProjects.md" />
-  </ItemGroup>
 
 </Project>
