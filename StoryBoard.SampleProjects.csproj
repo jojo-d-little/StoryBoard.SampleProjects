@@ -8,7 +8,7 @@
     <GenerateDocumentationFile>false</GenerateDocumentationFile>
 
     <PackageId>StoryBoard.SampleProjects</PackageId>
-    <Version>1.0.7</Version>
+    <Version>1.0.8</Version>
     <NuspecFile>StoryBoard.SampleProjects.nuspec</NuspecFile>
     <NuspecProperties>PackageVersion=$(PackageVersion)</NuspecProperties>
     <Authors>StoryBoard</Authors>
