@@ -8,7 +8,7 @@
     <GenerateDocumentationFile>false</GenerateDocumentationFile>
 
     <PackageId>StoryBoard.SampleProjects</PackageId>
-    <Version>1.0.6</Version>
+    <Version>1.0.7</Version>
     <Authors>StoryBoard</Authors>
     <Description>Sample StoryBoard projects and source assets for testing.</Description>
     <PackageTags>storyboard;sample;testing;assets</PackageTags>
