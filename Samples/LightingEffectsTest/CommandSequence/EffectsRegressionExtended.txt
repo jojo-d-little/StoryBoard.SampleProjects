@@ -1,0 +1,426 @@
+# Extended effects regression: additional coverage beyond EffectsRegression.txt.
+# Start a NEW game in Seasonal Shelter; start recording BEFORE this file.
+# 340 commands; 219.2 seconds of authored pauses before transport/poll overhead.
+# Do not append this to the short regression or reuse its changed session.
+# Format: exact command | pause after command (milliseconds). Four-direction navigation only.
+# Record with the existing schema-4 Host baseline/poll capture and hostEffects playback assertions.
+# Capture retains 1200 ms room-entry waits; object movement waits cover the authored slow legs.
+# Automated recording replay does not reproduce these authored observation pauses.
+# This does not test completed fades, frame timing, cache requests, FPS or real save/restore.
+# Both art exports support this route; record each variant separately if comparing their mappings.
+# Existing EffectsRegression.txt and its saved recording remain the frequent regression.
+
+
+# 01 BASELINE AND PARTIAL CUSTOM ART: establish every shared prerequisite.
+phase_spring_day | 100
+weather_none | 100
+sky_clear | 100
+intensity_moderate | 100
+wind_east | 100
+wind_speed_breeze | 100
+scope_all_off | 100
+go east | 1200
+# Image & Object Effects: candle tip and oval leaf overrides; other slots stay packaged.
+
+# Show, hide, recreate and revisit the same art-bearing instances.
+image_candle_show | 100
+image_leaves_on | 100
+image_leaves_off | 100
+image_candle_hide | 100
+image_candle_show | 100
+go west | 1200
+go east | 1200
+image_leaves_on | 100
+image_leaves_off | 100
+go west | 1200
+
+# 02 ALL SIXTEEN PHASES: stay in Seasonal Pavement; compare same-room target changes.
+phase_start | 100
+go west | 1200
+# Spring Dawn is now active. Each nextphase below advances exactly one authored page.
+# Spring Day: phase identity, ambient target/color/window and seasonal effect targets.
+nextphase | 100
+# Spring Evening: phase identity, ambient target/color/window and seasonal effect targets.
+nextphase | 100
+# Spring Night: phase identity, ambient target/color/window and seasonal effect targets.
+nextphase | 100
+# Summer Dawn: phase identity, ambient target/color/window and seasonal effect targets.
+nextphase | 100
+# Summer Day: phase identity, ambient target/color/window and seasonal effect targets.
+nextphase | 100
+# Summer Evening: phase identity, ambient target/color/window and seasonal effect targets.
+nextphase | 100
+# Summer Night: phase identity, ambient target/color/window and seasonal effect targets.
+nextphase | 100
+# Fall Dawn: phase identity, ambient target/color/window and seasonal effect targets.
+nextphase | 100
+# Fall Day: phase identity, ambient target/color/window and seasonal effect targets.
+nextphase | 100
+# Fall Evening: phase identity, ambient target/color/window and seasonal effect targets.
+nextphase | 100
+# Fall Night: phase identity, ambient target/color/window and seasonal effect targets.
+nextphase | 100
+# Winter Dawn: phase identity, ambient target/color/window and seasonal effect targets.
+nextphase | 100
+# Winter Day: phase identity, ambient target/color/window and seasonal effect targets.
+nextphase | 100
+# Winter Evening: phase identity, ambient target/color/window and seasonal effect targets.
+nextphase | 100
+# Winter Night: phase identity, ambient target/color/window and seasonal effect targets.
+nextphase | 100
+weather_status | 100
+
+# Independent weather: all intensity targets, repeated calm, restored speed and explicit hail.
+phase_spring_day | 100
+sky_cloudy | 100
+weather_rain | 100
+intensity_light | 100
+intensity_moderate | 100
+intensity_heavy | 100
+intensity_catastrophic | 100
+wind_calm | 100
+wind_calm | 100
+wind_speed_still | 100
+wind_east | 100
+wind_speed_gale | 100
+wind_south | 100
+wind_southeast | 100
+weather_hail | 100
+intensity_moderate | 100
+weather_snow | 100
+weather_none | 100
+sky_clear | 100
+wind_east | 100
+wind_speed_breeze | 100
+weather_status | 100
+# Zero speed must not stop precipitation; no EffectiveWindSpeed special variable is required.
+go east | 1200
+go north | 1200
+
+# 03 COMPOSITION: original relative parts move; the room-positioned child stays fixed.
+phase_spring_night | 100
+weather_none | 100
+sky_clear | 100
+wind_east | 100
+wind_speed_breeze | 100
+parts_east | 7700
+parts_north | 5200
+parts_west | 7700
+parts_south | 5200
+parts_hide | 100
+inherit_show | 100
+# Large board: all four movement legs return to the original anchor; white opts out of Movement.
+inherit_east | 5200
+inherit_south | 5200
+inherit_west | 5200
+inherit_north | 5200
+# Both removal orders: independent blue outline survives parent removal, and vice versa.
+
+# Inherited and independent activation identities remain distinct.
+inherit_highlight | 100
+inherit_local_on | 100
+inherit_highlight_off | 100
+inherit_highlight | 100
+inherit_local_off | 100
+inherit_highlight_off | 100
+inherit_scale | 5200
+inherit_scale_off | 5200
+inherit_shake | 100
+inherit_shake_off | 100
+inherit_scale | 5200
+inherit_shake | 100
+inherit_highlight | 100
+inherit_local_on | 100
+inherit_east | 5200
+inherit_west | 5200
+go south | 1200
+go north | 1200
+inherit_status | 100
+inherit_clear | 100
+inherit_local_off | 100
+inherit_hide | 100
+parts_show | 100
+# Parent/light/emitter positions and pivots must agree; fixed control remains room-positioned.
+go east | 1200
+
+# 04 TUNING: extremes and resets, zeros, both colors, both shared writers and computed reversal.
+phase_spring_day | 100
+tune_size_large | 100
+tune_size_small | 100
+tune_size_zero | 100
+tune_size_normal | 100
+tune_rate_high | 100
+tune_rate_low | 100
+tune_rate_zero | 100
+tune_rate_normal | 100
+tune_life_short | 100
+tune_life_long | 100
+tune_life_normal | 100
+tune_radius_wide | 100
+tune_radius_zero | 100
+tune_radius_normal | 100
+tune_primary_blue | 100
+tune_secondary_violet | 100
+tune_primary_yellow | 100
+tune_secondary_orange | 100
+shared_peer_large | 100
+shared_object_small | 100
+shared_peer_normal | 100
+computed_boost_on | 100
+computed_boost_off | 100
+phase_spring_night | 100
+phase_spring_day | 100
+tuning_rain_on | 100
+tuning_rain_rate_high | 100
+tuning_rain_life_short | 100
+tuning_rain_size_large | 100
+tuning_rain_size_normal | 100
+tuning_rain_life_normal | 100
+tuning_rain_rate_normal | 100
+tuning_rain_off | 100
+# Night omits optional phase sources: literal size fallback, omitted lifetime and Enabled fallback.
+# Returning to Day restores resolved values, including legitimate bound false.
+go east | 1200
+
+# 05 MOVING FIRE: closed route, separately aligned smoke/light and a stationary comparison.
+phase_spring_night | 100
+wind_east | 100
+wind_speed_breeze | 100
+fire_size_small | 100
+fire_rate_low | 100
+fire_life_long | 100
+fire_core_yellow | 100
+fire_edge_yellow | 100
+fire_east | 5200
+fire_south | 10200
+fire_west | 5200
+fire_north | 10200
+fire_size_large | 100
+fire_rate_high | 100
+fire_life_short | 100
+fire_core_orange | 100
+fire_edge_orange | 100
+go north | 1200
+
+# 06 REMAINING POINT RECIPES: Magic & Toxic; isolate then combine each source.
+survey_insect_orbit_hide | 100
+survey_magic_aura_hide | 100
+survey_toxic_cloud_hide | 100
+survey_insect_orbit_show | 100
+survey_insect_orbit_hide | 100
+survey_magic_aura_show | 100
+survey_magic_aura_hide | 100
+survey_toxic_cloud_show | 100
+survey_insect_orbit_show | 100
+survey_magic_aura_show | 100
+go west | 1200
+
+# Impacts & Debris: steam and drip are continuous; their neighboring burst markers are not.
+survey_pipe_steam_hide | 100
+survey_leaking_drip_hide | 100
+survey_pipe_steam_show | 100
+survey_pipe_steam_hide | 100
+survey_leaking_drip_show | 100
+survey_pipe_steam_show | 100
+go west | 1200
+go west | 1200
+
+# 07 SCOPE: Outdoor station. These are full same-name replacements, never merged settings.
+phase_spring_day | 100
+weather_none | 100
+sky_clear | 100
+intensity_moderate | 100
+wind_east | 100
+wind_speed_breeze | 100
+scope_all_off | 100
+scope_country_on | 100
+scope_country_off | 100
+scope_area_on | 100
+scope_area_off | 100
+scope_room_on | 100
+# Room organic motes versus Area drifting motes in the indoor neighbor.
+go east | 1200
+go west | 1200
+scope_room_off | 100
+scope_disabled_on | 100
+# Disabled Room winner suppresses Area fog here; the neighbor has no disabled replacement.
+go east | 1200
+go west | 1200
+scope_disabled_off | 100
+scope_applicability_on | 100
+go east | 1200
+go west | 1200
+# Outdoor ash vs Indoor motes; Both fog is eligible in each room.
+scope_applicability_off | 100
+scope_all_off | 100
+go east | 1200
+
+# Fog & Motes: isolate four instances, combine, then turn them all off.
+atmosphere_all_off | 100
+fog_1_on | 100
+fog_1_off | 100
+fog_2_on | 100
+fog_2_off | 100
+motes_on | 100
+motes_off | 100
+organic_motes_on | 100
+organic_motes_off | 100
+atmosphere_all_on | 100
+atmosphere_all_off | 100
+go north | 1200
+
+# 08 REMAINING ENVIRONMENT RECIPES: Leaves; independent oak/maple/oval/mixed instances.
+leaves_all_off | 100
+leaves_oak_on | 100
+leaves_oak_off | 100
+leaves_maple_on | 100
+leaves_maple_off | 100
+leaves_oval_on | 100
+leaves_oval_off | 100
+leaves_mixed_on | 100
+leaves_mixed_off | 100
+leaves_all_on | 100
+leaves_all_off | 100
+go east | 1200
+go east | 1200
+
+# Ash & Cinders: independently enable both recipes, combine, retune wind, stop production.
+embers_all_off | 100
+ash_on | 100
+ash_off | 100
+cinders_on | 100
+cinders_off | 100
+embers_all_on | 100
+wind_south | 100
+embers_all_off | 100
+go east | 1200
+
+# 09 BURSTS: actual requests for all four families, not just their room declarations.
+burst_all | 100
+# Literal half/normal/double/zero for water, debris and dust; sparks literals are in the short test.
+burst_water_half | 100
+burst_water_normal | 100
+burst_water_double | 100
+burst_water_zero | 100
+burst_debris_half | 100
+burst_debris_normal | 100
+burst_debris_double | 100
+burst_debris_zero | 100
+burst_dust_half | 100
+burst_dust_normal | 100
+burst_dust_double | 100
+burst_dust_zero | 100
+burst_sparks_a_tiny | 100
+# Positive tiny quantity is an occurrence even if emitted count rounds to zero.
+
+# Ordinary direct binding and computed output: sample per invocation, preserving legitimate zero.
+burst_quantity_half | 100
+burst_sparks_a_bound | 100
+burst_water_bound | 100
+burst_quantity_double | 100
+burst_sparks_a_bound | 100
+burst_water_bound | 100
+burst_quantity_zero | 100
+burst_sparks_a_bound | 100
+burst_water_bound | 100
+burst_boost_off | 100
+burst_sparks_a_computed | 100
+burst_boost_on | 100
+burst_sparks_a_computed | 100
+burst_boost_off | 100
+burst_quantity_normal | 100
+burst_sparks_a | 100
+burst_sparks_a | 100
+burst_sparks_a | 100
+burst_pair | 100
+# Each trigger above is a distinct occurrence. Close the source loop; Sparks B stays fixed.
+burst_source_east | 5200
+burst_sparks_a | 100
+burst_source_south | 5200
+burst_sparks_a | 100
+burst_source_west | 5200
+burst_sparks_a | 100
+burst_source_north | 5200
+burst_sparks_a | 100
+go south | 1200
+go north | 1200
+burst_sparks_a | 100
+# No old occurrences replay on re-entry. Only the last explicit request creates a fresh one.
+go south | 1200
+go south | 1200
+go south | 1200
+
+# 10 LIFECYCLE: absent object versus present nonproducing object; environmental Enabled separately.
+life_smoke_hide | 100
+life_smoke_show | 100
+life_smoke_disable | 100
+life_smoke_enable | 100
+life_fog_on | 100
+life_fog_off | 100
+restore_beacon_hide | 100
+restore_beacon_show | 100
+restore_beacon_disable | 100
+restore_beacon_enable | 100
+removal_all_on | 100
+removal_all_off | 100
+removal_all_on | 100
+removal_all_hide | 100
+removal_all_show | 100
+removal_fade_off | 100
+removal_fade_on | 100
+removal_fade_hide | 100
+removal_fade_show | 100
+removal_immediate_off | 100
+removal_immediate_on | 100
+removal_natural_off | 100
+removal_natural_on | 100
+# Natural/fade/immediate stay distinct recipe keys. This checks state/restart, not fade pixels.
+go west | 1200
+
+# 11 CLOUD INSTANCES: each layer independently, then the combined depth setup and retuning.
+clouds_all_off | 100
+cloud_1_on | 100
+cloud_1_off | 100
+cloud_2_on | 100
+cloud_2_off | 100
+cloud_3_on | 100
+cloud_3_off | 100
+cloud_4_on | 100
+cloud_4_off | 100
+clouds_all_on | 100
+wind_speed_gale | 100
+wind_south | 100
+wind_calm | 100
+wind_east | 100
+wind_speed_breeze | 100
+clouds_all_off | 100
+go west | 1200
+
+# Image station late revisit: reconstruct the same partial mappings, then restart the sources.
+image_candle_hide | 100
+image_candle_show | 100
+image_leaves_on | 100
+image_leaves_off | 100
+go south | 1200
+go west | 1200
+
+# 12 STAINS: close a moved mark loop; hide/show and deactivate/reactivate each style.
+stain_splatter_east | 5200
+stain_splatter_south | 5200
+stain_splatter_west | 5200
+stain_splatter_north | 5200
+stain_splatter_hide | 100
+stain_splatter_show | 100
+stain_splatter_disable | 100
+stain_splatter_enable | 100
+stain_patch_hide | 100
+stain_patch_show | 100
+stain_streak_disable | 100
+stain_streak_enable | 100
+stain_spray_disable | 100
+stain_spray_enable | 100
+go north | 1200
+weather_status | 3200
+
+# STOP recording after final output/deltas. End: Seasonal Shelter; some fixture state remains changed.
+# Always start a fresh session for another run. Genuine save/restore is a separate workflow.
